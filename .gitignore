@@ -1,0 +1,43 @@
+# OSX
+.DS_Store
+
+# IDE files
+.idea
+.project
+.settings
+*.iml
+.vscode
+
+# package directories
+node_modules/
+@adobe/
+npm-debug.log
+yarn-error.log
+yarn-debug.log*
+lerna-debug.log
+jspm_packages
+*.tgz
+
+# Serverless directories
+.serverless
+
+# Development Files
+dev-deployment
+
+# Coverage
+coverage
+.nyc_output/
+
+# npm
+package-lock.json
+
+#Build files
+/**/*.js
+/**/*.map
+dist/
+lib/
+!autoGenerator.js
+!webpack.config.js
+!k6-script.js
+!deployment-install.js
+!serverlessPackageConfig.js

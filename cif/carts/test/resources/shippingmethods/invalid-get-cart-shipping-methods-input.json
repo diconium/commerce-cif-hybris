@@ -1,0 +1,29 @@
+{
+  "HB_API_HOST": "hybris.example.com",
+  "HB_AUTH_HOST": "hybris.example.com",
+  "HB_AUTH": "basic",
+  "HB_BASESITEID": "electronics",
+  "HB_USER": "hybrisdemouser",
+  "HB_PASSWORD": "hybrisdemopassword",
+  "args": {},
+  "status": {
+    "error": {
+      "code": 400,
+      "validationErrors": [
+        {
+          "property": "isRequired",
+          "target": "id",
+          "value": "undefined"
+        }
+      ]
+    }
+  },
+  "validations": [
+    {
+      "mTarget": "id",
+      "validations": [
+        "isRequired"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "country": {
+    "isocode": "GB"
+  },
+  "defaultAddress": true,
+  "firstName": "Francisco",
+  "lastName": "Diconium",
+  "line1": "Address2",
+  "line2": "",
+  "postalCode": "12345",
+  "shippingAddress": false,
+  "titleCode": "mr",
+  "town": "Lisbon"
+}

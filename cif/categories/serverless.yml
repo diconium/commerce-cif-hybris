@@ -1,0 +1,41 @@
+service: hybris
+
+package:
+  individually: true
+  exclude:
+    - ./**
+
+provider:
+  name: openwhisk
+  runtime: nodejs:10
+  ignore_certs: true
+  defaultService: hybris
+  service: ${opt:service, self:provider.defaultService}
+
+custom:
+  npm-version: ${file(package.json):name}@${file(package.json):version}
+  ow-package: ${opt:ow-package, self:custom.npm-version}
+
+plugins:
+  - serverless-openwhisk
+  - serverless-webpack
+
+resources:
+  packages: ${file(../common/serverlessPackageConfig.js)}
+
+functions:
+  validateGetCategoryService:
+    name: ${self:custom.ow-package}/validateGetCategoryService
+    handler: lib/validations/categories.getById
+
+  getCategoryService:
+    name: ${self:custom.ow-package}/getCategoryService
+    handler: lib/actions/categories.getById
+
+  validateGetCategoriesService:
+    name: ${self:custom.ow-package}/validateGetCategoriesService
+    handler: lib/validations/categories.get
+
+  getCategoriesService:
+    name: ${self:custom.ow-package}/getCategoriesService
+    handler: lib/actions/categories.get

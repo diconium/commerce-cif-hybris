@@ -1,0 +1,8 @@
+{
+  "errors": [
+    {
+      "message": "Category with code 'brands' in CatalogVersion 'electronicsProductCatalog.Online' not found! (Active session catalogversions: electronicsProductCatalog.Online, ElectronicsClassification.1.0, electronicsContentCatalog.Online)",
+      "type": "UnknownIdentifierError"
+    }
+  ]
+}

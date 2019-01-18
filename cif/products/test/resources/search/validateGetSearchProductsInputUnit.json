@@ -1,0 +1,28 @@
+{
+  "entity": {},
+  "errorOutput": null,
+  "parameters": {
+    "query": "samsung",
+    "fields": "FULL"
+  },
+  "settings": {
+    "HB_API_BASE_PATH": "/rest/v2",
+    "HB_API_HOST": "hybris.example.com",
+    "HB_AUTH": "",
+    "HB_BASESITEID": "/electronics",
+    "HB_CATALOG": "electronicsProductCatalog",
+    "HB_CATALOGVERSION": "Online",
+    "HB_CLIENTID": "hybrisoauthclientid",
+    "HB_CLIENTSECRET": "hybrisoauthclientsecret",
+    "HB_OAUTH_HOST": "hybris.example.com",
+    "HB_OAUTH_PATH": "/authorizationserver/oauth/token",
+    "HB_PASSWORD": "",
+    "HB_PROTOCOL": "https",
+    "HB_USER": "",
+    "bearer": "",
+    "cookies": [],
+    "customerId": "anonymous",
+    "headers": {},
+    "language": ""
+  }
+}

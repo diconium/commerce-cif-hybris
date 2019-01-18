@@ -1,0 +1,8 @@
+{
+  "errors": [
+    {
+      "message": "coupon.not.active.expired",
+      "type": "VoucherOperationError"
+    }
+  ]
+}

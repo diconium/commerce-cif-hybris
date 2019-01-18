@@ -1,0 +1,8 @@
+{
+  "errors": [
+    {
+      "message": "Access is denied",
+      "type": "ForbiddenError"
+    }
+  ]
+}

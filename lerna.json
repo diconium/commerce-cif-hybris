@@ -1,0 +1,21 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "loglevel": "error",
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "allowBranch": [
+        "master",
+        "feature/*",
+        "release/*"
+      ]
+    }
+  },
+  "ignoreChanges": [
+    "**/test/**",
+    "**/lib/**",
+    "**/*.md"
+  ]
+}

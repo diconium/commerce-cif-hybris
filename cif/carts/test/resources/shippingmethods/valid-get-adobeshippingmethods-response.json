@@ -1,0 +1,8 @@
+{
+  "id": "standard-gross",
+  "name": "Standard Delivery",
+  "cost": {
+    "currency": "USD",
+    "amount": 899
+  }
+}

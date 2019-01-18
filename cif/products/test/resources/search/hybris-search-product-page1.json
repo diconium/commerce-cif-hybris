@@ -1,0 +1,464 @@
+{
+  "type" : "productCategorySearchPageWsDTO",
+  "currentQuery" : {
+    "query" : {
+      "value" : ":relevance"
+    },
+    "url" : "/search?q=%3Arelevance"
+  },
+  "freeTextSearch" : "",
+  "pagination" : {
+    "currentPage" : 1,
+    "pageSize" : 20,
+    "sort" : "relevance",
+    "totalPages" : 9,
+    "totalResults" : 179
+  },
+  "products" : [ {
+    "availableForPickup" : true,
+    "averageRating" : 4.363636363636363,
+    "code" : "1990255",
+    "description" : "Feature packed camera with advanced functions. Exmor™ CMOS sensor, Sony G lens, 1080p HD movie recording, Panorama mode and 20x optical zoom. High speed shooting and low image noise.<br/><br/>Please be aware that the features/specifications can differ from country to country.<br/><br/><b>Features:</b><br/><br/>- Exmor™ CMOS sensor boosts sensitivity while suppressing image noise for superb low-light pictures.<br/>- 9.1 effective megapixels resolution for very high quality imaging and detail-packed enlargements.<br/>- Premium G Lens by Sony with high-power 20x optical zoom range and 28mm wide angle.<br/>- Sweep Panorama mode automatically stitches together high-speed burst of images to capture extra-wide landscapes.<br/>- Two shooting modes dramatically reduce image noise even in low light, superimposing 6 separate images to create one beautiful shot.<br/>- 1080p HD movie recording captures crisp, detail-packed HD video clips plus stereo sound at 30 frames per second.<br/>- Exmor™ CMOS sensor and BIONZ processor powers high-speed, full resolution continuous shooting up to 10 frames per second.<br/>- 3.0-inch tilt-angle Clear Photo LCD Plus screen for comfortable framing in any shooting position.<br/>- Optical SteadyShot image stabilization for reduced camera shake with handheld shooting, especially in low light or at high zoom settings.<br/>- Enhanced Smile Shutter automatically fires shutter when subject smiles: now easier to use with adjustable smile threshold.<br/>- Enhanced Face Detection with selectable adult/child priority high-speed subject tracking for clearer portraits. Includes Face Motion Detection and Selected Face Memory.<br/>- Intelligent Scene Recognition simplifies shooting by choosing best settings for difficult conditions such as twilight portraits and backlit scenes.<br/>- HD output to view video and still images on HD TV (requires optional cable). PhotoTV HD enhances still image viewing on compatible BRAVIA TV.<br/>- Photomusic (HD Slideshow) offers fun display of still images and HD video clips with effects and music on LCD or connected HD TV<br/>- Fun in-camera retouching functions including trim, red-eye correction and artistic filters.<br/>- Picture Motion Browser software simplifies image management, searches and viewing on PC.",
+    "manufacturer" : "Sony",
+    "multidimensional" : false,
+    "name" : "DSC-HX1",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$924.46",
+      "priceType" : "BUY",
+      "value" : 924.46
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "DSC-HX 9.1MP , 20x zoom, Tilting 3.0\"\"LCD, SONY G lens, 10fps, 1080 HD movie",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-HX1/p/1990255"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 3.619047619047619,
+    "code" : "1993748",
+    "description" : "Compact camera with 12.1 megapixels and 720p HD movie recording. 5x optical zoom Carl Zeiss lens with 28mm wide angle and Optical SteadyShot.<br/><br/><b>Features:</b><br/>- 12.1 effective megapixels resolution for very high quality imaging and detail-packed enlargements<br/><br/>- 5x optical zoom Carl Zeiss Vario-Tessar lens with 28mm wide angle for panoramic landscapes and large group shots<br/><br/>- 720p HD movie recording captures crisp, detail-packed HD video clips plus stereo sound at 30 frames per second<br/><br/>- Enhanced Smile Shutter automatically fires shutter when subject smiles: now easier to use with adjustable smile threshold<br/><br/>- Enhanced Face Detection with selectable adult/child priority high-speed subject tracking for clearer portraits. Includes Face Motion Detection and Selected Face Memory<br/><br/>- Intelligent Scene Recognition simplifies shooting by choosing best settings for difficult conditions such as twilight portraits and backlit scenes<br/><br/>- Optical SteadyShot, high sensitivity ISO 3200 and Clear RAW Noise Reduction for high-quality images with reduced blur during handheld shooting in low light<br/><br/>- 2.7-inch (230K dot) Clear Photo LCD plus screen with wide viewing angle<br/><br/>- Available in a choice of beautiful colours to match your personal taste<br/><br/>- HD output to view video and still images on HD TV (requires optional cable). PhotoTV HD enhances still image viewing on compatible BRAVIA TV<br/><br/>- BIONZ processor for enhanced image quality, reduced image noise and fast shooting response<br/><br/>- D-Range Optimizer with new Plus mode adjusts exposure and contrast in high-contrast and backlit scenes<br/><br/>- HD Slideshow with music offers fun image display with effects and music on LCD or connected HD TV<br/><br/>- Fun in-camera retouching functions including trim, red-eye correction and artistic filters<br/><br/>- Picture Motion Browser software simplifies image management, searches and viewing on PC",
+    "manufacturer" : "Sony",
+    "multidimensional" : false,
+    "name" : "DSC-W270",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$406.39",
+      "priceType" : "BUY",
+      "value" : 406.39
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "DSC-W270, Black, 12.1 Megapixels, 5x Optical Zoom, 2.7\"\" LCD",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-W270/p/1993748"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.6,
+    "code" : "1997551",
+    "description" : "<b>Powerful Zoom Controls in a Compact Body</b><br/>12x optical zoom operates with rich functions optimized by superb quality of 10.0 megapixels - all in a compact body.<br/><br/><b>High Performance Shooting Functions</b><br/>Introducing a high-performance Tracking Auto Focus and Panorama Shooting Mode in the FinePix S1500.<br/><br/><b>New SR AUTO & Face Detection</b><br/>Equipped with the newly evolved SR Auto (Scene Recognition Auto) and Face Detection, scenes and faces can be captured and optimized even more with the detection functions.<br/><br/><b>A Blurless Image with Clarity</b><br/>No more blurs caused by camera shake or high-speed moving subjects. The Dual Image Stabilization and Continuous Shooting Mode will help you capture that one special moment with clarity.<br/><br/><b>Versatile Features</b><br/>Various features to enhance your photo life.",
+    "manufacturer" : "Fujifilm",
+    "multidimensional" : false,
+    "name" : "FinePix S1500",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$177.88",
+      "priceType" : "BUY",
+      "value" : 177.88
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "FinePix S1500 - 10.0 Megapixels, 1/2.3-inch CCD, 3,648 × 2,736, 2.7\"\" TFT LCD, black",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/FinePix-S1500/p/1997551"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 4.25,
+    "code" : "2053226",
+    "description" : "With the EOS 500D, every side of your story comes alive. Capture every detail in stunning 15.1 Megapixel resolution, or switch to shooting pin-sharp Full High Definition video.<br/><br/><b>15.1 MP CMOS sensor</b><br/>Ideal for those who want to create large, poster-size prints – or crop images to perfection without losing any of the detail necessary for printing – Canon’s 15.1MP CMOS sensor is outstanding in low light, and produces images with incredibly low noise.<br/><br/><b>Full HD movie recording</b><br/>The EOS 500D combines exceptional still shooting with the ability to shoot Full HD (1080p) video. For occasions when larger amounts of footage need to be stored on a memory card, users can also choose to shoot at 720p or VGA resolution. An HDMI connection allows High Definition playback of footage and images on any HDTV. <br/><br/><b>High ISO for low light</b><br/>When light levels fall, the EOS 500D offers an ISO range of up to 3200 – expandable to 12800 for those environments where using flash is undesirable. <br/><br/><b>3.4fps with up to 170 JPEG burst</b><br/>The EOS 500D features shooting speeds of up to 3.4fps in continuous bursts of up to 170 large JPEG images (9 RAW). <br/><br/><b>3.0” Clear View LCD with Live View mode</b><br/>Detailed checks on images and video are possible with a 3.0” ClearView LCD screen, which features an ultra-high 920,000 dots for increased clarity. Switch to Live View mode and use the real-time visual feed to shoot from awkward angles.<br/><br/><b>9-point AF system</b><br/>A high-precision AF system employs 9 AF points AF Points are located throughout the frame to better accommodate off-centre subjects. For accurate focusing with fast aperture lenses, the central AF point features a high sensitivity cross-type sensor, suitable for lenses with an aperture of f/2.8 or faster.<br/><br/><b>DIGIC 4</b><br/>Canon’s DIGIC 4 processor works with the CMOS sensor to deliver 14-bit image processing, for smooth gradations and natural looking colours. DIGIC 4 also powers advanced Noise Reduction when shooting at higher ISO speeds, plus split-second startup times and near-instant image review after shooting.<br/><br/><b>EOS Integrated Cleaning System</b><br/>Canon’s built-in dust prevention system offers three ways of guarding images against the effects of dust: reduction of internal dust generation",
+    "manufacturer" : "Canon",
+    "multidimensional" : false,
+    "name" : "EOS 500D + EF-S 18-55 IS, kit",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$1,538.70",
+      "priceType" : "BUY",
+      "value" : 1538.7
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "EOS 500D + EF-S 18-55 IS - 15.1 MP CMOS, Full HD (1080p), 3.4fps, 3.0” Clear View LCD, DIGIC 4, 9-point AF",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/EOS-500D-%2B-EF-S-18-55-IS%2C-kit/p/2053226"
+  }, {
+    "availableForPickup" : true,
+    "code" : "1978440_md",
+    "description" : "<b>Performance that won't weigh you down</b><br/>Enjoy superb quality images, with 10x Optical Zoom, HD movie recording and smart functions in a brilliantly designed package. The perfect partner when you want serious performance in a compact design.<br/><br/><b>Get closer to your subject</b><br/>A high-quality Optical Zoom lens gets closer to the action, letting you fill more of the frame with distant subjects. Unlike digital zoom, you'll get uncompromised image quality at all settings – even high magnifications.<br/><br/><b>Don’t worry about the right settings</b><br/>It can be hard judging the best camera settings to use in tricky situations like twilight portraits and sun-drenched backlit beach scenes. Intelligent Scene Recognition automatically adjusts exposure and other settings, helping you achieve better-looking results with less effort.<br/><br/><b>Beautiful portraits made simple</b><br/>Now it’s easy to capture beautiful, smiling portraits of friends and family. Enhanced Face Detection automatically adjusts camera settings for clear, crisp results with natural skin tones. Smile Shutter fires the shutter automatically when your subject smiles to capture those happy moments.<br/><br/><b>Big, beautiful pictures on your HD TV</b><br/>Why not show off your pictures in more style? Connect your camera to any HD Ready television and enjoy a big, beautiful view of your pictures that everyone can enjoy. If your BRAVIA TV supports PhotoTV HD, you’ll enjoy even incredibly lifelike HD images, packed with detail and vibrant colours.<br/><br/><b>The camera that thinks it’s a camcorder</b><br/>Left your camcorder behind? Don't worry: now you can capture crisp, clear HD movie clips at an incredible 30 frames per second for smooth, clear action. Watch the results on your BRAVIA television: you'll be amazed by the quality, detail and colour.",
+    "manufacturer" : "Sony",
+    "multidimensional" : true,
+    "name" : "DSC-H20_MD",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$558.40",
+      "priceType" : "BUY",
+      "value" : 558.4
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "DSC-H20, Black, 10.1 Megapixels, 10x Optical Zoom, 3.0\"\" LCD",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-H20-MD/p/1978440_md"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 3.7,
+    "code" : "2053367",
+    "description" : "With the EOS 500D, every side of your story comes alive. Capture every detail in stunning 15.1 Megapixel resolution, or switch to shooting pin-sharp Full High Definition video.<br/><br/><b>15.1 MP CMOS sensor</b><br/>Ideal for those who want to create large, poster-size prints – or crop images to perfection without losing any of the detail necessary for printing – Canon’s 15.1MP CMOS sensor is outstanding in low light, and produces images with incredibly low noise.<br/><br/><b>Full HD movie recording</b><br/>The EOS 500D combines exceptional still shooting with the ability to shoot Full HD (1080p) video. For occasions when larger amounts of footage need to be stored on a memory card, users can also choose to shoot at 720p or VGA resolution. An HDMI connection allows High Definition playback of footage and images on any HDTV. <br/><br/><b>High ISO for low light</b><br/>When light levels fall, the EOS 500D offers an ISO range of up to 3200 – expandable to 12800 for those environments where using flash is undesirable. <br/><br/><b>3.4fps with up to 170 JPEG burst</b><br/>The EOS 500D features shooting speeds of up to 3.4fps in continuous bursts of up to 170 large JPEG images (9 RAW). <br/><br/><b>3.0” Clear View LCD with Live View mode</b><br/>Detailed checks on images and video are possible with a 3.0” ClearView LCD screen, which features an ultra-high 920,000 dots for increased clarity. Switch to Live View mode and use the real-time visual feed to shoot from awkward angles.<br/><br/><b>9-point AF system</b><br/>A high-precision AF system employs 9 AF points AF Points are located throughout the frame to better accommodate off-centre subjects. For accurate focusing with fast aperture lenses, the central AF point features a high sensitivity cross-type sensor, suitable for lenses with an aperture of f/2.8 or faster.<br/><br/><b>DIGIC 4</b><br/>Canon’s DIGIC 4 processor works with the CMOS sensor to deliver 14-bit image processing, for smooth gradations and natural looking colours. DIGIC 4 also powers advanced Noise Reduction when shooting at higher ISO speeds, plus split-second startup times and near-instant image review after shooting.<br/><br/><b>EOS Integrated Cleaning System</b><br/>Canon’s built-in dust prevention system offers three ways of guarding images against the effects of dust: reduction of internal dust generation",
+    "manufacturer" : "Canon",
+    "multidimensional" : false,
+    "name" : "EOS 500D + EF-S 18-200mm f/3.5-5.6 IS, kit",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$2,410.42",
+      "priceType" : "BUY",
+      "value" : 2410.42
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "EOS 500D + EF-S 18-200mm f/3.5-5.6 IS - 15.1 MP CMOS, Full HD (1080p), 3.4fps, 3.0” Clear View LCD, DIGIC 4, 9-point AF",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/EOS-500D-%2B-EF-S-18-200mm-f-3-5-5-6-IS%2C-kit/p/2053367"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.5217391304347827,
+    "code" : "2934302",
+    "description" : "- Compact, stylish new dual-tone body design - light and easy to carry for day trips, holidays and weekends away.<br/>- High resolution 10.2 effective megapixel CCD sensor and BIONZ processor for superbly detailed, low noise images with rich tones and vib",
+    "manufacturer" : "Sony",
+    "multidimensional" : false,
+    "name" : "DSLR-A330 + DT 18 - 55 mm",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$508.88",
+      "priceType" : "BUY",
+      "value" : 508.88
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "DSLR-A330 + DT 18 - 55 mm - Light, compact, easy-to-use Digital Single Lens Reflex (D-SLR) camera - body only. 10.2 megapixels, SteadyShot INSIDE and Quick AF Live View. HD output, 2.7\"\" tilt LCD and on-screen help guide",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/DSLR-A330-%2B-DT-18---55-mm/p/2934302"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.3636363636363638,
+    "code" : "2934303",
+    "description" : "- Compact, stylish new body design - light and easy to carry for day trips, holidays and weekends away.<br/>- High resolution 10.2 effective megapixel CCD sensor and BIONZ processor for superbly detailed, low noise images with rich tones and vibrant colou",
+    "manufacturer" : "Sony",
+    "multidimensional" : false,
+    "name" : "DSLR-A230 + DT 18 - 55 mm",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$429.88",
+      "priceType" : "BUY",
+      "value" : 429.88
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "DSLR-A230 + DT 18 - 55 mm - Very light, compact, easy-to-use Digital Single Lens Reflex (D-SLR) camera - body only. 10.2 megapixels, SteadyShot INSIDE, HD output, 2.7\"\" LCD and on-screen help guide",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/DSLR-A230-%2B-DT-18---55-mm/p/2934303"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.4545454545454546,
+    "code" : "3505505",
+    "description" : "- 10X optical zoom lens with image stabilization<br/>- Amazing quality prints with 10 MP<br/>- Smart Capture feature<br/>- Best-in-class click-to-capture speed (<0.3 sec.)<br/>- HD pictures<br/>- High ISO (up to 1600)<br/>- Advanced settings and manual co",
+    "manufacturer" : "Kodak",
+    "multidimensional" : false,
+    "name" : "EasyShare Z915 red",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$426.55",
+      "priceType" : "BUY",
+      "value" : 426.55
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "EasyShare Z915, red",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/EasyShare-Z915-red/p/3505505"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.4705882352941178,
+    "code" : "3557133",
+    "description" : "With the EOS 500D, every side of your story comes alive. Capture every detail in stunning 15.1 Megapixel resolution, or switch to shooting pin-sharp Full High Definition video.<br/><br/><b>15.1 MP CMOS sensor</b><br/>Ideal for those who want to create large, poster-size prints – or crop images to perfection without losing any of the detail necessary for printing – Canon’s 15.1MP CMOS sensor is outstanding in low light, and produces images with incredibly low noise.<br/><br/><b>Full HD movie recording</b><br/>The EOS 500D combines exceptional still shooting with the ability to shoot Full HD (1080p) video. For occasions when larger amounts of footage need to be stored on a memory card, users can also choose to shoot at 720p or VGA resolution. An HDMI connection allows High Definition playback of footage and images on any HDTV. <br/><br/><b>High ISO for low light</b><br/>When light levels fall, the EOS 500D offers an ISO range of up to 3200 – expandable to 12800 for those environments where using flash is undesirable. <br/><br/><b>3.4fps with up to 170 JPEG burst</b><br/>The EOS 500D features shooting speeds of up to 3.4fps in continuous bursts of up to 170 large JPEG images (9 RAW). <br/><br/><b>3.0” Clear View LCD with Live View mode</b><br/>Detailed checks on images and video are possible with a 3.0” ClearView LCD screen, which features an ultra-high 920,000 dots for increased clarity. Switch to Live View mode and use the real-time visual feed to shoot from awkward angles.<br/><br/><b>9-point AF system</b><br/>A high-precision AF system employs 9 AF points AF Points are located throughout the frame to better accommodate off-centre subjects. For accurate focusing with fast aperture lenses, the central AF point features a high sensitivity cross-type sensor, suitable for lenses with an aperture of f/2.8 or faster.<br/><br/><b>DIGIC 4</b><br/>Canon’s DIGIC 4 processor works with the CMOS sensor to deliver 14-bit image processing, for smooth gradations and natural looking colours. DIGIC 4 also powers advanced Noise Reduction when shooting at higher ISO speeds, plus split-second startup times and near-instant image review after shooting.<br/><br/><b>EOS Integrated Cleaning System</b><br/>Canon’s built-in dust prevention system offers three ways of guarding images against the effects of dust: reduction of internal dust generation",
+    "manufacturer" : "Canon",
+    "multidimensional" : false,
+    "name" : "EOS 500D + EF-S 18-55IS + EF-S 55-250IS, kit",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$929.88",
+      "priceType" : "BUY",
+      "value" : 929.88
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "EOS 500D + EF-S 18-55IS + EF-S 55-250IS, kit",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/EOS-500D-%2B-EF-S-18-55IS-%2B-EF-S-55-250IS%2C-kit/p/3557133"
+  }, {
+    "availableForPickup" : true,
+    "code" : "1641905",
+    "description" : "Secure Digital High Capacity cards you can rely on. Kingston Technology's Secure Digital High-Capacity (SDHC) memory cards are fully compliant with the Secure Digital Association 2.00 specification. They are the next high performance generation of SD memory cards designed to meet the storage demands of high-quality digital still and video cameras and other high-resolution image recording devices.",
+    "manufacturer" : "Kingston",
+    "multidimensional" : false,
+    "name" : "32GB SDHC Card",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$142.70",
+      "priceType" : "BUY",
+      "value" : 142.7
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevel" : 4,
+      "stockLevelStatus" : "lowStock"
+    },
+    "summary" : "SD High Capacity",
+    "url" : "/Open-Catalogue/Data-storage/Flash-Memory/32GB-SDHC-Card/p/1641905"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 4.384615384615385,
+    "code" : "1776948",
+    "description" : "5-in-1 Features: 1. 1080p, HiDef Resolution",
+    "manufacturer" : "Toshiba",
+    "multidimensional" : false,
+    "name" : "Camileo S10 EU",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$146.88",
+      "priceType" : "BUY",
+      "value" : 146.88
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "Camileo S10 EU 5MP CMOS",
+    "url" : "/Open-Catalogue/Cameras/Hand-held-Camcorders/Camileo-S10-EU/p/1776948"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 4.416666666666667,
+    "code" : "1934796",
+    "description" : "<b>Affordable, intuitive and fun, the PowerShot A480 uses Canon know-how to let everyone take great 10 MP photos. Available in four colours, its compact, lightweight design slips easily into any pocket.</b><br/><br/><b>10.0 Megapixels</b><br/>With a 10 Megapixel sensor, you can capture every scene in vivid detail – ready for printing at sizes as large as A3+, or cropping to perfection without losing the detail necessary for larger prints.<br/><br/><b>Compact and colourful</b><br/>Small and light enough to slip into a pocket, the PowerShot A480 has a classic, stylish design that feels great in the hand. Controlled by a simple button layout, it comes in a choice of four attractive colours.<br/><br/><b>3.3x optical zoom</b><br/>Frame every picture perfectly with a Canon 3.3x optical zoom. In combination with digital zoom, magnification of up to 13x can be achieved.<br/><br/><b>DIGIC III</b><br/>As well as powering Face Detection Technology, Canon’s DIGIC III processor provides fast response times, superb image quality and colour reproduction. DIGIC III also delivers advanced noise reduction – ensuring that images remain sharp and clear.<br/><br/><b>15 shooting modes</b><br/>A selection of shooting modes - including dedicated Kids & Pets and Indoor modes - make it easy to get the right settings for any scene. Simply select the mode you want, and let the camera take care of everything else. <br/><br/><b>1cm Macro shooting</b><br/>A special 1cm Super Macro mode allows you to capture small scale detail from as close as 1cm away.<br/><br/><b>Great people shots</b><br/>A suite of Face Detection technologies detects up to nine faces in a scene and adjusts focus, exposure, flash settings and white balance – for optimal results with natural-looking skin tones. <br/><br/><b>Auto Red-Eye Correction</b><br/>Available in shooting or playback mode, Automatic Red-Eye Correction accurately removes the red-eye effect caused by flash. <br/><br/><b>Motion Detection Technology</b><br/>Motion Detection Technology uses changes in scene information and scene brightness to accurately identify subject motion. The optimal ISO level is then automatically set, to minimise blur and maximise image quality.",
+    "manufacturer" : "Canon",
+    "multidimensional" : false,
+    "name" : "PowerShot A480",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$110.88",
+      "priceType" : "BUY",
+      "value" : 110.88
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "PowerShot A480 - 10.0 MP, 3.3x optical, DIGIC III, 2.5” LCD, silver",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/PowerShot-A480/p/1934796"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 3.5,
+    "code" : "1992693",
+    "description" : "- 12.1 effective megapixels resolution for very high quality imaging and detail-packed enlargements.<br/>- 4x optical zoom Carl Zeiss Vario-Tessar lens.<br/>- 720p HD movie recording captures crisp, detail-packed HD video clips plus stereo sound at 30 fra",
+    "manufacturer" : "Sony",
+    "multidimensional" : false,
+    "name" : "DSC-T90",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$541.34",
+      "priceType" : "BUY",
+      "value" : 541.34
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "DSC-T90 - Stylish, ultra-slim camera with 12.1 megapixels and 720p HD movie recording. Wide 3.0-inch LCD touchscreen and Optical SteadyShot",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-T90/p/1992693"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.52,
+    "code" : "2278102",
+    "description" : "- Provides an easy and effective means to remove dust and contamination from the heads of the camcorder.<br/>- The non-abrasive, durable head cleaning tape gently removes harmful oxide accumulations over approximately 100 cleaning cycles.<br/>- The cleani",
+    "manufacturer" : "TDK",
+    "multidimensional" : false,
+    "name" : "miniDV Head Cleaner",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$11.00",
+      "priceType" : "BUY",
+      "value" : 11.0
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "miniDV Head Cleaner",
+    "url" : "/Open-Catalogue/Cameras/Camera-Accessories-%26-Supplies/Blank-Video-Tapes/miniDV-Head-Cleaner/p/2278102"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 4.5,
+    "code" : "300938",
+    "description" : "Get point and shoot simplicity plus crisp, true-to-life photos with this stylish and easy-to-use camera.<br/><br/>Get close in with 4x digital zoom, review via the clear 3.8 cm LCD then print great 10 × 15 cm photos and enlargements up to poster size.",
+    "manufacturer" : "HP",
+    "multidimensional" : false,
+    "name" : "Photosmart E317 Digital Camera",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$114.12",
+      "priceType" : "BUY",
+      "value" : 114.12
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "Point and shoot simplicity in a 5 MP camera.",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/Photosmart-E317-Digital-Camera/p/300938"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 4.538461538461538,
+    "code" : "816802",
+    "description" : "- 7,2 effective megapixels <br/>- ISO 1000 high sensitivity (REI) for shooting in low-light situations <br/>- Carl-Zeiss Vario-Tessar lens <br/>- 3x optical zoom 6x digital zoom up to 14x smart zoom <br/>- Large 2.5-inch (6.2cm) LCD screen and optical view",
+    "manufacturer" : "Sony",
+    "multidimensional" : false,
+    "name" : "Cyber-shot W55",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$260.87",
+      "priceType" : "BUY",
+      "value" : 260.87
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevel" : 4,
+      "stockLevelStatus" : "lowStock"
+    },
+    "summary" : "Compact and stylish blue design, with 7.2 effective megapixels, high sensitivity for shooting in low-light, ZEISS 3x optical zoom lens, large 2.5-inch LCD screen, STAMINA battery life, and finished with a brushed aluminium face.",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/Cyber-shot-W55/p/816802"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.75,
+    "code" : "1981415",
+    "description" : "<b>Smart Auto Mode</b><br/>This mode uses extremely clever technology to assess the type of photo you are taking and then optimises the camera automatically to ensure the best results possible are achieved - All this in less than the blink of an eye.<br/><br/><b>Dual Image Stabilisation</b><br/>Dual Image Stabilisation works by integrating the best sensor shift mechanisms of Optical Image Stabilisation with the sophisticated algorithms of Digital Image Stabilisation, to take ultra clear images without blur.<br/><br/><b>Face Detection</b><br/>Each time you click, your camera automatically recognises if there is a face in the shot. It then optimises the focus and brightness of up to nine faces for stunning, natural looking portraits...<br/><br/><b>Blink Detection</b><br/>The Blink Detection function detects when a subjects eyes are closed - this feature triggers the camera to automatically take three shots in order to capture the eyes open.<br/><br/><b>Beauty Shot</b><br/>The Beauty Shot function uses face detection technology to retouch the facial skin to appear brighter and to give the impression of a smoother skin tone. This can be done either while shooting or during playback...",
+    "manufacturer" : "Samsung",
+    "multidimensional" : false,
+    "name" : "PL60 Silver",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$212.26",
+      "priceType" : "BUY",
+      "value" : 212.26
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "PL60, 10.2MP, 5x opt., 2.7\"\" TFT LCD, USB 2.0, ISO 3200, SD/SDHC/MMC, OIS + DIS, Li-Ion",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/PL60-Silver/p/1981415"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 2.607142857142857,
+    "code" : "1986316",
+    "description" : "<b>The LEGRIA HF S100 records Full HD video to SDHC memory cards, ideal for sharing. A range of advanced features combine with an 8.0MP CMOS sensor and DIGIC DV III to deliver superior picture quality.</b><br/><br/><b>Features</b><br/><br/>- 8.0MP Canon HD Camera System<br/>- SDHC Memory card recording<br/>- Instant AF and Super Range OIS<br/>- Manual control options<br/>- Video Snapshot, Face Detection, Pre REC<br/>- x.v.Colour and 25p<br/>- 8MP photos<br/>- Superior audio<br/>- Mini Advanced Accessory Shoe<br/>- Editing software <br/><br/>Supreme quality, advanced control.<br/><br/><b>Canon HD Camera System</b><br/>Superb HD images are delivered by a high resolution Canon HD Camera System: an 8.0MP Full HD CMOS sensor, a Canon HD Video Lens (58mm filter diameter) with 10x optical zoom and the DIGIC DV III processor.<br/><br/><b>Memory card recording</b><br/>Record directly to high capacity SDHC memory cards – a 32GB card can store over 12 hours of HD movies at the most efficient setting. For maximum quality, shoot at 24Mbps. Cards are perfect for sharing.<br/><br/><b>Essential shooting features</b><br/>Canon’s unique Instant AF system achieves incredibly accurate focus at speed. Super Range OIS combats almost all kinds of camera shake, keeping shots steady.<br/><br/><b>Advanced control</b><br/>A Custom Key lets you activate one of five variables which can be assigned to the manual Control Dial, including focus, exposure, and audio level. Further advanced controls include AGC (Auto Gain Control) limits – usually only found on professional camcorders, this boosts or limits responsiveness when shooting in low light – Zebra patterns, Colour Peaking and Colour Bar/Test Tone output.<br/><br/><b>Great videos made easy</b><br/>Video Snapshot limits each movie to 4 seconds – ideal for putting together in a playlist later. Play back your montage of video clips to a soundtrack of your choice. Face Detection Technology automatically optimises settings for perfect people shots, detecting up to 35 faces in a frame. Pre REC captures the 3 seconds of action before you press Record – so you never miss the shot.<br/><br/><b>Choose your colour</b><br/>DIGIC DV III supports x.v.Color – for deeper, richer hues when movies are played back on compatible HD TVs. 25p Cinema Mode matches the look of traditional film, and provides enhanced low-light shooting.<br/><br/><b>Still shooting</b><br/>A dedicated Photo mode allows users to capture high resolution still images, up to 8MP. In Dual Shot mode, 6MP stills can be shot during video recording. Photo Burst grabs 25 stills from a single second of recorded footage.<br/><br/><b>Better audio</b><br/>Capture and monitor superior audio using the microphone and headphone jacks. Manual audio level control provides even more options.<br/><br/><b>Expandable system</b><br/>Attach a range of optional peripherals to a mini Advanced Accessory Shoe, including a directional microphone and video light.<br/><br/><b>Software</b><br/>Easy-to-use PIXELA™ software is supplied for editing and sharing movies. With Canon’s DW-100 DVD Burner (available separately) burn DVDs at the touch of a button.",
+    "manufacturer" : "Canon",
+    "multidimensional" : false,
+    "name" : "LEGRIA HF S100",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$1,934.23",
+      "priceType" : "BUY",
+      "value" : 1934.23
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "LEGRIA HF S100 - SD/SDHC, 1/2.6\"\" CMOS, 8.59 megapixel, 6.4 - 64mm, 10x Optical, DIGIC DV III, 2.7\"\" LCD, 0.3 lux, 1/6 - 1/2000th sec., USB/HDMI",
+    "url" : "/Open-Catalogue/Cameras/Hand-held-Camcorders/LEGRIA-HF-S100/p/1986316"
+  }, {
+    "availableForPickup" : true,
+    "averageRating" : 4.529411764705882,
+    "code" : "1382080",
+    "description" : "The EOS 450D blends uncompromising performance with ease of use in a lightweight, ergonomic body. Capture your world with a 12.2 Megapixel CMOS sensor and the very latest Canon technologies.<br/>Features<br/><br/>- 12.2 MP CMOS sensor<br/>- 3.5fps<br/>- 9-point wide-area AF<br/>- EOS Integrated Cleaning System<br/>- 3.0” LCD with Live View mode<br/>- DIGIC III processor<br/>- Large, bright viewfinder<br/>- Total image control<br/>- Compact and lightweight<br/>- Compatible with EF/EF-S lenses and EX Speedlites",
+    "manufacturer" : "Canon",
+    "multidimensional" : false,
+    "name" : "EOS450D + 18-55 IS Kit",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$574.88",
+      "priceType" : "BUY",
+      "value" : 574.88
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevel" : 4,
+      "stockLevelStatus" : "lowStock"
+    },
+    "summary" : "EOS450D + 18-55 IS Kit - 12.2 MP, 4272 × 2848, 3:2 CMOS, 3\"\" TFT, USB 2.0",
+    "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/EOS450D-%2B-18-55-IS-Kit/p/1382080"
+  } ],
+  "sorts" : [ {
+    "code" : "relevance",
+    "name" : "Relevance",
+    "selected" : true
+  }, {
+    "code" : "topRated",
+    "name" : "Top Rated",
+    "selected" : false
+  }, {
+    "code" : "name-asc",
+    "name" : "Name (ascending)",
+    "selected" : false
+  }, {
+    "code" : "name-desc",
+    "name" : "Name (descending)",
+    "selected" : false
+  }, {
+    "code" : "price-asc",
+    "name" : "Price (lowest first)",
+    "selected" : false
+  }, {
+    "code" : "price-desc",
+    "name" : "Price (highest first)",
+    "selected" : false
+  } ]
+}

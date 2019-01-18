@@ -1,0 +1,61 @@
+{
+  "addresses": [
+    {
+      "country": {
+        "isocode": "GB",
+        "name": "United Kingdom"
+      },
+      "defaultAddress": false,
+      "firstName": "First",
+      "formattedAddress": "Address, , London, 1234, United Kingdom",
+      "id": "8796224061463",
+      "lastName": "Last",
+      "line1": "Address",
+      "line2": "",
+      "postalCode": "1234",
+      "shippingAddress": true,
+      "title": "Mr.",
+      "titleCode": "mr",
+      "town": "London",
+      "visibleInAddressBook": true
+    },
+    {
+      "country": {
+        "isocode": "GB",
+        "name": "United Kingdom"
+      },
+      "defaultAddress": false,
+      "firstName": "First",
+      "formattedAddress": "Address, , London, 123, United Kingdom",
+      "id": "8796155215895",
+      "lastName": "Last",
+      "line1": "Address",
+      "line2": "",
+      "postalCode": "123",
+      "shippingAddress": true,
+      "title": "Mr.",
+      "titleCode": "mr",
+      "town": "London",
+      "visibleInAddressBook": true
+    },
+    {
+      "country": {
+        "isocode": "GB",
+        "name": "United Kingdom"
+      },
+      "defaultAddress": true,
+      "firstName": "First",
+      "formattedAddress": "Address, , London, 123, United Kingdom",
+      "id": "8796199190551",
+      "lastName": "Last",
+      "line1": "Address",
+      "line2": "",
+      "postalCode": "123",
+      "shippingAddress": false,
+      "title": "Mr.",
+      "titleCode": "mr",
+      "town": "London",
+      "visibleInAddressBook": true
+    }
+  ]
+}

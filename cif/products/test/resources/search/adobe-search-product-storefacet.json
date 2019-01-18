@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Chiba",
+    "occurrences": 100,
+    "selected": false,
+    "value": "Chiba"
+  },
+  {
+    "id": "Choshi",
+    "occurrences": 92,
+    "selected": true,
+    "value": "Choshi"
+  },
+  {
+    "id": "Fukuoka Best Western Fukuoka Nakasu Inn",
+    "occurrences": 102,
+    "selected": false,
+    "value": "Fukuoka+Best+Western+Fukuoka+Nakasu+Inn"
+  }
+]

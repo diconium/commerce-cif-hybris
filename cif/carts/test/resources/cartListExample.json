@@ -1,0 +1,33 @@
+{
+  "carts" : [ {
+    "code" : "00000909",
+    "entries" : [ {
+      "entryNumber" : 0,
+      "product" : {
+        "availableForPickup" : true,
+        "code" : "3514520",
+        "name" : "DSC-WX1",
+        "purchasable" : true,
+        "stock" : {
+          "stockLevel" : 7
+        },
+        "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-WX1/p/3514520"
+      },
+      "quantity" : 1,
+      "totalPrice" : {
+        "currencyIso" : "USD",
+        "value" : 309.17
+      }
+    } ],
+    "guid" : "0f04e64f-ca50-4823-9a8a-efc5129d3214",
+    "totalItems" : 1,
+    "totalPrice" : {
+      "currencyIso" : "USD",
+      "value" : 289.17
+    },
+    "totalPriceWithTax" : {
+      "currencyIso" : "USD",
+      "value" : 289.17
+    }
+  } ]
+}

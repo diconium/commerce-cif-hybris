@@ -1,0 +1,461 @@
+{
+  "type" : "productCategorySearchPageWsDTO",
+  "breadcrumbs" : [ {
+    "facetCode" : "code",
+    "facetName" : "Code",
+    "facetValueCode" : "280916",
+    "facetValueName" : "280916",
+    "removeQuery" : {
+      "query" : {
+        "value" : ":relevance"
+      },
+      "url" : "/search?q=%3Arelevance"
+    }
+  } ],
+  "currentQuery" : {
+    "query" : {
+      "value" : ":relevance:code:280916"
+    },
+    "url" : "/search?q=%3Arelevance%3Acode%3A280916"
+  },
+  "facets" : [ {
+    "category" : false,
+    "multiSelect" : true,
+    "name" : "Stores",
+    "priority" : 2147483647,
+    "values" : [ {
+      "count" : 1,
+      "name" : "Chiba",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Chiba"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AChiba"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Fukuoka Best Western Fukuoka Nakasu Inn",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Fukuoka+Best+Western+Fukuoka+Nakasu+Inn"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AFukuoka%2BBest%2BWestern%2BFukuoka%2BNakasu%2BInn"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Fukuoka Hilton Fukuoka Sea Hawk",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Fukuoka+Hilton+Fukuoka+Sea+Hawk"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AFukuoka%2BHilton%2BFukuoka%2BSea%2BHawk"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Fukuoka Hotel Nikko Fukuoka",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Fukuoka+Hotel+Nikko+Fukuoka"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AFukuoka%2BHotel%2BNikko%2BFukuoka"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Ichikawa",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Ichikawa"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AIchikawa"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kawasaki Grand Hotel",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kawasaki+Grand+Hotel"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKawasaki%2BGrand%2BHotel"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kawasaki Hotel Sunroute Kawasaki",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kawasaki+Hotel+Sunroute+Kawasaki"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKawasaki%2BHotel%2BSunroute%2BKawasaki"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kawasaki Mets Kawasaki Hotel",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kawasaki+Mets+Kawasaki+Hotel"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKawasaki%2BMets%2BKawasaki%2BHotel"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kawasaki Mets Mizonokuchi Hotel",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kawasaki+Mets+Mizonokuchi+Hotel"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKawasaki%2BMets%2BMizonokuchi%2BHotel"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kawasaki Pearl Hotel Kawasaki",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kawasaki+Pearl+Hotel+Kawasaki"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKawasaki%2BPearl%2BHotel%2BKawasaki"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kobe Bay Sheraton Hotel and Towers",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kobe+Bay+Sheraton+Hotel+and+Towers"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKobe%2BBay%2BSheraton%2BHotel%2Band%2BTowers"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kobe Hotel Monterey Amalie",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kobe+Hotel+Monterey+Amalie"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKobe%2BHotel%2BMonterey%2BAmalie"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kobe Hotel Monterey Kobe",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kobe+Hotel+Monterey+Kobe"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKobe%2BHotel%2BMonterey%2BKobe"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Kobe Sannomiya Terminal Hotel",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Kobe+Sannomiya+Terminal+Hotel"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKobe%2BSannomiya%2BTerminal%2BHotel"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Koto",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Koto"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AKoto"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Nagoya Marriott Nagoya",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Nagoya+Marriott+Nagoya"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ANagoya%2BMarriott%2BNagoya"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Nagoya The Westin Nagoya Castle",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Nagoya+The+Westin+Nagoya+Castle"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ANagoya%2BThe%2BWestin%2BNagoya%2BCastle"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Osaka Best Western Hotel Fino Osaka Shinsaibashi",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Osaka+Best+Western+Hotel+Fino+Osaka+Shinsaibashi"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AOsaka%2BBest%2BWestern%2BHotel%2BFino%2BOsaka%2BShinsaibashi"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Osaka Cross Hotel Osaka",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Osaka+Cross+Hotel+Osaka"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AOsaka%2BCross%2BHotel%2BOsaka"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Osaka Ramada Osaka",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Osaka+Ramada+Osaka"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AOsaka%2BRamada%2BOsaka"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Sapporo Ana Hotel Sapporo",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Sapporo+Ana+Hotel+Sapporo"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ASapporo%2BAna%2BHotel%2BSapporo"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Sapporo Best Western Hotel Sapporo Nakajima Koen",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Sapporo+Best+Western+Hotel+Sapporo+Nakajima+Koen"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ASapporo%2BBest%2BWestern%2BHotel%2BSapporo%2BNakajima%2BKoen"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Sapporo Hotel Resol Trinity Sapporo",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Sapporo+Hotel+Resol+Trinity+Sapporo"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ASapporo%2BHotel%2BResol%2BTrinity%2BSapporo"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Sapporo Sheraton Sapporo Hotel",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Sapporo+Sheraton+Sapporo+Hotel"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ASapporo%2BSheraton%2BSapporo%2BHotel"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Shinbashi",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Shinbashi"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AShinbashi"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Tokio Cerulean Tower Tokyu Hotel",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Tokio+Cerulean+Tower+Tokyu+Hotel"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ATokio%2BCerulean%2BTower%2BTokyu%2BHotel"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Tokio Dormy Inn Tokyo Hatchobori",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Tokio+Dormy+Inn+Tokyo+Hatchobori"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ATokio%2BDormy%2BInn%2BTokyo%2BHatchobori"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Tokio Flexstay Nippori Inn",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Tokio+Flexstay+Nippori+Inn"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ATokio%2BFlexstay%2BNippori%2BInn"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Tokio Hotel Metropolitan Tokyo",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Tokio+Hotel+Metropolitan+Tokyo"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ATokio%2BHotel%2BMetropolitan%2BTokyo"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Tokio Park Hotel Tokyo",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Tokio+Park+Hotel+Tokyo"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3ATokio%2BPark%2BHotel%2BTokyo"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Yokohama Comfort Hotel Yokohama Kannai",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Yokohama+Comfort+Hotel+Yokohama+Kannai"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AYokohama%2BComfort%2BHotel%2BYokohama%2BKannai"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Yokohama Hotel JAL City Kannai Yokohama",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Yokohama+Hotel+JAL+City+Kannai+Yokohama"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AYokohama%2BHotel%2BJAL%2BCity%2BKannai%2BYokohama"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Yokohama Hotel New Grand",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Yokohama+Hotel+New+Grand"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AYokohama%2BHotel%2BNew%2BGrand"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Yokohama Sakuragicho Washington Hotel",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Yokohama+Sakuragicho+Washington+Hotel"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AYokohama%2BSakuragicho%2BWashington%2BHotel"
+      },
+      "selected" : false
+    }, {
+      "count" : 1,
+      "name" : "Yokosuka",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:availableInStores:Yokosuka"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3AavailableInStores%3AYokosuka"
+      },
+      "selected" : false
+    } ],
+    "visible" : true
+  }, {
+    "category" : false,
+    "multiSelect" : true,
+    "name" : "Price",
+    "priority" : 2147483646,
+    "values" : [ {
+      "count" : 1,
+      "name" : "$0-$49.99",
+      "query" : {
+        "query" : {
+          "value" : ":relevance:code:280916:price:%240-%2449.99"
+        },
+        "url" : "/search?q=%3Arelevance%3Acode%3A280916%3Aprice%3A%25240-%252449.99"
+      },
+      "selected" : false
+    } ],
+    "visible" : true
+  } ],
+  "freeTextSearch" : "",
+  "pagination" : {
+    "currentPage" : 0,
+    "pageSize" : 20,
+    "sort" : "relevance",
+    "totalPages" : 1,
+    "totalResults" : 1
+  },
+  "products" : [ {
+    "availableForPickup" : true,
+    "averageRating" : 4.625,
+    "code" : "280916",
+    "description" : "Canyon is a growing world standard company that manufactures computer components and peripherals. Canyon products provide top quality, high performance and usability, while offered services and technical support make Canyon products fully customer-orientated.",
+    "images" : [ {
+      "format" : "thumbnail",
+      "imageType" : "PRIMARY",
+      "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+    }, {
+      "format" : "product",
+      "imageType" : "PRIMARY",
+      "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+    } ],
+    "manufacturer" : "Canyon",
+    "multidimensional" : false,
+    "name" : "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+    "price" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$8.20",
+      "priceType" : "BUY",
+      "value" : 8.2
+    },
+    "priceRange" : {
+    },
+    "stock" : {
+      "stockLevelStatus" : "inStock"
+    },
+    "summary" : "100K Webcam with blue LED & Rubber coating WITH CLIP",
+    "url" : "/Open-Catalogue/Cameras/Webcams/Web-Camera-%28100KpixelM-CMOS%2C-640X480%2C-USB-1-1%29-Black/p/280916",
+    "volumePricesFlag" : false
+  } ],
+  "sorts" : [ {
+    "code" : "relevance",
+    "name" : "Relevance",
+    "selected" : true
+  }, {
+    "code" : "topRated",
+    "name" : "Top Rated",
+    "selected" : false
+  }, {
+    "code" : "name-asc",
+    "name" : "Name (ascending)",
+    "selected" : false
+  }, {
+    "code" : "name-desc",
+    "name" : "Name (descending)",
+    "selected" : false
+  }, {
+    "code" : "price-asc",
+    "name" : "Price (lowest first)",
+    "selected" : false
+  }, {
+    "code" : "price-desc",
+    "name" : "Price (highest first)",
+    "selected" : false
+  } ]
+}

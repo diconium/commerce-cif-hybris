@@ -1,0 +1,106 @@
+{
+  "name": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+  "assets": [
+    {
+      "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+    },
+    {
+      "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+    },
+    {
+      "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+    },
+    {
+      "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMjU4fGltYWdlL2pwZWd8aW1hZ2VzL2gyMy9oYTAvODc5NjkxMDMyMTY5NC5qcGd8YjQ0NzczMTBkYmMwZTgyZWU4ZDFiODExYjMyYzNiMzVjNWVjN2I0Y2M5YmJiMGUwYzVjNWI1NGUyMjczNTA2NA"
+    },
+    {
+      "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+    },
+    {
+      "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+    },
+    {
+      "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+    }
+  ],
+  "masterVariantId": "280916",
+  "prices": [
+    {
+      "currency": "USD",
+      "amount": 820
+    }
+  ],
+  "description": "100K-Webcam mit blauer LED und Gummibeschichtung, mit Clip",
+  "attributes": [
+    {
+      "id": "manufacturer",
+      "name": "Hersteller",
+      "value": "Canyon"
+    },
+    {
+      "id": "averageRating",
+      "name": "Durchschnittliche Bewertung",
+      "value": 4.625
+    },
+    {
+      "id": "description",
+      "name": "Beschreibung",
+      "value": "Canyon ist ein internationaler wachstumsstarker Hersteller von Computerkomponenten und -Zubehör. Canyon-Produkte bieten höchste Qualität, Spitzenleistung und -Benutzerfreundlichkeit"
+    }
+  ],
+  "id": "280916",
+  "categories": [
+    {
+      "id": "577"
+    },
+    {
+      "id": "brand_745"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "sku": "280916",
+      "assets": [
+        {
+          "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+        },
+        {
+          "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+        },
+        {
+          "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+        },
+        {
+          "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMjU4fGltYWdlL2pwZWd8aW1hZ2VzL2gyMy9oYTAvODc5NjkxMDMyMTY5NC5qcGd8YjQ0NzczMTBkYmMwZTgyZWU4ZDFiODExYjMyYzNiMzVjNWVjN2I0Y2M5YmJiMGUwYzVjNWI1NGUyMjczNTA2NA"
+        },
+        {
+          "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+        },
+        {
+          "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+        },
+        {
+          "url": "https://external.asset.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+        }
+      ],
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 820
+        }
+      ],
+      "description": "100K-Webcam mit blauer LED und Gummibeschichtung, mit Clip",
+      "attributes": [],
+      "id": "280916",
+      "categories": [
+        {
+          "id": "577"
+        },
+        {
+          "id": "brand_745"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "parameters": {},
+  "errorOutput": {
+    "cause": {
+      "message": "missing-property"
+    },
+    "message": "Parameter 'id' is missing.",
+    "name": "MissingPropertyError"
+  },
+  "settings": {
+    "HB_API_HOST": "hybris.example.com",
+    "HB_AUTH": "",
+    "HB_AUTH_HOST": "hybris.example.com",
+    "HB_BASESITEID": "electronics",
+    "HB_CATALOG": "electronicsProductCatalog",
+    "HB_CATALOGVERSION": "Online",
+    "HB_CLIENTID": "hybrisoauthclientid",
+    "HB_CLIENTSECRET": "hybrisoauthclientsecret",
+    "HB_PASSWORD": "",
+    "HB_USER": "",
+    "HB_PROTOCOL": "https",
+    "bearer": "16bf7f81-ceeb-444e-ab0b-7d7baca1a183",
+    "cookies": [],
+    "customerId": "anonymous",
+    "headers": {},
+    "language": ""
+  }
+}

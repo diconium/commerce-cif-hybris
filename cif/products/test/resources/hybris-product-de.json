@@ -1,0 +1,84 @@
+{
+  "availableForPickup": false,
+  "averageRating": 4.625,
+  "baseOptions": [],
+  "categories": [
+    {
+      "code": "577",
+      "url": "/Katalog-%C3%B6ffnen/Kameras/Webcams/c/577"
+    },
+    {
+      "code": "brand_745",
+      "url": "/Marken/Canyon/c/brand_745"
+    }
+  ],
+  "code": "280916",
+  "description": "Canyon ist ein internationaler wachstumsstarker Hersteller von Computerkomponenten und -Zubehör. Canyon-Produkte bieten höchste Qualität, Spitzenleistung und -Benutzerfreundlichkeit",
+  "images": [
+    {
+      "altText": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "format": "zoom",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+    },
+    {
+      "altText": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "format": "product",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+    },
+    {
+      "altText": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "format": "thumbnail",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+    },
+    {
+      "altText": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "format": "cartIcon",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMjU4fGltYWdlL2pwZWd8aW1hZ2VzL2gyMy9oYTAvODc5NjkxMDMyMTY5NC5qcGd8YjQ0NzczMTBkYmMwZTgyZWU4ZDFiODExYjMyYzNiMzVjNWVjN2I0Y2M5YmJiMGUwYzVjNWI1NGUyMjczNTA2NA"
+    },
+    {
+      "altText": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "format": "zoom",
+      "galleryIndex": 0,
+      "imageType": "GALLERY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+    },
+    {
+      "altText": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "format": "product",
+      "galleryIndex": 0,
+      "imageType": "GALLERY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+    },
+    {
+      "altText": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+      "format": "thumbnail",
+      "galleryIndex": 0,
+      "imageType": "GALLERY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+    }
+  ],
+  "manufacturer": "Canyon",
+  "name": "Web-Kamera (100KPixelM CMOS, 640X480, USB 1,1) schwarz",
+  "numberOfReviews": 0,
+  "potentialPromotions": [],
+  "price": {
+    "currencyIso": "USD",
+    "formattedValue": "8,20 $",
+    "priceType": "BUY",
+    "value": 8.2
+  },
+  "priceRange": {},
+  "productReferences": [],
+  "purchasable": true,
+  "reviews": [],
+  "stock": {
+    "stockLevel": 15,
+    "stockLevelStatus": "inStock"
+  },
+  "summary": "100K-Webcam mit blauer LED und Gummibeschichtung, mit Clip",
+  "url": "/electronics/products/280916"
+}

@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "message": "Cart not found.",
+      "reason": "notFound",
+      "subject": "00000003",
+      "subjectType": "cart",
+      "type": "CartError"
+    }
+  ]
+}

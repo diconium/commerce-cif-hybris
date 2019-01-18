@@ -1,0 +1,13 @@
+HB_BASESITEID: /electronics
+HB_CLIENTID: oauth-clientid
+HB_CLIENTSECRET: oauth-client-secret
+HB_PROTOCOL: https
+HB_API_HOST: hybris.example.com
+HB_API_BASE_PATH: /rest/v2
+HB_OAUTH_HOST: hybris.example.com
+HB_OAUTH_PATH: /authorizationserver/oauth/token
+HB_CATALOG: electronicsProductCatalog
+HB_CATALOGVERSION: Online
+HB_USER: ''
+HB_PASSWORD: ''
+HB_AUTH: ''

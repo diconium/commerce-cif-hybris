@@ -1,0 +1,33 @@
+{
+  "HB_API_HOST": "hybris.example.com",
+  "HB_AUTH_HOST": "hybris.example.com",
+  "HB_BASESITEID": "electronics",
+  "args": {
+    "cartId": "00000003",
+    "bearer": "8330c161-6b0c-441a-b4d6-3c111c5bac54",
+    "payment": {
+      "method": "/var/commerce/payment-methods/we-retail/creditcard",
+      "amount": {
+        "currency": "USD",
+        "centAmount": 59834
+      },
+      "status": "Paid"
+    }
+  },
+  "status": {
+    "error": {
+      "code": 0,
+      "validationErrors": []
+    }
+  },
+  "validations": [
+    {
+      "mTarget": "cartId",
+      "validations": [
+        {
+          "name": "isRequired"
+        }
+      ]
+    }
+  ]
+}

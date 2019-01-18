@@ -1,0 +1,21 @@
+{
+  "name": "@diconium/commerce-cif-hybris-common",
+  "owname": "commerce-cif-hybris-common",
+  "description": "Commerce Integration Framework (CIF) Hybris Integration Common Project",
+  "version": "1.0.0",
+  "author": "diconium",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "deploy": "serverless deploy",
+    "remove": "serverless remove",
+    "deploy-current": "npm run deploy -- --ow-package $npm_package_owname@$npm_package_version --shared",
+    "deploy-latest": "npm run deploy -- --ow-package $npm_package_owname@latest --shared",
+    "deploy-package": "npm run deploy-current; npm run deploy-latest",
+    "remove-current": "npm run remove -- --ow-package $npm_package_owname@$npm_package_version",
+    "remove-latest": "npm run remove -- --ow-package $npm_package_owname@latest",
+    "remove-package": "npm run remove-current; npm run remove-latest",
+    "postinstall": "node ./deployment-install.js"
+  },
+  "hybrishost": "https://hybris.example.com/"
+}

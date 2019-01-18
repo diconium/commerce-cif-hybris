@@ -1,0 +1,28 @@
+{
+  "accountHolderName" : "Customer Name",
+  "billingAddress" : {
+    "country" : {
+      "isocode" : "US"
+    },
+    "defaultAddress" : false,
+    "firstName" : "Customer",
+    "id" : "8796138766359",
+    "lastName" : "string",
+    "line1" : "Cupertino, CA 95014",
+    "line2" : "",
+    "postalCode" : "95014",
+    "town" : "Cupertino"
+  },
+  "cardNumber" : "************1234",
+  "cardType" : {
+    "code" : "visa",
+    "name" : "Visa"
+  },
+  "defaultPayment" : false,
+  "expiryMonth" : "02",
+  "expiryYear" : "2020",
+  "id" : "8796097675306",
+  "issueNumber" : "123",
+  "saved" : true,
+  "subscriptionId" : "MockedSubscriptionID"
+}

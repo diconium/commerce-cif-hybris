@@ -1,0 +1,16 @@
+{
+  "title": "mr",
+  "salutation": "mr",
+  "firstName": "José",
+  "lastName": "Maria",
+  "email": "customer@example.com",
+  "phone": "23324",
+  "mobile": "465456",
+  "country": "GB",
+  "city": "London",
+  "postalCode": "23345",
+  "organizationName": "super company",
+  "streetName": "street name",
+  "streetNumber": "34",
+  "region": "LD"
+}

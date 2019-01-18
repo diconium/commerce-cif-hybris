@@ -1,0 +1,21 @@
+{
+  "companyName": "super company",
+  "country": {
+    "isocode": "GB"
+  },
+  "region": {
+    "isocode": "LD",
+    "countryIso": "GB"
+  },
+  "defaultAddress": false,
+  "email": "customer@example.com",
+  "firstName": "José",
+  "lastName": "Maria",
+  "line1": "street name",
+  "line2": "34",
+  "phone": "23324",
+  "postalCode": "23345",
+  "title": "mr",
+  "titleCode": "mr",
+  "town": "London"
+}

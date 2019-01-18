@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "id": "00000060"
+  },
+  "settings": {
+    "HB_API_HOST": "hybris.example.com",
+    "HB_API_BASE_PATH": "/rest/v2",
+    "HB_AUTH": "",
+    "HB_AUTH_HOST": "hybris.example.com",
+    "HB_BASESITEID": "/electronics",
+    "HB_CATALOG": "electronicsProductCatalog",
+    "HB_CATALOGVERSION": "Online",
+    "HB_CLIENTID": "hybrisoauthclientid",
+    "HB_CLIENTSECRET": "hybrisoauthclientsecret",
+    "HB_PASSWORD": "hybrisdemopassword",
+    "HB_USER": "hybrisdemouser",
+    "HB_PROTOCOL": "https",
+    "bearer": "c0a40aa0-bdae-4109-a6c2-50d3098a6d6c",
+    "cookies": [],
+    "customerId": "current",
+    "headers": {},
+    "language": ""
+  }
+}

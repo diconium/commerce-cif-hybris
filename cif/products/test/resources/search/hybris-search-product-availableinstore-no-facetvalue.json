@@ -1,0 +1,1455 @@
+{
+  "type": "productCategorySearchPageWsDTO",
+  "breadcrumbs": [
+    {
+      "facetCode": "availableInStores",
+      "facetName": "Stores",
+      "facetValueCode": "Choshi",
+      "facetValueName": "Choshi",
+      "removeQuery": {
+        "query": {
+          "value": ":relevance"
+        },
+        "url": "/search?q=%3Arelevance"
+      }
+    },
+    {
+      "facetCode": "brand",
+      "facetName": "Brand",
+      "facetValueCode": "brand_5",
+      "facetValueName": "Sony",
+      "removeQuery": {
+        "query": {
+          "value": ":relevance"
+        },
+        "url": "/search?q=%3Arelevance"
+      }
+    }
+  ],
+  "currentQuery": {
+    "query": {
+      "value": ":relevance:availableInStores:Choshi"
+    },
+    "url": "/search?q=%3Arelevance%3AavailableInStores%3AChoshi"
+  },
+  "facets": [
+    {
+      "category": false,
+      "multiSelect": true,
+      "name": "Stores",
+      "priority": 2147483647,
+      "values": [
+        {
+          "count": 100,
+          "name": "Chiba",
+          "query": {
+            "query": {
+              "value": ":relevance:availableInStores:Choshi:availableInStores:Chiba"
+            },
+            "url": "/search?q=%3Arelevance%3AavailableInStores%3AChoshi%3AavailableInStores%3AChiba"
+          },
+          "selected": false
+        },
+        {
+          "count": 102,
+          "name": "Fukuoka Best Western Fukuoka Nakasu Inn",
+          "query": {
+            "query": {
+              "value": ":relevance:availableInStores:Choshi:availableInStores:Fukuoka+Best+Western+Fukuoka+Nakasu+Inn"
+            },
+            "url": "/search?q=%3Arelevance%3AavailableInStores%3AChoshi%3AavailableInStores%3AFukuoka%2BBest%2BWestern%2BFukuoka%2BNakasu%2BInn"
+          },
+          "selected": false
+        }
+      ],
+      "visible": true
+    }
+  ],
+  "freeTextSearch": "",
+  "pagination": {
+    "currentPage": 0,
+    "pageSize": 20,
+    "sort": "relevance",
+    "totalPages": 5,
+    "totalResults": 92
+  },
+  "products": [
+    {
+      "availableForPickup": true,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd,sdhc"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "3555166",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "With the EOS 500D, every side of your story comes alive. Capture every detail in stunning 15.1 Megapixel resolution, or switch to shooting pin-sharp Full High Definition video.<br/><br/><b>15.1 MP CMOS sensor</b><br/>Ideal for those who want to create large, poster-size prints – or crop images to perfection without losing any of the detail necessary for printing – Canon’s 15.1MP CMOS sensor is outstanding in low light, and produces images with incredibly low noise.<br/><br/><b>Full HD movie recording</b><br/>The EOS 500D combines exceptional still shooting with the ability to shoot Full HD (1080p) video. For occasions when larger amounts of footage need to be stored on a memory card, users can also choose to shoot at 720p or VGA resolution. An HDMI connection allows High Definition playback of footage and images on any HDTV. <br/><br/><b>High ISO for low light</b><br/>When light levels fall, the EOS 500D offers an ISO range of up to 3200 – expandable to 12800 for those environments where using flash is undesirable. <br/><br/><b>3.4fps with up to 170 JPEG burst</b><br/>The EOS 500D features shooting speeds of up to 3.4fps in continuous bursts of up to 170 large JPEG images (9 RAW). <br/><br/><b>3.0” Clear View LCD with Live View mode</b><br/>Detailed checks on images and video are possible with a 3.0” ClearView LCD screen, which features an ultra-high 920,000 dots for increased clarity. Switch to Live View mode and use the real-time visual feed to shoot from awkward angles.<br/><br/><b>9-point AF system</b><br/>A high-precision AF system employs 9 AF points AF Points are located throughout the frame to better accommodate off-centre subjects. For accurate focusing with fast aperture lenses, the central AF point features a high sensitivity cross-type sensor, suitable for lenses with an aperture of f/2.8 or faster.<br/><br/><b>DIGIC 4</b><br/>Canon’s DIGIC 4 processor works with the CMOS sensor to deliver 14-bit image processing, for smooth gradations and natural looking colours. DIGIC 4 also powers advanced Noise Reduction when shooting at higher ISO speeds, plus split-second startup times and near-instant image review after shooting.<br/><br/><b>EOS Integrated Cleaning System</b><br/>Canon’s built-in dust prevention system offers three ways of guarding images against the effects of dust: reduction of internal dust generation",
+      "manufacturer": "Canon",
+      "multidimensional": false,
+      "name": "EOS 500D + 18-55mm IS + EF-S 55-250 IS",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$934.41",
+        "priceType": "BUY",
+        "value": 934.41
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "EOS 500D + 18-55mm IS + EF-S 55-250 IS - 15.1 MP CMOS, Full HD (1080p), 3.4fps, 3.0” Clear View LCD, DIGIC 4, 9-point AF",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/EOS-500D-%2B-18-55mm-IS-%2B-EF-S-55-250-IS/p/3555166",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd,sdhc"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "3708646",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "With the EOS 500D, every side of your story comes alive. Capture every detail in stunning 15.1 Megapixel resolution, or switch to shooting pin-sharp Full High Definition video.<br/><br/><b>15.1 MP CMOS sensor</b><br/>Ideal for those who want to create large, poster-size prints – or crop images to perfection without losing any of the detail necessary for printing – Canon’s 15.1MP CMOS sensor is outstanding in low light, and produces images with incredibly low noise.<br/><br/><b>Full HD movie recording</b><br/>The EOS 500D combines exceptional still shooting with the ability to shoot Full HD (1080p) video. For occasions when larger amounts of footage need to be stored on a memory card, users can also choose to shoot at 720p or VGA resolution. An HDMI connection allows High Definition playback of footage and images on any HDTV. <br/><br/><b>High ISO for low light</b><br/>When light levels fall, the EOS 500D offers an ISO range of up to 3200 – expandable to 12800 for those environments where using flash is undesirable. <br/><br/><b>3.4fps with up to 170 JPEG burst</b><br/>The EOS 500D features shooting speeds of up to 3.4fps in continuous bursts of up to 170 large JPEG images (9 RAW). <br/><br/><b>3.0” Clear View LCD with Live View mode</b><br/>Detailed checks on images and video are possible with a 3.0” ClearView LCD screen, which features an ultra-high 920,000 dots for increased clarity. Switch to Live View mode and use the real-time visual feed to shoot from awkward angles.<br/><br/><b>9-point AF system</b><br/>A high-precision AF system employs 9 AF points AF Points are located throughout the frame to better accommodate off-centre subjects. For accurate focusing with fast aperture lenses, the central AF point features a high sensitivity cross-type sensor, suitable for lenses with an aperture of f/2.8 or faster.<br/><br/><b>DIGIC 4</b><br/>Canon’s DIGIC 4 processor works with the CMOS sensor to deliver 14-bit image processing, for smooth gradations and natural looking colours. DIGIC 4 also powers advanced Noise Reduction when shooting at higher ISO speeds, plus split-second startup times and near-instant image review after shooting.<br/><br/><b>EOS Integrated Cleaning System</b><br/>Canon’s built-in dust prevention system offers three ways of guarding images against the effects of dust: reduction of internal dust generation",
+      "manufacturer": "Canon",
+      "multidimensional": false,
+      "name": "EOS 500D + 18-55mm IS + EF-S 55-250 IS",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$968.89",
+        "priceType": "BUY",
+        "value": 968.89
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "EOS 500D + 18-55mm IS + EF-S 55-250 IS - 15.1 MP CMOS, Full HD (1080p), 3.4fps, 3.0” Clear View LCD, DIGIC 4, 9-point AF",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/EOS-500D-%2B-18-55mm-IS-%2B-EF-S-55-250-IS/p/3708646",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "code": "4205436",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "Secure Digital High Capacity cards you can rely on. Kingston Technology's Secure Digital High-Capacity (SDHC) memory cards are fully compliant with the Secure Digital Association 2.00 specification. They are the next high performance generation of SD memory cards designed to meet the storage demands of high-quality digital still and video cameras and other high-resolution image recording devices.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wzNzg3fGltYWdlL2pwZWd8aW1hZ2VzL2hlZC9oMDMvODc5Njg5MTg3MzMxMC5qcGd8YzY5ZjE3ZGZkMWUyOTM1YWJmOTNkMmZmNGI5N2RlYmZkYzI4YWNlNTQ2MWQyZjE2ZjJlYWNjZGZiNWNhMzczNw"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w3NzkwM3xpbWFnZS9qcGVnfGltYWdlcy9oNDAvaDUwLzg3OTY4NjU1Mjc4MzguanBnfGM3ZmIyMGYzZmYzNzkyOGVlYjdjZDJkMDY4ZGU5ODUxZGU3YjRhNTcyNTYwZmE3ZTljMzkzOTg0YTczZTMzNmQ"
+        }
+      ],
+      "manufacturer": "Kingston",
+      "multidimensional": false,
+      "name": "32GB SDHC Card",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$333.49",
+        "priceType": "BUY",
+        "value": 333.49
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevel": 2,
+        "stockLevelStatus": "lowStock"
+      },
+      "summary": "SD High Capacity",
+      "url": "/Open-Catalogue/Data-storage/Flash-Memory/32GB-SDHC-Card/p/4205436",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "code": "4608858",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "- Additional power supply for HVL-F56AM flash.<br/>- Allows for shorter recycle times and additional power.<br/>- Uses 6xAA Batteries.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyNDA5fGltYWdlL2pwZWd8aW1hZ2VzL2g0Yi9oNjQvODc5Njg5MjY1OTc0Mi5qcGd8YTc3ODhlYTczOTBiNzY2ZmQ0MTIwMDFkNmViMmEwMjQzOTk3ZDhjNGE3ZjEyOTgzZThmOGQyZDkyNTUxNTYyMg"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMDQwMHxpbWFnZS9qcGVnfGltYWdlcy9oZjEvaDVjLzg3OTY4NjYzMTQyNzAuanBnfGY0ZTg2ZWE2NGFhYjYxNWE3ZjA1OTg3NTRkOGE5NzE0Y2FiM2MyMGUzNWM3MTA1ODNmNDFiNDI4NGJiNzE1M2Y"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "FA-EB1AM",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$505.66",
+        "priceType": "BUY",
+        "value": 505.66
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "External Battery Adaptor for Flash",
+      "url": "/Open-Catalogue/Components/Power-Supplies/Rechargeable-Batteries/FA-EB1AM/p/4608858",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "code": "4787986",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "- High capacity, ideal for high-resolution still and movie images.<br/>- Ideal for burst shooting with DSLR (ALPHA).<br/>- Offering up to 30MB/s, it allows large amount of data to be quickly transferred.<br/>- Greater durability and reliability: working p",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyOTM5fGltYWdlL2pwZWd8aW1hZ2VzL2hmZC9oY2EvODc5Njg5MzM4MDYzOC5qcGd8Y2VkOTczN2RhYzJkOWYxYmE5N2NkYWJkMWU0MDMxNzZmOThjOGJkOTI4ZjE5YjRjMGNlMjRjZjRmZDkwYjQ2Ng"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNDg0MnxpbWFnZS9qcGVnfGltYWdlcy9oOTkvaDM4Lzg3OTY4NjcwMzUxNjYuanBnfDZiYjgyMWRlMTZhMThlNmMzY2Y1MzQ1NDMwNDUzY2MzZDRlMTFhMGQ1YjM5ODI4NTJhYTc5M2Y0Y2UyMDRlYWI"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "MS Pro HG Duo HX 32GB",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$122.46",
+        "priceType": "BUY",
+        "value": 122.46
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "MSHX32A - Memory Stick Pro DUO HX, 32GB, Read / Write: 20MB/s",
+      "url": "/Open-Catalogue/Data-storage/Flash-Memory/MS-Pro-HG-Duo-HX-32GB/p/4787986",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "code": "4852405",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "Secure Digital High Capacity cards you can rely on. Kingston Technology's Secure Digital High-Capacity (SDHC) memory cards are fully compliant with the Secure Digital Association 2.00 specification. They are the next high performance generation of SD memory cards designed to meet the storage demands of high-quality digital still and video cameras and other high-resolution image recording devices.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyNzAxfGltYWdlL2pwZWd8aW1hZ2VzL2gwMi9oOGUvODc5Njg5Mzc3Mzg1NC5qcGd8ZTcwYjZkZDkwNDM1N2JkMWMwZTJhNTY3MjY3N2EzZjAxMmNiZDNhNmI5OWE1NWJkYzA3Y2YzMzRiZjFjZTZlZA"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMjEyMXxpbWFnZS9qcGVnfGltYWdlcy9oOTQvaDc1Lzg3OTY4Njc0MjgzODIuanBnfDRlNGE5MTg5NDEwOTJkOTUxZjAxMWI0ZjA4NmVkYmIxNmEzYTljOGVhYjM5OGVlNzAyODA3YjgyODVlNDFlN2Y"
+        }
+      ],
+      "manufacturer": "Kingston",
+      "multidimensional": false,
+      "name": "8GB SD Card",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$37.11",
+        "priceType": "BUY",
+        "value": 37.11
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "SD High Capacity",
+      "url": "/Open-Catalogue/Data-storage/Flash-Memory/8GB-SD-Card/p/4852405",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 4.444444444444445,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd,sdhc"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "4812254",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "With the EOS 500D, every side of your story comes alive. Capture every detail in stunning 15.1 Megapixel resolution, or switch to shooting pin-sharp Full High Definition video.<br/><br/><b>15.1 MP CMOS sensor</b><br/>Ideal for those who want to create large, poster-size prints – or crop images to perfection without losing any of the detail necessary for printing – Canon’s 15.1MP CMOS sensor is outstanding in low light, and produces images with incredibly low noise.<br/><br/><b>Full HD movie recording</b><br/>The EOS 500D combines exceptional still shooting with the ability to shoot Full HD (1080p) video. For occasions when larger amounts of footage need to be stored on a memory card, users can also choose to shoot at 720p or VGA resolution. An HDMI connection allows High Definition playback of footage and images on any HDTV. <br/><br/><b>High ISO for low light</b><br/>When light levels fall, the EOS 500D offers an ISO range of up to 3200 – expandable to 12800 for those environments where using flash is undesirable. <br/><br/><b>3.4fps with up to 170 JPEG burst</b><br/>The EOS 500D features shooting speeds of up to 3.4fps in continuous bursts of up to 170 large JPEG images (9 RAW). <br/><br/><b>3.0” Clear View LCD with Live View mode</b><br/>Detailed checks on images and video are possible with a 3.0” ClearView LCD screen, which features an ultra-high 920,000 dots for increased clarity. Switch to Live View mode and use the real-time visual feed to shoot from awkward angles.<br/><br/><b>9-point AF system</b><br/>A high-precision AF system employs 9 AF points AF Points are located throughout the frame to better accommodate off-centre subjects. For accurate focusing with fast aperture lenses, the central AF point features a high sensitivity cross-type sensor, suitable for lenses with an aperture of f/2.8 or faster.<br/><br/><b>DIGIC 4</b><br/>Canon’s DIGIC 4 processor works with the CMOS sensor to deliver 14-bit image processing, for smooth gradations and natural looking colours. DIGIC 4 also powers advanced Noise Reduction when shooting at higher ISO speeds, plus split-second startup times and near-instant image review after shooting.<br/><br/><b>EOS Integrated Cleaning System</b><br/>Canon’s built-in dust prevention system offers three ways of guarding images against the effects of dust: reduction of internal dust generation",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyODIxfGltYWdlL2pwZWd8aW1hZ2VzL2hiNC9oMDMvODc5Njg5MzY0Mjc4Mi5qcGd8ZWUwZmI5NmQxZTc4ZjhhMWJiMWJjNzdlZmE2OTViNjE4NDQ4MDA0ZTc5MzQzN2EwMjdjZWEwYThiOWI5ZTU2MA"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMjQxMHxpbWFnZS9qcGVnfGltYWdlcy9oMjUvaGVkLzg3OTY4NjcyOTczMTAuanBnfDdiMzlmOTVkYWZiYmRhNGVjMDE0Y2FlYWYyNmQ1MzJmOGVlNzZmNDRiYmNiYTk4MjM3NjU5NjBkNjI2MjIwY2U"
+        }
+      ],
+      "manufacturer": "Canon",
+      "multidimensional": false,
+      "name": "500D + 18-55mm IS + EF-S 55-250 IS",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$927.89",
+        "priceType": "BUY",
+        "value": 927.89
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "EOS 500D + 18-55mm IS + EF-S 55-250 IS - 15.1 MP CMOS, Full HD (1080p), 3.4fps, 3.0” Clear View LCD, DIGIC 4, 9-point AF",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/500D-%2B-18-55mm-IS-%2B-EF-S-55-250-IS/p/4812254",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "code": "5103712",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "Rapid charging of up to 2 batteries<br/><br/>Dual indication of remaining amount in hour and percentage<br/><br/><br/><br/>High-speed dual charging of P, H, and V series InfoLITHIUM batteries.<br/><br/>Information display shows remaining amount and current battery levels as percentage.<br/><br/>",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMDg0fGltYWdlL2pwZWd8aW1hZ2VzL2g0YS9oNDcvODc5Njg5NTA4NDU3NC5qcGd8YTJhNjgyZmJjMTkzMmY2OGQzYzAwYzhlNzc4MTEyNmNhYmZjMmE2MjAxYTJiYWUxYjdmYWNhYjA5YmJjYTgyNQ"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w3NTc0fGltYWdlL2pwZWd8aW1hZ2VzL2hhZC9oODgvODc5Njg2ODczOTEwMi5qcGd8NGVlYTU2YjRjYjdkZTY5MzA2ZTIxZmE1OTZkNWE5MWY2NmJhZWJlOTQxNWJmOTNiYWQzMWQyMTIyMTUyZWM0Mw"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "AC-VQV10",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$131.54",
+        "priceType": "BUY",
+        "value": 131.54
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevel": 4,
+        "stockLevelStatus": "lowStock"
+      },
+      "summary": "High-speed dual battery charger for P, H, and V series batteries",
+      "url": "/Open-Catalogue/Components/Power-Supplies/Rechargeable-Batteries/AC-VQV10/p/5103712",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "code": "5103775",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "<br/><br/>AC travel adaptor compatible with all Sony DSLR cameras.<br/><br/>Can be used worldwide (100-240V, 50/60Hz).<br/><br/>Approx. size (mm):  W127 × H35 × D63.<br/><br/>Approx. weight: 300g.<br/><br/>",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMTMwfGltYWdlL2pwZWd8aW1hZ2VzL2hlMy9oNDQvODc5Njg5NTE1MDExMC5qcGd8YmJlNmNjYmRmMTVhMWIwYTQ3YjQxY2E4YzUwZjJmODlkNjVkODBjZGY0MTIxOWUxMDc1NjQ3MzY3ODAyN2MzZQ"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w4ODg4fGltYWdlL2pwZWd8aW1hZ2VzL2g5Yy9oMGMvODc5Njg2ODgwNDYzOC5qcGd8ZmViZWVjOTdlMTZjNDk2NWNjOGNmZWE4YTc5Y2JmZDdhNDJlODU1MmYyNWI2YjBiMzJlZmMyZDcwYTcwYzYxYw"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "AC-PW10AM",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$169.07",
+        "priceType": "BUY",
+        "value": 169.07
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "AC Adaptor",
+      "url": "/Open-Catalogue/Components/Power-Supplies/Battery-Chargers/AC-PW10AM/p/5103775",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 4.363636363636363,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT LCD"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "Memory Stick™ Duo, Memory Stick PRO Duo™. Memory Stick PRO Duo™ High Speed, Memory Stick PRO-HG Duo™"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "1990255",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "Feature packed camera with advanced functions. Exmor™ CMOS sensor, Sony G lens, 1080p HD movie recording, Panorama mode and 20x optical zoom. High speed shooting and low image noise.<br/><br/>Please be aware that the features/specifications can differ from country to country.<br/><br/><b>Features:</b><br/><br/>- Exmor™ CMOS sensor boosts sensitivity while suppressing image noise for superb low-light pictures.<br/>- 9.1 effective megapixels resolution for very high quality imaging and detail-packed enlargements.<br/>- Premium G Lens by Sony with high-power 20x optical zoom range and 28mm wide angle.<br/>- Sweep Panorama mode automatically stitches together high-speed burst of images to capture extra-wide landscapes.<br/>- Two shooting modes dramatically reduce image noise even in low light, superimposing 6 separate images to create one beautiful shot.<br/>- 1080p HD movie recording captures crisp, detail-packed HD video clips plus stereo sound at 30 frames per second.<br/>- Exmor™ CMOS sensor and BIONZ processor powers high-speed, full resolution continuous shooting up to 10 frames per second.<br/>- 3.0-inch tilt-angle Clear Photo LCD Plus screen for comfortable framing in any shooting position.<br/>- Optical SteadyShot image stabilization for reduced camera shake with handheld shooting, especially in low light or at high zoom settings.<br/>- Enhanced Smile Shutter automatically fires shutter when subject smiles: now easier to use with adjustable smile threshold.<br/>- Enhanced Face Detection with selectable adult/child priority high-speed subject tracking for clearer portraits. Includes Face Motion Detection and Selected Face Memory.<br/>- Intelligent Scene Recognition simplifies shooting by choosing best settings for difficult conditions such as twilight portraits and backlit scenes.<br/>- HD output to view video and still images on HD TV (requires optional cable). PhotoTV HD enhances still image viewing on compatible BRAVIA TV.<br/>- Photomusic (HD Slideshow) offers fun display of still images and HD video clips with effects and music on LCD or connected HD TV<br/>- Fun in-camera retouching functions including trim, red-eye correction and artistic filters.<br/>- Picture Motion Browser software simplifies image management, searches and viewing on PC.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyNzkxfGltYWdlL2pwZWd8aW1hZ2VzL2hlOS9oOWMvODc5Njg4MTkxMTgzOC5qcGd8ODVjMjQyNDU1NDUzZGVmZjU2MTg3Mjc5YzE4OTU2ZDU3OWQ4YzQ1NDgwN2I4NzI1ZjU4YWM1YWQxNTE4YzgxMA"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w4MTYxOXxpbWFnZS9qcGVnfGltYWdlcy9oNTEvaGQyLzg3OTY4NTU2MzE5MDIuanBnfDUzZWI0MjQ5ZTY4OGFlNDQ4YTJlZDI5NmVkMGFlOGEwZWMyMjI5NmYyMDdlNmJjY2E5Y2RmYjMyODI3NmNiYmI"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "DSC-HX1",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$924.46",
+        "priceType": "BUY",
+        "value": 924.46
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "DSC-HX 9.1MP , 20x zoom, Tilting 3.0\"\"LCD, SONY G lens, 10fps, 1080 HD movie",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-HX1/p/1990255",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 3.619047619047619,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "memory stick (ms),ms pro"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "1993748",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "Compact camera with 12.1 megapixels and 720p HD movie recording. 5x optical zoom Carl Zeiss lens with 28mm wide angle and Optical SteadyShot.<br/><br/><b>Features:</b><br/>- 12.1 effective megapixels resolution for very high quality imaging and detail-packed enlargements<br/><br/>- 5x optical zoom Carl Zeiss Vario-Tessar lens with 28mm wide angle for panoramic landscapes and large group shots<br/><br/>- 720p HD movie recording captures crisp, detail-packed HD video clips plus stereo sound at 30 frames per second<br/><br/>- Enhanced Smile Shutter automatically fires shutter when subject smiles: now easier to use with adjustable smile threshold<br/><br/>- Enhanced Face Detection with selectable adult/child priority high-speed subject tracking for clearer portraits. Includes Face Motion Detection and Selected Face Memory<br/><br/>- Intelligent Scene Recognition simplifies shooting by choosing best settings for difficult conditions such as twilight portraits and backlit scenes<br/><br/>- Optical SteadyShot, high sensitivity ISO 3200 and Clear RAW Noise Reduction for high-quality images with reduced blur during handheld shooting in low light<br/><br/>- 2.7-inch (230K dot) Clear Photo LCD plus screen with wide viewing angle<br/><br/>- Available in a choice of beautiful colours to match your personal taste<br/><br/>- HD output to view video and still images on HD TV (requires optional cable). PhotoTV HD enhances still image viewing on compatible BRAVIA TV<br/><br/>- BIONZ processor for enhanced image quality, reduced image noise and fast shooting response<br/><br/>- D-Range Optimizer with new Plus mode adjusts exposure and contrast in high-contrast and backlit scenes<br/><br/>- HD Slideshow with music offers fun image display with effects and music on LCD or connected HD TV<br/><br/>- Fun in-camera retouching functions including trim, red-eye correction and artistic filters<br/><br/>- Picture Motion Browser software simplifies image management, searches and viewing on PC",
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "DSC-W270",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$406.39",
+        "priceType": "BUY",
+        "value": 406.39
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "DSC-W270, Black, 12.1 Megapixels, 5x Optical Zoom, 2.7\"\" LCD",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-W270/p/1993748",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 2.6,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT LCD"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "1997551",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "<b>Powerful Zoom Controls in a Compact Body</b><br/>12x optical zoom operates with rich functions optimized by superb quality of 10.0 megapixels - all in a compact body.<br/><br/><b>High Performance Shooting Functions</b><br/>Introducing a high-performance Tracking Auto Focus and Panorama Shooting Mode in the FinePix S1500.<br/><br/><b>New SR AUTO & Face Detection</b><br/>Equipped with the newly evolved SR Auto (Scene Recognition Auto) and Face Detection, scenes and faces can be captured and optimized even more with the detection functions.<br/><br/><b>A Blurless Image with Clarity</b><br/>No more blurs caused by camera shake or high-speed moving subjects. The Dual Image Stabilization and Continuous Shooting Mode will help you capture that one special moment with clarity.<br/><br/><b>Versatile Features</b><br/>Various features to enhance your photo life.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyODg4fGltYWdlL2pwZWd8aW1hZ2VzL2g3NS9oMWIvODc5Njg4Mjc2MzgwNi5qcGd8NzVkYzczZTA2NTAzYWIwZjE2ZWU1MGFlYTc1ZDQ5ZThjMDg2Mjk2MGQxMjEyMDZjNjQxM2Q2NmNkNDljYzM4ZA"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNDYxNHxpbWFnZS9qcGVnfGltYWdlcy9oZmIvaGJjLzg3OTY4NTY0ODM4NzAuanBnfDRkMjRhMjM3ZjMwNTdlNzA5YmYxZDIxZTUyMDY5NWZlY2E0MTllMzk4ZjY5NTQ2ZTMwZTc3NzZjNTcyYTdmNTA"
+        }
+      ],
+      "manufacturer": "Fujifilm",
+      "multidimensional": false,
+      "name": "FinePix S1500",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$177.88",
+        "priceType": "BUY",
+        "value": 177.88
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "FinePix S1500 - 10.0 Megapixels, 1/2.3-inch CCD, 3,648 × 2,736, 2.7\"\" TFT LCD, black",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/FinePix-S1500/p/1997551",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "LCD"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "memory stick (ms),ms pro"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "1978440_md",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "<b>Performance that won't weigh you down</b><br/>Enjoy superb quality images, with 10x Optical Zoom, HD movie recording and smart functions in a brilliantly designed package. The perfect partner when you want serious performance in a compact design.<br/><br/><b>Get closer to your subject</b><br/>A high-quality Optical Zoom lens gets closer to the action, letting you fill more of the frame with distant subjects. Unlike digital zoom, you'll get uncompromised image quality at all settings – even high magnifications.<br/><br/><b>Don’t worry about the right settings</b><br/>It can be hard judging the best camera settings to use in tricky situations like twilight portraits and sun-drenched backlit beach scenes. Intelligent Scene Recognition automatically adjusts exposure and other settings, helping you achieve better-looking results with less effort.<br/><br/><b>Beautiful portraits made simple</b><br/>Now it’s easy to capture beautiful, smiling portraits of friends and family. Enhanced Face Detection automatically adjusts camera settings for clear, crisp results with natural skin tones. Smile Shutter fires the shutter automatically when your subject smiles to capture those happy moments.<br/><br/><b>Big, beautiful pictures on your HD TV</b><br/>Why not show off your pictures in more style? Connect your camera to any HD Ready television and enjoy a big, beautiful view of your pictures that everyone can enjoy. If your BRAVIA TV supports PhotoTV HD, you’ll enjoy even incredibly lifelike HD images, packed with detail and vibrant colours.<br/><br/><b>The camera that thinks it’s a camcorder</b><br/>Left your camcorder behind? Don't worry: now you can capture crisp, clear HD movie clips at an incredible 30 frames per second for smooth, clear action. Watch the results on your BRAVIA television: you'll be amazed by the quality, detail and colour.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyNDE1fGltYWdlL2pwZWd8aW1hZ2VzL2hjZi9oMWEvODc5Njk1NjEzMTM1OC5qcGd8ZjBkOTc0OTg4ZjUwMmRkOTFhM2VkMzIwOGY4YmRhYzU3ZDM5YmRjOGE4YzY0ODY2NTUyYjAyMjhiYzU5ZDRjMw"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w3ODA3NHxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGY1Lzg3OTY5NTU5MDE5ODIuanBnfDY0ZTYzZjU5MGM0OTIzNmMzM2ExNzhjMDBmM2ZiNjc2NGM3ZGI4MWQyYzM2NmVjMjZiNzI3YjBiYzUwMGJhOTQ"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": true,
+      "name": "DSC-H20_MD",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$558.40",
+        "priceType": "BUY",
+        "value": 558.4
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "DSC-H20, Black, 10.1 Megapixels, 10x Optical Zoom, 3.0\"\" LCD",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-H20-MD/p/1978440_md",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 3.7,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "2053367",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "With the EOS 500D, every side of your story comes alive. Capture every detail in stunning 15.1 Megapixel resolution, or switch to shooting pin-sharp Full High Definition video.<br/><br/><b>15.1 MP CMOS sensor</b><br/>Ideal for those who want to create large, poster-size prints – or crop images to perfection without losing any of the detail necessary for printing – Canon’s 15.1MP CMOS sensor is outstanding in low light, and produces images with incredibly low noise.<br/><br/><b>Full HD movie recording</b><br/>The EOS 500D combines exceptional still shooting with the ability to shoot Full HD (1080p) video. For occasions when larger amounts of footage need to be stored on a memory card, users can also choose to shoot at 720p or VGA resolution. An HDMI connection allows High Definition playback of footage and images on any HDTV. <br/><br/><b>High ISO for low light</b><br/>When light levels fall, the EOS 500D offers an ISO range of up to 3200 – expandable to 12800 for those environments where using flash is undesirable. <br/><br/><b>3.4fps with up to 170 JPEG burst</b><br/>The EOS 500D features shooting speeds of up to 3.4fps in continuous bursts of up to 170 large JPEG images (9 RAW). <br/><br/><b>3.0” Clear View LCD with Live View mode</b><br/>Detailed checks on images and video are possible with a 3.0” ClearView LCD screen, which features an ultra-high 920,000 dots for increased clarity. Switch to Live View mode and use the real-time visual feed to shoot from awkward angles.<br/><br/><b>9-point AF system</b><br/>A high-precision AF system employs 9 AF points AF Points are located throughout the frame to better accommodate off-centre subjects. For accurate focusing with fast aperture lenses, the central AF point features a high sensitivity cross-type sensor, suitable for lenses with an aperture of f/2.8 or faster.<br/><br/><b>DIGIC 4</b><br/>Canon’s DIGIC 4 processor works with the CMOS sensor to deliver 14-bit image processing, for smooth gradations and natural looking colours. DIGIC 4 also powers advanced Noise Reduction when shooting at higher ISO speeds, plus split-second startup times and near-instant image review after shooting.<br/><br/><b>EOS Integrated Cleaning System</b><br/>Canon’s built-in dust prevention system offers three ways of guarding images against the effects of dust: reduction of internal dust generation",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyODI4fGltYWdlL2pwZWd8aW1hZ2VzL2g0MS9oOWQvODc5Njg4MzgxMjM4Mi5qcGd8YmFlYzNjNzAwOWYzZWU2NTZkNGQyNzFmOTQyZTVjNzNmMGU4Y2IwNjY1YTY3ZTYxMzEyMmQ0ZmFiYjQ1ZjdiYw"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMjQwMnxpbWFnZS9qcGVnfGltYWdlcy9oNTUvaGUwLzg3OTY4NTc0NjY5MTAuanBnfDUwYTY2YjA3ZjMwODI5Yjc5ZjMyN2U1YzQzODUwOTVlYTZmNzVkMjUwMjUzN2RiYzgxMmJkMjZlYWNlMGJjNDc"
+        }
+      ],
+      "manufacturer": "Canon",
+      "multidimensional": false,
+      "name": "EOS 500D + EF-S 18-200mm f/3.5-5.6 IS, kit",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$2,410.42",
+        "priceType": "BUY",
+        "value": 2410.42
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "EOS 500D + EF-S 18-200mm f/3.5-5.6 IS - 15.1 MP CMOS, Full HD (1080p), 3.4fps, 3.0” Clear View LCD, DIGIC 4, 9-point AF",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/EOS-500D-%2B-EF-S-18-200mm-f-3-5-5-6-IS%2C-kit/p/2053367",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 2.5217391304347827,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "LCD"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd,ms pro"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "2934302",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "- Compact, stylish new dual-tone body design - light and easy to carry for day trips, holidays and weekends away.<br/>- High resolution 10.2 effective megapixel CCD sensor and BIONZ processor for superbly detailed, low noise images with rich tones and vib",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wzMjAxfGltYWdlL2pwZWd8aW1hZ2VzL2g0Yy9oMmYvODc5Njg4Njg5MjU3NC5qcGd8N2EyNDFlOWZhNDAwNmE3ZGY4YmY1YzcxYTRhMDFiOTg1MmJlMWI2MDk3ZjE5ZDVmNjBjYmRmYmQ0ZWJmMzA5MA"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w4NTc2OXxpbWFnZS9qcGVnfGltYWdlcy9oMWEvaDFmLzg3OTY4NjA1NDcxMDIuanBnfDI3NjFiMmU0MmZiNjY1MTE2NGQzMzc1MTQzYjY3MjNjZmVlYjU3MjNmYmFlMjFhN2E3YTZjM2U3YjU0MTUwYWE"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "DSLR-A330 + DT 18 - 55 mm",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$508.88",
+        "priceType": "BUY",
+        "value": 508.88
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "DSLR-A330 + DT 18 - 55 mm - Light, compact, easy-to-use Digital Single Lens Reflex (D-SLR) camera - body only. 10.2 megapixels, SteadyShot INSIDE and Quick AF Live View. HD output, 2.7\"\" tilt LCD and on-screen help guide",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/DSLR-A330-%2B-DT-18---55-mm/p/2934302",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 2.3636363636363638,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "LCD"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd,ms pro"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "2934303",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "- Compact, stylish new body design - light and easy to carry for day trips, holidays and weekends away.<br/>- High resolution 10.2 effective megapixel CCD sensor and BIONZ processor for superbly detailed, low noise images with rich tones and vibrant colou",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wzMjY1fGltYWdlL2pwZWd8aW1hZ2VzL2gxZi9oODgvODc5Njg4NzM1MTMyNi5qcGd8YmFkMjdhNGI4NDA3NTZiZDUwYzJkN2YzNWUwMTM2Yzc0OTQ4YjkyMWVmM2RkYTQwMmJkMzQ5NzlhZDA5MWJhZg"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w4NTk1MnxpbWFnZS9qcGVnfGltYWdlcy9oMDgvaDM0Lzg3OTY4NjEwMDU4NTQuanBnfGQyMTM4YmU5OGNlNWJjM2U0OTBlZDFiYzY2ZTAyN2VmOWY5YmE1MzQzYTA5MWI4YTg0MDI5OGZlMjQ3NDk1MGI"
+        }
+      ],
+      "manufacturer": "Sony",
+      "multidimensional": false,
+      "name": "DSLR-A230 + DT 18 - 55 mm",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$429.88",
+        "priceType": "BUY",
+        "value": 429.88
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "DSLR-A230 + DT 18 - 55 mm - Very light, compact, easy-to-use Digital Single Lens Reflex (D-SLR) camera - body only. 10.2 megapixels, SteadyShot INSIDE, HD output, 2.7\"\" LCD and on-screen help guide",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/DSLR-A230-%2B-DT-18---55-mm/p/2934303",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 2.4545454545454546,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "LCD"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd,memory stick (ms),sdhc"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "3505505",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "- 10X optical zoom lens with image stabilization<br/>- Amazing quality prints with 10 MP<br/>- Smart Capture feature<br/>- Best-in-class click-to-capture speed (<0.3 sec.)<br/>- HD pictures<br/>- High ISO (up to 1600)<br/>- Advanced settings and manual co",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wzMjIwfGltYWdlL2pwZWd8aW1hZ2VzL2hlMi9oYjQvODc5Njg4OTQ0ODQ3OC5qcGd8MGEzNTYzYjA5YzcxNjFjMWRhZDQ2ZWFkMmQ3MjdhZmEzODg3MGMwZmQ2OTc1MWU2NWYwYmU1ZDBjMjNiZjJlMQ"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNTQ5MnxpbWFnZS9qcGVnfGltYWdlcy9oOTIvaDhlLzg3OTY4NjMxMDMwMDYuanBnfGM4Y2JhNTBjZWY2NjdmM2VkOGU4MGRkODQ2NjAxOTQ4NjRlZTQ2NTA0MTJiMWFkODUyYTZkOGMwNzI1MThjZjE"
+        }
+      ],
+      "manufacturer": "Kodak",
+      "multidimensional": false,
+      "name": "EasyShare Z915 red",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$426.55",
+        "priceType": "BUY",
+        "value": 426.55
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "EasyShare Z915, red",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/EasyShare-Z915-red/p/3505505",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 4.384615384615385,
+      "code": "1776948",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "5-in-1 Features: 1. 1080p, HiDef Resolution",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzk2fGltYWdlL2pwZWd8aW1hZ2VzL2g2Yi9oMDIvODc5Njg3OTA5Mzc5MC5qcGd8M2IzZTljYjIyMWNmNzQ5NjY5NDNkNWI2MzNjMThkOThlNTkyZWI4YTE0MzIyMjcyYjMxMDA1MzMxMDY1MzU3OA"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wzMzYzNHxpbWFnZS9qcGVnfGltYWdlcy9oMGEvaDFjLzg3OTY4NTI4MTM4NTQuanBnfDE3MTk0NTYzNDJlOTQ2ZTUzMTgwNDQ0MWM0NGU3ZGQ4YjljNjQzZGI5NDJmNmMwMjM2Zjc1NjJhMjhmOWQ3ZTI"
+        }
+      ],
+      "manufacturer": "Toshiba",
+      "multidimensional": false,
+      "name": "Camileo S10 EU",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$146.88",
+        "priceType": "BUY",
+        "value": 146.88
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "Camileo S10 EU 5MP CMOS",
+      "url": "/Open-Catalogue/Cameras/Hand-held-Camcorders/Camileo-S10-EU/p/1776948",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 4.416666666666667,
+      "classifications": [
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "TFT"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "sd,mmc"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "1934796",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "<b>Affordable, intuitive and fun, the PowerShot A480 uses Canon know-how to let everyone take great 10 MP photos. Available in four colours, its compact, lightweight design slips easily into any pocket.</b><br/><br/><b>10.0 Megapixels</b><br/>With a 10 Megapixel sensor, you can capture every scene in vivid detail – ready for printing at sizes as large as A3+, or cropping to perfection without losing the detail necessary for larger prints.<br/><br/><b>Compact and colourful</b><br/>Small and light enough to slip into a pocket, the PowerShot A480 has a classic, stylish design that feels great in the hand. Controlled by a simple button layout, it comes in a choice of four attractive colours.<br/><br/><b>3.3x optical zoom</b><br/>Frame every picture perfectly with a Canon 3.3x optical zoom. In combination with digital zoom, magnification of up to 13x can be achieved.<br/><br/><b>DIGIC III</b><br/>As well as powering Face Detection Technology, Canon’s DIGIC III processor provides fast response times, superb image quality and colour reproduction. DIGIC III also delivers advanced noise reduction – ensuring that images remain sharp and clear.<br/><br/><b>15 shooting modes</b><br/>A selection of shooting modes - including dedicated Kids & Pets and Indoor modes - make it easy to get the right settings for any scene. Simply select the mode you want, and let the camera take care of everything else. <br/><br/><b>1cm Macro shooting</b><br/>A special 1cm Super Macro mode allows you to capture small scale detail from as close as 1cm away.<br/><br/><b>Great people shots</b><br/>A suite of Face Detection technologies detects up to nine faces in a scene and adjusts focus, exposure, flash settings and white balance – for optimal results with natural-looking skin tones. <br/><br/><b>Auto Red-Eye Correction</b><br/>Available in shooting or playback mode, Automatic Red-Eye Correction accurately removes the red-eye effect caused by flash. <br/><br/><b>Motion Detection Technology</b><br/>Motion Detection Technology uses changes in scene information and scene brightness to accurately identify subject motion. The optimal ISO level is then automatically set, to minimise blur and maximise image quality.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxODk3fGltYWdlL2pwZWd8aW1hZ2VzL2g1MS9oNzkvODc5Njg4MDQ3MDA0Ni5qcGd8ZGFjNDRiMDJiYzI0YmZjMDY5YTFiYTkzZDRiYzdhOWZiNWQ1MTc2MmEzOTQ0Y2NkNWJlNTJjYjZlNDI4NjQxOA"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w0MTcwOXxpbWFnZS9qcGVnfGltYWdlcy9oZTkvaGY1Lzg3OTY4NTQxOTAxMTAuanBnfDNiOTVkMDljZmYzMDZlMjYyNDBkMjExNmQzMThjNTQyMzQwMGNlNmRkMmIzZTRlZjc1ZTRlMTMzMWRkY2M5MTc"
+        }
+      ],
+      "manufacturer": "Canon",
+      "multidimensional": false,
+      "name": "PowerShot A480",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$110.88",
+        "priceType": "BUY",
+        "value": 110.88
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "PowerShot A480 - 10.0 MP, 3.3x optical, DIGIC III, 2.5” LCD, silver",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/PowerShot-A480/p/1934796",
+      "volumePricesFlag": false
+    },
+    {
+      "availableForPickup": true,
+      "averageRating": 4.5,
+      "classifications": [
+        {
+          "code": "622",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/622.aperture setting, 5775",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "Automatic"
+                }
+              ],
+              "name": "Aperture setting",
+              "range": false
+            },
+            {
+              "code": "ElectronicsClassification/1.0/622.video memory capacity, 5167",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "Maximum length is limited to the size of the memory card or internal memory"
+                }
+              ],
+              "name": "Video memory capacity",
+              "range": false
+            },
+            {
+              "code": "ElectronicsClassification/1.0/622.picture mode, 2030",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "[24 fps]"
+                }
+              ],
+              "name": "Picture mode",
+              "range": false
+            },
+            {
+              "code": "ElectronicsClassification/1.0/622.size, 1147",
+              "comparable": true,
+              "featureUnit": {
+                "name": "inch",
+                "symbol": "\"",
+                "unitType": "16"
+              },
+              "featureValues": [
+                {
+                  "value": "3.91 × 1.26 × 2.07"
+                }
+              ],
+              "name": "Size",
+              "range": false
+            }
+          ],
+          "name": "Technical details"
+        },
+        {
+          "code": "41",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/41.display, 83",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "3.8cm (1.5\"\") colour LCD (557 × 234 = 130000px)"
+                }
+              ],
+              "name": "Display",
+              "range": false
+            }
+          ],
+          "name": "Display"
+        },
+        {
+          "code": "42",
+          "features": [
+            {
+              "code": "ElectronicsClassification/1.0/42.compatible memory cards, 730",
+              "comparable": true,
+              "featureUnit": {
+                "name": ".",
+                "symbol": ".",
+                "unitType": "300"
+              },
+              "featureValues": [
+                {
+                  "value": "10 images (1.0 MB each) = 5 MP, (default)"
+                }
+              ],
+              "name": "Compatible memory cards",
+              "range": false
+            }
+          ],
+          "name": "Memory"
+        }
+      ],
+      "code": "300938",
+      "configurable": false,
+      "configuratorType": "",
+      "description": "Get point and shoot simplicity plus crisp, true-to-life photos with this stylish and easy-to-use camera.<br/><br/>Get close in with 4x digital zoom, review via the clear 3.8 cm LCD then print great 10 × 15 cm photos and enlargements up to poster size.",
+      "images": [
+        {
+          "format": "thumbnail",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMDYxfGltYWdlL2pwZWd8aW1hZ2VzL2g3OC9oNjEvODc5Njg4ODA3MjIyMi5qcGd8N2M4MzEyYWYyOTU4NDBkZmQ2YjNlMjM0ODQ1YTAwMWI4OWEwMTc5MDU4NzM5YmZhMDQxNTFjOWI1OGQwZDc5Zg"
+        },
+        {
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w3MDg1fGltYWdlL2pwZWd8aW1hZ2VzL2hhMy9oNDYvODc5Njg2MTcyNjc1MC5qcGd8MzNmOTEyNTE0NjNlNTgxZWM2ZTA4ZjRlNjY3MmNjNjgxZGJkNzdmZmI4MTBjZDIzNDg5ZWMyN2Y2NTNkMWQ0YQ"
+        }
+      ],
+      "manufacturer": "HP",
+      "multidimensional": false,
+      "name": "Photosmart E317 Digital Camera",
+      "price": {
+        "currencyIso": "USD",
+        "formattedValue": "$114.12",
+        "priceType": "BUY",
+        "value": 114.12
+      },
+      "priceRange": {},
+      "stock": {
+        "stockLevelStatus": "inStock"
+      },
+      "summary": "Point and shoot simplicity in a 5 MP camera.",
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/Photosmart-E317-Digital-Camera/p/300938",
+      "volumePricesFlag": false
+    }
+  ],
+  "sorts": [
+    {
+      "code": "relevance",
+      "name": "Relevance",
+      "selected": true
+    },
+    {
+      "code": "topRated",
+      "name": "Top Rated",
+      "selected": false
+    },
+    {
+      "code": "name-asc",
+      "name": "Name (ascending)",
+      "selected": false
+    },
+    {
+      "code": "name-desc",
+      "name": "Name (descending)",
+      "selected": false
+    },
+    {
+      "code": "price-asc",
+      "name": "Price (lowest first)",
+      "selected": false
+    },
+    {
+      "code": "price-desc",
+      "name": "Price (highest first)",
+      "selected": false
+    }
+  ]
+}

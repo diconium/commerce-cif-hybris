@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "message": "Entry not found",
+      "reason": "notFound",
+      "subject": "1",
+      "subjectType": "entry",
+      "type": "CartEntryError"
+    }
+  ]
+}

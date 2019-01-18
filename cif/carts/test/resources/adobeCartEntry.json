@@ -1,0 +1,63 @@
+{
+  "id": "0",
+  "price": {
+    "currency": "USD",
+    "amount": 345
+  },
+  "productVariant": {
+    "id": "779841",
+    "name": "FUN Flash Single Use Camera, 27+12 pic",
+    "attributes": [
+      {
+        "id": "manufacturer",
+        "name": "Manufacturer",
+        "value": "Kodak"
+      },
+      {
+        "id": "averageRating",
+        "name": "Average Rating",
+        "value": 2.6
+      },
+      {
+        "id": "availableForPickup",
+        "name": "Available for Pickup",
+        "value": true
+      }
+    ],
+    "prices": [
+      {
+        "currency": "USD",
+        "amount": 345
+      }
+    ],
+    "categories": [
+      {
+        "id": "574"
+      },
+      {
+        "id": "brand_88"
+      }
+    ],
+    "assets": [
+      {
+        "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMTk1MHxpbWFnZS9qcGVnfGltYWdlcy9oZjUvaDA5Lzg3OTY4NDI4MTk2MTQuanBnfDA5YjQ2OTU5YzNmYjNkNzBmYmU1YTZiMjVmYTJiNzEzMWVlOGY0YmEzNzBlYThkMDljNzRmODYzNDUzZTY4YTM"
+      },
+      {
+        "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMDk5N3xpbWFnZS9qcGVnfGltYWdlcy9oYTkvaDBmLzg3OTY4NjkwOTk1NTAuanBnfDZjNTBmYzliYzRjYzc1MDA5NjE3ZTQ0MGQ1NTA3MjAwZDM2ZTlkYjhhNDdjY2UyMTI1NjcxN2ViMDc3NDQyOWM"
+      },
+      {
+        "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyODI2fGltYWdlL2pwZWd8aW1hZ2VzL2gxMS9oMGIvODc5Njg5NTQ0NTAyMi5qcGd8NTEyYTMwZDMyYTg0Mzg1YTI1MjdiNGY3ZTQ0ZjkzYTRiNmIzMjBiOTNhZTlmN2ViMzEyNGNmYmI1NjQzNDVjYg"
+      },
+      {
+        "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxODQ1fGltYWdlL2pwZWd8aW1hZ2VzL2gwMS9oMGMvODc5NjkyMTc5MDQ5NC5qcGd8MTQ0YWEwMGMwZmNhMmZkNzQ0NzI2YjA5ZGJiZjczZDQxNTQ0ZDU3ZWZmODFmMzVmODFkYmI5ZmFjMDY1N2M0NQ"
+      }
+    ],
+    "sku": "779841"
+  },
+  "quantity": 1,
+  "unitPrice": {
+    "currency": "USD",
+    "amount": 345
+  },
+  "type": "REGULAR"
+}

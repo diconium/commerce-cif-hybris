@@ -1,0 +1,23 @@
+{
+  "type": "categoryHierarchyWsDTO",
+  "id": "brands",
+  "lastModified": "2018-08-31T22:51:20+0000",
+  "name": "Brands",
+  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brands",
+  "subcategories": [
+    {
+      "id": "brand_1",
+      "lastModified": "2018-08-31T22:49:29+0000",
+      "name": "HP",
+      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_1",
+      "subcategories": []
+    },
+    {
+      "id": "brand_2",
+      "lastModified": "2018-08-31T22:51:20+0000",
+      "name": "Toshiba",
+      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_2",
+      "subcategories": []
+    }
+  ]
+}

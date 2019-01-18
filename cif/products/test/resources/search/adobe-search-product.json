@@ -1,0 +1,88 @@
+{
+  "offset": 0,
+  "count": 20,
+  "total": 179,
+  "results": [
+    {
+      "id": "3514520",
+      "name": "DSC-WX1",
+      "description": "DSC-WX1 - 10.2 megapixels, Exmor R CMOS sensor, f/2.4 'G Lens' with 5x zoom/24mm wide angle & HD movie",
+      "prices": [
+        {
+          "currency": "USD",
+          "amount": 30917
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMjM5fGltYWdlL2pwZWd8aW1hZ2VzL2g3MS9oZTgvODc5Njg4ODU2Mzc0Mi5qcGd8Zjg3YzU4NTMyN2RmODM0OTc2ZjgzYTAxNjAyY2FkZjNkMTA2NzFjMjU4ZDZmNmIxNTI1NzM4ODFiNzAyZTQ0YQ"
+        },
+        {
+          "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w5MzM4fGltYWdlL2pwZWd8aW1hZ2VzL2g1Zi9oNTIvODc5Njg2MjIxODI3MC5qcGd8ODc0ZDJiMzYzMDEzN2M4OThiMWUwNThiNDRiNWY3YWFiMWFkYTUxNzhlNGQzYmNlNzhmODA0N2Y0NDE3NWIyNQ"
+        }
+      ],
+      "attributes": [
+        {
+          "id": "manufacturer",
+          "name": "Manufacturer",
+          "value": "Sony"
+        },
+        {
+          "id": "availableForPickup",
+          "name": "Available for Pickup",
+          "value": true
+        }
+      ],
+      "masterVariantId": "3514520",
+      "variants": [
+        {
+          "id": "3514520",
+          "name": "DSC-WX1",
+          "description": "DSC-WX1 - 10.2 megapixels, Exmor R CMOS sensor, f/2.4 'G Lens' with 5x zoom/24mm wide angle & HD movie",
+          "prices": [
+            {
+              "currency": "USD",
+              "amount": 30917
+            }
+          ],
+          "assets": [
+            {
+              "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMjM5fGltYWdlL2pwZWd8aW1hZ2VzL2g3MS9oZTgvODc5Njg4ODU2Mzc0Mi5qcGd8Zjg3YzU4NTMyN2RmODM0OTc2ZjgzYTAxNjAyY2FkZjNkMTA2NzFjMjU4ZDZmNmIxNTI1NzM4ODFiNzAyZTQ0YQ"
+            },
+            {
+              "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w5MzM4fGltYWdlL2pwZWd8aW1hZ2VzL2g1Zi9oNTIvODc5Njg2MjIxODI3MC5qcGd8ODc0ZDJiMzYzMDEzN2M4OThiMWUwNThiNDRiNWY3YWFiMWFkYTUxNzhlNGQzYmNlNzhmODA0N2Y0NDE3NWIyNQ"
+            }
+          ],
+          "attributes": [
+            {
+              "id": "manufacturer",
+              "name": "Manufacturer",
+              "value": "Sony"
+            },
+            {
+              "id": "availableForPickup",
+              "name": "Available for Pickup",
+              "value": true
+            }
+          ],
+          "sku": "3514520"
+        }
+      ]
+    }
+  ],
+  "facets": [
+    {
+      "id": "availableInStores",
+      "name": "Stores",
+      "multiSelect": true,
+      "values": [
+        {
+          "id": "Chiba",
+          "occurrences": 100,
+          "selected": false,
+          "value": "Chiba"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "id": "ce280b6d-61f0-41e7-acb4-d670546f744b",
+    "address": {
+      "companyName": "super company",
+      "country": {
+        "isocode": "GB"
+      },
+      "email": "customer@example.com",
+      "firstName": "José",
+      "lastName": "Maria",
+      "line1": "street name",
+      "line2": "34",
+      "phone": "23324",
+      "postalCode": "23345",
+      "title": "mr",
+      "titleCode": "mr",
+      "town": "London"
+    }
+  },
+  "settings": {
+    "HB_API_HOST": "hybris.example.com",
+    "HB_API_BASE_PATH": "/rest/v2",
+    "HB_AUTH": "",
+    "HB_AUTH_HOST": "hybris.example.com",
+    "HB_BASESITEID": "/electronics",
+    "HB_CATALOG": "electronicsProductCatalog",
+    "HB_CATALOGVERSION": "Online",
+    "HB_CLIENTID": "hybrisoauthclientid",
+    "HB_CLIENTSECRET": "hybrisoauthclientsecret",
+    "HB_PASSWORD": "hybrisdemopassword",
+    "HB_USER": "hybrisdemouser",
+    "HB_PROTOCOL": "https",
+    "bearer": "4b825a40-b54b-4b6f-8873-ab478ebd34a8",
+    "cookies": [],
+    "customerId": "current",
+    "headers": {},
+    "language": ""
+  }
+}

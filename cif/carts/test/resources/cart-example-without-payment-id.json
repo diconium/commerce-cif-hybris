@@ -1,0 +1,204 @@
+{
+  "type" : "cartWsDTO",
+  "appliedOrderPromotions" : [ {
+    "consumedEntries" : [ ],
+    "description" : "Buy over $200.00 get $20.00 discount on cart",
+    "promotion" : {
+      "code" : "order_threshold_fixed_discount",
+      "couldFireMessages" : [ ],
+      "description" : "A fixed discount is applied to the cart when the order threshold value is reached",
+      "firedMessages" : [ ],
+      "promotionType" : "Rule Based Promotion"
+    }
+  } ],
+  "appliedProductPromotions" : [ ],
+  "appliedVouchers" : [ ],
+  "calculated" : true,
+  "code" : "00000060",
+  "deliveryItemsQuantity" : 7,
+  "deliveryOrderGroups" : [ {
+    "entries" : [ {
+      "basePrice" : {
+        "currencyIso" : "USD",
+        "formattedValue" : "$309.17",
+        "priceType" : "BUY",
+        "value" : 309.17
+      },
+      "entryNumber" : 0,
+      "product" : {
+        "availableForPickup" : false,
+        "baseOptions" : [ ],
+        "categories" : [ {
+          "code" : "576",
+          "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/c/576"
+        }, {
+          "code" : "brand_5",
+          "url" : "/Brands/Sony/c/brand_5"
+        } ],
+        "code" : "3514520",
+        "images" : [ {
+          "altText" : "DSC-WX1",
+          "format" : "zoom",
+          "imageType" : "PRIMARY",
+          "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxODIyNHxpbWFnZS9qcGVnfGltYWdlcy9oYzEvaDU0Lzg3OTY4MzU5MzgzMzQuanBnfGU2ZTUwNjdmYmE0ZGNkYjc3YTJjMWZiMTliZGFlODAxZDU1ZGY4Njc1MDEyNTM0NGE2YThkZWUyNmI0ZTUyN2I"
+        }, {
+          "altText" : "DSC-WX1",
+          "format" : "product",
+          "imageType" : "PRIMARY",
+          "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w5MzM4fGltYWdlL2pwZWd8aW1hZ2VzL2g1Zi9oNTIvODc5Njg2MjIxODI3MC5qcGd8ODc0ZDJiMzYzMDEzN2M4OThiMWUwNThiNDRiNWY3YWFiMWFkYTUxNzhlNGQzYmNlNzhmODA0N2Y0NDE3NWIyNQ"
+        }, {
+          "altText" : "DSC-WX1",
+          "format" : "thumbnail",
+          "imageType" : "PRIMARY",
+          "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMjM5fGltYWdlL2pwZWd8aW1hZ2VzL2g3MS9oZTgvODc5Njg4ODU2Mzc0Mi5qcGd8Zjg3YzU4NTMyN2RmODM0OTc2ZjgzYTAxNjAyY2FkZjNkMTA2NzFjMjU4ZDZmNmIxNTI1NzM4ODFiNzAyZTQ0YQ"
+        }, {
+          "altText" : "DSC-WX1",
+          "format" : "cartIcon",
+          "imageType" : "PRIMARY",
+          "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNTQyfGltYWdlL2pwZWd8aW1hZ2VzL2hjMy9oZGEvODc5NjkxNDkwOTIxNC5qcGd8NTUzMTgzYTYxMDBmNWUyMDE2NmI5ZmUyYTc4OGM3Njc0MDE3ZDhiYTY0Y2VhOTE0NzNiMzQ5NzI5ZjFiZGZiMw"
+        } ],
+        "manufacturer" : "Sony",
+        "name" : "DSC-WX1",
+        "purchasable" : true,
+        "stock" : {
+          "stockLevel" : 7,
+          "stockLevelStatus" : "inStock"
+        },
+        "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-WX1/p/3514520"
+      },
+      "quantity" : 7,
+      "totalPrice" : {
+        "currencyIso" : "USD",
+        "formattedValue" : "$2,164.19",
+        "priceType" : "BUY",
+        "value" : 2164.19
+      },
+      "updateable" : true
+    } ],
+    "totalPriceWithTax" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$2,164.19",
+      "priceType" : "BUY",
+      "value" : 2164.19
+    }
+  } ],
+  "entries" : [ {
+    "basePrice" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$309.17",
+      "priceType" : "BUY",
+      "value" : 309.17
+    },
+    "entryNumber" : 0,
+    "product" : {
+      "availableForPickup" : false,
+      "baseOptions" : [ ],
+      "categories" : [ {
+        "code" : "576",
+        "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/c/576"
+      }, {
+        "code" : "brand_5",
+        "url" : "/Brands/Sony/c/brand_5"
+      } ],
+      "code" : "3514520",
+      "images" : [ {
+        "altText" : "DSC-WX1",
+        "format" : "zoom",
+        "imageType" : "PRIMARY",
+        "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxODIyNHxpbWFnZS9qcGVnfGltYWdlcy9oYzEvaDU0Lzg3OTY4MzU5MzgzMzQuanBnfGU2ZTUwNjdmYmE0ZGNkYjc3YTJjMWZiMTliZGFlODAxZDU1ZGY4Njc1MDEyNTM0NGE2YThkZWUyNmI0ZTUyN2I"
+      }, {
+        "altText" : "DSC-WX1",
+        "format" : "product",
+        "imageType" : "PRIMARY",
+        "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w5MzM4fGltYWdlL2pwZWd8aW1hZ2VzL2g1Zi9oNTIvODc5Njg2MjIxODI3MC5qcGd8ODc0ZDJiMzYzMDEzN2M4OThiMWUwNThiNDRiNWY3YWFiMWFkYTUxNzhlNGQzYmNlNzhmODA0N2Y0NDE3NWIyNQ"
+      }, {
+        "altText" : "DSC-WX1",
+        "format" : "thumbnail",
+        "imageType" : "PRIMARY",
+        "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMjM5fGltYWdlL2pwZWd8aW1hZ2VzL2g3MS9oZTgvODc5Njg4ODU2Mzc0Mi5qcGd8Zjg3YzU4NTMyN2RmODM0OTc2ZjgzYTAxNjAyY2FkZjNkMTA2NzFjMjU4ZDZmNmIxNTI1NzM4ODFiNzAyZTQ0YQ"
+      }, {
+        "altText" : "DSC-WX1",
+        "format" : "cartIcon",
+        "imageType" : "PRIMARY",
+        "url" : "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNTQyfGltYWdlL2pwZWd8aW1hZ2VzL2hjMy9oZGEvODc5NjkxNDkwOTIxNC5qcGd8NTUzMTgzYTYxMDBmNWUyMDE2NmI5ZmUyYTc4OGM3Njc0MDE3ZDhiYTY0Y2VhOTE0NzNiMzQ5NzI5ZjFiZGZiMw"
+      } ],
+      "manufacturer" : "Sony",
+      "name" : "DSC-WX1",
+      "purchasable" : true,
+      "stock" : {
+        "stockLevel" : 7,
+        "stockLevelStatus" : "inStock"
+      },
+      "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-WX1/p/3514520"
+    },
+    "quantity" : 7,
+    "totalPrice" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$2,164.19",
+      "priceType" : "BUY",
+      "value" : 2164.19
+    },
+    "updateable" : true
+  } ],
+  "guid" : "34518aaa-2c25-4999-b469-676d71a7a41f",
+  "net" : false,
+  "orderDiscounts" : {
+    "currencyIso" : "USD",
+    "formattedValue" : "$20.00",
+    "priceType" : "BUY",
+    "value" : 20.0
+  },
+  "pickupItemsQuantity" : 0,
+  "pickupOrderGroups" : [ ],
+  "productDiscounts" : {
+    "currencyIso" : "USD",
+    "formattedValue" : "$0.00",
+    "priceType" : "BUY",
+    "value" : 0.0
+  },
+  "site" : "electronics",
+  "store" : "electronics",
+  "subTotal" : {
+    "currencyIso" : "USD",
+    "formattedValue" : "$2,144.19",
+    "priceType" : "BUY",
+    "value" : 2144.19
+  },
+  "totalDiscounts" : {
+    "currencyIso" : "USD",
+    "formattedValue" : "$20.00",
+    "priceType" : "BUY",
+    "value" : 20.0
+  },
+  "totalItems" : 1,
+  "totalPrice" : {
+    "currencyIso" : "USD",
+    "formattedValue" : "$2,144.19",
+    "priceType" : "BUY",
+    "value" : 2144.19
+  },
+  "totalPriceWithTax" : {
+    "currencyIso" : "USD",
+    "formattedValue" : "$2,144.19",
+    "priceType" : "BUY",
+    "value" : 2144.19
+  },
+  "totalTax" : {
+    "currencyIso" : "USD",
+    "formattedValue" : "$0.00",
+    "priceType" : "BUY",
+    "value" : 0.0
+  },
+  "potentialOrderPromotions" : [ {
+    "consumedEntries" : [ ],
+    "description" : "Hello World!",
+    "promotion" : {
+      "code" : "show_message_test",
+      "couldFireMessages" : [ ],
+      "firedMessages" : [ ],
+      "promotionType" : "Rule Based Promotion"
+    }
+  } ],
+  "potentialProductPromotions" : [ ],
+  "totalUnitCount" : 7
+}

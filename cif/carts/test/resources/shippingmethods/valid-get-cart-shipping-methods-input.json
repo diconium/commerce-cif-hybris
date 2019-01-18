@@ -1,0 +1,26 @@
+{
+  "HB_API_HOST": "hybris.example.com",
+  "HB_AUTH_HOST": "hybris.example.com",
+  "HB_AUTH": "basic",
+  "HB_BASESITEID": "electronics",
+  "HB_USER": "hybrisdemouser",
+  "HB_PASSWORD": "hybrisdemopassword",
+  "args": {
+    "id": "ce280b6d-61f0-41e7-acb4-d670546f744b",
+    "customerId": "current"
+  },
+  "status": {
+    "error": {
+      "code": 0,
+      "validationErrors": []
+    }
+  },
+  "validations": [
+    {
+      "mTarget": "id",
+      "validations": [
+        "isRequired"
+      ]
+    }
+  ]
+}

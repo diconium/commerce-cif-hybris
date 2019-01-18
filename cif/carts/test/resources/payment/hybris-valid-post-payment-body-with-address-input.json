@@ -1,0 +1,21 @@
+{
+  "billingAddress": {
+    "country": {
+      "isocode": "GB"
+    },
+    "firstName": "First",
+    "lastName": "Last",
+    "line1": "Address",
+    "line2": "",
+    "postalCode": "",
+    "titleCode": "mr",
+    "town": "London"
+  },
+  "cardNumber": 12341234,
+  "cardType": {
+    "code": "visa"
+  },
+  "expiryMonth": "02",
+  "expiryYear": "2020",
+  "accountHolderName": "Customer"
+}

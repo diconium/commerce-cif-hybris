@@ -1,0 +1,121 @@
+{
+  "id": "00001897",
+  "cartEntries": [
+    {
+      "id": "0",
+      "quantity": 1,
+      "productVariant": {
+        "id": "3514521",
+        "name": {
+          "en": "DSC-WX1"
+        },
+        "description": {
+          "en": ""
+        },
+        "prices": [
+          {
+            "currency": "USD",
+            "centAmount": 62665
+          }
+        ],
+        "categories": [
+          {
+            "id": "578",
+            "parentCategories": [],
+            "subCategories": []
+          },
+          {
+            "id": "brand_5",
+            "parentCategories": [],
+            "subCategories": []
+          }
+        ],
+        "assets": [
+          {
+            "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyNDMxNHxpbWFnZS9qcGVnfGltYWdlcy9oMDIvaDUxLzg3OTY4MzYwNjk0MDYuanBnfDM0YzY0OTlmNTI5ZDU4ZDU3Nzk3OWVlNWJkNmViMWUxYzIzZmM3OGViNjRjZWI5MTNjMWM3YTZlMGI3N2FkZmI"
+          },
+          {
+            "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTM3N3xpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGU0Lzg3OTY4NjIzNDkzNDIuanBnfDk4NzZkZjQyODAxN2IxODRiZWQ2OWZiN2JmZmJlNGJhZjI5NWZhMDBhNGE3MzIxNDlhYTU2ZWVlYjBiY2NlOGU"
+          },
+          {
+            "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyNDQ2fGltYWdlL2pwZWd8aW1hZ2VzL2hkNi9oODUvODc5Njg4ODY5NDgxNC5qcGd8OTc0M2YzMjQ2NzRhM2EwZGI5NzhmZmNiZjBjYjVhOGU0NGE4ZGY5ZjE0OTZkYjRmMWRiYzUwMjQ3MjUwYmI4YQ"
+          },
+          {
+            "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNTk2fGltYWdlL2pwZWd8aW1hZ2VzL2g0Ni9oOGUvODc5NjkxNTA0MDI4Ni5qcGd8NjI1MzVjZjE2NjUwMjA3YTQ5ZTJmMzVkYmMxZGZiOTQwMTRhMDc4ZWVjNmM5OTZiZWI0OGE1Y2I2OTI1YmNmNg"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "manufacturer",
+            "name": {
+              "en": "Manufacturer"
+            },
+            "value": {
+              "value": "Sony"
+            }
+          },
+          {
+            "id": "averageRating",
+            "name": {
+              "en": "Average Rating"
+            },
+            "value": {
+              "value": 2.375
+            }
+          },
+          {
+            "id": "availableForPickup",
+            "name": {
+              "en": "Available for pickup"
+            },
+            "value": {
+              "value": true
+            }
+          }
+        ],
+        "sku": "3514521"
+      },
+      "unitPrice": {
+        "currency": "USD",
+        "centAmount": 62665
+      },
+      "discounts": [],
+      "cartEntryPrice": {
+        "currency": "USD",
+        "centAmount": 62665
+      },
+      "type": "REGULAR"
+    }
+  ],
+  "customerId": "current",
+  "netTotalPrice": {
+    "currency": "USD",
+    "centAmount": 61464
+  },
+  "grossTotalPrice": {
+    "currency": "USD",
+    "centAmount": 61464
+  },
+  "shippingAddress": {
+    "id": "8796138569751",
+    "title": "mr",
+    "salutation": "Mr.",
+    "firstName": "string",
+    "lastName": "string",
+    "country": "GB",
+    "city": "string",
+    "postalCode": "string",
+    "streetName": "string",
+    "additionalStreetInfo": "string"
+  },
+  "shippingInfo": {
+    "name": "Standard Delivery",
+    "price": {
+      "currency": "USD",
+      "centAmount": 799
+    },
+    "id": "standard-gross"
+  },
+  "discounts": [],
+  "coupons": []
+}

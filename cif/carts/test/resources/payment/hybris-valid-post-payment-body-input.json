@@ -1,0 +1,29 @@
+{
+  "cardNumber": "4196431502693644",
+  "cardType": {
+    "code": "visa",
+    "name": "Visa"
+  },
+  "expiryMonth": "02",
+  "expiryYear": "2020",
+  "accountHolderName": "First Last",
+  "billingAddress": {
+    "country": {
+      "isocode": "GB",
+      "name": "United Kingdom"
+    },
+    "defaultAddress": true,
+    "firstName": "First",
+    "formattedAddress": "Address, , London, 123, United Kingdom",
+    "id": "8796199190551",
+    "lastName": "Last",
+    "line1": "Address",
+    "line2": "",
+    "postalCode": "123",
+    "shippingAddress": false,
+    "title": "Mr.",
+    "titleCode": "mr",
+    "town": "London",
+    "visibleInAddressBook": true
+  }
+}

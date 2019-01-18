@@ -1,0 +1,72 @@
+{
+  "payments": [
+    {
+      "accountHolderName": "Rui silva",
+      "billingAddress": {
+        "country": {
+          "isocode": "PT",
+          "name": "Portugal"
+        },
+        "defaultAddress": false,
+        "email": "customer@example.com",
+        "firstName": "Rui",
+        "formattedAddress": "Avenida Casal Ribeiro n50, string, Lisboa, 1000-234",
+        "id": "8796125855767",
+        "lastName": "Silva",
+        "line1": "Avenida Casal Ribeiro n50",
+        "line2": "string",
+        "postalCode": "1000-234",
+        "shippingAddress": false,
+        "title": "Mr.",
+        "titleCode": "mr",
+        "town": "Lisboa",
+        "visibleInAddressBook": true
+      },
+      "cardNumber": "************1111",
+      "cardType": {
+        "code": "visa",
+        "name": "Visa"
+      },
+      "defaultPayment": false,
+      "expiryMonth": "01",
+      "expiryYear": "2019",
+      "id": "8796093055018",
+      "saved": false,
+      "subscriptionId": "MockedSubscriptionID"
+    },
+    {
+      "accountHolderName": "Rui silva",
+      "billingAddress": {
+        "country": {
+          "isocode": "PT",
+          "name": "Portugal"
+        },
+        "defaultAddress": false,
+        "email": "customer@example.com",
+        "firstName": "Rui",
+        "formattedAddress": "Avenida Casal Ribeiro n50, string, Lisboa, 1000-234",
+        "id": "8796126052375",
+        "lastName": "Silva",
+        "line1": "Avenida Casal Ribeiro n50",
+        "line2": "string",
+        "postalCode": "1000-234",
+        "shippingAddress": false,
+        "title": "Mr.",
+        "titleCode": "mr",
+        "town": "Lisboa",
+        "visibleInAddressBook": true
+      },
+      "cardNumber": "************1111",
+      "cardType": {
+        "code": "visa",
+        "name": "Visa"
+      },
+      "defaultPayment": false,
+      "expiryMonth": "01",
+      "expiryYear": "2019",
+      "id": "8796093120554",
+      "saved": false,
+      "subscriptionId": "MockedSubscriptionID"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "425cbda0-64f9-4ea4-8b96-7adfe3cabee3",
+  "cartEntries": [
+    {
+      "id": "0",
+      "quantity": 2,
+      "productVariant": {
+        "id": "280916",
+        "name": {
+          "en": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black"
+        },
+        "prices": [
+          {
+            "currency": "USD",
+            "centAmount": 1640
+          }
+        ],
+        "categories": [],
+        "assets": [],
+        "attributes": []
+      },
+      "discounts": []
+    }
+  ],
+  "customerId": "anonymous",
+  "discounts": [],
+  "coupons": []
+}

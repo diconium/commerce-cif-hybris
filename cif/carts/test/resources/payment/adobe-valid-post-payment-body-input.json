@@ -1,0 +1,10 @@
+{
+  "payment": {
+    "method": "/var/commerce/payment-methods/we-retail/creditcard",
+    "amount": {
+      "currency": "USD",
+      "centAmount": 59834
+    },
+    "status": "Paid"
+  }
+}

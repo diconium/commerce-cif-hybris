@@ -1,0 +1,49 @@
+{
+  "id": "",
+  "cartEntries": [
+    {
+      "id": "0",
+      "quantity": 1,
+      "productVariant": {
+        "id": "3514520",
+        "name": {
+          "en": "DSC-WX1"
+        },
+        "description": {
+          "en": ""
+        },
+        "prices": [
+          {
+            "currency": "USD",
+            "centAmount": 30917
+          }
+        ],
+        "categories": [],
+        "assets": [],
+
+        "sku": "3514520"
+      },
+      "unitPrice": {
+        "currency": "USD",
+        "centAmount": 30917
+      },
+      "discounts": [],
+      "cartEntryPrice": {
+        "currency": "USD",
+        "centAmount": 30917
+      },
+      "type": "REGULAR"
+    }
+  ],
+  "customerId": "anonymous",
+  "netTotalPrice": {
+    "currency": "USD",
+    "centAmount": 28917
+  },
+  "grossTotalPrice": {
+    "currency": "USD",
+    "centAmount": 28917
+  },
+  "discounts": [],
+  "coupons": []
+}

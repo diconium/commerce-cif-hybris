@@ -1,0 +1,42 @@
+{
+  "HB_API_HOST": "hybris.example.com",
+  "HB_AUTH_HOST": "hybris.example.com",
+  "HB_BASESITEID": "electronics",
+  "HB_USER": "hybrisdemouser",
+  "HB_PASSWORD": "hybrisdemopassword",
+  "args": {
+    "id": "ce280b6d-61f0-41e7-acb4-d670546f744b",
+    "address": {
+      "firstName": "Francisco",
+      "lastName": "Diconium",
+      "country": "GB",
+      "region": "",
+      "city": "Lisbon",
+      "postalCode": "12345",
+      "streetName": "Address2",
+      "additionalStreetInfo": ""
+    },
+    "customerId": "customer@example.com",
+    "bearer":"4b825a40-b54b-4b6f-8873-ab478ebd34a8"
+  },
+  "status": {
+    "error": {
+      "code": 400,
+      "validationErrors": [
+        {
+          "property": "isRequired",
+          "target": "id",
+          "value": "undefined"
+        }
+      ]
+    }
+  },
+  "validations": [
+    {
+      "mTarget": "id",
+      "validations": [
+        "isRequired"
+      ]
+    }
+  ]
+}

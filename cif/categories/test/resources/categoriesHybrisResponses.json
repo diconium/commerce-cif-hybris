@@ -1,0 +1,335 @@
+{
+  "type": "catalogVersionWsDTO",
+  "id": "Online",
+  "url": "/electronicsProductCatalog/Online",
+  "categories": [
+    {
+      "id": "brands",
+      "name": "Brands",
+      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brands",
+      "subcategories": [
+        {
+          "id": "brand_1",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_1",
+          "subcategories": []
+        },
+        {
+          "id": "brand_2",
+          "name": "Toshiba",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_2",
+          "subcategories": []
+        },
+        {
+          "id": "brand_5",
+          "name": "Sony",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_5",
+          "subcategories": []
+        },
+        {
+          "id": "brand_10",
+          "name": "Canon",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_10",
+          "subcategories": []
+        },
+        {
+          "id": "brand_18",
+          "name": "Kingston",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_18",
+          "subcategories": []
+        },
+        {
+          "id": "brand_26",
+          "name": "Samsung",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_26",
+          "subcategories": []
+        },
+        {
+          "id": "brand_75",
+          "name": "Fujifilm",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_75",
+          "subcategories": []
+        },
+        {
+          "id": "brand_88",
+          "name": "Kodak",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_88",
+          "subcategories": []
+        },
+        {
+          "id": "brand_91",
+          "name": "Logitech",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_91",
+          "subcategories": []
+        },
+        {
+          "id": "brand_103",
+          "name": "NEC",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_103",
+          "subcategories": []
+        },
+        {
+          "id": "brand_128",
+          "name": "Targus",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_128",
+          "subcategories": []
+        },
+        {
+          "id": "brand_251",
+          "name": "TDK",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_251",
+          "subcategories": []
+        },
+        {
+          "id": "brand_702",
+          "name": "Sweex",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_702",
+          "subcategories": []
+        },
+        {
+          "id": "brand_745",
+          "name": "Canyon",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_745",
+          "subcategories": []
+        },
+        {
+          "id": "brand_750",
+          "name": "Dane-Elec",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_750",
+          "subcategories": []
+        },
+        {
+          "id": "brand_2171",
+          "name": "ICIDU",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/brand_2171",
+          "subcategories": []
+        }
+      ]
+    },
+    {
+      "id": "B2C_Color",
+      "name": "Color",
+      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/B2C_Color",
+      "subcategories": [
+        {
+          "id": "B2C_Red",
+          "name": "Red",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/B2C_Red",
+          "subcategories": []
+        },
+        {
+          "id": "B2C_Green",
+          "name": "Green",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/B2C_Green",
+          "subcategories": []
+        },
+        {
+          "id": "B2C_Blue",
+          "name": "Blue",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/B2C_Blue",
+          "subcategories": []
+        }
+      ]
+    },
+    {
+      "id": "configurations",
+      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/configurations",
+      "subcategories": [
+        {
+          "id": "engraving_powershot",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/engraving_powershot",
+          "subcategories": []
+        },
+        {
+          "id": "chargers",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/chargers",
+          "subcategories": []
+        },
+        {
+          "id": "engraving",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/engraving",
+          "subcategories": [
+            {
+              "id": "engraving_largeFont",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/engraving_largeFont",
+              "subcategories": []
+            },
+            {
+              "id": "engraving_extraLargeFont",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/engraving_extraLargeFont",
+              "subcategories": []
+            },
+            {
+              "id": "engraving_smallFont",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/engraving_smallFont",
+              "subcategories": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1",
+      "name": "Open Catalogue",
+      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/1",
+      "subcategories": [
+        {
+          "id": "106",
+          "name": "Components",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/106",
+          "subcategories": [
+            {
+              "id": "816",
+              "name": "Power Supplies",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/816",
+              "subcategories": [
+                {
+                  "id": "814",
+                  "name": "Rechargeable Batteries",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/814",
+                  "subcategories": []
+                },
+                {
+                  "id": "827",
+                  "name": "Power Adapters & Inverters",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/827",
+                  "subcategories": []
+                },
+                {
+                  "id": "829",
+                  "name": "Battery Chargers",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/829",
+                  "subcategories": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "206",
+          "name": "Data storage",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/206",
+          "subcategories": [
+            {
+              "id": "902",
+              "name": "Flash Memory",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/902",
+              "subcategories": []
+            }
+          ]
+        },
+        {
+          "id": "571",
+          "name": "Cameras",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/571",
+          "subcategories": [
+            {
+              "id": "574",
+              "name": "Film cameras",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/574",
+              "subcategories": []
+            },
+            {
+              "id": "575",
+              "name": "Digital Cameras",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/575",
+              "subcategories": [
+                {
+                  "id": "576",
+                  "name": "Digital Compacts",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/576",
+                  "subcategories": []
+                },
+                {
+                  "id": "578",
+                  "name": "Digital SLR",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/578",
+                  "subcategories": [
+                    {
+                      "id": "587",
+                      "name": "Tripods",
+                      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/587",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "588",
+                      "name": "Camera Lenses",
+                      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/588",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "1288",
+                      "name": "Camera Kits",
+                      "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/1288",
+                      "subcategories": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "577",
+              "name": "Webcams",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/577",
+              "subcategories": []
+            },
+            {
+              "id": "584",
+              "name": "Hand-held Camcorders",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/584",
+              "subcategories": []
+            },
+            {
+              "id": "585",
+              "name": "Camera Accessories & Supplies",
+              "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/585",
+              "subcategories": [
+                {
+                  "id": "586",
+                  "name": "Camera Flashes",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/586",
+                  "subcategories": []
+                },
+                {
+                  "id": "597",
+                  "name": "Colour Films",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/597",
+                  "subcategories": []
+                },
+                {
+                  "id": "598",
+                  "name": "Black & White Films",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/598",
+                  "subcategories": []
+                },
+                {
+                  "id": "604",
+                  "name": "Blank Video Tapes",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/604",
+                  "subcategories": []
+                },
+                {
+                  "id": "934",
+                  "name": "Camera Cables",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/934",
+                  "subcategories": []
+                },
+                {
+                  "id": "1201",
+                  "name": "Fixatives",
+                  "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/1201",
+                  "subcategories": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1421",
+          "name": "Binoculars",
+          "url": "/electronics/catalogs/electronicsProductCatalog/Online/categories/1421",
+          "subcategories": []
+        }
+      ]
+    }
+  ]
+}

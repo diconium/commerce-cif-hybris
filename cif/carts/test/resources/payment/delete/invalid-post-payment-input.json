@@ -1,0 +1,31 @@
+{
+  "parameter": {
+    "id": "00000003"
+  },
+  "errorOutput": {
+    "cause": {
+      "message": "missing-property"
+    },
+    "message": "Parameter 'paymentId' is missing.",
+    "name": "MissingPropertyError"
+  },
+  "settings": {
+    "HB_API_HOST": "hybris.example.com",
+    "HB_API_BASE_PATH": "/rest/v2",
+    "HB_AUTH": "",
+    "HB_AUTH_HOST": "hybris.example.com",
+    "HB_BASESITEID": "/electronics",
+    "HB_CATALOG": "electronicsProductCatalog",
+    "HB_CATALOGVERSION": "Online",
+    "HB_CLIENTID": "hybrisoauthclientid",
+    "HB_CLIENTSECRET": "hybrisoauthclientsecret",
+    "HB_PASSWORD": "hybrisdemopassword",
+    "HB_USER": "hybrisdemouser",
+    "HB_PROTOCOL": "https",
+    "bearer": "8330c161-6b0c-441a-b4d6-3c111c5bac54",
+    "cookies": [],
+    "customerId": "current",
+    "headers": {},
+    "language": ""
+  }
+}

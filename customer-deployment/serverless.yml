@@ -1,0 +1,302 @@
+service: customer-deployment
+
+package:
+  individually: true
+  exclude:
+  - ./**
+
+provider:
+  name: openwhisk
+  runtime: nodejs:default
+  ignore_certs: true
+
+custom:
+  customer-namespace: ${opt:customer-namespace, file(package.json):customer-namespace}
+  customer-package: ${opt:customer-package, file(package.json):customer-package}
+  bindings-namespace: ${opt:bindings-namespace, file(package.json):bindings-namespace}
+
+  commons-actions: /${self:custom.customer-namespace}/customer-dahc-commons@latest
+  carts-actions: /${self:custom.customer-namespace}/customer-dahc-cart@latest
+  customer-actions: /${self:custom.customer-namespace}/customer-dahc-customer@latest
+  products-actions: /${self:custom.customer-namespace}/customer-dahc-product@latest
+  categories-actions: /${self:custom.customer-namespace}/customer-dahc-category@latest
+  orders-actions: /${self:custom.customer-namespace}/customer-dahc-order@latest
+
+  hybris:
+    HB_BASESITEID: ${opt:basesiteid, file(options.yml):HB_BASESITEID}
+    HB_CLIENTID: ${opt:clientid, file(options.yml):HB_CLIENTID}
+    HB_CLIENTSECRET: ${opt:clientsecret, file(options.yml):HB_CLIENTSECRET}
+    HB_USER: ${opt:clientid, file(options.yml):HB_USER}
+    HB_PASSWORD: ${opt:clientsecret, file(options.yml):HB_PASSWORD}
+    HB_PROTOCOL: ${opt:protocol, file(options.yml):HB_PROTOCOL}
+    HB_API_HOST: ${opt:apihost, file(options.yml):HB_API_HOST}
+    HB_API_BASE_PATH: ${opt:apibasepath, file(options.yml):HB_API_BASE_PATH}
+    HB_OAUTH_HOST: ${opt:authhost, file(options.yml):HB_OAUTH_HOST}
+    HB_OAUTH_PATH: ${opt:authhost, file(options.yml):HB_OAUTH_PATH}
+    HB_AUTH: ${opt:auth, file(options.yml):HB_AUTH}
+    HB_CATALOG: ${opt:catalog, file(options.yml):HB_CATALOG}
+    HB_CATALOGVERSION: ${opt:catalogversion, file(options.yml):HB_CATALOGVERSION}
+
+plugins:
+- serverless-openwhisk
+
+resources:
+  packages:
+    customer-dahc-commons@latest:
+      binding: /${self:custom.bindings-namespace}/dahc-commons@latest
+    customer-dahc-cart@latest:
+      binding: /${self:custom.bindings-namespace}/dahc-cart@latest
+      parameters: ${self:custom.hybris}
+    customer-dahc-customer@latest:
+      binding: /${self:custom.bindings-namespace}/dahc-customer@latest
+      parameters: ${self:custom.hybris}
+    customer-dahc-product@latest:
+      binding: /${self:custom.bindings-namespace}/dahc-product@latest
+      parameters: ${self:custom.hybris}
+    customer-dahc-category@latest:
+      binding: /${self:custom.bindings-namespace}/dahc-category@latest
+      parameters: ${self:custom.hybris}
+    customer-dahc-order@latest:
+      binding: /${self:custom.bindings-namespace}/dahc-order@latest
+      parameters: ${self:custom.hybris}
+
+functions:
+
+  getCart:
+    name: ${self:custom.customer-package}/getCart
+    sequence:
+    - ${self:custom.carts-actions}/validateGetCartService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteCart:
+    name: ${self:custom.customer-package}/deleteCart
+    sequence:
+    - ${self:custom.carts-actions}/validateDeleteCartService
+    - ${self:custom.carts-actions}/deleteCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getPaymentMethods:
+    name: ${self:custom.customer-package}/getPaymentMethods
+    sequence:
+    - ${self:custom.carts-actions}/validateGetPaymentMethodsService
+    - ${self:custom.carts-actions}/getPaymentMethodsService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postCustomerLogin:
+    name: ${self:custom.customer-package}/postCustomerLogin
+    sequence:
+    - ${self:custom.customer-actions}/validatePostCustomerLoginService
+    - ${self:custom.customer-actions}/postCustomerLoginService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+ 
+  getCustomerById:
+    name: ${self:custom.customer-package}/getCustomerById
+    sequence:
+    - ${self:custom.customer-actions}/validateGetCustomerByIdService
+    - ${self:custom.customer-actions}/getCustomerByIdService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  searchProducts:
+    name: ${self:custom.customer-package}/searchProducts
+    sequence:
+    - ${self:custom.products-actions}/validateSearchProductsService
+    - ${self:custom.products-actions}/searchProductsService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getProductById:
+    name: ${self:custom.customer-package}/getProductById
+    sequence:
+    - ${self:custom.products-actions}/validateGetProductService
+    - ${self:custom.products-actions}/getProductService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getCategoryById:
+    name: ${self:custom.customer-package}/getCategoryById
+    sequence:
+    - ${self:custom.categories-actions}/validateGetCategoryService
+    - ${self:custom.categories-actions}/getCategoryService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getCategories:
+    name: ${self:custom.customer-package}/getCategories
+    sequence:
+    - ${self:custom.categories-actions}/validateGetCategoriesService
+    - ${self:custom.categories-actions}/getCategoriesService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postOrder:
+    name: ${self:custom.customer-package}/postOrder
+    sequence:
+    - ${self:custom.orders-actions}/validatePostOrderService
+    - ${self:custom.orders-actions}/postOrderService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postShippingAddress:
+    name: ${self:custom.customer-package}/postShippingAddress
+    sequence:
+    - ${self:custom.carts-actions}/validatePostCartShippingAddressService
+    - ${self:custom.carts-actions}/postCartShippingAddressService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postBillingAddress:
+    name: ${self:custom.customer-package}/postBillingAddress
+    sequence:
+    - ${self:custom.carts-actions}/validatePostCartBillingAddressService
+    - ${self:custom.carts-actions}/postCartBillingAddressService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postPayment:
+    name: ${self:custom.customer-package}/postPayment
+    sequence:
+    - ${self:custom.carts-actions}/validatePostPaymentService
+    - ${self:custom.carts-actions}/postPaymentService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deletePayment:
+    name: ${self:custom.customer-package}/deletePayment
+    sequence:
+    - ${self:custom.carts-actions}/validateDeletePaymentService
+    - ${self:custom.carts-actions}/deletePaymentService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postCoupon:
+    name: ${self:custom.customer-package}/postCoupon
+    sequence:
+    - ${self:custom.carts-actions}/validatePostCouponService
+    - ${self:custom.carts-actions}/postCouponService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteCoupon:
+    name: ${self:custom.customer-package}/deleteCoupon
+    sequence:
+    - ${self:custom.carts-actions}/validateDeleteCouponService
+    - ${self:custom.carts-actions}/deleteCouponService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteShippingAddress:
+    name: ${self:custom.customer-package}/deleteShippingAddress
+    sequence:
+    - ${self:custom.carts-actions}/validateDeleteCartShippingAddressService
+    - ${self:custom.carts-actions}/deleteCartShippingAddressService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteBillingAddress:
+    name: ${self:custom.customer-package}/deleteBillingAddress
+    sequence:
+    - ${self:custom.carts-actions}/validateDeleteCartBillingAddressService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postCartEntry:
+    name: ${self:custom.customer-package}/postCartEntry
+    sequence:
+    - ${self:custom.carts-actions}/validatePostCartEntryService
+    - ${self:custom.carts-actions}/postCartEntryService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  putCartEntry:
+    name: ${self:custom.customer-package}/putCartEntry
+    sequence:
+    - ${self:custom.carts-actions}/validatePutCartEntryService
+    - ${self:custom.carts-actions}/putCartEntryService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteCartEntry:
+    name: ${self:custom.customer-package}/deleteCartEntry
+    sequence:
+    - ${self:custom.carts-actions}/validateDeleteCartEntryService
+    - ${self:custom.carts-actions}/deleteCartEntryService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postCart:
+    name: ${self:custom.customer-package}/postCart
+    sequence:
+    - ${self:custom.carts-actions}/validatePostCartService
+    - ${self:custom.carts-actions}/postCartService
+    - ${self:custom.carts-actions}/postCartEntryService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getShippingMethods:
+    name: ${self:custom.customer-package}/getShippingMethods
+    sequence:
+    - ${self:custom.carts-actions}/validateGetShippingMethodsService
+    - ${self:custom.carts-actions}/getShippingMethodsService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postShippingMethod:
+    name: ${self:custom.customer-package}/postShippingMethod
+    sequence:
+    - ${self:custom.carts-actions}/validatePostShippingMethodService
+    - ${self:custom.carts-actions}/postShippingMethodService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteShippingMethod:
+    name: ${self:custom.customer-package}/deleteShippingMethod
+    sequence:
+    - ${self:custom.carts-actions}/validateDeleteShippingMethodService
+    - ${self:custom.carts-actions}/deleteShippingMethodService
+    - ${self:custom.carts-actions}/getCartService
+    - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+

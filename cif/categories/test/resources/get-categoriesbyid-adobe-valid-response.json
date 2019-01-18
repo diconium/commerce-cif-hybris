@@ -1,0 +1,21 @@
+{
+  "children": [
+    {
+      "children": [],
+      "id": "brand_1",
+      "lastModifiedAt": "2018-08-31T22:49:29+0000",
+      "mainParentId": "brands",
+      "name": "HP"
+    },
+    {
+      "children": [],
+      "id": "brand_2",
+      "lastModifiedAt": "2018-08-31T22:51:20+0000",
+      "mainParentId": "brands",
+      "name": "Toshiba"
+    }
+  ],
+  "id": "brands",
+  "lastModifiedAt": "2018-08-31T22:51:20+0000",
+  "name": "Brands"
+}

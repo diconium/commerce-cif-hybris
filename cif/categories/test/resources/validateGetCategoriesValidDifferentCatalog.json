@@ -1,0 +1,31 @@
+{
+  "HB_API_HOST": "hybris.example.com",
+  "HB_AUTH_HOST": "hybris.example.com",
+  "HB_BASESITEID": "stihl",
+  "HB_USER": "hybrisdemouser",
+  "HB_PASSWORD": "hybrisdemopassword",
+  "HB_CATALOG": "stihlProductCatalog",
+  "HB_CATALOGVERSION": "Online",
+  "args": {
+  },
+  "status": {
+    "error": {
+      "code": 0,
+      "validationErrors": []
+    }
+  },
+  "validations": [
+    {
+      "_target": "id",
+      "validations": [
+        "isRequired"
+      ]
+    },
+    {
+      "_target": "id",
+      "validations": [
+        "isNumeric"
+      ]
+    }
+  ]
+}
