@@ -72,7 +72,8 @@
     ],
     "reporter": [
       "text-summary",
-      "html"
+      "html",
+      "lcov"
     ],
     "all": true,
     "cache": false,
