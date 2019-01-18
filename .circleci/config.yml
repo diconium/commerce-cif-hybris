@@ -36,4 +36,4 @@ jobs:
       - store_test_results:
           path: test-reports
       - store_artifacts:
-          path: ./test-reports/*.xml
+          path: test-reports
