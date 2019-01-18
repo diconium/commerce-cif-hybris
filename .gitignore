@@ -24,6 +24,9 @@ jspm_packages
 # Development Files
 dev-deployment
 
+# Tests
+test-reports
+
 # Coverage
 coverage
 .nyc_output/
