@@ -28,4 +28,4 @@ jobs:
       - store_artifacts:
           path: test-reports
       - store_artifacts:
-          path: coverage/lcov.info
+          path: coverage
