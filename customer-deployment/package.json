@@ -9,7 +9,7 @@
     "serverless-openwhisk": "0.13.0"
   },
   "customer-namespace": "cif-customer",
-  "customer-package": "hybris",
+  "customer-package": "hybris-cif-catalog",
   "bindings-namespace": "cif-core",
   "scripts": {
     "deploy": "serverless deploy",
