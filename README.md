@@ -20,6 +20,7 @@ To get started with the instalation of the project make sure you have the follow
 * Node 10.x or higher.
 * Yarn 1.x.
 * [OpenWhisk CLI](https://github.com/apache/incubator-openwhisk-cli)
+* [serverless](https://serverless.com/)
   
 :warning: OpenWhisk CLI must be available in your systems PATH and set up correctly to either use an OpenWhisk installation or an Adobe I/O account. Try `wsk --help` to make sure it is working.
 
@@ -134,14 +135,14 @@ we use the [lerna](https://github.com/lerna/lerna) tool and the
 
 If you change the code of an existing action, you don't have to use `lerna` for anything,
 just redeploy your action/function. 
-If you add a new Node.js package with new actions under `/cif`, just call `yarn install` from the root of the repository.
+If you add a new Node.js package with new actions under [cif](cif), just call `yarn install` from the root of the repository.
 If you add some (remote) Node.js dependencies to a package, just use `yarn` to install the new dependencies for that package.
 If you add some local dependency from one package to another local package, call `yarn install` from the
 root of the repository.
 
 ### Serverless
 The OpenWhisk actions can be deployed using [serverless](https://serverless.com/framework/docs/providers/openwhisk/) framework.
-Actions and sequences are declared in the `serverless.yml` of the main each individual project, under `/cif`. 
+Actions and sequences are declared in the `serverless.yml` of the main each individual project, under [cif](cif). 
 A global `serveless.yml` that create the web actions is available under `customer-deployment`. 
 Follow the instructions it's specific [README.md](customer-deployment/README.md) file for more details. 
 
@@ -149,5 +150,5 @@ To deploy all actions you can call `yarn deploy`.
 For reference, during the deployment, actions are zipped and stored in the `.serverless` directory.
 
 It is also possible to use `serverless` directly to deploy a single action. 
-First navigate to the action folder (i.e `/cif/products`) 
+First navigate to the action folder (e.g [cif/products](cif/products)) 
 and execute `$ serverless deploy function -f NAME` (with `NAME` referring to the name of a function declared in `serverless.yml`).
