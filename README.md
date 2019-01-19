@@ -2,6 +2,7 @@
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![CircleCI](https://circleci.com/gh/diconium/commerce-cif-hybris.svg?style=svg)](https://circleci.com/gh/diconium/commerce-cif-hybris)
+[![codecov](https://codecov.io/gh/diconium/commerce-cif-hybris/branch/master/graph/badge.svg)](https://codecov.io/gh/diconium/commerce-cif-hybris)
 
 ## Introduction
 
