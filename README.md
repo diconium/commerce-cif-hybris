@@ -1,6 +1,6 @@
 # Commerce CIF Hybris by [diconium](https://www.diconium.com)
 
-![diconium-dds](https://raw.githubusercontent.com/diconium/commerce-cif-hybris/feature/logo/diconium-dds.png  "diconium digital solutions" )
+![diconium-dds](https://raw.githubusercontent.com/diconium/commerce-cif-hybris/master/diconium-dds.png  "diconium digital solutions" )
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![CircleCI](https://circleci.com/gh/diconium/commerce-cif-hybris.svg?style=svg)](https://circleci.com/gh/diconium/commerce-cif-hybris)
