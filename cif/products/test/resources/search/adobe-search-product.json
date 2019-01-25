@@ -6,7 +6,7 @@
     {
       "id": "3514520",
       "name": "DSC-WX1",
-      "description": "DSC-WX1 - 10.2 megapixels, Exmor R CMOS sensor, f/2.4 'G Lens' with 5x zoom/24mm wide angle & HD movie",
+      "description": "<b>Experience the whole picture</b><br/><br/>Now it's easy to grab breathtaking wide-screen views of that landscape or city scene. Sweep Panorama mode shoots a high-speed burst of frames as you sweep the camera from side to side (or up and down!). Images are stitched together automatically by the camera to create one amazing panoramic image.<br/><br/><b>Sensational images, even in low light</b><br/><br/>Many cameras struggle to produce crisp, clear images in low light. The revolutionary Exmor R™ CMOS sensor boosts sensitivity while reducing image noise for brilliant, detail-packed pictures.<br/><br/><b>Your own personal photographer</b><br/><br/>The optional IPT-DS1 Party-shot turns Cyber-shot into your own personal photographer, automatically shooting beautifully-framed pictures of everyone in the room - including you.<br/><br/><b>Pack more into every scene</b><br/><br/>Dramatic landscapes, architectural shots, interiors and even family scenes can produce disappointing results when a scene gets cut off at the edges. A wide angle lens lets you pack more into the picture without having to stand further back from the subject.<br/><br/><b>The camera that thinks it’s a camcorder</b><br/><br/>Left your camcorder behind? Don't worry: now you can capture crisp, clear HD movie clips at an incredible 30 frames per second for smooth, clear action. Watch the results on your BRAVIA television: you'll be amazed by the quality, detail and colour.",
       "prices": [
         {
           "currency": "USD",
@@ -31,41 +31,24 @@
           "id": "availableForPickup",
           "name": "Available for Pickup",
           "value": true
+        },
+        {
+          "id": "summary",
+          "name": "summary",
+          "value": "DSC-WX1 - 10.2 megapixels, Exmor R CMOS sensor, f/2.4 'G Lens' with 5x zoom/24mm wide angle & HD movie"
         }
       ],
-      "masterVariantId": "3514520",
       "variants": [
         {
-          "id": "3514520",
-          "name": "DSC-WX1",
-          "description": "DSC-WX1 - 10.2 megapixels, Exmor R CMOS sensor, f/2.4 'G Lens' with 5x zoom/24mm wide angle & HD movie",
+          "id": "9999999",
+          "name": "variant 01",
           "prices": [
             {
-              "currency": "USD",
-              "amount": 30917
+              "amount": 53200,
+              "currency": "USD"
             }
           ],
-          "assets": [
-            {
-              "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wyMjM5fGltYWdlL2pwZWd8aW1hZ2VzL2g3MS9oZTgvODc5Njg4ODU2Mzc0Mi5qcGd8Zjg3YzU4NTMyN2RmODM0OTc2ZjgzYTAxNjAyY2FkZjNkMTA2NzFjMjU4ZDZmNmIxNTI1NzM4ODFiNzAyZTQ0YQ"
-            },
-            {
-              "url": "https://hybris.example.com/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w5MzM4fGltYWdlL2pwZWd8aW1hZ2VzL2g1Zi9oNTIvODc5Njg2MjIxODI3MC5qcGd8ODc0ZDJiMzYzMDEzN2M4OThiMWUwNThiNDRiNWY3YWFiMWFkYTUxNzhlNGQzYmNlNzhmODA0N2Y0NDE3NWIyNQ"
-            }
-          ],
-          "attributes": [
-            {
-              "id": "manufacturer",
-              "name": "Manufacturer",
-              "value": "Sony"
-            },
-            {
-              "id": "availableForPickup",
-              "name": "Available for Pickup",
-              "value": true
-            }
-          ],
-          "sku": "3514520"
+          "sku": "9999999"
         }
       ]
     }

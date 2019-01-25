@@ -1263,7 +1263,36 @@
     },
     "summary" : "DSC-WX1 - 10.2 megapixels, Exmor R CMOS sensor, f/2.4 'G Lens' with 5x zoom/24mm wide angle & HD movie",
     "url" : "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/DSC-WX1/p/3514520",
-    "volumePricesFlag" : false
+    "volumePricesFlag" : false,
+    "variantOptions": [
+      {
+        "code": "9999999",
+        "priceData": {
+          "currencyIso": "USD",
+          "formattedValue": "$532.00",
+          "priceType": "BUY",
+          "value": 532
+        },
+        "stock": {
+          "stockLevel": 0,
+          "stockLevelStatus": "outOfStock"
+        },
+        "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/EASYSHARE-M381/p/9999999",
+        "variantOptionQualifiers": [
+          {
+            "name": "Color",
+            "qualifier": "color",
+            "value": "red"
+          },
+          {
+            "name": "variant 01",
+            "qualifier": "name",
+            "value": "variant 01"
+          }
+        ]
+      }
+    ],
+    "variantType": "ElectronicsColorVariantProduct"
   }, {
     "availableForPickup" : true,
     "averageRating" : 2.375,

@@ -2,6 +2,7 @@
   "availableForPickup": true,
   "averageRating": 4.625,
   "baseOptions": [],
+  "baseProduct": "280916",
   "categories": [
     {
       "code": "577",
@@ -626,5 +627,34 @@
     "stockLevelStatus": "inStock"
   },
   "summary": "100K Webcam with blue LED & Rubber coating WITH CLIP",
-  "url": "/electronics/products/280916"
+  "url": "/electronics/products/280916",
+  "variantOptions": [
+    {
+      "code": "280916",
+      "priceData": {
+        "currencyIso": "USD",
+        "formattedValue": "$532.00",
+        "priceType": "BUY",
+        "value": 8.2
+      },
+      "stock": {
+        "stockLevel": 0,
+        "stockLevelStatus": "outOfStock"
+      },
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/EASYSHARE-M381/p/9999999",
+      "variantOptionQualifiers": [
+        {
+          "name": "Color",
+          "qualifier": "color",
+          "value": "red"
+        },
+        {
+          "name": "Web Camera ",
+          "qualifier": "name",
+          "value": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black"
+        }
+      ]
+    }
+  ],
+  "variantType": "ElectronicsColorVariantProduct"
 }

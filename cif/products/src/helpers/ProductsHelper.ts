@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { CategoryWsDTO, FacetValueWsDTO, ImageWsDTO, PriceWsDTO, ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
+import { CategoryWsDTO, FacetValueWsDTO, ImageWsDTO, PriceWsDTO, ProductWsDTO, VariantOptionWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import { InputSettings, TranslationService } from '@diconium/commerce-cif-hybris-core';
 import ProductVariantMapper from '../mappers/ProductVariantMapper';
 import MoneyValueMapper from '../mappers/MoneyValueMapper';
@@ -25,10 +25,10 @@ import FacetValueMapper from '../mappers/FacetValueMapper';
 
 export class ProductsHelper {
 
-  static pushProductVariant(productDTO: ProductWsDTO, product: Product | ProductVariant, settings: InputSettings): Product | ProductVariant[] {
+  static pushProductVariant(variantOption: VariantOptionWsDTO[], product: Product | ProductVariant, settings: InputSettings): Product | ProductVariant[] {
     const variants = [];
-    if (product) {
-      variants.push(new ProductVariantMapper(settings).mapToEntity(productDTO));
+    if (product && variantOption) {
+      variantOption.map(variant =>  variants.push(new ProductVariantMapper(settings).mapToEntity(variant)));
     }
     return variants;
   }
@@ -43,7 +43,7 @@ export class ProductsHelper {
 
   static buildAttributes(dto, translationService: TranslationService): Attribute[] {
 
-    const attributes = ['manufacturer', 'averageRating', 'numberOfReviews', 'availableForPickup', 'description'];
+    const attributes = ['manufacturer', 'averageRating', 'numberOfReviews', 'availableForPickup', 'summary'];
     return attributes
       .filter(attribute => dto[attribute])
       .map(attribute => this.buildAttribute(attribute, dto, translationService));
