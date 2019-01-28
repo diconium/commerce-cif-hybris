@@ -53,6 +53,7 @@ export default class CartMapper extends Mapper<Cart> {
       code,
       totalPrice,
       totalPriceWithTax,
+      subTotal,
       deliveryMode,
       paymentInfo,
       deliveryAddress,
@@ -74,6 +75,10 @@ export default class CartMapper extends Mapper<Cart> {
 
     if (totalPriceWithTax) {
       cart.grossTotalPrice = moneyValueMapper.mapToEntity(totalPrice);
+    }
+
+    if (subTotal) {
+      cart.netTotalPrice = moneyValueMapper.mapToEntity(subTotal);
     }
 
     if (totalTax) {
