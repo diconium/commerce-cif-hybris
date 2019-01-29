@@ -64,16 +64,8 @@ export default class ProductMapper extends Mapper<Product> {
     product.categories = ProductsHelper.buildCategories(categories, this.settings);
     product.description = description;
     product.attributes = ProductsHelper.buildAttributes(dto, this.translationService);
-
-    product.variants = [];
-    if (variantOptions) {
-      product.variants = ProductsHelper.pushProductVariant(variantOptions, product, this.settings);
-    }
-
-    product.assets = [];
-    if (images) {
-      product.assets = ProductsHelper.buildAssets(images, this.settings);
-    }
+    product.variants = ProductsHelper.pushProductVariant(variantOptions, this.settings);
+    product.assets = ProductsHelper.buildAssets(images, this.settings);
 
     return product;
   }

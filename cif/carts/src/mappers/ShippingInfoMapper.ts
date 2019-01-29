@@ -15,7 +15,7 @@
  */
 
 import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
-import { ShippingInfo } from '@adobe/commerce-cif-model';
+import { ShippingInfo, TaxInfo } from '@adobe/commerce-cif-model';
 import { DeliveryModeWsDTO, PriceWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import MoneyValueMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/MoneyValueMapper';
 
@@ -47,10 +47,16 @@ export default class ShippingInfoMapper extends Mapper<ShippingInfo> {
       name,
     } = dto;
 
+    const moneyValueMapper = new MoneyValueMapper(this.settings);
+    const taxInfo = new TaxInfo.Builder()
+        .withValue(moneyValueMapper.mapToEntity(deliveryCost))
+        .build();
+
     return new ShippingInfo.Builder()
       .withId(code)
       .withName(name ? name : code)
       .withCost(new MoneyValueMapper(this.settings).mapToEntity(deliveryCost))
+      .withTaxInfo(taxInfo)
       .build();
   }
 

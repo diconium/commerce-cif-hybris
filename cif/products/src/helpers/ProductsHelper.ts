@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { CategoryWsDTO, FacetValueWsDTO, ImageWsDTO, PriceWsDTO, ProductWsDTO, VariantOptionWsDTO } from '@diconium/commerce-cif-hybris-clients';
+import { CategoryWsDTO, FacetValueWsDTO, ImageWsDTO, PriceWsDTO, VariantOptionWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import { InputSettings, TranslationService } from '@diconium/commerce-cif-hybris-core';
 import ProductVariantMapper from '../mappers/ProductVariantMapper';
 import MoneyValueMapper from '../mappers/MoneyValueMapper';
@@ -25,12 +25,11 @@ import FacetValueMapper from '../mappers/FacetValueMapper';
 
 export class ProductsHelper {
 
-  static pushProductVariant(variantOption: VariantOptionWsDTO[], product: Product | ProductVariant, settings: InputSettings): Product | ProductVariant[] {
-    const variants = [];
-    if (product && variantOption) {
-      variantOption.map(variant =>  variants.push(new ProductVariantMapper(settings).mapToEntity(variant)));
+  static pushProductVariant(variantOption: VariantOptionWsDTO[], settings: InputSettings): ProductVariant[] {
+    if (variantOption) {
+      return variantOption.map(variant => new ProductVariantMapper(settings).mapToEntity(variant));
     }
-    return variants;
+    return [];
   }
 
   static pushPrice(price: PriceWsDTO, settings: InputSettings) {
@@ -63,7 +62,10 @@ export class ProductsHelper {
   }
 
   static buildAssets(images: ImageWsDTO[], settings: InputSettings) {
-    return images.map(image => new AssetMapper(settings).mapToEntity(image));
+    if (images) {
+      return images.map(image => new AssetMapper(settings).mapToEntity(image));
+    }
+    return [];
   }
 
   static mapFacetValues(facetValuesDto: FacetValueWsDTO[], settings: InputSettings): FacetValue[] {

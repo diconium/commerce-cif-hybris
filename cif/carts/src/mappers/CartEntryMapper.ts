@@ -70,15 +70,13 @@ export default class CartEntryMapper extends Mapper<CartEntry> {
     } = dto;
 
     const moneyValueMapper = new MoneyValueMapper(this.settings);
-    const entryUnitPrice = moneyValueMapper.mapToEntity(basePrice);
-    const productVariant = this.mapProductVariant(product);
 
     const cartEntry = new CartEntry.Builder()
       .withId(String(entryNumber))
       .withQuantity(quantity)
-      .withProductVariant(productVariant)
+      .withProductVariant(this.mapProductVariant(product))
       .withPrice(moneyValueMapper.mapToEntity(totalPrice))
-      .withUnitPrice(entryUnitPrice)
+      .withUnitPrice(moneyValueMapper.mapToEntity(basePrice))
       .withType('REGULAR')
       .build();
 
