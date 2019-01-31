@@ -117,6 +117,11 @@
   resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.0.0.tgz#9e84abed0e20e1c303aa2d92d143fee4dd66f140"
   integrity sha512-d5uFlFoPeDI0uxt1r6uLjQahFIR5gQ35IidHYw20VhHni/HAm3GnNDzU6ms8lbDiJnZbVdlFyHsodDya4PSf7w==
 
+"@diconium/commerce-cif-hybris-core@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.1.0.tgz#0ebbfc86d6cf6af7b7e58572c4f7dfc4789f737d"
+  integrity sha512-sB30rA/8J2qnsD5RmiD8WlI4tfKxNSX+03pEAQsBoAeCU27I9wWRiXUYxUckWSLDevvoOH56amuN8/97nXaKNg==
+
 "@diconium/commerce-cif-hybris-i18n@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.0.tgz#a2ba50bc255838f3306571c86cc450773a309de4"

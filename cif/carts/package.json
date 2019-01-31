@@ -8,7 +8,7 @@
   "dependencies": {
     "@adobe/commerce-cif-model": "^1.1.2",
     "@diconium/commerce-cif-hybris-clients": "^1.0.0",
-    "@diconium/commerce-cif-hybris-core": "^1.0.0",
+    "@diconium/commerce-cif-hybris-core": "^1.1.0",
     "@diconium/commerce-cif-hybris-i18n": "^1.0.0",
     "@diconium/commerce-cif-hybris-products": "^1.0.1",
     "@diconium/commerce-cif-hybris-validators": "^1.0.0"
