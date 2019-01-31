@@ -18,13 +18,14 @@ export default class CartModificationMapper extends Mapper<any> {
 
   mapToEntity(dto: CartModificationWsDTO, entity?: any): any {
     const { quantity, quantityAdded, statusCode, entry } = dto;
+    const entryNumber = entry && entry.entryNumber || undefined;
 
     return {
       modification: {
         quantity,
         quantityAdded,
         statusCode,
-        cartEntryId: String(entry.entryNumber),
+        cartEntryId: String(entryNumber),
       },
     };
   }

@@ -11,10 +11,10 @@
   "scripts": {
     "deploy": "lerna run deploy-package -- ",
     "remove-package": "lerna run remove-package -- ",
+    "test": "yarn test:unit && yarn test:integration",
     "test:unit": "nyc lerna run test:unit",
     "test:integration": "lerna run test:integration",
     "lint": "tslint -c tslint.json '**/src/**/*.ts'",
-    "test": "yarn test:unit && yarn test:integration",
     "release": "lerna publish --conventional-commits --npm-tag=next",
     "build": "yarn build:cif",
     "build:cif": "tsc -b cif/*/tsconfig.json",

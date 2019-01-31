@@ -24,7 +24,7 @@
     "remove-current": "npm run remove -- --ow-package $npm_package_owname@$npm_package_version",
     "remove-latest": "npm run remove -- --ow-package $npm_package_owname@latest",
     "remove-package": "npm run remove-current; npm run remove-latest",
-    "test:unit": "mocha -r ts-node/register 'test/**/*.spec.ts' --require source-map-support/register --reporter mocha-junit-reporter --reporter-options mochaFile=../../test-reports/mocha/$npm_package_owname-mocha-test-report.xml",
+    "test:unit": "mocha -r ts-node/register 'test/**/*.spec.ts' --require source-map-support/register",
     "test:integration": "mocha -r ts-node/register 'test/integration/**/*.spec.it.ts' --require source-map-support/register"
   },
   "publishConfig": {

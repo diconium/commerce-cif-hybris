@@ -103,36 +103,36 @@
     to-fast-properties "^2.0.0"
 
 "@diconium/commerce-cif-hybris-clients@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.0.1.tgz#52092bc0a81bc0069b0fc74d2a2b2987c222814c"
-  integrity sha512-ZsLjQzVPECI52ZpXrNDwzAvJpkGYv7BOTtKiJX/Z2QrhQuxM5J8JHDmeVPjOU1DhMBPboHqrJ3REqs7Dc2tnCQ==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.0.2.tgz#7aed5115b453deb88351e4590463e16fe797b787"
+  integrity sha512-vTQJceFRG8LvpDjDmJ7mACMfLpnfeSkJM7TLbGCFGD4VgHt/WoPqoQxxK3Bix51+OAwXZTgNnW1GoSVqZgaGRw==
   dependencies:
-    "@diconium/commerce-cif-hybris-core" "^1.1.0"
-    "@diconium/commerce-cif-hybris-i18n" "^1.0.1"
+    "@diconium/commerce-cif-hybris-core" "^1.1.1"
+    "@diconium/commerce-cif-hybris-i18n" "^1.0.2"
     js-string-escape "^1.0.1"
     node-fetch "^2.1.2"
 
-"@diconium/commerce-cif-hybris-core@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.1.0.tgz#0ebbfc86d6cf6af7b7e58572c4f7dfc4789f737d"
-  integrity sha512-sB30rA/8J2qnsD5RmiD8WlI4tfKxNSX+03pEAQsBoAeCU27I9wWRiXUYxUckWSLDevvoOH56amuN8/97nXaKNg==
+"@diconium/commerce-cif-hybris-core@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.1.1.tgz#dcfcf269d07b410a59f71a46c1107e29fa3399a6"
+  integrity sha512-2WKqHT0S0UcoLZMzHOvJtBS0s7mN3nOVVuLOly3CYErQtlCnvx+p4ZpAzMBR79P6yg5fageyP5j93LU53At3fg==
 
-"@diconium/commerce-cif-hybris-i18n@^1.0.0", "@diconium/commerce-cif-hybris-i18n@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.1.tgz#8867f498e65375a0471eca5da041aa58c2754326"
-  integrity sha512-yhfbWAgQLSLj9gCGyivXaIwCnx/6iPvh5uDs+bRYOHZV2WlGQ/V/0BKshP4vW2RQADs2IW78kXcWWrQicto3mQ==
+"@diconium/commerce-cif-hybris-i18n@^1.0.0", "@diconium/commerce-cif-hybris-i18n@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.2.tgz#c8819ec2b5d75635723dadb19b88d57a212e5916"
+  integrity sha512-mg1TPgZ9FRNu9oju1oJK1ShkyAGaUrRqjyG/jWqTIeiMZJ7ORyytIb17qjdy9b2lNmqK/L6NDzAYeITZx+Bq2w==
   dependencies:
-    "@diconium/commerce-cif-hybris-core" "^1.1.0"
+    "@diconium/commerce-cif-hybris-core" "^1.1.1"
     accept-language "^3.0.18"
     di18n "^0.2.11"
 
 "@diconium/commerce-cif-hybris-validators@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-validators/-/commerce-cif-hybris-validators-1.0.1.tgz#b3e669d9ed5ec4f1dc4ccca468241fd6d2590ac4"
-  integrity sha512-YvgkPQtRuG5B+o9zKSfVxcZ2/H4at8lH96iSrBVhxra9HXm/GCsVm1RDD1eVmANucKasfOhZ/PzVG6DwtwsHrQ==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-validators/-/commerce-cif-hybris-validators-1.0.2.tgz#247033c7aa235409d6f3003d346c5573a29e1568"
+  integrity sha512-UGTCDnccp8cWcXfJri6fdKIPFsPfe/a4qbRKlcsT94jdpGE5kGGaeaD5rj2N0Sv9HGO33u9kRILiU9tj4rv8Yg==
   dependencies:
     "@adobe/commerce-cif-common" "1.0.0"
-    "@diconium/commerce-cif-hybris-core" "^1.1.0"
+    "@diconium/commerce-cif-hybris-core" "^1.1.1"
 
 "@fimbul/bifrost@^0.17.0":
   version "0.17.0"
