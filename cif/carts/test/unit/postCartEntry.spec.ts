@@ -32,6 +32,7 @@ const invalidInputNoQuantity = require('../resources/entry/invalid-post-cart-ent
 const invalidInput = require('../resources/entry/invalid-post-cart-entry-input.json');
 const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
 const productUnknown = require('../resources/product-unknown-error.json');
+const productOutOfStock = require('../resources/product-out-stock.json');
 const cartNotFound = require('../resources/cartNotFound.json');
 const successResponseDto = require('../resources/entry/success-response-dto.json');
 
@@ -179,6 +180,20 @@ describe('postCartEntry', () => {
           message: 'Product with id 280916 not found',
           cause: {
             message: 'UnknownIdentifierError',
+          },
+        });
+      });
+
+      it('Action should return InvalidArgumentError if an product has no stock', async () => {
+        scope.post('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries')
+          .query({ fields: 'FULL', lang: 'en' })
+          .reply(400, productOutOfStock);
+        const { errorOutput } = await postCartEntry(validInput);
+        expect(errorOutput).to.be.deep.equal({
+          name: 'CommerceServiceBadRequestError',
+          message: 'Product [11392000253] cannot be shipped - out of stock online',
+          cause: {
+            message: 'InsufficientStockErrornoStock',
           },
         });
       });
