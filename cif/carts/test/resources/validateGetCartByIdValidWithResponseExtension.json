@@ -1,0 +1,32 @@
+{
+  "responseExtension": {
+    "modification": {
+      "cartEntryId": "1",
+      "quantity": 2,
+      "quantityAdded": 2,
+      "statusCode": "success"
+    }
+  },
+  "parameters": {
+    "id": "f527bf4b-dda3-4e99-a76b-03a2ebe1ae94"
+  },
+  "settings": {
+    "HB_API_HOST": "hybris.example.com",
+    "HB_API_BASE_PATH": "/rest/v2",
+    "HB_AUTH": "",
+    "HB_AUTH_HOST": "hybris.example.com",
+    "HB_BASESITEID": "/electronics",
+    "HB_CATALOG": "electronicsProductCatalog",
+    "HB_CATALOGVERSION": "Online",
+    "HB_CLIENTID": "hybrisoauthclientid",
+    "HB_CLIENTSECRET": "hybrisoauthclientsecret",
+    "HB_PASSWORD": "hybrisdemopassword",
+    "HB_USER": "hybrisdemouser",
+    "HB_PROTOCOL": "https",
+    "bearer": "",
+    "cookies": [],
+    "customerId": "anonymous",
+    "headers": {},
+    "language": ""
+  }
+}
