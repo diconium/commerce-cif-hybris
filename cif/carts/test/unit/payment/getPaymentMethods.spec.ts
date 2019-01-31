@@ -79,7 +79,7 @@ describe('getPaymentMethods', () => {
         });
       });
 
-      it('Should return 200 was successfully deleted', async () => {
+      it('Should return 200 with the correct payment informarion', async () => {
         scope.get('/rest/v2/electronics/users/current/paymentdetails')
           .query({ lang: 'en' })
           .query({ access_token: '16bf7f81-ceeb-444e-ab0b-7d7baca1a183' })
