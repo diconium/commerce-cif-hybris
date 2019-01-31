@@ -25,6 +25,7 @@ chai.use(chaiShallowDeepEqual);
 
 const cartExample = require('../resources/cartExample-00000003.json');
 const validInput = require('../resources/validateGetCartByIdValid.json');
+const validInputWithResponseExtension = require('../resources/validateGetCartByIdValidWithResponseExtension.json');
 const invalidInput = require('../resources/validateGetCartByIdInvalid.json');
 
 const cartNotFoundExample = require('../resources/cartNotFound.json');
@@ -33,7 +34,6 @@ const cartNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
 const adobeCartEntry = require('../resources/adobeCartEntry.json');
 const adobeCoupon = require('../resources/adobeCoupon.json');
 const adobePayment = require('../resources/adobePayment.json');
-const adobeShippingInfo = require('../resources/adobeShippingInfo.json');
 
 describe('getCartById', () => {
   describe('Unit tests', () => {
@@ -171,6 +171,20 @@ describe('getCartById', () => {
       const { response } = await getCartById(validInput);
       const { body } = response;
       expect(body.payments[0]).to.shallowDeepEqual(adobePayment);
+    });
+
+    it('Should have a response with the extension from the sequence response', async () => {
+      scope.get('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94')
+        .query({ lang: 'en', fields: 'FULL' })
+        .reply(200, cartExample);
+      const { response } = await getCartById(validInputWithResponseExtension);
+      const { body } = response;
+      expect(body.modification).to.deep.equal({
+        cartEntryId: '1',
+        quantity: 2,
+        quantityAdded: 2,
+        statusCode: 'success',
+      });
     });
   });
 });
