@@ -19,6 +19,7 @@ import { Input, SequenceAction } from '@diconium/commerce-cif-hybris-core';
 import PostCartEntryClient from '../clients/PostCartEntryClient';
 import PutCartEntryClient from '../clients/PutCartEntryClient';
 import DeleteCartEntryClient from '../clients/DeleteCartEntryClient';
+import CartModificationMapper from '../mappers/CartModificationMapper';
 
 const ERROR_TYPE = 'CartError';
 
@@ -26,6 +27,7 @@ function postCartEntry(input: Input): Promise<Input> {
 
   return new SequenceAction(input)
     .setClient(PostCartEntryClient)
+    .setMapper(CartModificationMapper)
     .setErrorType(ERROR_TYPE)
     .activate();
 

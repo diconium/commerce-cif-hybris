@@ -234,6 +234,26 @@ describe('postCartEntry', () => {
         expect(parameters.id).to.equal('00000006');
       });
 
+      it('Post cart entry output should have a cart modification object as responseExtension', async () => {
+        scope.post('/rest/v2/electronics/users/current/carts/00000006/entries', validBody)
+          .query({
+            fields: 'FULL',
+            lang: 'en',
+            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
+          })
+          .reply(200, successResponseDto);
+        const { responseExtension, errorOutput } = await postCartEntry(validAuthenticatedInput);
+        expect(errorOutput).to.be.undefined;
+        expect(responseExtension).to.deep.equal({
+          modification: {
+            cartEntryId: '1',
+            quantity: 3,
+            quantityAdded: 3,
+            statusCode: 'success',
+          },
+        });
+      });
+
       it('Should do nothing', async () => {
         const { parameters, errorOutput } = await postCartEntry(validAuthenticatedInputNoEntry);
         expect(errorOutput).to.be.undefined;
