@@ -19,6 +19,7 @@ import { CartEntry } from '@adobe/commerce-cif-model';
 import { OrderEntryWsDTO, ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import MoneyValueMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/MoneyValueMapper';
 import ProductVariantMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/ProductVariantMapper';
+import ProductMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/ProductMapper';
 
 export default class CartEntryMapper extends Mapper<CartEntry> {
 
@@ -70,19 +71,27 @@ export default class CartEntryMapper extends Mapper<CartEntry> {
 
     const moneyValueMapper = new MoneyValueMapper(this.settings);
 
-    const entryUnitPrice = moneyValueMapper.mapToEntity(basePrice);
     const cartEntry = new CartEntry.Builder()
       .withId(String(entryNumber))
       .withQuantity(quantity)
-      .withProductVariant(new ProductVariantMapper(this.settings).mapToEntity(product))
+      .withProductVariant(this.mapProductVariant(product))
       .withPrice(moneyValueMapper.mapToEntity(totalPrice))
-      .withUnitPrice(entryUnitPrice)
+      .withUnitPrice(moneyValueMapper.mapToEntity(basePrice))
       .withType('REGULAR')
       .build();
 
-    cartEntry.productVariant.prices.push(entryUnitPrice);
-
     return cartEntry;
+  }
+
+  private mapProductVariant(product: ProductWsDTO) {
+    const productVariant = new ProductMapper(this.settings).mapToEntity(product);
+    const { variants } = productVariant;
+    if (variants[0]) {
+      productVariant.attributes = [...productVariant.attributes, variants[0].attributes];
+    }
+    productVariant.variants = undefined;
+    productVariant.sku = productVariant.id;
+    return productVariant;
   }
 
 }

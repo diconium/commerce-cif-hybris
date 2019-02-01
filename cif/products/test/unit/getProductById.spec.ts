@@ -107,7 +107,7 @@ describe('getProductById', () => {
         expect(response.body).to.shallowDeepEqual(expectedProductMockDe);
       });
 
-      it('Response should contain assets comming from external source', async () => {
+      it('Response should contain assets coming from external source', async () => {
         scope.get('/rest/v2/electronics/products/280916').query({ fields: 'FULL', lang: 'de' })
           .reply(200, product280916de);
         validInputGerman.settings.CT_ASSETS_HOST = 'https://external.asset.com';

@@ -24,12 +24,6 @@
         "value": true
       }
     ],
-    "prices": [
-      {
-        "currency": "USD",
-        "amount": 345
-      }
-    ],
     "categories": [
       {
         "id": "574"

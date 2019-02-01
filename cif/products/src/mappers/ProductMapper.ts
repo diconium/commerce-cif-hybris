@@ -46,25 +46,26 @@ export default class ProductMapper extends Mapper<Product> {
       name = '',
       price,
       categories = [],
-      images = [],
-      summary = '',
+      description,
+      images,
+      baseProduct,
+      variantOptions,
     } = dto;
 
     const product = new Product.Builder()
       .withId(id)
       .withName(name)
       .withPrices([])
+      .withMasterVariantId(baseProduct)
       .withVariants([])
-      .withMasterVariantId(id)
       .build();
 
-    product.sku = id;
-    product.description = summary;
-    product.categories = ProductsHelper.buildCategories(categories, this.settings);
-    product.assets = ProductsHelper.buildAssets(images, this.settings);
-    product.attributes = ProductsHelper.buildAttributes(dto, this.translationService);
     product.prices = ProductsHelper.pushPrice(price, this.settings);
-    product.variants = ProductsHelper.pushProductVariant(dto, product, this.settings);
+    product.categories = ProductsHelper.buildCategories(categories, this.settings);
+    product.description = description;
+    product.attributes = ProductsHelper.buildAttributes(dto, this.translationService);
+    product.variants = ProductsHelper.pushProductVariant(variantOptions, this.settings);
+    product.assets = ProductsHelper.buildAssets(images, this.settings);
 
     return product;
   }
