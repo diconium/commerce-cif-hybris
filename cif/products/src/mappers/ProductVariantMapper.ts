@@ -47,7 +47,7 @@ export default class ProductVariantMapper extends Mapper<ProductVariant> {
       .withId(code)
       .withName(this.getVariantName(variantOptionQualifiers))
       .withPrices(ProductsHelper.pushPrice(priceData, this.settings))
-      .withAvailable(stock.stockLevelStatus === 'inStock')
+      .withAvailable(stock && stock.stockLevelStatus === 'inStock')
       .withSku(code)
       .build();
 
