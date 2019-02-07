@@ -27,15 +27,19 @@ functions:
   validateGetCategoryService:
     name: ${self:custom.ow-package}/validateGetCategoryService
     handler: lib/validations/categories.getById
+    concurrency: 500
 
   getCategoryService:
     name: ${self:custom.ow-package}/getCategoryService
     handler: lib/actions/categories.getById
+    concurrency: 500
 
   validateGetCategoriesService:
     name: ${self:custom.ow-package}/validateGetCategoriesService
     handler: lib/validations/categories.get
+    concurrency: 500
 
   getCategoriesService:
     name: ${self:custom.ow-package}/getCategoriesService
     handler: lib/actions/categories.get
+    concurrency: 500
