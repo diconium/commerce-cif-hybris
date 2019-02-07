@@ -59,7 +59,7 @@ export default class ProductVariantMapper extends Mapper<ProductVariant> {
     return variant;
   }
 
-  private mapAttribute(qualifier) {
+  mapAttribute(qualifier) {
     const attribute = new Attribute.Builder()
       .withId(qualifier.qualifier)
       .withName(qualifier.name)
@@ -70,7 +70,7 @@ export default class ProductVariantMapper extends Mapper<ProductVariant> {
     return attribute;
   }
 
-  private getVariantName(variantOptionQualifiers: any) {
+  getVariantName(variantOptionQualifiers: any) {
     let name = '';
 
     if (variantOptionQualifiers) {
