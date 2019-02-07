@@ -82,7 +82,7 @@ export default class CartEntryMapper extends Mapper<CartEntry> {
     return cartEntry;
   }
 
-  private mapProductVariant(product: ProductWsDTO) {
+  mapProductVariant(product: ProductWsDTO) {
     const productVariant = new ProductMapper(this.settings).mapToEntity(product);
     const { variants } = productVariant;
     if (variants[0]) {
