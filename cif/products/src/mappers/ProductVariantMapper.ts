@@ -16,7 +16,7 @@
 
 import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { Attribute, ProductVariant } from '@adobe/commerce-cif-model';
-import { ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
+import { ProductWsDTO, VariantOptionWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import { ProductsHelper } from '../helpers/ProductsHelper';
 import { dahcTranslator } from '@diconium/commerce-cif-hybris-i18n';
 
@@ -34,31 +34,52 @@ export default class ProductVariantMapper extends Mapper<ProductVariant> {
     throw new Error('Unsupported Operation');
   }
 
-  mapToEntity(dto: ProductWsDTO, entity?): ProductVariant {
+  mapToEntity(dto: VariantOptionWsDTO, entity?): ProductVariant {
 
     const {
-      code: id,
-      name = '',
-      price,
-      categories = [],
-      images = [],
-      summary = '',
+      code,
+      priceData,
+      stock,
+      variantOptionQualifiers,
     } = dto;
 
-    const product = new ProductVariant.Builder()
-      .withId(id)
-      .withName(name)
-      .withPrices([])
-      .withSku(id)
+    const variant = new ProductVariant.Builder()
+      .withId(code)
+      .withName(this.getVariantName(variantOptionQualifiers))
+      .withPrices(ProductsHelper.pushPrice(priceData, this.settings))
+      .withAvailable(stock.stockLevelStatus === 'inStock')
+      .withSku(code)
       .build();
 
-    product.description = summary;
-    product.categories = ProductsHelper.buildCategories(categories, this.settings);
-    product.assets = ProductsHelper.buildAssets(images, this.settings);
-    product.attributes = ProductsHelper.buildAttributes(dto, this.translationService);
-    product.masterVariantId = id;
-    product.prices  = ProductsHelper.pushPrice(price, this.settings);
+    if (variantOptionQualifiers) {
+      variant.attributes = variantOptionQualifiers
+        .map(qualifier => this.mapAttribute(qualifier));
+    }
 
-    return product;
+    return variant;
+  }
+
+  private mapAttribute(qualifier) {
+    const attribute = new Attribute.Builder()
+      .withId(qualifier.qualifier)
+      .withName(qualifier.name)
+      .withValue(qualifier.value);
+
+    attribute.isVariantAxis = true;
+
+    return attribute;
+  }
+
+  private getVariantName(variantOptionQualifiers: any) {
+    let name = '';
+
+    if (variantOptionQualifiers) {
+      const nameQualifier = variantOptionQualifiers.find(qualifier => qualifier.qualifier === 'name');
+
+      if (nameQualifier) {
+        name = nameQualifier.value;
+      }
+    }
+    return name;
   }
 }

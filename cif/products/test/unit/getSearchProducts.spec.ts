@@ -75,14 +75,16 @@ describe('Search Products', () => {
 
     describe('Service', () => {
       it('Response should contain error', async () => {
-        scope.get('/rest/v2/electronics/products/search').query({ fields: 'FULL', lang: 'en', query: 'samsung' })
+        scope.get('/rest/v2/electronics/products/search')
+          .query({ fields: 'FULL', lang: 'en', query: 'samsung' })
           .reply(400, hybrisSearchProductsMockPage0);
         const { response } = await search(validInput);
         expect(response.error).to.exist.and.to.haveOwnProperty('name').that.equals('UnexpectedError');
       });
 
       it('Response should contain the correct pagination', async () => {
-        scope.get('/rest/v2/electronics/products/search').query({ fields: 'FULL', lang: 'en', query: 'samsung' })
+        scope.get('/rest/v2/electronics/products/search')
+          .query({ fields: 'FULL', lang: 'en', query: 'samsung' })
           .reply(200, hybrisSearchProductsMockPage0);
         const { response } = await search(validInput);
         const { body } = response;
@@ -92,7 +94,8 @@ describe('Search Products', () => {
       });
 
       it('Response should contain the correct facets', async () => {
-        scope.get('/rest/v2/electronics/products/search').query({ fields: 'FULL', lang: 'en', query: 'samsung' })
+        scope.get('/rest/v2/electronics/products/search')
+          .query({ fields: 'FULL', lang: 'en', query: 'samsung' })
           .reply(200, hybrisSearchProductsMockPage0);
         const { response } = await search(validInput);
         const { body } = response;
