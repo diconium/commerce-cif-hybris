@@ -27,15 +27,19 @@ functions:
   validateGetProductService:
     name: ${self:custom.ow-package}/validateGetProductService
     handler: lib/validations/products.getById
+    concurrency: 500
 
   getProductService:
     name: ${self:custom.ow-package}/getProductService
     handler: lib/actions/products.getById
+    concurrency: 500
 
   validateSearchProductsService:
     name: ${self:custom.ow-package}/validateSearchProductsService
     handler: lib/validations/products.search
+    concurrency: 500
 
   searchProductsService:
     name: ${self:custom.ow-package}/searchProductsService
     handler: lib/actions/products.search
+    concurrency: 500

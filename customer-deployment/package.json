@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "serverless": "1.29.0",
-    "serverless-openwhisk": "0.13.0"
+    "serverless-openwhisk": "0.18.1"
   },
   "customer-namespace": "cif-customer",
   "customer-package": "hybris-cif-catalog",

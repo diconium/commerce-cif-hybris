@@ -27,139 +27,174 @@ functions:
   validateGetCartService:
     name: ${self:custom.ow-package}/validateGetCartService
     handler: lib/validations/carts.getById
+    concurrency: 500
 
   getCartService:
     name: ${self:custom.ow-package}/getCartService
     handler: lib/actions/carts.getById
+    concurrency: 500
 
   validateDeleteCartService:
     name: ${self:custom.ow-package}/validateDeleteCartService
     handler: lib/validations/carts.deleteById
+    concurrency: 500
 
   deleteCartService:
     name: ${self:custom.ow-package}/deleteCartService
     handler: lib/actions/carts.deleteById
+    concurrency: 500
 
   validatePostCartShippingAddressService:
     name: ${self:custom.ow-package}/validatePostCartShippingAddressService
     handler: lib/validations/shippingaddress.post
+    concurrency: 500
 
   postCartShippingAddressService:
     name: ${self:custom.ow-package}/postCartShippingAddressService
     handler: lib/actions/shippingaddress.post
+    concurrency: 500
 
   validateDeleteCartShippingAddressService:
     name: ${self:custom.ow-package}/validateDeleteCartShippingAddressService
     handler: lib/validations/shippingaddress.del
+    concurrency: 500
 
   deleteCartShippingAddressService:
     name: ${self:custom.ow-package}/deleteCartShippingAddressService
     handler: lib/actions/shippingaddress.del
+    concurrency: 500
 
   validateDeleteCartBillingAddressService:
     name: ${self:custom.ow-package}/validateDeleteCartBillingAddressService
     handler: lib/validations/billingaddress.del
+    concurrency: 500
 
   validatePostCartBillingAddressService:
     name: ${self:custom.ow-package}/validatePostCartBillingAddressService
     handler: lib/validations/billingaddress.post
+    concurrency: 500
 
   postCartBillingAddressService:
     name: ${self:custom.ow-package}/postCartBillingAddressService
     handler: lib/actions/billingaddress.post
+    concurrency: 500
 
   validateGetPaymentMethodsService:
     name: ${self:custom.ow-package}/validateGetPaymentMethodsService
     handler: lib/validations/paymentmethods.get
+    concurrency: 500
 
   getPaymentMethodsService:
     name: ${self:custom.ow-package}/getPaymentMethodsService
     handler: lib/actions/paymentmethods.get
+    concurrency: 500
 
   validatePostPaymentService:
     name: ${self:custom.ow-package}/validatePostPaymentService
     handler: lib/validations/payments.post
+    concurrency: 500
 
   postPaymentService:
     name: ${self:custom.ow-package}/postPaymentService
     handler: lib/actions/payments.post
+    concurrency: 500
 
   validateDeletePaymentService:
     name: ${self:custom.ow-package}/validateDeletePaymentService
     handler: lib/validations/payments.deleteById
+    concurrency: 500
 
   deletePaymentService:
     name: ${self:custom.ow-package}/deletePaymentService
     handler: lib/actions/payments.deleteById
+    concurrency: 500
 
   validatePostCartService:
     name: ${self:custom.ow-package}/validatePostCartService
     handler: lib/validations/carts.post
+    concurrency: 500
 
   postCartService:
     name: ${self:custom.ow-package}/postCartService
     handler: lib/actions/carts.post
+    concurrency: 500
 
   validatePostCartEntryService:
     name: ${self:custom.ow-package}/validatePostCartEntryService
     handler: lib/validations/entries.post
+    concurrency: 500
 
   postCartEntryService:
     name: ${self:custom.ow-package}/postCartEntryService
     handler: lib/actions/entries.post
+    concurrency: 500
 
   validatePutCartEntryService:
     name: ${self:custom.ow-package}/validatePutCartEntryService
     handler: lib/validations/entries.put
+    concurrency: 500
 
   putCartEntryService:
     name: ${self:custom.ow-package}/putCartEntryService
     handler: lib/actions/entries.put
+    concurrency: 500
 
   validateDeleteCartEntryService:
     name: ${self:custom.ow-package}/validateDeleteCartEntryService
     handler: lib/validations/entries.deleteById
+    concurrency: 500
 
   deleteCartEntryService:
     name: ${self:custom.ow-package}/deleteCartEntryService
     handler: lib/actions/entries.deleteById
+    concurrency: 500
 
   validatePostCouponService:
     name: ${self:custom.ow-package}/validatePostCouponService
     handler: lib/validations/coupons.post
+    concurrency: 500
 
   postCouponService:
     name: ${self:custom.ow-package}/postCouponService
     handler: lib/actions/coupons.post
+    concurrency: 500
 
   validateDeleteCouponService:
     name: ${self:custom.ow-package}/validateDeleteCouponService
     handler: lib/validations/coupons.deleteById
+    concurrency: 500
 
   deleteCouponService:
     name: ${self:custom.ow-package}/deleteCouponService
     handler: lib/actions/coupons.deleteById
+    concurrency: 500
 
   validateGetShippingMethodsService:
     name: ${self:custom.ow-package}/validateGetShippingMethodsService
     handler: lib/validations/shippingmethods.get
+    concurrency: 500
 
   getShippingMethodsService:
     name: ${self:custom.ow-package}/getShippingMethodsService
     handler: lib/actions/shippingmethods.get
+    concurrency: 500
 
   validatePostShippingMethodService:
     name: ${self:custom.ow-package}/validatePostShippingMethodService
     handler: lib/validations/shippingmethods.post
+    concurrency: 500
 
   postShippingMethodService:
     name: ${self:custom.ow-package}/postShippingMethodService
     handler: lib/actions/shippingmethods.post
+    concurrency: 500
 
   validateDeleteShippingMethodService:
     name: ${self:custom.ow-package}/validateDeleteShippingMethodService
     handler: lib/validations/shippingmethods.del
+    concurrency: 500
 
   deleteShippingMethodService:
     name: ${self:custom.ow-package}/deleteShippingMethodService
     handler: lib/actions/shippingmethods.del
+    concurrency: 500
