@@ -1,10 +1,6 @@
-[![pipeline status](https://git.diconium.com/adobe-io/diconium-cif-hybris/badges/master/pipeline.svg)](https://git.diconium.com/adobe-io/diconium-hybris-connector/commits/master)
-[![coverage report](https://git.diconium.com/adobe-io/diconium-cif-hybris/badges/master/coverage.svg)](https://git.diconium.com/adobe-io/diconium-hybris-connector/commits/master)
-[![npm]()](https://www.npmjs.com/package/@diconium/commerce-cif-hybris-categories
-)
+[![npm version](https://badge.fury.io/js/%40diconium%2Fcommerce-cif-hybris-categories.svg)](https://www.npmjs.com/package/@diconium/commerce-cif-hybris-categories)
 
 # Commerce CIF Hybris by diconium - Categories
-![diconium-dds](https://raw.githubusercontent.com/diconium/commerce-cif-hybris/feature/logo/diconium-dds.png  "diconium digital solutions" )
 
 ### Introduction
 
