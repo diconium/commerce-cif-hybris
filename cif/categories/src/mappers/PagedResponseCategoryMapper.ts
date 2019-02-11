@@ -91,7 +91,7 @@ export default class PagedResponseCategoryMapper extends Mapper<PagedResponseCat
     return result;
   }
 
-  private cutChildren(categories, depth) {
+  private cutChildren(categories = [], depth) {
 
     const results = [];
 
