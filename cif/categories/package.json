@@ -2,7 +2,7 @@
   "name": "@diconium/commerce-cif-hybris-categories",
   "owname": "commerce-cif-hybris-categories",
   "description": "Commerce Integration Framework (CIF) Hybris Integration Categories Project",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "author": "diconium",
   "license": "Apache-2.0",
   "dependencies": {
