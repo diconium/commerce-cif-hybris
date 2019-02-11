@@ -53,21 +53,24 @@ export default class ProductVariantMapper extends Mapper<ProductVariant> {
 
     if (variantOptionQualifiers) {
       variant.attributes = variantOptionQualifiers
-        .map(qualifier => this.mapAttribute(qualifier));
+        .map(attribute => this.mapAttribute(attribute));
     }
 
     return variant;
   }
 
-  mapAttribute(qualifier) {
-    const attribute = new Attribute.Builder()
-      .withId(qualifier.qualifier)
-      .withName(qualifier.name)
-      .withValue(qualifier.value);
+  mapAttribute(attribute) {
 
-    attribute.isVariantAxis = true;
+    const { qualifier, name = qualifier, value } = attribute;
 
-    return attribute;
+    const mappedAttribute = new Attribute.Builder()
+      .withId(qualifier)
+      .withName(name)
+      .withValue(value);
+
+    mappedAttribute.isVariantAxis = true;
+
+    return mappedAttribute;
   }
 
   getVariantName(variantOptionQualifiers: any) {
