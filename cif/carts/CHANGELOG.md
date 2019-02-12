@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.0.1...@diconium/commerce-cif-hybris-carts@1.3.0) (2019-02-12)
+
+
+### Bug Fixes
+
+* Mappers ([#17](https://github.com/diconium/commerce-cif-hybris/issues/17)) ([985ae6d](https://github.com/diconium/commerce-cif-hybris/commit/985ae6d))
+* ProductVariantMapper attribute mapping fix to always have name ([7b08dd3](https://github.com/diconium/commerce-cif-hybris/commit/7b08dd3))
+* ProductVariantMapper when stock object is not present ([#16](https://github.com/diconium/commerce-cif-hybris/issues/16)) ([08f5826](https://github.com/diconium/commerce-cif-hybris/commit/08f5826))
+* Updated core dependencies ([#21](https://github.com/diconium/commerce-cif-hybris/issues/21)) ([e442295](https://github.com/diconium/commerce-cif-hybris/commit/e442295))
+
+
+### Features
+
+* concurrency ([#15](https://github.com/diconium/commerce-cif-hybris/issues/15)) ([32fa20c](https://github.com/diconium/commerce-cif-hybris/commit/32fa20c))
+* Update product and product variant mappings ([#9](https://github.com/diconium/commerce-cif-hybris/issues/9)) ([4afa1d7](https://github.com/diconium/commerce-cif-hybris/commit/4afa1d7))
+
+
+
+
+
 # [1.2.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.0.1...@diconium/commerce-cif-hybris-carts@1.2.0) (2019-02-11)
 
 
