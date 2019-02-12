@@ -19,6 +19,7 @@
     "HB_PASSWORD": "",
     "HB_PROTOCOL": "https",
     "HB_USER": "",
+    "LOG_LEVEL": "DEBUG",
     "bearer": "",
     "cookies": [],
     "customerId": "anonymous",
