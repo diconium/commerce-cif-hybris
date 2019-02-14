@@ -21,8 +21,6 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      - run: git checkout $CIRCLE_BRANCH
-      - run: git pull
       - run: git remote set-url --push origin $CI_SSH_REPO
       - run: yarn install
       - run: yarn lerna-version
