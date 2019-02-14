@@ -18,15 +18,9 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
       - run: yarn install
-      - run:
-          name: Install Lerna and Typescript
-          command: sudo npm install -g lerna && sudo npm install -g typescript
-      - run:
-        name: lerna version
-        command: "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
-      - run:
-          name: build
-          command: yarn build
+      - run: sudo npm install -g lerna && sudo npm install -g typescript
+      - run: "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
+      - run: yarn build
       - save_cache:
           paths:
             - node_modules
