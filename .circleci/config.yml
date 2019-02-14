@@ -11,21 +11,20 @@ jobs:
       - image: circleci/node:10.15.0
     working_directory: ~/repo
     steps:
+      - checkout
       - run: mkdir -pvm 0700 ~/.ssh
       - run: echo "StrictHostKeyChecking=no" > ~/.ssh/config
       - run: echo "$CI_PRIVATE_RSA_KEY" > ~/.ssh/id_rsa
       - run: chmod 0400 ~/.ssh/id_rsa
+      - run: git config --global user.email jose.capela.05@gmail.com
+      - run: git config --global user.name "${CIRCLE_USERNAME}"
+      - run: git checkout $CIRCLE_BRANCH
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      - run: git config --global user.email jose.capela.05@gmail.com
-      - run: git config --global user.name "${CIRCLE_USERNAME}"
       - run: yarn install
-      - run: git checkout $CIRCLE_BRANCH
-      - run: git pull
-      - run: git remote set-url --push origin $CI_SSH_REPO
       - run: yarn lerna-version
       - run: yarn build
       - save_cache:
