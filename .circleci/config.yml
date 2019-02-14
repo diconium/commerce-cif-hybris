@@ -12,13 +12,6 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: mkdir -pvm 0700 ~/.ssh
-      - run: echo "StrictHostKeyChecking=no" > ~/.ssh/config
-      - run: echo "$CI_PRIVATE_RSA_KEY" > ~/.ssh/id_rsa
-      - run: chmod 0400 ~/.ssh/id_rsa
-      - run: git config --global user.email jose.capela.05@gmail.com
-      - run: git config --global user.name "${CIRCLE_USERNAME}"
-      - run: git checkout $CIRCLE_BRANCH
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
