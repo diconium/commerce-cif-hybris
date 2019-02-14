@@ -18,7 +18,11 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
       - run: yarn install
-      - run: yarn build
+      - run:
+          name: build
+          command: |
+             "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
+             yarn build
       - save_cache:
           paths:
             - node_modules
@@ -33,3 +37,37 @@ jobs:
           path: coverage
       - codecov/upload:
           file: coverage/lcov.info
+
+  deploy:
+    docker:
+      - image: circleci/node:10.15.0
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: deploy
+          command: |
+            wsk property set --auth "$ADOBE_RUNTIME_AUTH" --apihost "$ADOBE_RUNTIME_HOST" --namespace "$ADOBE_NAMESPACE"
+            yarn deploy
+
+  publish:
+    docker:
+      - image: circleci/node:10.15.0
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: publish
+          command: |
+            lerna publish from-git --yes
+
+workflows:
+  version: 2
+  build_deploy_publish:
+    jobs:
+      - build
+      - hold: # <<< A job that will require manual approval in the CircleCI web application.
+          type: approval # <<< This key-value pair will set your workflow to a status of "On Hold"
+          requires:
+            - build
+          
