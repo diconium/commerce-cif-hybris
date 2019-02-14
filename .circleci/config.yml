@@ -19,10 +19,13 @@ jobs:
             - v1-dependencies-
       - run: yarn install
       - run:
-          name: build
-          command: |
-             "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
-             yarn build
+          name: Install Lerna and Typescript
+          command: sudo npm install -g lerna && sudo npm install -g typescript
+      - run:
+        name: build
+        command: |
+          "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
+            yarn build
       - save_cache:
           paths:
             - node_modules
@@ -70,4 +73,4 @@ workflows:
           type: approval # <<< This key-value pair will set your workflow to a status of "On Hold"
           requires:
             - build
-          
+
