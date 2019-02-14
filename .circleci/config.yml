@@ -22,10 +22,11 @@ jobs:
           name: Install Lerna and Typescript
           command: sudo npm install -g lerna && sudo npm install -g typescript
       - run:
-        name: build
-        command: |
-          "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
-            yarn build
+        name: lerna version
+        command: "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
+      - run:
+          name: build
+          command: yarn build
       - save_cache:
           paths:
             - node_modules
