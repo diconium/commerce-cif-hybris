@@ -18,7 +18,8 @@
     "release": "lerna publish --conventional-commits --npm-tag=next",
     "build": "yarn build:cif",
     "build:cif": "tsc -b cif/*/tsconfig.json",
-    "clean": "rimraf **/lib **/node_modules yarn.lock"
+    "clean": "rimraf **/lib **/node_modules yarn.lock",
+    "lerna-version": "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace"
   },
   "devDependencies": {
     "@adobe/commerce-cif-model": "^1.1.2",
