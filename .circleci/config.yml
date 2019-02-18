@@ -14,6 +14,8 @@ jobs:
       - checkout
       - run: yarn install
       - run: yarn build
+      - run: yarn lint
+      - run: yarn test:unit
   build_master:
     docker:
       - image: circleci/node:10.15.0
@@ -74,10 +76,6 @@ workflows:
           filters:
             branches:
               only: master
-      - hold: # <<< A job that will require manual approval in the CircleCI web application.
-          type: approval # <<< This key-value pair will set your workflow to a status of "On Hold"
-          requires:
-            - build_master
       - deploy:
           requires:
             - build_master
