@@ -6,13 +6,20 @@ version: 2.1
 orbs:
   codecov: codecov/codecov@1.0.2
 jobs:
-  build:
+  build_feature:
+    docker:
+      - image: circleci/node:10.15.0
+    working_directory: ~/repo
+    steps:
+      - run: yarn install
+      - run: yarn build
+  build_master:
     docker:
       - image: circleci/node:10.15.0
     working_directory: ~/repo
     steps:
       - checkout
-      - run: git config --global user.email jose.capela.05@gmail.com
+      - run: git config --global user.email $USER_EMAIL
       - run: git config --global user.name "${CIRCLE_USERNAME}"
       - restore_cache:
           keys:
@@ -20,7 +27,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
       - run: yarn install
-      - run: yarn lerna-version
+      - run: yarn lerna:version
       - run: yarn build
       - save_cache:
           paths:
@@ -43,11 +50,8 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run:
-          name: deploy
-          command: |
-            wsk property set --auth "$ADOBE_RUNTIME_AUTH" --apihost "$ADOBE_RUNTIME_HOST" --namespace "$ADOBE_NAMESPACE"
-            yarn deploy
+      - run: yarn ow:config
+      - run: yarn deploy
 
   publish:
     docker:
@@ -55,18 +59,33 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run:
-          name: publish
-          command: |
-            lerna publish from-git --yes
+      - run: yarn lerna:publish
 
 workflows:
   version: 2
   build_deploy_publish:
     jobs:
-      - build
+      - build_feature
+        filters:
+          branches:
+            only: /feature.*/
+      - build_master
+          filters:
+            branches:
+              only: master
       - hold: # <<< A job that will require manual approval in the CircleCI web application.
           type: approval # <<< This key-value pair will set your workflow to a status of "On Hold"
           requires:
-            - build
-
+            - build_master
+      - deploy:
+          requires:
+            - build_master
+          filters:
+            branches:
+              only: master
+      - publish:
+          requires:
+            - deploy
+          filters:
+            branches:
+              only: master
