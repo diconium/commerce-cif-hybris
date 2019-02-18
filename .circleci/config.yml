@@ -65,11 +65,11 @@ workflows:
   version: 2
   build_deploy_publish:
     jobs:
-      - build_feature
-        filters:
-          branches:
-            only: /feature.*/
-      - build_master
+      - build_feature:
+          filters:
+            branches:
+              only: /feature.*/
+      - build_master:
           filters:
             branches:
               only: master
