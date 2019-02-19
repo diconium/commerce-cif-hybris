@@ -25,6 +25,7 @@ HB_USER: #Optional: Hybris authentication user
 HB_PASSWORD: #Optional: Hybris authentication password
 HB_AUTH: #Optional: Hybris authentication type (eg. basic)
 CT_ASSETS_HOST: #Optional: host for the product images in case they are stored outside the hybris instance 
+LOG_LEVEL: #Optional: application log level (eg. DEBUG)
 ```
 
 ## The [serverless.yml](serverless.yml) file
@@ -55,7 +56,7 @@ These parameters can be passed to the deployment file via yarn or changed direct
 and `bindings-namespace` (the namespace where the shared action packages is deployed - 
 it can be same as `customer-namespace` although the idea is to share common actions across different projects)
 1. Run `yarn deploy` and guarantee all your actions were deployed in the path: `https://runtime.adobe.io/api/v1/web/<customer-namespace>/<customer-package>/<action>`
-1. Test a action to guarantee all is ok - e.g. `https://runtime.adobe.io/api/v1/web/<customer-namespace>/<customer-package>/searchProducts/`
+1. Test an action to guarantee all is ok - e.g. `https://runtime.adobe.io/api/v1/web/<customer-namespace>/<customer-package>/searchProducts/`
 1. Configure the api-gateway as described [here](https://github.com/adobe/commerce-cif-api)
 
 ## Package Versioning
@@ -75,7 +76,29 @@ _Recommendation_: for a real project, a customer should rather point to a partic
 to make sure that future changes do not break their deployment. 
 
 
-## Deployment
+## Serverless Configuration - Helper notes
+
+Run the command to intall the serverless cli
+```
+$ yarn add -g serverless
+```
+
+#####  Install the provider plugin
+
+```
+$ npm install --global serverless-openwhisk
+```
+
+##### Link provider plugin to service directory
+
+Using `npm link` will import the provider plugin into the service directory:
+
+```
+$ npm link serverless-openwhisk
+```
+
+
+## Deployment - Helper notes
 
 The [package.json](package.json) file contains a number of scripts that can be used to deploy all package bindings and actions. First install all dependencies with
 
