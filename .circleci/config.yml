@@ -65,9 +65,9 @@ workflows:
   build_deploy_publish:
     jobs:
       - build
-      - test
+      - test:
           requires:
-            - build
+          - build
       - version:
           requires:
             - build
