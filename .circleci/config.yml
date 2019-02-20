@@ -6,6 +6,10 @@ version: 2.1
 orbs:
   codecov: codecov/codecov@1.0.2
 jobs:
+  read-repo: &read-repo
+    attach_workspace:
+      at: ~/repo
+
   build:
     docker:
       - image: circleci/node:10.15.0
@@ -17,18 +21,23 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
       - run: yarn build
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - commerce-cif-hybris
 
   test:
     docker:
       - image: circleci/node:10.15.0
     working_directory: ~/repo
     steps:
+      - *read-repo
       - run: yarn lint
       - run: yarn test:unit
 
@@ -37,6 +46,7 @@ jobs:
       - image: circleci/node:10.15.0
     working_directory: ~/repo
     steps:
+      - *read-repo
       - run: git config --global user.email $USER_EMAIL
       - run: git config --global user.name "${CIRCLE_USERNAME}"
       - run: yarn lerna:version
@@ -50,11 +60,13 @@ jobs:
       - image: circleci/node:10.15.0
     working_directory: ~/repo
     steps:
+      - *read-repo
       - run: yarn ow:config
       - run: yarn deploy
 
   publish:
     docker:
+      - *read-repo
       - image: circleci/node:10.15.0
     working_directory: ~/repo
     steps:
