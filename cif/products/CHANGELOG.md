@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.0...@diconium/commerce-cif-hybris-products@1.5.1) (2019-02-20)
+
+
+### Bug Fixes
+
+* readme files ([076624f](https://github.com/diconium/commerce-cif-hybris/commit/076624f))
+* synchronize versions in git and npm by doing small refactorings ([d407efa](https://github.com/diconium/commerce-cif-hybris/commit/d407efa))
+
+
+
+
+
 # [1.5.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.0.1...@diconium/commerce-cif-hybris-products@1.5.0) (2019-02-20)
 
 
