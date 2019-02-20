@@ -20,7 +20,7 @@
     "build:cif": "tsc -b cif/*/tsconfig.json",
     "clean": "rimraf **/lib **/node_modules yarn.lock",
     "lerna:version": "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace",
-    "lerna:publish": "lerna publish from-git --yes",
+    "lerna:publish": "lerna publish from-git --yes --loglevel trace",
     "ow:config": "wsk property set --auth \"$ADOBE_RUNTIME_AUTH\" --apihost \"$ADOBE_RUNTIME_HOST\" --namespace \"$ADOBE_NAMESPACE\""
   },
   "devDependencies": {
