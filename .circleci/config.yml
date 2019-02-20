@@ -28,7 +28,6 @@ jobs:
             - v1-dependencies-
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - run: ls
       - save_cache:
           paths:
             - node_modules
@@ -36,7 +35,7 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths:
-            - commerce-cif-hybris
+            - ./**
 
   test:
     <<: *defaults
