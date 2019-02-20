@@ -38,7 +38,7 @@ export default class CategoryMapper extends Mapper<Category> {
     throw new Error('Unsupported Operation');
   }
 
-  mapToEntity(dto: CategoryHierarchyWsDTO, entity?) {
+  mapToEntity(dto: CategoryHierarchyWsDTO, entity?): Category {
 
     const {
       id,

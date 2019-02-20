@@ -48,18 +48,18 @@ export default class CartMapper extends Mapper<Cart> {
 
   mapToEntity(dto: CartWsDTO, entity?: Cart): Cart {
     const {
+      appliedVouchers,
+      code,
+      deliveryAddress,
+      deliveryMode,
       entries = [],
       guid,
-      code,
-      totalPrice,
-      totalPriceWithTax,
-      subTotal,
-      deliveryMode,
       paymentInfo,
-      deliveryAddress,
-      appliedVouchers,
-      user,
+      subTotal,
+      totalPriceWithTax,
+      totalPrice,
       totalTax,
+      user,
     } = dto;
 
     const id = user.name === 'current' ? code : guid;

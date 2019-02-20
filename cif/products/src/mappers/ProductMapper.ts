@@ -42,21 +42,21 @@ export default class ProductMapper extends Mapper<Product> {
   mapToEntity(dto: ProductWsDTO, entity?): Product {
 
     const {
+      baseProduct,
       code: id,
-      name = '',
-      price,
       categories = [],
       description,
       images,
-      baseProduct,
+      name = '',
+      price,
       variantOptions,
     } = dto;
 
     const product = new Product.Builder()
+      .withMasterVariantId(baseProduct)
       .withId(id)
       .withName(name)
       .withPrices([])
-      .withMasterVariantId(baseProduct)
       .withVariants([])
       .build();
 
