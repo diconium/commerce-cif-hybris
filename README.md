@@ -14,7 +14,7 @@ It is based on Adobe I/O and Apache Openwhisk (OW) architecture, the main buildi
 
 Inside this project you'll find the Actions implementations based on the [Adobe CIF API](https://github.com/adobe/commerce-cif-api), and that connect with the Hybris Commerce Webservices Version 2 REST API.
 
-## Instalation
+## Installation
 
 ### Dependencies
 

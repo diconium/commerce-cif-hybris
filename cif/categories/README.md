@@ -14,9 +14,3 @@ The Commerce CIF Hybris by diconium works as a middleware, it is used to transfo
 The open source project can be found at https://github.com/diconium/commerce-cif-hybris
 
 The related npm packages can be found at https://www.npmjs.com/search?q=diconium%2Fcommerce-cif-hybris
-
-####  Install the package globally
-
-```
-$ npm install --global @diconium/commerce-cif-hybris-categories
-```
