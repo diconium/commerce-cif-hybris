@@ -12,8 +12,10 @@ defaults: &defaults
   working_directory: ~/repo
 
 set-git-setting: &set-git-settings
-  - run: git config --global user.email $USER_EMAIL
-  - run: git config --global user.name "${CIRCLE_USERNAME}"
+  run:
+    command: |
+      git config --global user.email $USER_EMAIL
+      git config --global user.name "${CIRCLE_USERNAME}"
 
 version: 2.1
 orbs:
