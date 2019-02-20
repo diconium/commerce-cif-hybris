@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-read-repo: &read-repo
+read-workspace: &read-workspace
   attach_workspace:
     at: ~/repo
 
@@ -16,6 +16,11 @@ set-git-setting: &set-git-settings
     command: |
       git config --global user.email $USER_EMAIL
       git config --global user.name "${CIRCLE_USERNAME}"
+
+set-fingerprint: &set-fingerprint
+  add_ssh_keys:
+    fingerprints:
+      - $SSH_KEY_FINGERPRINT
 
 version: 2.1
 orbs:
@@ -45,19 +50,20 @@ jobs:
   test-unit:
     <<: *defaults
     steps:
-      - *read-repo
+      - *read-workspace
       - run: yarn test:unit
 
   test-lint:
     <<: *defaults
     steps:
-      - *read-repo
+      - *read-workspace
       - run: yarn lint
 
   version:
     <<: *defaults
     steps:
-      - *read-repo
+      - *read-workspace
+      - *set-fingerprint
       - *set-git-settings
       - run: yarn lerna:version
       - store_test_results:
@@ -68,14 +74,15 @@ jobs:
   deploy:
     <<: *defaults
     steps:
-      - *read-repo
+      - *read-workspace
       - run: yarn ow:config
       - run: yarn deploy
 
   publish:
     <<: *defaults
     steps:
-      - *read-repo
+      - *read-workspace
+      - *set-fingerprint
       - *set-git-settings
       - run: yarn lerna:publish
 
