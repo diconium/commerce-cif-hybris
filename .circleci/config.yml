@@ -28,7 +28,7 @@ jobs:
             - v1-dependencies-
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - ls
+      - run: ls
       - save_cache:
           paths:
             - node_modules
