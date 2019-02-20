@@ -85,7 +85,7 @@ jobs:
   publish:
     <<: *defaults
     steps:
-      - *read-workspace
+      - checkout
       - *set-fingerprint
       - *set-git-settings
       - run: yarn lerna:publish
