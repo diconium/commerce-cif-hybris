@@ -2,19 +2,23 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2.1
-orbs:
-  codecov: codecov/codecov@1.0.2
-
 read-repo: &read-repo
   attach_workspace:
     at: ~/repo
 
+defaults: &defaults
+  docker:
+    - image: circleci/node:10.15.0
+  working_directory: ~/repo
+
+
+version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
+
 jobs:
   build:
-    docker:
-      - image: circleci/node:10.15.0
-    working_directory: ~/repo
+    <<: *defaults
     steps:
       - checkout
       - restore_cache:
@@ -34,18 +38,14 @@ jobs:
             - commerce-cif-hybris
 
   test:
-    docker:
-      - image: circleci/node:10.15.0
-    working_directory: ~/repo
+    <<: *defaults
     steps:
       - *read-repo
       - run: yarn lint
       - run: yarn test:unit
 
   version:
-    docker:
-      - image: circleci/node:10.15.0
-    working_directory: ~/repo
+    <<: *defaults
     steps:
       - *read-repo
       - run: git config --global user.email $USER_EMAIL
@@ -57,20 +57,16 @@ jobs:
           file: coverage/lcov.info
 
   deploy:
-    docker:
-      - image: circleci/node:10.15.0
-    working_directory: ~/repo
+    <<: *defaults
     steps:
       - *read-repo
       - run: yarn ow:config
       - run: yarn deploy
 
   publish:
-    docker:
-      - *read-repo
-      - image: circleci/node:10.15.0
-    working_directory: ~/repo
+    <<: *defaults
     steps:
+      - *read-repo
       - run: yarn lerna:publish
 
 workflows:
