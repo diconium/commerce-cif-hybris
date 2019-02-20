@@ -37,13 +37,13 @@ jobs:
           paths:
             - ./**
 
-  test:unit:
+  test-unit:
     <<: *defaults
     steps:
       - *read-repo
       - run: yarn test:unit
 
-  test:lint:
+  test-lint:
     <<: *defaults
     steps:
       - *read-repo
@@ -79,17 +79,17 @@ workflows:
   build:
     jobs:
       - build
-      - test:unit:
+      - test-unit:
           requires:
           - build
-      - test:lint:
+      - test-lint:
           requires:
           - build
       - version:
           requires:
             - build
-            - test:unit
-            - test:lint
+            - test-unit
+            - test-lint
           filters:
             branches:
               only: master
