@@ -74,7 +74,9 @@ jobs:
           file: coverage/lcov.info
 
   deploy:
-    <<: *defaults
+    docker:
+      - image: gcr.io/geometric-smoke-193807/wsk-serverless:1.0.10
+    working_directory: ~/repo
     steps:
       - *read-workspace
       - run: yarn ow:config
