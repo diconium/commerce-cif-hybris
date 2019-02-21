@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.2](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.5.1...@diconium/commerce-cif-hybris-categories@1.5.2) (2019-02-21)
+
+
+### Bug Fixes
+
+* commit to bump versions for testing publish in circleci ([9e3e1ca](https://github.com/diconium/commerce-cif-hybris/commit/9e3e1ca))
+
+
+
+
+
 ## [1.5.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.5.0...@diconium/commerce-cif-hybris-categories@1.5.1) (2019-02-20)
 
 
