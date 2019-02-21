@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.5](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.5.4...@diconium/commerce-cif-hybris-carts@1.5.5) (2019-02-21)
+
+
+### Bug Fixes
+
+* update core library to support cache headers ([61a0d5a](https://github.com/diconium/commerce-cif-hybris/commit/61a0d5a))
+
+
+
+
+
 ## [1.5.4](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.5.3...@diconium/commerce-cif-hybris-carts@1.5.4) (2019-02-21)
 
 
