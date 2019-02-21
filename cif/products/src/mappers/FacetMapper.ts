@@ -36,8 +36,8 @@ export default class FacetMapper extends Mapper<Facet> {
   mapToEntity(dto: FacetWsDTO, entity?): Facet {
 
     const {
-      name = '',
       multiSelect,
+      name = '',
       values = [],
     } = dto;
 

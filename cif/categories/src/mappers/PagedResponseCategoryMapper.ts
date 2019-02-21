@@ -71,8 +71,8 @@ export default class PagedResponseCategoryMapper extends Mapper<PagedResponseCat
     results = results.map(category => categoryMapper.mapToEntity(category));
 
     return  new PagedResponseCategory.Builder()
-        .withTotal(total)
         .withCount(results.length)
+        .withTotal(total)
         .withResults(results)
         .build();
   }

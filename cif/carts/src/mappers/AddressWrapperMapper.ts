@@ -28,8 +28,8 @@ export default class AddressWrapperMapper extends Mapper<AddressWrapper> {
   mapFromInputArgsToActionParameters(mappable: any) {
 
     const {
-      id,
       address,
+      id,
     } = mappable;
 
     return { id, address: this.mapFromEntity(address) };
