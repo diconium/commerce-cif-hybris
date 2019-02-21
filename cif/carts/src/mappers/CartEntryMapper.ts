@@ -61,11 +61,11 @@ export default class CartEntryMapper extends Mapper<CartEntry> {
   mapToEntity(dto: OrderEntryWsDTO, entity?): CartEntry {
 
     const {
+      basePrice,
       entryNumber,
       product,
       quantity,
       totalPrice,
-      basePrice,
     } = dto;
 
     const moneyValueMapper = new MoneyValueMapper(this.settings);

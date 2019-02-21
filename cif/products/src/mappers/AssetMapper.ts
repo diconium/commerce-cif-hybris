@@ -52,9 +52,9 @@ export default class AssetMapper extends Mapper<Asset> {
   private getAssetHost() {
 
     const {
+      CT_ASSETS_HOST,
       HB_API_HOST,
       HB_PROTOCOL,
-      CT_ASSETS_HOST,
     } = this.settings;
 
     if (CT_ASSETS_HOST) {

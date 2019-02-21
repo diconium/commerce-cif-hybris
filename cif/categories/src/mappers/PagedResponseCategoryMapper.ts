@@ -50,10 +50,10 @@ export default class PagedResponseCategoryMapper extends Mapper<PagedResponseCat
     } = dto;
 
     const {
-      type,
-      offset = 0,
-      limit = 50,
       depth,
+      limit = 50,
+      offset = 0,
+      type,
     } = this.actionParameters;
 
     let results = [];
