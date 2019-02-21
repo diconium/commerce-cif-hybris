@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.4](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.3...@diconium/commerce-cif-hybris-products@1.5.4) (2019-02-21)
+
+
+### Bug Fixes
+
+* update client dependency that fixes a problem when hybris reponse was empty ([24d2181](https://github.com/diconium/commerce-cif-hybris/commit/24d2181))
+
+
+
+
+
 ## [1.5.3](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.2...@diconium/commerce-cif-hybris-products@1.5.3) (2019-02-21)
 
 
