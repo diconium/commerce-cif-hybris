@@ -2,7 +2,7 @@
   "name": "@diconium/commerce-cif-hybris-products",
   "owname": "commerce-cif-hybris-products",
   "description": "Commerce Integration Framework (CIF) Hybris Integration Products Project",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "author": "diconium",
   "license": "Apache-2.0",
   "dependencies": {
