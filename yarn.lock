@@ -103,21 +103,14 @@
     to-fast-properties "^2.0.0"
 
 "@diconium/commerce-cif-hybris-clients@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.3.2.tgz#d746617e6dff44ad8d522ca35d905215b13424bd"
-  integrity sha512-wqiUKd/qgExnFOVEmUx1wni8M+A4APZEK+3Qjrdx+hvMvVLHFV9QW9JGX+y59YsUCpSTWEm4ghAD4WsDntxdSg==
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.3.3.tgz#68fd919c185aa147d5dc6f7d41d4746e57e04943"
+  integrity sha512-CSmlgXgHzyqtKD4XEy6ankgT//VV/p9/alSdJ3Z8Z1gILaH1tNdVCxld2IK72snNNm3qrPel3ttDnRdxDLRtWg==
   dependencies:
-    "@diconium/commerce-cif-hybris-core" "^1.3.2"
-    "@diconium/commerce-cif-hybris-i18n" "^1.0.6"
+    "@diconium/commerce-cif-hybris-core" "^1.4.0"
+    "@diconium/commerce-cif-hybris-i18n" "^1.0.7"
     js-string-escape "^1.0.1"
     node-fetch "^2.1.2"
-
-"@diconium/commerce-cif-hybris-core@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.3.2.tgz#59b408c12867ac6d4e72b6529c0e586cb8c815c9"
-  integrity sha512-0QCcWv7uj6moHNXPQhqp5E6Ks2JgvLHYg5Wti+w40WQZtG8dByYCAW9VnpNOmAaIP0B+o8Xo0tFGA4Db3jxM5w==
-  dependencies:
-    loglevel "^1.6.1"
 
 "@diconium/commerce-cif-hybris-core@^1.4.0":
   version "1.4.0"
@@ -126,22 +119,22 @@
   dependencies:
     loglevel "^1.6.1"
 
-"@diconium/commerce-cif-hybris-i18n@^1.0.3", "@diconium/commerce-cif-hybris-i18n@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.6.tgz#2355d3dec0ee6e238fc8a4c8932d0362894a8cb5"
-  integrity sha512-1EAlHDkXOShp/yuz9VGqhn+X6j2+3dQxPc5MLUc78a9xDC4ZSdtnmZ2N2imiaBEDgv3DNqe3glW1IWUa0SpxrA==
+"@diconium/commerce-cif-hybris-i18n@^1.0.3", "@diconium/commerce-cif-hybris-i18n@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.7.tgz#751181d33e356fd87251772b82a009d8c6fdfaa2"
+  integrity sha512-0zvSzymGyXMz1a3nOX79rb+uz+RENa3i1aHbjlkmUTLtCXhC7vxgXG8tE0OD2/HYT2+Cq7hm5xI3ZMbFxwrA4w==
   dependencies:
-    "@diconium/commerce-cif-hybris-core" "^1.3.2"
+    "@diconium/commerce-cif-hybris-core" "^1.4.0"
     accept-language "^3.0.18"
     di18n "^0.2.11"
 
 "@diconium/commerce-cif-hybris-validators@^1.1.1":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-validators/-/commerce-cif-hybris-validators-1.2.2.tgz#6494c62c34d8b5c495d3fcef596cd24aa8f79591"
-  integrity sha512-czmC/BgalnEbHmPr22+9d//G2ye53K9yVpPle3JK8HBCxmvW4njuS/oOMPcXM5Arcgabjs3AotPWYlTlJnZycQ==
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-validators/-/commerce-cif-hybris-validators-1.2.3.tgz#57c45a6d26a02ea329288105ae79ad6779efedd8"
+  integrity sha512-uS5CPuzjblXZ2ZtuoYmF1U5zy0V49eezr/jua91PKSVE52bBJB/KioCGDEWQvkKUEcML8MYpE/6Ck6u7HTelFg==
   dependencies:
     "@adobe/commerce-cif-common" "1.0.0"
-    "@diconium/commerce-cif-hybris-core" "^1.3.2"
+    "@diconium/commerce-cif-hybris-core" "^1.4.0"
 
 "@fimbul/bifrost@^0.17.0":
   version "0.17.0"
@@ -2222,11 +2215,6 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-core-js@~2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.3.0.tgz#fab83fbb0b2d8dc85fa636c4b9d34c75420c6d65"
-  integrity sha1-+rg/uwstjchfpjbEudNMdUIMbWU=
-
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -2757,11 +2745,6 @@ es6-promise@^4.0.3:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.6.tgz#b685edd8258886365ea62b57d30de28fadcd974f"
   integrity sha512-aRVgGdnmW2OiySVPUC9e6m+plolMAJKjZnQlCwNSuK5yQ0JN61DZSO1X1Ufd1foqWRAlig0rhduTCHe7sVtK5Q==
-
-es6-promise@~3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.0.2.tgz#010d5858423a5f118979665f46486a95c6ee2bb6"
-  integrity sha1-AQ1YWEI6XxGJeWZfRkhqlcbuK7Y=
 
 es6-promisify@^5.0.0:
   version "5.0.0"
@@ -4305,15 +4288,14 @@ jsprim@^1.2.2:
     verror "1.10.0"
 
 jszip@^3.1.3:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.1.5.tgz#e3c2a6c6d706ac6e603314036d43cd40beefdf37"
-  integrity sha512-5W8NUaFRFRqTOL7ZDDrx5qWHJyBXy6velVudIzQUSoqAAYqzSh2Z7/m0Rf1QbmQJccegD0r+YZxBjzqoBiEeJQ==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.2.0.tgz#1c179e8692777490ca4e9b8f3ced08f9b820da2c"
+  integrity sha512-4WjbsaEtBK/DHeDZOPiPw5nzSGLDEDDreFRDEgnoMwmknPjTqa+23XuYFk6NiGbeiAeZCctiQ/X/z0lQBmDVOQ==
   dependencies:
-    core-js "~2.3.0"
-    es6-promise "~3.0.2"
-    lie "~3.1.0"
+    lie "~3.3.0"
     pako "~1.0.2"
-    readable-stream "~2.0.6"
+    readable-stream "~2.3.6"
+    set-immediate-shim "~1.0.1"
 
 jwt-decode@^2.2.0:
   version "2.2.0"
@@ -4427,10 +4409,10 @@ libnpmpublish@^1.1.1:
     semver "^5.5.1"
     ssri "^6.0.1"
 
-lie@~3.1.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/lie/-/lie-3.1.1.tgz#9a436b2cc7746ca59de7a41fa469b3efb76bd87e"
-  integrity sha1-mkNrLMd0bKWd56QfpGmz77dr2H4=
+lie@~3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/lie/-/lie-3.3.0.tgz#dcf82dee545f46074daf200c7c1c5a08e0f40f6a"
+  integrity sha512-UaiMJzeWRlEujzAuw5LokY1L5ecNQYZKfmyZ9L7wDHb/p5etKaxXhohBcrw0EYby+G/NA52vRSN4N39dxHAIwQ==
   dependencies:
     immediate "~3.0.5"
 
@@ -5782,11 +5764,6 @@ prepend-http@^1.0.1:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
-process-nextick-args@~1.0.6:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
-  integrity sha1-FQ4gt1ZZCtP5EJPyWk8q2L/zC6M=
-
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
@@ -6067,18 +6044,6 @@ read@1, read@~1.0.1:
     process-nextick-args "~2.0.0"
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
-    util-deprecate "~1.0.1"
-
-readable-stream@~2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
-  integrity sha1-j5A0HmilPMySh4jaz80Rs265t44=
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "~1.0.0"
-    process-nextick-args "~1.0.6"
-    string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
 
 readdir-scoped-modules@^1.0.0:
@@ -6456,6 +6421,11 @@ set-blocking@^2.0.0, set-blocking@~2.0.0:
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha1-BF+XgtARrppoA93TgrJDkrPYkPc=
 
+set-immediate-shim@~1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
+  integrity sha1-SysbJ+uAip+NzEgaWOXlb1mfP2E=
+
 set-value@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/set-value/-/set-value-0.4.3.tgz#7db08f9d3d22dc7f78e53af3c3bf4666ecdfccf1"
@@ -6792,11 +6762,6 @@ string_decoder@^1.0.0:
   integrity sha512-6YqyX6ZWEYguAxgZzHGL7SsCeGx3V2TtOTqZz1xSTSWnqsbWwbptafNyvf/ACquZUXV3DANr5BDIwNYe1mN42w==
   dependencies:
     safe-buffer "~5.1.0"
-
-string_decoder@~0.10.x:
-  version "0.10.31"
-  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
-  integrity sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=
 
 string_decoder@~1.1.1:
   version "1.1.1"
