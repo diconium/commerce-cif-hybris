@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.6](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.5.5...@diconium/commerce-cif-hybris-categories@1.5.6) (2019-02-21)
+
+
+### Bug Fixes
+
+* updated dependencies for cache control feature ([c505204](https://github.com/diconium/commerce-cif-hybris/commit/c505204))
+
+
+
+
+
 ## [1.5.5](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.5.4...@diconium/commerce-cif-hybris-categories@1.5.5) (2019-02-21)
 
 
