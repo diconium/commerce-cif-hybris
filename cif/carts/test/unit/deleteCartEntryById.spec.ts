@@ -122,17 +122,21 @@ describe('deleteCartEntry', () => {
       });
 
       it('Action should return 200 if cart entry was successfully deleted', async () => {
-        scope.delete('/rest/v2/electronics/users/anonymous/carts/ce280b6d-61f0-41e7-acb4-d670546f744b/entries/0').query({ lang: 'en' })
-          .reply(200, {});
-        const { parameters } = await deleteCartEntryById(validInput);
+        scope.delete('/rest/v2/electronics/users/anonymous/carts/ce280b6d-61f0-41e7-acb4-d670546f744b/entries/0')
+          .query({ lang: 'en' })
+          .reply(200);
+        const { parameters, errorOutput } = await deleteCartEntryById(validInput);
+        expect(errorOutput).not.to.exist;
         expect(parameters.id).to.equal(validInput.parameters.id);
       });
 
       it('Action should return 200 if cart entry was successfully deleted for authenticated cart', async () => {
-        scope.delete('/rest/v2/electronics/users/current/carts/00000006/entries/1').query({ lang: 'en' })
+        scope.delete('/rest/v2/electronics/users/current/carts/00000006/entries/1')
+          .query({ lang: 'en' })
           .query({ access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51' })
-          .reply(200, {});
-        const { parameters } = await deleteCartEntryById(validAuthenticatedInput);
+          .reply(200);
+        const { parameters, errorOutput } = await deleteCartEntryById(validAuthenticatedInput);
+        expect(errorOutput).not.to.exist;
         expect(parameters.id).to.equal(validAuthenticatedInput.parameters.id);
       });
     });

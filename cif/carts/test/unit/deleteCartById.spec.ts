@@ -93,17 +93,19 @@ describe('deleteCartById', () => {
 
       it('Should return 200 was successfully deleted', async () => {
         scope.delete('/rest/v2/electronics/users/anonymous/carts/ce280b6d-61f0-41e7-acb4-d670546f744b').query({ lang: 'en' })
-          .reply(200, {});
+          .reply(200);
         const { response } = await deleteCartById(validInput);
         expect(response.statusCode).to.equal(204);
+        expect(response.body).to.deep.equal({});
       });
 
       it('Should return 200 was successfully deleted for authenticated cart', async () => {
         scope.delete('/rest/v2/electronics/users/current/carts/00000006').query({ lang: 'en' })
           .query({ access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51' })
-          .reply(200, {});
+          .reply(200);
         const { response } = await deleteCartById(validAuthenticatedInput);
         expect(response.statusCode).to.equal(204);
+        expect(response.body).to.deep.equal({});
       });
     });
   });

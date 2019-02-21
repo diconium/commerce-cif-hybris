@@ -109,7 +109,7 @@ describe('postCartShippingMethods', () => {
       it('Should return 200 and a cart with shipping methods', async () => {
         scope.put('/rest/v2/electronics/users/current/carts/00000001/deliverymode', {})
           .query({ deliveryModeId: 'pickup', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8', lang: 'en' })
-          .reply(200, {});
+          .reply(200);
         const { parameters, settings, errorOutput } = await postCartShippingMethod(validInput);
         expect(settings).to.be.deep.equal(validInput.settings);
         expect(parameters).to.be.deep.equal(validInput.parameters);

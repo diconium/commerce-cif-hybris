@@ -105,7 +105,7 @@ describe('postCartShippingAddress', () => {
       it('Should return success', async () => {
         scope.post('/rest/v2/electronics/users/current/carts/ce280b6d-61f0-41e7-acb4-d670546f744b/addresses/delivery', validHybrisBody)
           .query({ fields: 'FULL', lang: 'en', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8' })
-          .reply(200, {});
+          .reply(200);
         const { parameters, settings, errorOutput } = await postCartShippingAddress(validInput);
         expect(settings).to.be.deep.equal(validInput.settings);
         expect(parameters).to.be.deep.equal(validInput.parameters);

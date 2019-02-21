@@ -102,39 +102,39 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@diconium/commerce-cif-hybris-clients@^1.2.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.3.0.tgz#62978b3bc2c40e45094e3016ab274eb9b685341d"
-  integrity sha512-EhXIdCpqq8eJ6A9ErHkCjJLMFrFnQN1/aM00H33+gO4esAodcj96B/1AaFhPCimPHPv06jrUqjO7wQygjHtV6A==
+"@diconium/commerce-cif-hybris-clients@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.3.2.tgz#d746617e6dff44ad8d522ca35d905215b13424bd"
+  integrity sha512-wqiUKd/qgExnFOVEmUx1wni8M+A4APZEK+3Qjrdx+hvMvVLHFV9QW9JGX+y59YsUCpSTWEm4ghAD4WsDntxdSg==
   dependencies:
-    "@diconium/commerce-cif-hybris-core" "^1.3.0"
-    "@diconium/commerce-cif-hybris-i18n" "^1.0.4"
+    "@diconium/commerce-cif-hybris-core" "^1.3.2"
+    "@diconium/commerce-cif-hybris-i18n" "^1.0.6"
     js-string-escape "^1.0.1"
     node-fetch "^2.1.2"
 
-"@diconium/commerce-cif-hybris-core@^1.2.0", "@diconium/commerce-cif-hybris-core@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.3.0.tgz#df965fad7dc65a6812e3c2cbbaeec1832ed34af4"
-  integrity sha512-HHTv9w+OouueXle+JOWH5SDrHkX0d+rV5lJxVY2eaIzKf/Ilvxl+F8lC4+EVA/w63Ys7T8qE/tDEpovoXSwLsA==
+"@diconium/commerce-cif-hybris-core@^1.2.0", "@diconium/commerce-cif-hybris-core@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.3.2.tgz#59b408c12867ac6d4e72b6529c0e586cb8c815c9"
+  integrity sha512-0QCcWv7uj6moHNXPQhqp5E6Ks2JgvLHYg5Wti+w40WQZtG8dByYCAW9VnpNOmAaIP0B+o8Xo0tFGA4Db3jxM5w==
   dependencies:
     loglevel "^1.6.1"
 
-"@diconium/commerce-cif-hybris-i18n@^1.0.3", "@diconium/commerce-cif-hybris-i18n@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.4.tgz#cdbc93e84e5f20a5e3eefba71c5a254fe111b119"
-  integrity sha512-+Vn4zykluh1561NaItBAT4x5y/7yXSG/mtL7a364D07ihGMpW8hN+BzZPSvWmcBBhnqYehZZ1D+V6QOrQI6wXQ==
+"@diconium/commerce-cif-hybris-i18n@^1.0.3", "@diconium/commerce-cif-hybris-i18n@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.6.tgz#2355d3dec0ee6e238fc8a4c8932d0362894a8cb5"
+  integrity sha512-1EAlHDkXOShp/yuz9VGqhn+X6j2+3dQxPc5MLUc78a9xDC4ZSdtnmZ2N2imiaBEDgv3DNqe3glW1IWUa0SpxrA==
   dependencies:
-    "@diconium/commerce-cif-hybris-core" "^1.3.0"
+    "@diconium/commerce-cif-hybris-core" "^1.3.2"
     accept-language "^3.0.18"
     di18n "^0.2.11"
 
 "@diconium/commerce-cif-hybris-validators@^1.1.1":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-validators/-/commerce-cif-hybris-validators-1.2.0.tgz#90b7425f07997ca30b0c8148dd380d19bd282859"
-  integrity sha512-Sl7N3HpLcktmBBCrT3JDDlU/7kReDfCAVR1r35Bn6CN7Fhm5+cbrmFyIdy0ynUnwzgzkJtSof4d/j2sLlzgPxQ==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-validators/-/commerce-cif-hybris-validators-1.2.2.tgz#6494c62c34d8b5c495d3fcef596cd24aa8f79591"
+  integrity sha512-czmC/BgalnEbHmPr22+9d//G2ye53K9yVpPle3JK8HBCxmvW4njuS/oOMPcXM5Arcgabjs3AotPWYlTlJnZycQ==
   dependencies:
     "@adobe/commerce-cif-common" "1.0.0"
-    "@diconium/commerce-cif-hybris-core" "^1.3.0"
+    "@diconium/commerce-cif-hybris-core" "^1.3.2"
 
 "@fimbul/bifrost@^0.17.0":
   version "0.17.0"
@@ -3600,9 +3600,9 @@ hmac-drbg@^1.0.0:
     minimalistic-crypto-utils "^1.0.1"
 
 homedir-polyfill@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/homedir-polyfill/-/homedir-polyfill-1.0.1.tgz#4c2bbc8a758998feebf5ed68580f76d46768b4bc"
-  integrity sha1-TCu8inWJmP7r9e1oWA921GdotLw=
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/homedir-polyfill/-/homedir-polyfill-1.0.2.tgz#0e59a09fcfcb387638f0832f5c27eb22da510fa7"
+  integrity sha512-A0cau1b1F7kmsKG3vHLi7DQ2d13k/BefUGRKRa8+sv7f1Vs+N28f0uv9nnWo3CNH50VsVdLcSKdxtztwn6K3Vg==
   dependencies:
     parse-passwd "^1.0.0"
 

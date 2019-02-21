@@ -62,7 +62,7 @@ describe('postCoupon', () => {
       it('Should return 200 if coupon is valid', async () => {
         scope.post('/electronics/users/current/carts/00000003/vouchers')
           .query({ lang: 'en', voucherId: 'ITTEST', access_token: '16bf7f81-ceeb-444e-ab0b-7d7baca1a183' })
-          .reply(200, {});
+          .reply(200);
         const { parameters, errorOutput } = await postCoupon(validInput);
         expect(errorOutput).is.not.ok;
         expect(parameters).shallowDeepEqual({

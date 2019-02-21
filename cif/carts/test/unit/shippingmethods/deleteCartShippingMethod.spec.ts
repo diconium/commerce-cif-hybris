@@ -100,7 +100,7 @@ describe('deleteCartShippingMethod', () => {
     it('Should return 200 and a cart with shipping methods', async () => {
       scope.delete('/rest/v2/electronics/users/current/carts/00000001/deliverymode')
         .query({ lang: 'en', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8' })
-        .reply(200, {});
+        .reply(200);
       const { parameters, settings, errorOutput } = await deleteCartShippingMethod(validInput);
       expect(settings).to.be.deep.equal(validInput.settings);
       expect(parameters).to.be.deep.equal(validInput.parameters);
