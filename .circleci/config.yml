@@ -86,9 +86,9 @@ jobs:
     <<: *defaults
     steps:
       - *read-workspace
-      - checkout
       - *set-fingerprint
       - *set-git-settings
+      - run: git pull
       - run: echo "$NPM_REGISTRY_TOKEN" >> ~/.npmrc
       - run: yarn lerna:publish
 
