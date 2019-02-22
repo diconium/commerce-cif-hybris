@@ -1,12 +1,12 @@
 [![npm version](https://badge.fury.io/js/%40diconium%2Fcommerce-cif-hybris-carts.svg)](https://www.npmjs.com/package/@diconium/commerce-cif-hybris-carts)
 
-# //diconium Hybris CIF Connector - Carts
+# Commerce CIF Hybris by diconium - Carts
 
 ![diconium-dds](https://raw.githubusercontent.com/diconium/commerce-cif-hybris/master/diconium-dds.png  "diconium digital solutions" )
 
 ### Introduction
 
-This is the carts package of the diconium Hybris CIF Connector.
+This is the carts package of the Commerce CIF Hybris by diconium.
 It provides all the components related to Carts functionality for the connector - such as the external requests, validations and the mappings.
 
 ### Context
