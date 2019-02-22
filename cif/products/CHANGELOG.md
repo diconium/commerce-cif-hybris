@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.7](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.6...@diconium/commerce-cif-hybris-products@1.5.7) (2019-02-22)
+
+
+### Bug Fixes
+
+* products with a default empty array value for when theirs no results ([e6bfbab](https://github.com/diconium/commerce-cif-hybris/commit/e6bfbab))
+
+
+
+
+
 ## [1.5.6](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.5...@diconium/commerce-cif-hybris-products@1.5.6) (2019-02-21)
 
 
