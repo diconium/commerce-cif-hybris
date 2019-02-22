@@ -34,6 +34,7 @@ const hybrisSearchProductsMockRelevance = require('../resources/search/hybris-se
 const hybrisSearchProductsMockTopRated = require('../resources/search/hybris-search-product-topRated.json');
 const hybrisSearchProductsMockPageAvailableInStore = require('../resources/search/hybris-search-product-availableinstore.json');
 const hybrisSearchProductsMockPageAvailableInStoreNoFacetValue = require('../resources/search/hybris-search-product-availableinstore-no-facetvalue.json');
+const hybrisNoResults = require('../resources/search/hybris-search-product-no-results.json');
 
 const adobeSearchProductMock = require('../resources/search/adobe-search-product.json');
 const adobeSearchProductStoreFacetMock = require('../resources/search/adobe-search-product-storefacet.json');
@@ -159,6 +160,20 @@ describe('Search Products', () => {
           occurrences: 92,
           selected: true,
           value: 'Choshi',
+        });
+      });
+
+      it('Response should bring empty results array', async () => {
+        scope.get('/rest/v2/electronics/products/search')
+          .query({ fields: 'FULL', lang: 'en', query: 'samsung' })
+          .reply(200, hybrisNoResults);
+        const { response } = await search(validInput);
+        expect(response.error).is.not.ok;
+        expect(response.body).to.shallowDeepEqual({
+          count: 0,
+          offset: 0,
+          results: [],
+          total: 0,
         });
       });
     });

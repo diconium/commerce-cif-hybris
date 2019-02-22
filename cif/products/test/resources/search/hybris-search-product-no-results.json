@@ -1,0 +1,35 @@
+{
+  "type": "productCategorySearchPageWsDTO",
+  "currentQuery": {
+    "query": {
+      "value": "asdflkasdhfjç:relevance"
+    },
+    "url": "/search?q=asdflkasdhfj%C3%A7%3Arelevance"
+  },
+  "freeTextSearch": "asdflkasdhfjç",
+  "pagination": {
+    "currentPage": 0,
+    "pageSize": 20,
+    "sort": "relevance",
+    "totalPages": 0,
+    "totalResults": 0
+  },
+  "sorts": [
+    {
+      "code": "relevance",
+      "selected": true
+    },
+    {
+      "code": "name-asc",
+      "selected": false
+    },
+    {
+      "code": "price-asc",
+      "selected": false
+    },
+    {
+      "code": "price-desc",
+      "selected": false
+    }
+  ]
+}
