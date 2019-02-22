@@ -50,7 +50,7 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
   mapToEntity(dto: ProductSearchPageWsDTO, entity?): PagedResponseProduct {
 
     const {
-      products,
+      products = [],
       pagination,
       facets,
       breadcrumbs,
