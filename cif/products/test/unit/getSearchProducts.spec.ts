@@ -87,6 +87,20 @@ describe('Search Products', () => {
         expect(body.total).is.equal(adobeSearchProductMock.total);
       });
 
+      it('Response should bring empty results array', async () => {
+        scope.get('/rest/v2/electronics/products/search')
+          .query({ fields: 'FULL', lang: 'en', query: 'samsung' })
+          .reply(200, hybrisNoResults);
+        const { response } = await search(validInput);
+        expect(response.error).is.not.ok;
+        expect(response.body).to.shallowDeepEqual({
+          count: 0,
+          offset: 0,
+          results: [],
+          total: 0,
+        });
+      });
+
       it('Response should contain the correct facets', async () => {
         scope.get('/rest/v2/electronics/products/search')
           .query({ fields: 'FULL', lang: 'en', query: 'samsung' })
@@ -109,8 +123,9 @@ describe('Search Products', () => {
         scope.get('/rest/v2/electronics/products/search')
           .query({ fields: 'FULL', lang: 'en', query: 'samsung', pageSize: 40 })
           .reply(200, hybrisSearchProductsMockPage1);
-        validInput.parameters.pageSize = 40;
-        const { response } = await search(validInput);
+        const newInput = validInput;
+        newInput.parameters.pageSize = 40;
+        const { response } = await search(newInput);
         const { body } = response;
         expect(body.offset).to.be.equals(20);
         expect(body.results.length).to.be.equals(20);
@@ -163,19 +178,6 @@ describe('Search Products', () => {
         });
       });
 
-      it('Response should bring empty results array', async () => {
-        scope.get('/rest/v2/electronics/products/search')
-          .query({ fields: 'FULL', lang: 'en', query: 'samsung' })
-          .reply(200, hybrisNoResults);
-        const { response } = await search(validInput);
-        expect(response.error).is.not.ok;
-        expect(response.body).to.shallowDeepEqual({
-          count: 0,
-          offset: 0,
-          results: [],
-          total: 0,
-        });
-      });
     });
   });
 });
