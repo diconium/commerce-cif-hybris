@@ -2,6 +2,12 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+save-workspace: &save-workspace
+  persist_to_workspace:
+    root: ~/repo
+      paths:
+        - ./**
+
 read-workspace: &read-workspace
   attach_workspace:
     at: ~/repo
@@ -44,10 +50,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - persist_to_workspace:
-          root: ~/repo
-          paths:
-            - ./**
+      - *save-workspace
 
   test-unit:
     <<: *defaults
@@ -68,6 +71,7 @@ jobs:
       - *set-fingerprint
       - *set-git-settings
       - run: yarn lerna:version
+      - *save-workspace
       - store_test_results:
           path: test-reports
       - codecov/upload:
@@ -88,7 +92,6 @@ jobs:
       - *read-workspace
       - *set-fingerprint
       - *set-git-settings
-      - run: git pull
       - run: echo "$NPM_REGISTRY_TOKEN" >> ~/.npmrc
       - run: yarn lerna:publish
 
