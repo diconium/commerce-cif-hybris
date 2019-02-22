@@ -5,8 +5,8 @@
 save-workspace: &save-workspace
   persist_to_workspace:
     root: ~/repo
-      paths:
-        - ./**
+    paths:
+      - ./**
 
 read-workspace: &read-workspace
   attach_workspace:
