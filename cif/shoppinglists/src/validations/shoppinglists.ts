@@ -32,6 +32,7 @@ function getShoppingListById(args: any): Input {
 }
 
 export const getById = getShoppingListById;
+export const deleteById = getShoppingListById;
 
 function patchShoppingList(args: any): Input {
 

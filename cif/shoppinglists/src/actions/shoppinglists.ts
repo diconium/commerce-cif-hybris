@@ -17,6 +17,7 @@
 import { Cart } from '@adobe/commerce-cif-model';
 import { Input, Output, SequenceAction, SimpleAction } from '@diconium/commerce-cif-hybris-core';
 import GetShoppingListByIdClient from '../clients/GetShoppingListByIdClient';
+import DeleteCartClient from '@diconium/commerce-cif-hybris-carts/lib/clients/DeleteCartClient';
 import ShoppingListMapper from '../mappers/ShoppingListMapper';
 import PatchShoppingListClient from '../clients/PatchShoppingListClient';
 
@@ -31,6 +32,15 @@ function getShoppingListById(input: Input): Promise<Output<Cart>> {
 }
 
 export const getById = getShoppingListById;
+
+function deleteShoppingList(input: Input): Promise<Output<Cart>> {
+  return new SimpleAction<Cart>(input)
+    .setMapper(ShoppingListMapper)
+    .setClient(DeleteCartClient)
+    .setErrorType(ERROR_TYPE)
+    .activate();
+}
+export const deleteById = deleteShoppingList;
 
 function patchShoppingList(input: Input): Promise<Output<Cart>> {
   return new SimpleAction<Cart>(input)
