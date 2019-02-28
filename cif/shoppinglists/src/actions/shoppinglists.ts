@@ -14,17 +14,22 @@
  * limitations under the License.
  */
 
-import { Cart } from '@adobe/commerce-cif-model';
+import { Cart, PagedResponseShoppingList, ShoppingList } from '@adobe/commerce-cif-model';
 import { Input, Output, SequenceAction, SimpleAction } from '@diconium/commerce-cif-hybris-core';
+import GetShoppingListClient from '../clients/GetShoppingListClient';
 import GetShoppingListByIdClient from '../clients/GetShoppingListByIdClient';
 import DeleteCartClient from '@diconium/commerce-cif-hybris-carts/lib/clients/DeleteCartClient';
+import PostShoppingListClient from '../clients/PostShoppingListClient';
 import ShoppingListMapper from '../mappers/ShoppingListMapper';
 import PatchShoppingListClient from '../clients/PatchShoppingListClient';
+import PagedResponseShoppingListMapper from '../mappers/PagedResponseShoppingListMapper';
+import PagedResponseProductMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/PagedResponseProductMapper';
+import SearchProductClient from '@diconium/commerce-cif-hybris-products/lib/clients/SearchProductClient';
 
 const ERROR_TYPE = 'ShoppingListError';
 
-function getShoppingListById(input: Input): Promise<Output<Cart>> {
-  return new SimpleAction<Cart>(input)
+function getShoppingListById(input: Input): Promise<Output<ShoppingList>> {
+  return new SimpleAction<ShoppingList>(input)
     .setMapper(ShoppingListMapper)
     .setClient(GetShoppingListByIdClient)
     .setErrorType(ERROR_TYPE)
@@ -33,8 +38,18 @@ function getShoppingListById(input: Input): Promise<Output<Cart>> {
 
 export const getById = getShoppingListById;
 
-function deleteShoppingList(input: Input): Promise<Output<Cart>> {
-  return new SimpleAction<Cart>(input)
+function getShoppingLists(input: Input): Promise<Output<PagedResponseShoppingList>> {
+  return new SimpleAction<PagedResponseShoppingList>(input)
+    .setMapper(PagedResponseShoppingListMapper)
+    .setClient(GetShoppingListClient)
+    .setErrorType(ERROR_TYPE)
+    .activate();
+}
+
+export const get = getShoppingLists;
+
+function deleteShoppingList(input: Input): Promise<Output<ShoppingList>> {
+  return new SimpleAction<ShoppingList>(input)
     .setMapper(ShoppingListMapper)
     .setClient(DeleteCartClient)
     .setErrorType(ERROR_TYPE)
@@ -42,8 +57,8 @@ function deleteShoppingList(input: Input): Promise<Output<Cart>> {
 }
 export const deleteById = deleteShoppingList;
 
-function patchShoppingList(input: Input): Promise<Output<Cart>> {
-  return new SimpleAction<Cart>(input)
+function patchShoppingList(input: Input): Promise<Output<ShoppingList>> {
+  return new SimpleAction<ShoppingList>(input)
     .setMapper(ShoppingListMapper)
     .setClient(PatchShoppingListClient)
     .setErrorType(ERROR_TYPE)

@@ -18,6 +18,7 @@ import { ShoppingList } from '@adobe/commerce-cif-model';
 import { Input } from '@diconium/commerce-cif-hybris-core';
 import { Validator } from '@diconium/commerce-cif-hybris-validators';
 import ShoppingListMapper from '../mappers/ShoppingListMapper';
+import PagedResponseShoppingListMapper from '../mappers/PagedResponseShoppingListMapper';
 
 const ERROR_TYPE = 'ShoppingListError';
 
@@ -33,6 +34,17 @@ function getShoppingListById(args: any): Input {
 
 export const getById = getShoppingListById;
 export const deleteById = getShoppingListById;
+
+function getShoppingLists(args: any): Input {
+
+  return new Validator<ShoppingList>(args, ERROR_TYPE)
+    .setMapper(PagedResponseShoppingListMapper)
+    .checkArguments()
+    .input();
+
+}
+
+export const get = getShoppingLists;
 
 function patchShoppingList(args: any): Input {
 
