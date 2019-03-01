@@ -30,18 +30,18 @@ export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
       id,
       productVariantId,
       quantity,
-      cartEntryId,
+      entryId,
     } = mappable;
 
     const orderEntry = this.mapFromEntity({
       productVariantId,
       quantity,
-      cartEntryId,
+      entryId,
     });
 
     return {
       id,
-      cartEntryId,
+      entryId,
       entry: orderEntry,
     };
   }
@@ -52,7 +52,7 @@ export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
     product.code = entity.productVariantId;
     orderEntry.product = product;
     orderEntry.quantity = entity.quantity;
-    orderEntry.entryNumber = entity.cartEntryId;
+    orderEntry.entryNumber = entity.entryId;
 
     return orderEntry;
   }
@@ -80,6 +80,7 @@ export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
     if (variants[0]) {
       productVariant.attributes = [...productVariant.attributes, variants[0].attributes];
     }
+    productVariant.available = product.stock && product.stock.stockLevelStatus === 'inStock';
     productVariant.variants = undefined;
     productVariant.sku = productVariant.id;
     return productVariant;

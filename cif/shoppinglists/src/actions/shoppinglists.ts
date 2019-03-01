@@ -66,3 +66,11 @@ function patchShoppingList(input: Input): Promise<Output<ShoppingList>> {
 }
 
 export const patch = patchShoppingList;
+
+function postShoppingList(input: Input): Promise<Input> {
+  return new SequenceAction(input)
+    .setClient(PostShoppingListClient)
+    .setErrorType(ERROR_TYPE)
+    .activate();
+}
+export const post = postShoppingList;

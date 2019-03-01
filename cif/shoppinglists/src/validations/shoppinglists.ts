@@ -46,6 +46,18 @@ function getShoppingLists(args: any): Input {
 
 export const get = getShoppingLists;
 
+function postShoppingList(args: any): Input {
+
+  return new Validator<ShoppingList>(args, ERROR_TYPE)
+    .setMapper(ShoppingListMapper)
+    .checkArguments()
+    .mandatoryParameter('saveCartName')
+    .input();
+
+}
+
+export const post = postShoppingList;
+
 function patchShoppingList(args: any): Input {
 
   return new Validator<ShoppingList>(args, ERROR_TYPE)

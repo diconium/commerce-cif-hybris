@@ -46,7 +46,7 @@ describe('getShoppingListById', () => {
         id: '00001000',
       };
 
-      it('Validation should return a valid Input if all the inputs are ok', async () => {                  // TODO
+      it('Validation should return a valid Input if all the inputs are ok', async () => {
         const { errorOutput, parameters } = await getShoppingListByIdValidation(correctInput);
         expect(errorOutput).to.not.exist;
         expect(parameters).to.be.ok.and.to.haveOwnProperty('id').that.equals('00001000');

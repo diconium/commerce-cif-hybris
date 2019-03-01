@@ -31,7 +31,7 @@ const validInput = require('../resources/validatePatchShoppingListValid.json');
 
 describe('patchShoppingList', () => {
   describe('Unit tests', () => {
-    const scope = nock('https://hybris.example.com');          // TODO
+    const scope = nock('https://hybris.example.com');
 
     it('Gravity points down!', () => {
       expect(true).to.equal(true);
