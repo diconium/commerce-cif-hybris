@@ -23,7 +23,6 @@ import PagedResponseShoppingListMapper from '../mappers/PagedResponseShoppingLis
 const ERROR_TYPE = 'ShoppingListError';
 
 function getShoppingListById(args: any): Input {
-
   return new Validator<ShoppingList>(args, ERROR_TYPE)
     .setMapper(ShoppingListMapper)
     .checkArguments()
@@ -31,42 +30,37 @@ function getShoppingListById(args: any): Input {
     .input();
 
 }
-
 export const getById = getShoppingListById;
 export const deleteById = getShoppingListById;
 
 function getShoppingLists(args: any): Input {
-
   return new Validator<ShoppingList>(args, ERROR_TYPE)
     .setMapper(PagedResponseShoppingListMapper)
     .checkArguments()
+    .isInteger('limit')
+    .isInsideInterval('limit', 1)
+    .isInteger('offset')
+    .isInsideInterval('offset', 0)
     .input();
 
 }
-
 export const get = getShoppingLists;
 
 function postShoppingList(args: any): Input {
-
   return new Validator<ShoppingList>(args, ERROR_TYPE)
     .setMapper(ShoppingListMapper)
     .checkArguments()
     .mandatoryParameter('saveCartName')
     .input();
-
 }
-
 export const post = postShoppingList;
 
 function patchShoppingList(args: any): Input {
-
   return new Validator<ShoppingList>(args, ERROR_TYPE)
     .setMapper(ShoppingListMapper)
     .checkArguments()
     .mandatoryParameter('id')
     .mandatoryParameter('saveCartName')
     .input();
-
 }
-
 export const patch = patchShoppingList;

@@ -36,7 +36,7 @@ export default class GetShoppingListClient extends HttpClient {
       pageSize,
     } = this.input.parameters;
 
-    return this.get(`/users/${customerId}/carts`,  { bearer, queryParameters: { currentPage, pageSize, fields: 'FULL', savedCartsOnly: true } })
+    return this.get(`/users/${customerId}/carts`, { bearer, queryParameters: { currentPage, pageSize, fields: 'FULL', savedCartsOnly: true } })
     .then(cartDto => cartDto)
     .catch(errorOutput => Promise.reject(errorOutput));
 

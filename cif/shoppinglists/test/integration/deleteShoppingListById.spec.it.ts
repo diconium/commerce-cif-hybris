@@ -25,7 +25,7 @@ chai.use(chaiShallowDeepEqual);
 chai.use(chaiHttp);
 const { expect } = chai;
 
-const validInput = require('../resources/valid-delete-cart-input.json');
+const validInput = require('../resources/validDeleteCartInput.json');
 
 describe('Delete Shopping List By Id', function ()  {
   this.timeout(25000);

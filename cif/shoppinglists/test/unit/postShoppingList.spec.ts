@@ -23,9 +23,9 @@ import { post as validatePostShoppingList } from '../../src/validations/shopping
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
 const cartCreated = require('../resources/cartCreatedExample.json');
-const validInput = require('../resources/validatePatchShoppingListValid.json');
+const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
+const validInput = require('../resources/validPatchShoppingListInput.json');
 
 describe('postShoppingList', () => {
   describe('Unit tests', () => {

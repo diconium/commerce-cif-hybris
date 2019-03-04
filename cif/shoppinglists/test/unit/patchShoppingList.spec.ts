@@ -24,10 +24,10 @@ const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
 const cartNotFoundExample = require('../resources/cartNotFound.json');
+const invalidInput = require('../resources/invalidPatchShoppingListInput.json');
+const invalidInputWithId = require('../resources/invalidPatchShoppingListInputWithId.json');
+const validInput = require('../resources/validPatchShoppingListInput.json');
 const shoppingListExample = require('../resources/shoppingListExample-00001000.json');
-const invalidInput = require('../resources/validatePatchShoppingListInvalid.json');
-const invalidInputWithId = require('../resources/validatePatchShoppingListInvalidWithId.json');
-const validInput = require('../resources/validatePatchShoppingListValid.json');
 
 describe('patchShoppingList', () => {
   describe('Unit tests', () => {

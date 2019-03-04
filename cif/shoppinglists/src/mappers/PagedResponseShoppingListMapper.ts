@@ -22,8 +22,8 @@ import ShoppingListMapper from './ShoppingListMapper';
 
 export default class PagedResponseShoppingListMapper extends Mapper<PagedResponseShoppingList> {
 
-  offset: number;  // TODO: pode-se fazer isto para passar contexto?
-  limit: number;
+  offset: number = 0;  // TODO: pode-se fazer isto para passar contexto?
+  limit: number = 20;
 
   constructor(settings: InputSettings) {
     super(settings, dahcTranslator);

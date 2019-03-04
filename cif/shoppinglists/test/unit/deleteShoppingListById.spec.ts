@@ -21,11 +21,11 @@ const { expect } = chai;
 import { deleteById as deleteShoppingListById } from '../../src/actions/shoppinglists';
 import { deleteById as deleteShoppingListByIdValidation } from '../../src/validations/shoppinglists';
 
-const validInput = require('../resources/valid-delete-cart-input.json');
-const validAuthenticatedInput = require('../resources/valid-authenticated-delete-cart-input.json');
-const invalidInput = require('../resources/invalid-delete-cart-input.json');
-const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
 const cartNotFound = require('../resources/cartNotFound.json');
+const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
+const invalidInput = require('../resources/invalidDeleteCartInput.json');
+const validAuthenticatedInput = require('../resources/validAuthenticatedDeleteCartInput.json');
+const validInput = require('../resources/validDeleteCartInput.json');
 
 describe('deleteShoppingListById', () => {
   describe('Unit tests', () => {
@@ -79,9 +79,13 @@ describe('deleteShoppingListById', () => {
       });
 
       it('Should return CommerceServiceResourceNotFoundError if cart to delete is not found', async () => {
-        scope.delete('/rest/v2/electronics/users/anonymous/carts/ce280b6d-61f0-41e7-acb4-d670546f744b').query({ lang: 'en' })
+        scope.delete('/rest/v2/electronics/users/current/carts/00000006')
+          .query({
+            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
+            lang: 'en',
+          })
           .reply(404, cartNotFound);
-        const { response } = await deleteShoppingListById(validInput);
+        const { response } = await deleteShoppingListById(validAuthenticatedInput);
         expect(response.error).to.be.deep.equal({
           cause: {
             message: 'CartErrornotFound',
@@ -91,24 +95,15 @@ describe('deleteShoppingListById', () => {
         });
       });
 
-      it('Should return 200 was successfully deleted', async () => {
-        scope.delete('/rest/v2/electronics/users/anonymous/carts/ce280b6d-61f0-41e7-acb4-d670546f744b')
-          .query({ lang: 'en' })
-          .reply(200);
-        const { response } = await deleteShoppingListById(validInput);
-        expect(response.statusCode).to.equal(200);
-        expect(response.body).to.deep.equal({});
-      });
-
-      it('Should return 200 was successfully deleted for authenticated cart', async () => {
+      it('Should return 204 was successfully deleted for authenticated user', async () => {
         scope.delete('/rest/v2/electronics/users/current/carts/00000006')
           .query({
             access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
-          .reply(200);
+          .reply(204);
         const { response } = await deleteShoppingListById(validAuthenticatedInput);
-        expect(response.statusCode).to.equal(200);
+        expect(response.statusCode).to.equal(204);
         expect(response.body).to.deep.equal({});
       });
     });

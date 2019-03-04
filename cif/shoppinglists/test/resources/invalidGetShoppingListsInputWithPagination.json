@@ -1,5 +1,8 @@
 {
-  "parameters": {},
+  "parameters": {
+    "currentPage": 2,
+    "pageSize": 1
+  },
   "settings": {
     "HB_API_BASE_PATH": "/rest/v2",
     "HB_API_HOST": "hybris.example.com",

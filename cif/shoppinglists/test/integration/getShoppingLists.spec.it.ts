@@ -24,9 +24,9 @@ import { getById as getShoppingLists } from '../../src/actions/shoppinglists';
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const validInput = require('../resources/validateGetShoppingListByIdAnonymous.json');
-const validInputOauth = require('../resources/validateGetShoppingListByIdValid.json');
-const validInputOauthWithPagination = require('../resources/validateGetShoppingListValidWithPagination.json');
+const validInput = require('../resources/validGetShoppingListByIdInputAnonymous.json');
+const validInputOauth = require('../resources/validGetShoppingListByIdInput.json');
+const validInputOauthWithPagination = require('../resources/validGetShoppingListInputWithPagination.json');
 
 describe('getShoppingLists', function () {
   this.timeout(25000);
@@ -83,7 +83,7 @@ describe('getShoppingLists', function () {
       expect(body.results[0]).to.deep.include({ name: validInputOauth.parameters.saveCartName });
     });
 
-    it('Response should be 200 if any shopping list exists for the current user, if bearer is valid', async () => {
+    it('Paginated Response should be 200 if any shopping list exists for the current user, if bearer is valid', async () => {
       chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
         .post(`carts?access_token=${validInputOauthWithPagination.settings.bearer}`)
         .then((response) => {

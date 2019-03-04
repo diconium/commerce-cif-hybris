@@ -23,11 +23,13 @@ import { get as getShoppingListsValidation } from '../../src/validations/shoppin
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const shoppingListsExample = require('../resources/shoppingListsExample.json');
-const emptyShoppingListsExample = require('../resources/emptyShoppingLists.json');
-const validInput = require('../resources/validateGetShoppingListsValid.json');
 const adobeEmptyResponse = require('../resources/adobeEmptyGetShoppingListsResponse.json');
 const adobeValidResponse = require('../resources/adobeValidGetShoppingListsResponse.json');
+const emptyShoppingListsExample = require('../resources/emptyShoppingLists.json');
+const validInput = require('../resources/validGetShoppingListsInput.json');
+const validInputWithPagination = require('../resources/validGetShoppingListsInputWithPagination.json');
+const invalidInputWithPagination = require('../resources/invalidGetShoppingListsInputWithPagination.json');
+const shoppingListsExample = require('../resources/shoppingListsExample.json');
 
 describe('getShoppingLists', () => {
   describe('Unit tests', () => {
@@ -65,6 +67,23 @@ describe('getShoppingLists', () => {
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeEmptyResponse);
       });
 
+      it('Action should have an empty response when pagination input exceeds limit', async () => {
+        scope.get('/rest/v2/electronics/users/current/carts')
+          .query({
+            fields: 'FULL',
+            savedCartsOnly: true,
+            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
+            lang: 'en',
+            currentPage: 2,
+            pageSize: 1,
+          })
+          .reply(200, emptyShoppingListsExample);
+        const { response } = await getShoppingLists(invalidInputWithPagination);
+        const { body } = response;
+        console.log(body);
+        expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeEmptyResponse);
+      });
+
       it('Action should have a response with the correct shopping list id for current user', async () => {
         scope.get('/rest/v2/electronics/users/current/carts')
           .query({
@@ -75,6 +94,22 @@ describe('getShoppingLists', () => {
           })
           .reply(200, shoppingListsExample);
         const { response } = await getShoppingLists(validInput);
+        const { body } = response;
+        expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeValidResponse);
+      });
+
+      it('Action should have a response with the correct shopping list id for current user, with pagination', async () => {
+        scope.get('/rest/v2/electronics/users/current/carts')
+          .query({
+            fields: 'FULL',
+            savedCartsOnly: true,
+            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
+            lang: 'en',
+            currentPage: 0,
+            pageSize: 1,
+          })
+          .reply(200, shoppingListsExample);
+        const { response } = await getShoppingLists(validInputWithPagination);
         const { body } = response;
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeValidResponse);
       });

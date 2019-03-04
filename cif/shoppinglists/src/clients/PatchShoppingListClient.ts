@@ -15,7 +15,7 @@
  */
 
 import { Input } from '@diconium/commerce-cif-hybris-core';
-import { CartWsDTO, HttpClient, PrincipalWsDTO, SaveCartResultWsDTO } from '@diconium/commerce-cif-hybris-clients';
+import { CartWsDTO, HttpClient, PrincipalWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import { Cart } from '@adobe/commerce-cif-model';
 
 export default class PatchShoppingListClient extends HttpClient {

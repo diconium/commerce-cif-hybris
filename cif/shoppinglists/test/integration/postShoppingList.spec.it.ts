@@ -23,8 +23,8 @@ import { patch as patchShoppingList, post as postShoppingList } from '../../src/
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const validInput = require('../resources/validateGetShoppingListByIdAnonymousIntegration.json');
-const validInputOauth = require('../resources/validateGetShoppingListByIdValidIntegration.json');
+const validInput = require('../resources/validGetShoppingListByIdInputAnonymousIntegration.json');
+const validInputOauth = require('../resources/validGetShoppingListByIdInputIntegration.json');
 
 describe('patchShoppingList', function () {
   this.timeout(25000);

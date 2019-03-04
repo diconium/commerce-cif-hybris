@@ -24,8 +24,8 @@ import { getById as getShoppingListById } from '../../src/actions/shoppinglists'
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const validInput = require('../resources/validateGetShoppingListByIdAnonymous.json');
-const validInputOauth = require('../resources/validateGetShoppingListByIdValid.json');
+const validInput = require('../resources/validGetShoppingListByIdInputAnonymous.json');
+const validInputOauth = require('../resources/validGetShoppingListByIdInput.json');
 
 describe('getShoppingListById', function () {
   this.timeout(25000);

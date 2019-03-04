@@ -23,10 +23,10 @@ import { getById as getShoppingListByIdValidation } from '../../src/validations/
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const shoppingListExample = require('../resources/shoppingListExample-00001000.json');
 const cartNotFoundExample = require('../resources/cartNotFound.json');
-const validInput = require('../resources/validateGetShoppingListByIdValid.json');
-const invalidInput = require('../resources/validateGetShoppingListByIdInvalid.json');
+const invalidInput = require('../resources/invalidGetShoppingListByIdInput.json');
+const validInput = require('../resources/validGetShoppingListByIdInput.json');
+const shoppingListExample = require('../resources/shoppingListExample-00001000.json');
 
 describe('getShoppingListById', () => {
   describe('Unit tests', () => {
@@ -45,7 +45,6 @@ describe('getShoppingListById', () => {
       const correctInput = {
         id: '00001000',
       };
-
       it('Validation should return a valid Input if all the inputs are ok', async () => {
         const { errorOutput, parameters } = await getShoppingListByIdValidation(correctInput);
         expect(errorOutput).to.not.exist;

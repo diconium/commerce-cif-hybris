@@ -16,15 +16,15 @@
 
 import { Cart, PagedResponseShoppingList, ShoppingList } from '@adobe/commerce-cif-model';
 import { Input, Output, SequenceAction, SimpleAction } from '@diconium/commerce-cif-hybris-core';
+
+import DeleteCartClient from '@diconium/commerce-cif-hybris-carts/lib/clients/DeleteCartClient';
 import GetShoppingListClient from '../clients/GetShoppingListClient';
 import GetShoppingListByIdClient from '../clients/GetShoppingListByIdClient';
-import DeleteCartClient from '@diconium/commerce-cif-hybris-carts/lib/clients/DeleteCartClient';
-import PostShoppingListClient from '../clients/PostShoppingListClient';
-import ShoppingListMapper from '../mappers/ShoppingListMapper';
 import PatchShoppingListClient from '../clients/PatchShoppingListClient';
+import PostShoppingListClient from '../clients/PostShoppingListClient';
+
 import PagedResponseShoppingListMapper from '../mappers/PagedResponseShoppingListMapper';
-import PagedResponseProductMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/PagedResponseProductMapper';
-import SearchProductClient from '@diconium/commerce-cif-hybris-products/lib/clients/SearchProductClient';
+import ShoppingListMapper from '../mappers/ShoppingListMapper';
 
 const ERROR_TYPE = 'ShoppingListError';
 
@@ -35,7 +35,6 @@ function getShoppingListById(input: Input): Promise<Output<ShoppingList>> {
     .setErrorType(ERROR_TYPE)
     .activate();
 }
-
 export const getById = getShoppingListById;
 
 function getShoppingLists(input: Input): Promise<Output<PagedResponseShoppingList>> {
@@ -45,7 +44,6 @@ function getShoppingLists(input: Input): Promise<Output<PagedResponseShoppingLis
     .setErrorType(ERROR_TYPE)
     .activate();
 }
-
 export const get = getShoppingLists;
 
 function deleteShoppingList(input: Input): Promise<Output<ShoppingList>> {
@@ -64,7 +62,6 @@ function patchShoppingList(input: Input): Promise<Output<ShoppingList>> {
     .setErrorType(ERROR_TYPE)
     .activate();
 }
-
 export const patch = patchShoppingList;
 
 function postShoppingList(input: Input): Promise<Input> {

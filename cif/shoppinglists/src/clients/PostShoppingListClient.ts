@@ -43,7 +43,6 @@ export default class PostShoppingListClient extends HttpClient {
   }
 
   private modifyInputs(cartDto: CartWsDTO) {
-
     this.input.settings.customerId === 'current' ? this.input.parameters.id = cartDto.code : this.input.parameters.id = cartDto.guid;
 
     const {
@@ -57,7 +56,6 @@ export default class PostShoppingListClient extends HttpClient {
     }
 
     return cartDto;
-
   }
 
 }
