@@ -1,0 +1,69 @@
+{
+  "basePrice": {
+    "currencyIso": "USD",
+    "formattedValue": "$626.65",
+    "priceType": "BUY",
+    "value": 626.65
+  },
+  "configurationInfos": [],
+  "entryNumber": 1,
+  "product": {
+    "availableForPickup": true,
+    "averageRating": 2.375,
+    "baseOptions": [],
+    "categories": [
+      {
+        "code": "578",
+        "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/c/578"
+      },
+      {
+        "code": "brand_5",
+        "url": "/Brands/Sony/c/brand_5"
+      }
+    ],
+    "code": "3514521",
+    "configurable": false,
+    "images": [
+      {
+        "altText": "DSC-WX1",
+        "format": "zoom",
+        "imageType": "PRIMARY",
+        "url": "/medias/?context=bWFzdGVyfGltYWdlc3wyNDMxNHxpbWFnZS9qcGVnfGltYWdlcy9oOWQvaDA0Lzg3OTY3OTIzMjQxMjYuanBnfGVmYTdjYTc0MDE1ZmIwYmE5YmI1Njc0YmJlMWQwYTg0YzliZGI0MzhkZDVhYmMzZmI5NzNjMzQ1ZTQxZGYxMTg"
+      },
+      {
+        "altText": "DSC-WX1",
+        "format": "product",
+        "imageType": "PRIMARY",
+        "url": "/medias/?context=bWFzdGVyfGltYWdlc3wxMTM3N3xpbWFnZS9qcGVnfGltYWdlcy9oZTkvaDliLzg3OTY4MTg2MDQwNjIuanBnfDliMTM0MjRlZDEyYzVlNGY3YWU5NTVkZmI3ZWVjMTcwZDQ4MWU3ZGYyNWQ1OTMxODFjMmExNGEzZTIzOTIzYmU"
+      },
+      {
+        "altText": "DSC-WX1",
+        "format": "thumbnail",
+        "imageType": "PRIMARY",
+        "url": "/medias/?context=bWFzdGVyfGltYWdlc3wyNDQ2fGltYWdlL2pwZWd8aW1hZ2VzL2g0My9oYTMvODc5Njg0NDk0OTUzNC5qcGd8NjkyZTU4ZGQ4YWE3MjU0Mjg4ZDBmNGI2N2Y5Y2MwNTc2NzNiNTc4NzIwMDk2NzcxMTQyMWY0NjA3OGE4NDdhZA"
+      },
+      {
+        "altText": "DSC-WX1",
+        "format": "cartIcon",
+        "imageType": "PRIMARY",
+        "url": "/medias/?context=bWFzdGVyfGltYWdlc3wxNTk2fGltYWdlL2pwZWd8aW1hZ2VzL2hkYS9oZGQvODc5Njg3MTI5NTAwNi5qcGd8NGEwNWQyZTgxMzczZTI0ZDMyZTI3MjY5MTdiZGI4MmYzNmJhOGFkMTliYzM2M2ZjYjIwMWU5Mzk3ZTU3YmNiOA"
+      }
+    ],
+    "manufacturer": "Sony",
+    "name": "DSC-WX1",
+    "purchasable": true,
+    "stock": {
+      "stockLevel": 11,
+      "stockLevelStatus": "inStock"
+    },
+    "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/DSC-WX1/p/3514521"
+  },
+  "quantity": 1,
+  "totalPrice": {
+    "currencyIso": "USD",
+    "formattedValue": "$626.65",
+    "priceType": "BUY",
+    "value": 626.65
+  },
+  "updateable": true
+}

@@ -1,0 +1,54 @@
+{
+  "id": "1",
+  "productVariant": {
+    "assets": [
+      {
+        "id": "undefined",
+        "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wyNDMxNHxpbWFnZS9qcGVnfGltYWdlcy9oOWQvaDA0Lzg3OTY3OTIzMjQxMjYuanBnfGVmYTdjYTc0MDE1ZmIwYmE5YmI1Njc0YmJlMWQwYTg0YzliZGI0MzhkZDVhYmMzZmI5NzNjMzQ1ZTQxZGYxMTg"
+      },
+      {
+        "id": "undefined",
+        "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wxMTM3N3xpbWFnZS9qcGVnfGltYWdlcy9oZTkvaDliLzg3OTY4MTg2MDQwNjIuanBnfDliMTM0MjRlZDEyYzVlNGY3YWU5NTVkZmI3ZWVjMTcwZDQ4MWU3ZGYyNWQ1OTMxODFjMmExNGEzZTIzOTIzYmU"
+      },
+      {
+        "id": "undefined",
+        "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wyNDQ2fGltYWdlL2pwZWd8aW1hZ2VzL2g0My9oYTMvODc5Njg0NDk0OTUzNC5qcGd8NjkyZTU4ZGQ4YWE3MjU0Mjg4ZDBmNGI2N2Y5Y2MwNTc2NzNiNTc4NzIwMDk2NzcxMTQyMWY0NjA3OGE4NDdhZA"
+      },
+      {
+        "id": "undefined",
+        "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wxNTk2fGltYWdlL2pwZWd8aW1hZ2VzL2hkYS9oZGQvODc5Njg3MTI5NTAwNi5qcGd8NGEwNWQyZTgxMzczZTI0ZDMyZTI3MjY5MTdiZGI4MmYzNmJhOGFkMTliYzM2M2ZjYjIwMWU5Mzk3ZTU3YmNiOA"
+      }
+    ],
+    "attributes": [
+      {
+        "id": "manufacturer",
+        "name": "Manufacturer",
+        "value": "Sony"
+      },
+      {
+        "id": "averageRating",
+        "name": "Average Rating",
+        "value": 2.375
+      },
+      {
+        "id": "availableForPickup",
+        "name": "Available for Pickup",
+        "value": true
+      }
+    ],
+    "available": true,
+    "categories": [
+      {
+        "id": "578"
+      },
+      {
+        "id": "brand_5"
+      }
+    ],
+    "id": "3514521",
+    "name": "DSC-WX1",
+    "prices": [],
+    "sku": "3514521"
+  },
+  "quantity": 1
+}
