@@ -1,0 +1,1 @@
+{"version":3,"file":"GetShippingMethodsClient.d.ts","sourceRoot":"","sources":["../../src/clients/GetShippingMethodsClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,qBAAqB,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAG1F,MAAM,CAAC,OAAO,OAAO,wBAAyB,SAAQ,UAAU;gBAElD,KAAK,EAAE,KAAK;IAIxB,IAAI,IAAI,OAAO,CAAC,qBAAqB,CAAC;CAgBvC"}

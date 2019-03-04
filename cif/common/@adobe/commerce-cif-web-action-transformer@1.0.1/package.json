@@ -1,0 +1,42 @@
+{
+  "name": "@adobe/commerce-cif-web-action-transformer",
+  "version": "1.0.1",
+  "description": "Adobe Commerce Integration Framework (CIF) Web Action Transformer Project",
+  "main": "index.js",
+  "author": "Adobe Systems Inc.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe/commerce-cif-common.git"
+  },
+  "dependencies": {
+    "@adobe/commerce-cif-common": "1.0.0",
+    "@adobe/commerce-cif-model": "1.0.0",
+    "http-status-codes": "1.1.6"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-plugin-header": "1.2.0",
+    "serverless": "1.29.2",
+    "serverless-openwhisk": "0.14.0",
+    "serverless-webpack": "4.3.0",
+    "webpack": "4.0.1"
+  },
+  "eslintConfig": {
+    "extends": "../../.eslintrc.js"
+  },
+  "scripts": {
+    "lint": "$(npm bin)/eslint -f table --ignore-path ../../.eslintignore .",
+    "package": "$(npm bin)/serverless package",
+    "deploy": "$(npm bin)/serverless deploy",
+    "remove": "$(npm bin)/serverless remove",
+    "deploy-latest": "wsk -i package create web-action-transformer@latest --shared yes; npm run deploy -- --ow-package web-action-transformer@latest",
+    "deploy-current": "wsk -i package create web-action-transformer@$npm_package_version --shared yes; npm run deploy",
+    "deploy-suffix": "wsk -i package create web-action-transformer@${OW_PACKAGE_SUFFIX} --shared yes; npm run deploy -- --ow-package web-action-transformer@${OW_PACKAGE_SUFFIX}",
+    "remove-latest": "npm run remove -- --ow-package web-action-transformer@latest; wsk -i package delete web-action-transformer@$npm_package_version",
+    "remove-current": "npm run remove; wsk -i package delete web-action-transformer@latest",
+    "remove-suffix": "npm run remove -- --ow-package web-action-transformer@${OW_PACKAGE_SUFFIX}; wsk -i package delete web-action-transformer@${OW_PACKAGE_SUFFIX}",
+    "deploy-package": "npm run deploy-current; npm run deploy-latest",
+    "remove-package": "npm run remove-current; npm run remove-latest"
+  }
+}

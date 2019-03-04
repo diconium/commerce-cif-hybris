@@ -1,0 +1,24 @@
+service: cif-core
+
+package:
+  individually: true
+  exclude:
+    - ./**
+
+provider:
+  name: openwhisk
+  runtime: nodejs:default
+  ignore_certs: true
+
+custom:
+  npm-version: web-action-transformer@${file(package.json):version}
+  ow-package: ${opt:ow-package, self:custom.npm-version}
+
+plugins:
+  - serverless-openwhisk
+  - serverless-webpack
+
+functions:
+  main:
+    name: ${self:custom.ow-package}/main
+    handler: ./index.main

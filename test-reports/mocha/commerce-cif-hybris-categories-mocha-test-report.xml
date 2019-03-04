@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.038000000000000006" tests="22" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-03-04T16:50:41" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="getCategories" timestamp="2019-03-04T16:50:41" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/categories/test/unit/getCategories.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-03-04T16:50:41" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/categories/test/unit/getCategories.spec.ts" failures="0" time="0.001">
+    <testcase name="getCategories Unit tests Gravity points down!" time="0.001" classname="Gravity points down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-03-04T16:50:41" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/categories/test/unit/getCategories.spec.ts" failures="0" time="0.005">
+    <testcase name="getCategories Unit tests Validation Validator should return InvalidArgumentError errorOutput if offset is negative" time="0.004" classname="Validator should return InvalidArgumentError errorOutput if offset is negative">
+    </testcase>
+    <testcase name="getCategories Unit tests Validation Validator should return InvalidArgumentError errorOutput if limit is less than 1" time="0.001" classname="Validator should return InvalidArgumentError errorOutput if limit is less than 1">
+    </testcase>
+    <testcase name="getCategories Unit tests Validation Validator should return correct parameters" time="0" classname="Validator should return correct parameters">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-03-04T16:50:41" tests="10" file="/Users/capeljos/Work/commerce-cif-hybris/cif/categories/test/unit/getCategories.spec.ts" failures="0" time="0.02800000000000001">
+    <testcase name="getCategories Unit tests Service Function should return something" time="0.001" classname="Function should return something">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should have Unexpected error" time="0.016" classname="Response should have Unexpected error">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should be 200" time="0.002" classname="Response should be 200">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should have flat results with a total of 54 and a count of 20 (limit)" time="0.002" classname="Response should have flat results with a total of 54 and a count of 20 (limit)">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should have flat results: first result is a parent category and second is the first child" time="0.001" classname="Response should have flat results: first result is a parent category and second is the first child">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should have tree results" time="0.002" classname="Response should have tree results">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should retrieve a tree structure with the correct subcategories if the parameters &quot;tree&quot; is sent" time="0.001" classname="Response should retrieve a tree structure with the correct subcategories if the parameters &quot;tree&quot; is sent">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should retrieve a tree structure but only with the root categories." time="0.001" classname="Response should retrieve a tree structure but only with the root categories.">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should retrieve a tree structure but only with the 1 depth categories." time="0.001" classname="Response should retrieve a tree structure but only with the 1 depth categories.">
+    </testcase>
+    <testcase name="getCategories Unit tests Service Response should retrieve the categories offset by 1" time="0.001" classname="Response should retrieve the categories offset by 1">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCategoriesById" timestamp="2019-03-04T16:50:41" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/categories/test/unit/getCategoryById.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-03-04T16:50:41" tests="8" file="/Users/capeljos/Work/commerce-cif-hybris/cif/categories/test/unit/getCategoryById.spec.ts" failures="0" time="0.004">
+    <testcase name="getCategoriesById Unit tests Gravity points down!" time="0" classname="Gravity points down!">
+    </testcase>
+    <testcase name="getCategoriesById Unit tests Function should return something" time="0" classname="Function should return something">
+    </testcase>
+    <testcase name="getCategoriesById Unit tests Validator should return MissingPropertyError errorOutput if no id is provided" time="0" classname="Validator should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="getCategoriesById Unit tests Validator should return categoryId when id is provided" time="0" classname="Validator should return categoryId when id is provided">
+    </testcase>
+    <testcase name="getCategoriesById Unit tests Action should return MissingPropertyError errorOutput if no id is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="getCategoriesById Unit tests Response should be 404 if the id does not exist on hybris." time="0.001" classname="Response should be 404 if the id does not exist on hybris.">
+    </testcase>
+    <testcase name="getCategoriesById Unit tests Response should be 200 if a correct category id is given." time="0.002" classname="Response should be 200 if a correct category id is given.">
+    </testcase>
+    <testcase name="getCategoriesById Unit tests Response should return a category model if hybris response is ok." time="0.001" classname="Response should return a category model if hybris response is ok.">
+    </testcase>
+  </testsuite>
+</testsuites>

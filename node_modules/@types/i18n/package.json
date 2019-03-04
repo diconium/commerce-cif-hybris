@@ -1,0 +1,27 @@
+{
+    "name": "@types/i18n",
+    "version": "0.8.3",
+    "description": "TypeScript definitions for i18n-node",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Maxime LUCE",
+            "url": "https://github.com/SomaticIT",
+            "githubUsername": "SomaticIT"
+        },
+        {
+            "name": "FindQ",
+            "url": "https://github.com/FindQ",
+            "githubUsername": "FindQ"
+        }
+    ],
+    "main": "",
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "d67828fd76bad9699f653213e705318ec7ccbf02694591a8d19c39077dd776e9",
+    "typeScriptVersion": "2.2"
+}

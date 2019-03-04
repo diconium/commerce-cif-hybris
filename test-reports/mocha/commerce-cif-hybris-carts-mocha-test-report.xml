@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.09500000000000004" tests="167" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-01-31T13:16:52" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="deleteCartBillingAddress" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/billingaddress/deleteBillingAddress.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/billingaddress/deleteBillingAddress.spec.ts" failures="0" time="0.001">
+    <testcase name="deleteCartBillingAddress Unit tests Gravity point down!" time="0.001" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="2" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/billingaddress/deleteBillingAddress.spec.ts" failures="0" time="0.003">
+    <testcase name="deleteCartBillingAddress Unit tests Validation Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="deleteCartBillingAddress Unit tests Validation Validator should return MissingPropertyError errorOutput if no id is provided" time="0.003" classname="Validator should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+  </testsuite>
+  <testsuite name="postCartBillingAddress" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="8" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts" failures="0" time="0.017">
+    <testcase name="postCartBillingAddress Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+    <testcase name="postCartBillingAddress Unit tests Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="postCartBillingAddress Unit tests Validator should return MissingPropertyError errorOutput if no id is provided" time="0.001" classname="Validator should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="postCartBillingAddress Unit tests Validator should return MissingPropertyError errorOutput if no address is provided" time="0" classname="Validator should return MissingPropertyError errorOutput if no address is provided">
+    </testcase>
+    <testcase name="postCartBillingAddress Unit tests Validator should return correctly map cartId and address parameters" time="0" classname="Validator should return correctly map cartId and address parameters">
+    </testcase>
+    <testcase name="postCartBillingAddress Unit tests Should return CommerceServiceResourceNotFoundError if the requested cart was not found" time="0.013" classname="Should return CommerceServiceResourceNotFoundError if the requested cart was not found">
+    </testcase>
+    <testcase name="postCartBillingAddress Unit tests Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart" time="0.002" classname="Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart">
+    </testcase>
+    <testcase name="postCartBillingAddress Unit tests Should return success" time="0.001" classname="Should return success">
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteCoupon" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/deleteCoupon.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/deleteCoupon.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/deleteCoupon.spec.ts" failures="0" time="0.001">
+    <testcase name="deleteCoupon Unit tests Validation Validation should return error if &apos;id&apos; is missing" time="0.001" classname="Validation should return error if &apos;id&apos; is missing">
+    </testcase>
+    <testcase name="deleteCoupon Unit tests Validation Validation should return error if &apos;couponId&apos; is missing" time="0" classname="Validation should return error if &apos;couponId&apos; is missing">
+    </testcase>
+    <testcase name="deleteCoupon Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="4" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/deleteCoupon.spec.ts" failures="0" time="0.001">
+    <testcase name="deleteCoupon Unit tests Service Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="deleteCoupon Unit tests Service Should return MissingPropertyError if input is not valid" time="0" classname="Should return MissingPropertyError if input is not valid">
+    </testcase>
+    <testcase name="deleteCoupon Unit tests Service Should CommerceServiceForbiddenError when accessing a not authorized cart" time="0.001" classname="Should CommerceServiceForbiddenError when accessing a not authorized cart">
+    </testcase>
+    <testcase name="deleteCoupon Unit tests Service Should return 200 if coupon is valid" time="0" classname="Should return 200 if coupon is valid">
+    </testcase>
+  </testsuite>
+  <testsuite name="postCoupon" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/postCoupon.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/postCoupon.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/postCoupon.spec.ts" failures="0" time="0.001">
+    <testcase name="postCoupon Unit tests Validation Validation should return error if &apos;id&apos; is missing" time="0.001" classname="Validation should return error if &apos;id&apos; is missing">
+    </testcase>
+    <testcase name="postCoupon Unit tests Validation Validation should return error if &apos;code&apos; is missing" time="0" classname="Validation should return error if &apos;code&apos; is missing">
+    </testcase>
+    <testcase name="postCoupon Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="4" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/coupons/postCoupon.spec.ts" failures="0" time="0.002">
+    <testcase name="postCoupon Unit tests Service Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="postCoupon Unit tests Service Should return MissingPropertyError if input is not valid" time="0" classname="Should return MissingPropertyError if input is not valid">
+    </testcase>
+    <testcase name="postCoupon Unit tests Service Should return 200 if coupon is valid" time="0.001" classname="Should return 200 if coupon is valid">
+    </testcase>
+    <testcase name="postCoupon Unit tests Service Should return CommerceServiceResourceNotFoundError if coupon is expired" time="0.001" classname="Should return CommerceServiceResourceNotFoundError if coupon is expired">
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteCartById" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartById.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartById.spec.ts" failures="0" time="0">
+    <testcase name="deleteCartById Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="2" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartById.spec.ts" failures="0" time="0">
+    <testcase name="deleteCartById Unit tests Validation Validation should return error if &apos;id&apos; is missing" time="0" classname="Validation should return error if &apos;id&apos; is missing">
+    </testcase>
+    <testcase name="deleteCartById Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="6" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartById.spec.ts" failures="0" time="0.003">
+    <testcase name="deleteCartById Unit tests Service Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="deleteCartById Unit tests Service Should return MissingPropertyError errorOutput if no id is provided" time="0" classname="Should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="deleteCartById Unit tests Service Should return CommerceServiceForbiddenError if not allowed to delete the cart" time="0.001" classname="Should return CommerceServiceForbiddenError if not allowed to delete the cart">
+    </testcase>
+    <testcase name="deleteCartById Unit tests Service Should return CommerceServiceResourceNotFoundError if cart to delete is not found" time="0" classname="Should return CommerceServiceResourceNotFoundError if cart to delete is not found">
+    </testcase>
+    <testcase name="deleteCartById Unit tests Service Should return 200 was successfully deleted" time="0.001" classname="Should return 200 was successfully deleted">
+    </testcase>
+    <testcase name="deleteCartById Unit tests Service Should return 200 was successfully deleted for authenticated cart" time="0.001" classname="Should return 200 was successfully deleted for authenticated cart">
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteCartEntry" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartEntryById.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartEntryById.spec.ts" failures="0" time="0">
+    <testcase name="deleteCartEntry Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartEntryById.spec.ts" failures="0" time="0">
+    <testcase name="deleteCartEntry Unit tests Validation Validation should return MissingPropertyError if no &apos;id&apos; is provided" time="0" classname="Validation should return MissingPropertyError if no &apos;id&apos; is provided">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Validation Validation should return error if &apos;cartEntryId&apos; is missing" time="0" classname="Validation should return error if &apos;cartEntryId&apos; is missing">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="7" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/deleteCartEntryById.spec.ts" failures="0" time="0.003">
+    <testcase name="deleteCartEntry Unit tests Service Action should return something" time="0" classname="Action should return something">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no id is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no cartEntryId is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no cartEntryId is provided">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Service Action should return CommerceServiceForbiddenError if user is not allowed to delete the cart entry" time="0.001" classname="Action should return CommerceServiceForbiddenError if user is not allowed to delete the cart entry">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Service Action should return CommerceServiceResourceNotFoundError if cart entry to delete is not found" time="0.001" classname="Action should return CommerceServiceResourceNotFoundError if cart entry to delete is not found">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Service Action should return 200 if cart entry was successfully deleted" time="0.001" classname="Action should return 200 if cart entry was successfully deleted">
+    </testcase>
+    <testcase name="deleteCartEntry Unit tests Service Action should return 200 if cart entry was successfully deleted for authenticated cart" time="0" classname="Action should return 200 if cart entry was successfully deleted for authenticated cart">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCartById" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/getCartById.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="13" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/getCartById.spec.ts" failures="0" time="0.016">
+    <testcase name="getCartById Unit tests Gravity points down!" time="0" classname="Gravity points down!">
+    </testcase>
+    <testcase name="getCartById Unit tests Function should return something" time="0" classname="Function should return something">
+    </testcase>
+    <testcase name="getCartById Unit tests Should return MissingPropertyError errorOutput if no id is provided" time="0" classname="Should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="getCartById Unit tests Should return CommerceServiceResourceNotFoundError if a cart does not exist with the id" time="0.001" classname="Should return CommerceServiceResourceNotFoundError if a cart does not exist with the id">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have CommerceServiceForbiddenError response if the user has no permissions to fetch the cart" time="0.001" classname="Should have CommerceServiceForbiddenError response if the user has no permissions to fetch the cart">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have 200 OK if the cart exists with that number" time="0.004" classname="Should have 200 OK if the cart exists with that number">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have a response with the correct cart id for anonymous user" time="0.001" classname="Should have a response with the correct cart id for anonymous user">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have a response with the correct cart id for current user" time="0.001" classname="Should have a response with the correct cart id for current user">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have a response with one entry" time="0.003" classname="Should have a response with one entry">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have a response with one entry that matches the adobe model" time="0.001" classname="Should have a response with one entry that matches the adobe model">
+    </testcase>
+    <testcase name="getCartById Unit tests Should return 200 if basic auth is needed" time="0.002" classname="Should return 200 if basic auth is needed">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have a response with one coupon that matches the adobe model" time="0.001" classname="Should have a response with one coupon that matches the adobe model">
+    </testcase>
+    <testcase name="getCartById Unit tests Should have a response with one payment that matches the adobe model" time="0.001" classname="Should have a response with one payment that matches the adobe model">
+    </testcase>
+  </testsuite>
+  <testsuite name="Delete payment" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/deletePayment.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/deletePayment.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/deletePayment.spec.ts" failures="0" time="0.001">
+    <testcase name="Delete payment Unit tests Validation Validation should return error if &apos;id&apos; is missing" time="0" classname="Validation should return error if &apos;id&apos; is missing">
+    </testcase>
+    <testcase name="Delete payment Unit tests Validation Validation should return error if &apos;id&apos; is missing" time="0.001" classname="Validation should return error if &apos;id&apos; is missing">
+    </testcase>
+    <testcase name="Delete payment Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="4" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/deletePayment.spec.ts" failures="0" time="0.003">
+    <testcase name="Delete payment Unit tests Service Should return MissingPropertyError errorOutput if invalid id is supplied." time="0" classname="Should return MissingPropertyError errorOutput if invalid id is supplied.">
+    </testcase>
+    <testcase name="Delete payment Unit tests Service Should return CommerceServiceResourceNotFoundError errorOutput if the it is not available to delete the payment." time="0.001" classname="Should return CommerceServiceResourceNotFoundError errorOutput if the it is not available to delete the payment.">
+    </testcase>
+    <testcase name="Delete payment Unit tests Service Should return CommerceServiceForbiddenError errorOutput if the it is not authorized to delete the payment." time="0.001" classname="Should return CommerceServiceForbiddenError errorOutput if the it is not authorized to delete the payment.">
+    </testcase>
+    <testcase name="Delete payment Unit tests Service Should return a 200 if the payment was removed successfully " time="0.001" classname="Should return a 200 if the payment was removed successfully ">
+    </testcase>
+  </testsuite>
+  <testsuite name="getPaymentMethods" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/getPaymentMethods.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/getPaymentMethods.spec.ts" failures="0" time="0">
+    <testcase name="getPaymentMethods Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="2" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/getPaymentMethods.spec.ts" failures="0" time="0">
+    <testcase name="getPaymentMethods Unit tests Validation Validation should return error if &apos;id&apos; is missing" time="0" classname="Validation should return error if &apos;id&apos; is missing">
+    </testcase>
+    <testcase name="getPaymentMethods Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="4" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/getPaymentMethods.spec.ts" failures="0" time="0.003">
+    <testcase name="getPaymentMethods Unit tests Service Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="getPaymentMethods Unit tests Service Should return MissingPropertyError errorOutput if no id is provided" time="0.001" classname="Should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="getPaymentMethods Unit tests Service Should return CommerceServiceForbiddenError if not allowed to get the payment details." time="0.001" classname="Should return CommerceServiceForbiddenError if not allowed to get the payment details.">
+    </testcase>
+    <testcase name="getPaymentMethods Unit tests Service Should return 200 was successfully deleted" time="0.001" classname="Should return 200 was successfully deleted">
+    </testcase>
+  </testsuite>
+  <testsuite name="postPayment" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/postPayment.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/postPayment.spec.ts" failures="0" time="0">
+    <testcase name="postPayment Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="2" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/postPayment.spec.ts" failures="0" time="0">
+    <testcase name="postPayment Unit tests Validation Validation should return error if &apos;id&apos; is mandatory" time="0" classname="Validation should return error if &apos;id&apos; is mandatory">
+    </testcase>
+    <testcase name="postPayment Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/payment/postPayment.spec.ts" failures="0" time="0.004">
+    <testcase name="postPayment Unit tests Service Should return CommerceServiceForbiddenError errorOutput if user is not not allowed to set the payment." time="0.002" classname="Should return CommerceServiceForbiddenError errorOutput if user is not not allowed to set the payment.">
+    </testcase>
+    <testcase name="postPayment Unit tests Service Should return CommerceServiceResourceNotFoundError errorOutput if the cart id is not valid/found." time="0.001" classname="Should return CommerceServiceResourceNotFoundError errorOutput if the cart id is not valid/found.">
+    </testcase>
+    <testcase name="postPayment Unit tests Service Should return a 200 if the payment was successful" time="0.001" classname="Should return a 200 if the payment was successful">
+    </testcase>
+  </testsuite>
+  <testsuite name="postCart" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/postCart.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="16" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/postCart.spec.ts" failures="0" time="0.007">
+    <testcase name="postCart Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+    <testcase name="postCart Unit tests Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="postCart Unit tests Validator should return a valid input given a valid currency" time="0.001" classname="Validator should return a valid input given a valid currency">
+    </testcase>
+    <testcase name="postCart Unit tests Validator should return a valid input given a valid currency, productVariantId and quantity" time="0" classname="Validator should return a valid input given a valid currency, productVariantId and quantity">
+    </testcase>
+    <testcase name="postCart Unit tests Validator should return MissingPropertyError errorOutput if no currency is provided" time="0" classname="Validator should return MissingPropertyError errorOutput if no currency is provided">
+    </testcase>
+    <testcase name="postCart Unit tests Validator should return InvalidArgumentError errorOutput if an invalid currency is provided" time="0" classname="Validator should return InvalidArgumentError errorOutput if an invalid currency is provided">
+    </testcase>
+    <testcase name="postCart Unit tests Validator should return InvalidArgumentError errorOutput if an invalid quantity is provided" time="0" classname="Validator should return InvalidArgumentError errorOutput if an invalid quantity is provided">
+    </testcase>
+    <testcase name="postCart Unit tests Action should return MissingPropertyError errorOutput if no currency is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no currency is provided">
+    </testcase>
+    <testcase name="postCart Unit tests Action should return MissingPropertyError errorOutput if an invalid currency is provided" time="0" classname="Action should return MissingPropertyError errorOutput if an invalid currency is provided">
+    </testcase>
+    <testcase name="postCart Unit tests Action should return CommerceServiceForbiddenError if user is not allowed to create the cart" time="0.001" classname="Action should return CommerceServiceForbiddenError if user is not allowed to create the cart">
+    </testcase>
+    <testcase name="postCart Unit tests Action should return CommerceServiceResourceNotFoundError if a new cart is not found" time="0.001" classname="Action should return CommerceServiceResourceNotFoundError if a new cart is not found">
+    </testcase>
+    <testcase name="postCart Unit tests Should return 200 if a new empty cart was successfully created for an anonymous user" time="0.001" classname="Should return 200 if a new empty cart was successfully created for an anonymous user">
+    </testcase>
+    <testcase name="postCart Unit tests Should return 200 if a new empty cart was successfully created for an authenticated user" time="0.001" classname="Should return 200 if a new empty cart was successfully created for an authenticated user">
+    </testcase>
+    <testcase name="postCart Unit tests Should return 200 if a new cart with products was successfully created for an anonymous user" time="0" classname="Should return 200 if a new cart with products was successfully created for an anonymous user">
+    </testcase>
+    <testcase name="postCart Unit tests Should return 200 if a new cart with products was successfully created for an authenticated user" time="0.001" classname="Should return 200 if a new cart with products was successfully created for an authenticated user">
+    </testcase>
+    <testcase name="postCart Unit tests Should return 200 if given no quantity a new cart with products was successfully created for an authenticated user" time="0.001" classname="Should return 200 if given no quantity a new cart with products was successfully created for an authenticated user">
+    </testcase>
+  </testsuite>
+  <testsuite name="postCartEntry" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/postCartEntry.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/postCartEntry.spec.ts" failures="0" time="0">
+    <testcase name="postCartEntry Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validator" timestamp="2019-01-31T13:16:52" tests="5" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/postCartEntry.spec.ts" failures="0" time="0.001">
+    <testcase name="postCartEntry Unit tests Validator Validator should return a valid input" time="0" classname="Validator should return a valid input">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Validator Validator should return MissingPropertyError errorOutput if no id is provided" time="0.001" classname="Validator should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Validator Validator should return MissingPropertyError errorOutput if no productVariantId is provided" time="0" classname="Validator should return MissingPropertyError errorOutput if no productVariantId is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Validator Validator should return MissingPropertyError errorOutput if no quantity is provided" time="0" classname="Validator should return MissingPropertyError errorOutput if no quantity is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Validator Validator should return InvalidArgumentError errorOutput if an invalid quantity is provided" time="0" classname="Validator should return InvalidArgumentError errorOutput if an invalid quantity is provided">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="11" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/postCartEntry.spec.ts" failures="0" time="0.006">
+    <testcase name="postCartEntry Unit tests Service Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no id is provided" time="0.001" classname="Action should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no productVariantId is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no productVariantId is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no quantity is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no quantity is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Action should return  errorOutput if an invalid quantity is provided" time="0" classname="Action should return  errorOutput if an invalid quantity is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided" time="0.001" classname="Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Should return CommerceServiceForbiddenError if user is not allowed to add entry to the cart" time="0.001" classname="Should return CommerceServiceForbiddenError if user is not allowed to add entry to the cart">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Should return CommerceServiceResourceNotFoundError if the cart is not found" time="0" classname="Should return CommerceServiceResourceNotFoundError if the cart is not found">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Should return 200 if new entry was successfully added" time="0.001" classname="Should return 200 if new entry was successfully added">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Should return a valid input if new entry was successfully added to the authenticated cart" time="0.001" classname="Should return a valid input if new entry was successfully added to the authenticated cart">
+    </testcase>
+    <testcase name="postCartEntry Unit tests Service Should do nothing" time="0.001" classname="Should do nothing">
+    </testcase>
+  </testsuite>
+  <testsuite name="putCartEntry" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/putCartEntry.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="2" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/putCartEntry.spec.ts" failures="0" time="0">
+    <testcase name="putCartEntry Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Should return something" time="0" classname="Should return something">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="5" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/putCartEntry.spec.ts" failures="0" time="0.001">
+    <testcase name="putCartEntry Unit tests Validation Validation should return a valid input" time="0" classname="Validation should return a valid input">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Validation Validation should return MissingPropertyError errorOutput if no id is provided" time="0.001" classname="Validation should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Validation Validation should return MissingPropertyError errorOutput if no cartEntryId is provided" time="0" classname="Validation should return MissingPropertyError errorOutput if no cartEntryId is provided">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Validation Validation should return MissingPropertyError errorOutput if no quantity is provided" time="0" classname="Validation should return MissingPropertyError errorOutput if no quantity is provided">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Validation Validation should return InvalidArgumentError errorOutput if an invalid quantity is provided" time="0" classname="Validation should return InvalidArgumentError errorOutput if an invalid quantity is provided">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="8" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/putCartEntry.spec.ts" failures="0" time="0.002">
+    <testcase name="putCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no id is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no productVariantId is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no productVariantId is provided">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Service Action should return MissingPropertyError errorOutput if no quantity is provided" time="0" classname="Action should return MissingPropertyError errorOutput if no quantity is provided">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Service Action should return  errorOutput if an invalid quantity is provided" time="0" classname="Action should return  errorOutput if an invalid quantity is provided">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Service Should return CommerceServiceForbiddenError if user is not allowed to add entry to the cart" time="0.001" classname="Should return CommerceServiceForbiddenError if user is not allowed to add entry to the cart">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Service Should return CommerceServiceResourceNotFoundError if the cart entry is not found" time="0" classname="Should return CommerceServiceResourceNotFoundError if the cart entry is not found">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Service Should return 200 if new entry was successfully added" time="0" classname="Should return 200 if new entry was successfully added">
+    </testcase>
+    <testcase name="putCartEntry Unit tests Service Should return a valid input if new entry was successfully added to the authenticated cart" time="0.001" classname="Should return a valid input if new entry was successfully added to the authenticated cart">
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteCartShippingAddress" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingaddress/deleteCartShippingAddress.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="7" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingaddress/deleteCartShippingAddress.spec.ts" failures="0" time="0.004">
+    <testcase name="deleteCartShippingAddress Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+    <testcase name="deleteCartShippingAddress Unit tests Action Should return something" time="0.001" classname="Action Should return something">
+    </testcase>
+    <testcase name="deleteCartShippingAddress Unit tests Validation Should return something" time="0" classname="Validation Should return something">
+    </testcase>
+    <testcase name="deleteCartShippingAddress Unit tests Should return MissingPropertyError if id is wrongly provided" time="0" classname="Should return MissingPropertyError if id is wrongly provided">
+    </testcase>
+    <testcase name="deleteCartShippingAddress Unit tests Should return CommerceServiceResourceNotFoundError if the requested cart was not found" time="0.001" classname="Should return CommerceServiceResourceNotFoundError if the requested cart was not found">
+    </testcase>
+    <testcase name="deleteCartShippingAddress Unit tests Should return 403 if it is not allowed to post to the requested cart" time="0.001" classname="Should return 403 if it is not allowed to post to the requested cart">
+    </testcase>
+    <testcase name="deleteCartShippingAddress Unit tests Should return success" time="0.001" classname="Should return success">
+    </testcase>
+  </testsuite>
+  <testsuite name="postCartShippingAddress" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingaddress/postCartShippingAddress.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingaddress/postCartShippingAddress.spec.ts" failures="0" time="0">
+    <testcase name="postCartShippingAddress Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingaddress/postCartShippingAddress.spec.ts" failures="0" time="0.001">
+    <testcase name="postCartShippingAddress Unit tests Validation Validator should return MissingPropertyError errorOutput if no id is provided" time="0" classname="Validator should return MissingPropertyError errorOutput if no id is provided">
+    </testcase>
+    <testcase name="postCartShippingAddress Unit tests Validation Validator should return MissingPropertyError errorOutput if no address is provided" time="0" classname="Validator should return MissingPropertyError errorOutput if no address is provided">
+    </testcase>
+    <testcase name="postCartShippingAddress Unit tests Validation Validator should return correctly map cartId and address parameters" time="0.001" classname="Validator should return correctly map cartId and address parameters">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="4" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingaddress/postCartShippingAddress.spec.ts" failures="0" time="0.003">
+    <testcase name="postCartShippingAddress Unit tests Service Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="postCartShippingAddress Unit tests Service Should return CommerceServiceResourceNotFoundError if the requested cart was not found" time="0.001" classname="Should return CommerceServiceResourceNotFoundError if the requested cart was not found">
+    </testcase>
+    <testcase name="postCartShippingAddress Unit tests Service Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart" time="0.001" classname="Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart">
+    </testcase>
+    <testcase name="postCartShippingAddress Unit tests Service Should return success" time="0.001" classname="Should return success">
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteCartShippingMethod" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/deleteCartShippingMethod.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="8" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/deleteCartShippingMethod.spec.ts" failures="0" time="0.003">
+    <testcase name="deleteCartShippingMethod Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+    <testcase name="deleteCartShippingMethod Unit tests Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="deleteCartShippingMethod Unit tests Validation Should return something" time="0" classname="Validation Should return something">
+    </testcase>
+    <testcase name="deleteCartShippingMethod Unit tests Should return MissingPropertyError if id is wrongly provided" time="0" classname="Should return MissingPropertyError if id is wrongly provided">
+    </testcase>
+    <testcase name="deleteCartShippingMethod Unit tests Should return CommerceServiceResourceNotFoundError if the requested cart was not found" time="0.001" classname="Should return CommerceServiceResourceNotFoundError if the requested cart was not found">
+    </testcase>
+    <testcase name="deleteCartShippingMethod Unit tests Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart" time="0.001" classname="Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart">
+    </testcase>
+    <testcase name="deleteCartShippingMethod Unit tests Should return CommerceServiceBadRequestError if it is not allowed to post the specific method to the requested cart" time="0.001" classname="Should return CommerceServiceBadRequestError if it is not allowed to post the specific method to the requested cart">
+    </testcase>
+    <testcase name="deleteCartShippingMethod Unit tests Should return 200 and a cart with shipping methods" time="0" classname="Should return 200 and a cart with shipping methods">
+    </testcase>
+  </testsuite>
+  <testsuite name="getCartShippingMethods" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/getCartShippingMethods.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="9" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/getCartShippingMethods.spec.ts" failures="0" time="0.005">
+    <testcase name="getCartShippingMethods Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should return MissingPropertyError if id is wrongly provided" time="0" classname="Should return MissingPropertyError if id is wrongly provided">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should should return correctly map cartId and address parameters" time="0" classname="Should should return correctly map cartId and address parameters">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should return CommerceServiceResourceNotFoundError if the request has user but no bearer exist" time="0.001" classname="Should return CommerceServiceResourceNotFoundError if the request has user but no bearer exist">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should return CommerceServiceForbiddenError if the request has user but no token is invalid" time="0.001" classname="Should return CommerceServiceForbiddenError if the request has user but no token is invalid">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should return 200 with shipping methods if authenticated user does a request" time="0.001" classname="Should return 200 with shipping methods if authenticated user does a request">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should return an array with items for each method available in the hybris response" time="0.001" classname="Should return an array with items for each method available in the hybris response">
+    </testcase>
+    <testcase name="getCartShippingMethods Unit tests Should return a valid shipping method model" time="0.001" classname="Should return a valid shipping method model">
+    </testcase>
+  </testsuite>
+  <testsuite name="postCartShippingMethods" timestamp="2019-01-31T13:16:52" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/postCartShippingMethod.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-01-31T13:16:52" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/postCartShippingMethod.spec.ts" failures="0" time="0">
+    <testcase name="postCartShippingMethods Unit tests Gravity point down!" time="0" classname="Gravity point down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-01-31T13:16:52" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/postCartShippingMethod.spec.ts" failures="0" time="0">
+    <testcase name="postCartShippingMethods Unit tests Validation Validation Should return something" time="0" classname="Validation Should return something">
+    </testcase>
+    <testcase name="postCartShippingMethods Unit tests Validation Should return MissingPropertyError if id is wrongly provided" time="0" classname="Should return MissingPropertyError if id is wrongly provided">
+    </testcase>
+    <testcase name="postCartShippingMethods Unit tests Validation Should return parameters mapped correctly" time="0" classname="Should return parameters mapped correctly">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-01-31T13:16:52" tests="5" file="/Users/capeljos/Work/commerce-cif-hybris/cif/carts/test/unit/shippingmethods/postCartShippingMethod.spec.ts" failures="0" time="0.003">
+    <testcase name="postCartShippingMethods Unit tests Service Should return something" time="0" classname="Should return something">
+    </testcase>
+    <testcase name="postCartShippingMethods Unit tests Service Should return CommerceServiceResourceNotFoundError if the requested cart was not found" time="0.001" classname="Should return CommerceServiceResourceNotFoundError if the requested cart was not found">
+    </testcase>
+    <testcase name="postCartShippingMethods Unit tests Service Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart" time="0" classname="Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart">
+    </testcase>
+    <testcase name="postCartShippingMethods Unit tests Service Should return CommerceServiceBadRequestError if it is not allowed to post the specific method to the requested cart" time="0.001" classname="Should return CommerceServiceBadRequestError if it is not allowed to post the specific method to the requested cart">
+    </testcase>
+    <testcase name="postCartShippingMethods Unit tests Service Should return 200 and a cart with shipping methods" time="0.001" classname="Should return 200 and a cart with shipping methods">
+    </testcase>
+  </testsuite>
+</testsuites>

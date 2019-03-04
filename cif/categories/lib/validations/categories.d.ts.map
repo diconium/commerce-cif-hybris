@@ -1,0 +1,1 @@
+{"version":3,"file":"categories.d.ts","sourceRoot":"","sources":["../../src/validations/categories.ts"],"names":[],"mappings":"AAkBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAO3D,iBAAS,eAAe,CAAC,IAAI,EAAE,GAAG,GAAG,KAAK,CAQzC;AAED,eAAO,MAAM,OAAO,wBAAkB,CAAC;AAEvC,iBAAS,aAAa,CAAC,IAAI,EAAE,GAAG,GAAG,KAAK,CASvC;AAED,eAAO,MAAM,GAAG,sBAAgB,CAAC"}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.07700000000000001" tests="22" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-03-04T16:50:41" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="getProductById" timestamp="2019-03-04T16:50:41" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getProductById.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-03-04T16:50:41" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getProductById.spec.ts" failures="0" time="0.001">
+    <testcase name="getProductById Unit tests Gravity points down!" time="0.001" classname="Gravity points down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-03-04T16:50:41" tests="2" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getProductById.spec.ts" failures="0" time="0.004">
+    <testcase name="getProductById Unit tests Validation Validation should return error if &apos;id&apos; is missing" time="0.004" classname="Validation should return error if &apos;id&apos; is missing">
+    </testcase>
+    <testcase name="getProductById Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-03-04T16:50:41" tests="6" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getProductById.spec.ts" failures="0" time="0.031000000000000007">
+    <testcase name="getProductById Unit tests Service Function should return something" time="0.017" classname="Function should return something">
+    </testcase>
+    <testcase name="getProductById Unit tests Service Response should be 400 if validation brings errorOutput" time="0.001" classname="Response should be 400 if validation brings errorOutput">
+    </testcase>
+    <testcase name="getProductById Unit tests Service Response should be 404 if no product exists" time="0.002" classname="Response should be 404 if no product exists">
+    </testcase>
+    <testcase name="getProductById Unit tests Service Response should have status code 200 and the should be equal to the mock" time="0.002" classname="Response should have status code 200 and the should be equal to the mock">
+    </testcase>
+    <testcase name="getProductById Unit tests Service Response should contain a body with a product name in german if the product exists with the id" time="0.005" classname="Response should contain a body with a product name in german if the product exists with the id">
+    </testcase>
+    <testcase name="getProductById Unit tests Service Response should contain assets coming from external source" time="0.004" classname="Response should contain assets coming from external source">
+    </testcase>
+  </testsuite>
+  <testsuite name="Search Products" timestamp="2019-03-04T16:50:41" tests="0" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getSearchProducts.spec.ts" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Unit tests" timestamp="2019-03-04T16:50:41" tests="1" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getSearchProducts.spec.ts" failures="0" time="0.001">
+    <testcase name="Search Products Unit tests Gravity points down!" time="0.001" classname="Gravity points down!">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validation" timestamp="2019-03-04T16:50:41" tests="3" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getSearchProducts.spec.ts" failures="0" time="0.001">
+    <testcase name="Search Products Unit tests Validation Validation should return error if &apos;limit&apos; is not an integer" time="0.001" classname="Validation should return error if &apos;limit&apos; is not an integer">
+    </testcase>
+    <testcase name="Search Products Unit tests Validation Validation should return error if &apos;limit&apos; and &apos;offset&apos; is not an integer division" time="0" classname="Validation should return error if &apos;limit&apos; and &apos;offset&apos; is not an integer division">
+    </testcase>
+    <testcase name="Search Products Unit tests Validation Validation should return a valid Input if all the inputs are ok" time="0" classname="Validation should return a valid Input if all the inputs are ok">
+    </testcase>
+  </testsuite>
+  <testsuite name="Service" timestamp="2019-03-04T16:50:41" tests="9" file="/Users/capeljos/Work/commerce-cif-hybris/cif/products/test/unit/getSearchProducts.spec.ts" failures="0" time="0.03900000000000001">
+    <testcase name="Search Products Unit tests Service Response should contain the correct pagination" time="0.008" classname="Response should contain the correct pagination">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should bring empty results array" time="0.001" classname="Response should bring empty results array">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should contain the correct facets" time="0.006" classname="Response should contain the correct facets">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should contain the correct list of products with the query: samsung" time="0.005" classname="Response should contain the correct list of products with the query: samsung">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should contain the correct list of products with the second page" time="0.003" classname="Response should contain the correct list of products with the second page">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should contain the correct list of products sorted by relevance" time="0.004" classname="Response should contain the correct list of products sorted by relevance">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should contain the correct list of products sorted by topRated" time="0.005" classname="Response should contain the correct list of products sorted by topRated">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should contain the correct list of products with the correct facet selected" time="0.004" classname="Response should contain the correct list of products with the correct facet selected">
+    </testcase>
+    <testcase name="Search Products Unit tests Service Response should contain the correct list of products with the correct facet selected but no facet value is returned by hyrbis" time="0.003" classname="Response should contain the correct list of products with the correct facet selected but no facet value is returned by hyrbis">
+    </testcase>
+  </testsuite>
+</testsuites>

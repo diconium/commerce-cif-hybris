@@ -1,0 +1,1 @@
+{"version":3,"file":"GetCategoriesClient.d.ts","sourceRoot":"","sources":["../../src/clients/GetCategoriesClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,mBAAmB,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAExF,MAAM,CAAC,OAAO,OAAO,mBAAoB,SAAQ,UAAU;gBAE7C,KAAK,EAAE,KAAK;IAIxB,IAAI,IAAI,OAAO,CAAC,mBAAmB,CAAC;CAarC"}

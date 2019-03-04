@@ -1,0 +1,1 @@
+{"version":3,"file":"GetCategoryByIdClient.d.ts","sourceRoot":"","sources":["../../src/clients/GetCategoryByIdClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,sBAAsB,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAE3F,MAAM,CAAC,OAAO,OAAO,qBAAsB,SAAQ,UAAU;gBAE/C,KAAK,EAAE,KAAK;IAIxB,IAAI,IAAI,OAAO,CAAC,sBAAsB,CAAC;CAiBxC"}

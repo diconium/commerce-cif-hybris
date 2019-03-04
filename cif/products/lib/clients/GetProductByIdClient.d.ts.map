@@ -1,0 +1,1 @@
+{"version":3,"file":"GetProductByIdClient.d.ts","sourceRoot":"","sources":["../../src/clients/GetProductByIdClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AACnE,OAAO,EAAE,OAAO,EAAE,MAAM,2BAA2B,CAAC;AAEpD,MAAM,CAAC,OAAO,OAAO,oBAAqB,SAAQ,UAAU;gBAE9C,KAAK,EAAE,KAAK;IAIxB,IAAI,IAAI,OAAO,CAAC,OAAO,CAAC;CAYzB"}

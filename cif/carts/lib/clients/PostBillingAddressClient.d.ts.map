@@ -1,0 +1,1 @@
+{"version":3,"file":"PostBillingAddressClient.d.ts","sourceRoot":"","sources":["../../src/clients/PostBillingAddressClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,YAAY,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAEjF,MAAM,CAAC,OAAO,OAAO,wBAAyB,SAAQ,UAAU;gBAElD,KAAK,EAAE,KAAK;IAIxB,IAAI,IAAI,OAAO,CAAC,YAAY,CAAC;CAmB9B"}

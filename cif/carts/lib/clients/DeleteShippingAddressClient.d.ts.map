@@ -1,0 +1,1 @@
+{"version":3,"file":"DeleteShippingAddressClient.d.ts","sourceRoot":"","sources":["../../src/clients/DeleteShippingAddressClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAGnE,MAAM,CAAC,OAAO,OAAO,2BAA4B,SAAQ,UAAU;gBAErD,KAAK,EAAE,KAAK;IAIxB,IAAI;CAiBL"}

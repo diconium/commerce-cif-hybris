@@ -1,0 +1,1 @@
+{"version":3,"file":"DeletePaymentClient.d.ts","sourceRoot":"","sources":["../../src/clients/DeletePaymentClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,UAAU,EAAE,mBAAmB,EAAE,MAAM,uCAAuC,CAAC;AAExF,MAAM,CAAC,OAAO,OAAO,mBAAoB,SAAQ,UAAU;gBAE7C,KAAK,EAAE,KAAK;IAIxB,IAAI,IAAI,OAAO,CAAC,mBAAmB,CAAC;CAiBrC"}

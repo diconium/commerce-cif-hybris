@@ -1,0 +1,1 @@
+{"version":3,"file":"PostShippingAddressClient.d.ts","sourceRoot":"","sources":["../../src/clients/PostShippingAddressClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,YAAY,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAEjF,MAAM,CAAC,OAAO,OAAO,yBAA0B,SAAQ,UAAU;gBAEnD,KAAK,EAAE,KAAK;IAIxB,IAAI,IAAI,OAAO,CAAC,YAAY,CAAC;CAoB9B"}

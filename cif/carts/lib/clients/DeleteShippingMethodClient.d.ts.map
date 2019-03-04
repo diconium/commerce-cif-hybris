@@ -1,0 +1,1 @@
+{"version":3,"file":"DeleteShippingMethodClient.d.ts","sourceRoot":"","sources":["../../src/clients/DeleteShippingMethodClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAE,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAGnE,MAAM,CAAC,OAAO,OAAO,0BAA2B,SAAQ,UAAU;gBAEpD,KAAK,EAAE,KAAK;IAIxB,IAAI;CAiBL"}

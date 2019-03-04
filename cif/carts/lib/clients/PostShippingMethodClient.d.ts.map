@@ -1,0 +1,1 @@
+{"version":3,"file":"PostShippingMethodClient.d.ts","sourceRoot":"","sources":["../../src/clients/PostShippingMethodClient.ts"],"names":[],"mappings":"AAgBA,OAAO,EAAE,KAAK,EAAE,MAAM,oCAAoC,CAAC;AAC3D,OAAO,EAAgB,UAAU,EAAE,MAAM,uCAAuC,CAAC;AAGjF,MAAM,CAAC,OAAO,OAAO,wBAAyB,SAAQ,UAAU;gBAElD,KAAK,EAAE,KAAK;IAIxB,IAAI;CAkBL"}

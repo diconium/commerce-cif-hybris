@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97be3c00-58c6-4f87-b2a7-b174a20d87ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="105" column="93" selection-start-line="105" selection-start-column="93" selection-end-line="105" selection-end-column="93" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cif/shoppinglists/serverless.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer-deployment/serverless.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="25" column="69" lean-forward="true" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>postShippingMethodService</find>
+      <find>postCartService</find>
+      <find>getCartService</find>
+      <find>postBillingAdd</find>
+      <find>save</find>
+      <find>todo</find>
+      <find>avail</find>
+      <find>TODO</find>
+      <find>mapProductVariant</find>
+      <find>facet</find>
+      <find>CartModificationWsDTO</find>
+      <find>CartModification</find>
+      <find>CartModificationMapper</find>
+      <find>PostCartEntryClient</find>
+      <find>productUnknown</find>
+      <find>adobevalidgetentr</find>
+      <find>todo:</find>
+      <find>.mapFromInputArgsToActionParameters</find>
+      <find>mapFromInputArgsToActionParameters</find>
+      <find>notFoundCartId</find>
+      <find>console</find>
+      <find>emptyshopping</find>
+      <find>Cart</find>
+      <find>inside</find>
+      <find>isInsideInterval</find>
+      <find>mandatoryParameter</find>
+      <find>anonymous</find>
+      <find>anon</find>
+      <find>suppo</find>
+      <find>cart</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>oauth-client-secret</replace>
+      <replace>oauth-clientid</replace>
+      <replace>hybris.example.com</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/cif/shoppinglists/test/unit</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/adobeValidGetEntryByIdResponse.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/valid-post-shoppinglist-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entryCreatedExample.json" />
+        <option value="$PROJECT_DIR$/cif/carts/src/mappers/CartModificationMapper.ts" />
+        <option value="$PROJECT_DIR$/cif/carts/test/resources/entry/valid-post-cart-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryMapper.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/valid-body-entry.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/valid-authenticated-post-cart-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/valid-post-cart-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/entryNotFound.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/not-found-put-cart-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/not-found-post-cart-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/valid-authenticated-put-cart-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validateGetShoppingListEntryByIdValid.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/valid-post-shoppinglist-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validateGetShoppingListEntryByIdInvalid.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validateGetShoppingListEntryByIdBlank.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/valid-put-cart-entry-input.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/clients/PostShoppingListEntryClient.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingListEntryById.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/patchShoppingList.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/postShoppingList.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/clients/PatchShoppingListClient.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryModificationMapper.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/integration/getShoppingLists.spec.it.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/actions/shoppinglists.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/clients/PostShoppingListClient.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListEntryClient.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListEntryByIdClient.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListMapper.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/actions/entries.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validDeleteShoppingListEntryInput.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validAuthenticatedDeleteShoppingListEntryInput.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/invalidDeleteShoppingListEntryInput.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/invalidDeleteShoppingListEntryInputWithId.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/clients/DeleteShoppingListEntryByIdClient.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingListById.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/validations/entries.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/validations/shoppinglists.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/mappers/PagedResponseShoppingListEntryMapper.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/mappers/PagedResponseShoppingListMapper.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingListEntries.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/validGetShoppingListsInput.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListClient.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/resources/validGetShoppingListsInputWithPagination.json" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingLists.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/postShoppingListEntry.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/deleteShoppingListById.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/test/unit/deleteShoppingListEntryById.spec.ts" />
+        <option value="$PROJECT_DIR$/cif/shoppinglists/serverless.yml" />
+        <option value="$PROJECT_DIR$/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="720" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="carts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="validations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="validations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="entry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="cif" type="462c0819:PsiDirectoryNode" />
+              <item name="shoppinglists" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="customer-deployment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@adobe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@adobe" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-common" type="462c0819:PsiDirectoryNode" />
+              <item name="@adobe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-common" type="462c0819:PsiDirectoryNode" />
+              <item name="@adobe" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-web-action-transformer@1.0.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-common" type="462c0819:PsiDirectoryNode" />
+              <item name="@adobe" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-web-action-transformer@1.0.2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-validators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="commerce-cif-hybris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="commerce-cif-hybris" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@diconium" type="462c0819:PsiDirectoryNode" />
+              <item name="commerce-cif-hybris-validators" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551719328575" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry" />
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/src/actions" />
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/test/resources" />
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/test/resources/entry" />
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/test/unit" />
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/src/clients" />
+      <recent name="$PROJECT_DIR$/cif/shoppinglists/src/mappers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Mocha.postCartBillingAddress.Unit tests.Should return success">
+    <configuration name="deleteShoppingListById.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if cart to delete is not found" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/cif/shoppinglists/test/unit/deleteShoppingListById.spec.ts</test-file>
+      <test-names>
+        <name value="deleteShoppingListById" />
+        <name value="Unit tests" />
+        <name value="Service" />
+        <name value="Should return CommerceServiceResourceNotFoundError if cart to delete is not found" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="deleteShoppingListEntryById.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if entry to delete is not found" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/cif/shoppinglists/test/unit/deleteShoppingListEntryById.spec.ts</test-file>
+      <test-names>
+        <name value="deleteShoppingListEntryById" />
+        <name value="Unit tests" />
+        <name value="Service" />
+        <name value="Should return CommerceServiceResourceNotFoundError if entry to delete is not found" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="postCartBillingAddress" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts</test-file>
+      <test-names>
+        <name value="postCartBillingAddress" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="postCartBillingAddress.Unit tests.Should return success" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts</test-file>
+      <test-names>
+        <name value="postCartBillingAddress" />
+        <name value="Unit tests" />
+        <name value="Should return success" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="postShoppingListEntry.Unit tests.Service.Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/cif/shoppinglists/test/unit/postShoppingListEntry.spec.ts</test-file>
+      <test-names>
+        <name value="postShoppingListEntry" />
+        <name value="Unit tests" />
+        <name value="Service" />
+        <name value="Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.postCartBillingAddress.Unit tests.Should return success" />
+        <item itemvalue="Mocha.postCartBillingAddress" />
+        <item itemvalue="Mocha.deleteShoppingListEntryById.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if entry to delete is not found" />
+        <item itemvalue="Mocha.deleteShoppingListById.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if cart to delete is not found" />
+        <item itemvalue="Mocha.postShoppingListEntry.Unit tests.Service.Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructuralSearchPlugin">
+    <replaceConfiguration name="user defined" created="1551276833787" text="b2c-accelerator.test.diconium.com" recursive="false" caseInsensitive="true" type="TypeScript" scope_type="PROJECT" scope_descriptor="" reformatAccordingToStyle="false" shortenFQN="false" replacement="hybris.example.com" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </replaceConfiguration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97be3c00-58c6-4f87-b2a7-b174a20d87ee" name="Default Changelist" comment="" />
+      <created>1548347117248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548347117248</updated>
+      <workItem from="1548347118562" duration="1523000" />
+      <workItem from="1548348701002" duration="4871000" />
+      <workItem from="1548405567698" duration="22147000" />
+      <workItem from="1548665612419" duration="8641000" />
+      <workItem from="1548675527496" duration="6346000" />
+      <workItem from="1548752411168" duration="7240000" />
+      <workItem from="1548838177477" duration="1454000" />
+      <workItem from="1548924704407" duration="17044000" />
+      <workItem from="1549011100701" duration="7643000" />
+      <workItem from="1549270702514" duration="8263000" />
+      <workItem from="1549356745892" duration="8123000" />
+      <workItem from="1549373055701" duration="5481000" />
+      <workItem from="1549443880135" duration="1646000" />
+      <workItem from="1549641349364" duration="35000" />
+      <workItem from="1549641402456" duration="580000" />
+      <workItem from="1549904626765" duration="3000" />
+      <workItem from="1549966764432" duration="1239000" />
+      <workItem from="1550051386853" duration="9003000" />
+      <workItem from="1550133406768" duration="9002000" />
+      <workItem from="1550220225551" duration="7216000" />
+      <workItem from="1550480406073" duration="10206000" />
+      <workItem from="1550568049006" duration="9573000" />
+      <workItem from="1550653384041" duration="515000" />
+      <workItem from="1550654513450" duration="9659000" />
+      <workItem from="1550738579413" duration="3871000" />
+      <workItem from="1550824913161" duration="1901000" />
+      <workItem from="1550830988398" duration="1600000" />
+      <workItem from="1551084699153" duration="4276000" />
+      <workItem from="1551171696092" duration="15657000" />
+      <workItem from="1551257509875" duration="21590000" />
+      <workItem from="1551344197572" duration="25154000" />
+      <workItem from="1551430300393" duration="135000" />
+      <workItem from="1551430954215" duration="17908000" />
+      <workItem from="1551687744287" duration="19520000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="postShoppingListEntry_Unit_tests_Service_Should_return_CommerceServiceResourceNotFoundError_if_the_shopping_list_is_not_found - 2019.03.04 at 15h 40m 45s.xml">
+      <configuration name="postShoppingListEntry.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if the shopping list is not found" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="postShoppingListEntry_Unit_tests_Service_Should_return_CommerceServiceResourceNotFoundError_if_the_shopping_list_is_not_found - 2019.03.04 at 15h 41m 04s.xml">
+      <configuration name="postShoppingListEntry.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if the shopping list is not found" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="postShoppingListEntry_Unit_tests_Service_Should_return_CommerceServiceResourceNotFoundError_if_the_shopping_list_is_not_found - 2019.03.04 at 15h 41m 19s.xml">
+      <configuration name="postShoppingListEntry.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if the shopping list is not found" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="postShoppingListEntry_Unit_tests_Service_Action_should_return_CommerceServiceResourceNotFoundError_if_an_invalid_product_id_is_provided - 2019.03.04 at 15h 41m 58s.xml">
+      <configuration name="postShoppingListEntry.Unit tests.Service.Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="deleteShoppingListById_Unit_tests_Service_Should_return_CommerceServiceResourceNotFoundError_if_cart_to_delete_is_not_found - 2019.03.04 at 15h 45m 30s.xml">
+      <configuration name="deleteShoppingListById.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if cart to delete is not found" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="deleteShoppingListEntryById_Unit_tests_Service_Should_return_CommerceServiceResourceNotFoundError_if_entry_to_delete_is_not_found - 2019.03.04 at 15h 47m 49s.xml">
+      <configuration name="deleteShoppingListEntryById.Unit tests.Service.Should return CommerceServiceResourceNotFoundError if entry to delete is not found" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="postCartBillingAddress - 2019.03.04 at 16h 52m 34s.xml">
+      <configuration name="postCartBillingAddress" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="postCartBillingAddress_Unit_tests_Should_return_success - 2019.03.04 at 16h 53m 38s.xml">
+      <configuration name="postCartBillingAddress.Unit tests.Should return success" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="postCartBillingAddress_Unit_tests_Should_return_success - 2019.03.04 at 16h 57m 42s.xml">
+      <configuration name="postCartBillingAddress.Unit tests.Should return success" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="postCartBillingAddress_Unit_tests_Should_return_success - 2019.03.04 at 16h 58m 49s.xml">
+      <configuration name="postCartBillingAddress.Unit tests.Should return success" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="269065000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="720" y="-1057" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984472" visible="true" weight="0.22683705" />
+      <window_info id="Structure" order="1" sideWeight="0.5015528" side_tool="true" weight="0.21618743" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30673575" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32435232" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32953367" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.16062176" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/src/validations/carts.ts</url>
+          <line>26</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/test/unit/getCartById.spec.ts</url>
+          <line>120</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/categories/test/integration/getCategories.spec.it.ts</url>
+          <line>33</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/products/test/unit/getSearchProducts.spec.ts</url>
+          <line>77</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/src/mappers/PaymentMapper.ts</url>
+          <line>41</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/src/clients/PostCartClient.ts</url>
+          <line>38</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/test/integration/postCart.spec.it.ts</url>
+          <line>51</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/test/integration/postCart.spec.it.ts</url>
+          <line>61</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/test/integration/postCart.spec.it.ts</url>
+          <line>36</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListByIdClient.ts</url>
+          <line>43</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/clients/PatchShoppingListClient.ts</url>
+          <line>38</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/validations/shoppinglists.ts</url>
+          <line>62</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@adobe/commerce-cif-common/input-validator.js</url>
+          <line>64</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/src/clients/DeleteCartClient.ts</url>
+          <line>26</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/PagedResponseShoppingListMapper.ts</url>
+          <line>63</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/validations/shoppinglists.ts</url>
+          <line>43</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/PagedResponseShoppingListEntryMapper.ts</url>
+          <line>64</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/products/src/mappers/ProductVariantMapper.ts</url>
+          <line>45</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingListEntryById.spec.ts</url>
+          <line>101</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/test/unit/postShoppingListEntry.spec.ts</url>
+          <line>93</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/test/unit/postShoppingListEntry.spec.ts</url>
+          <line>100</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryMapper.ts</url>
+          <line>67</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/actions/entries.ts</url>
+          <line>51</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryModificationMapper.ts</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryModificationMapper.ts</url>
+          <line>63</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/validations/entries.ts</url>
+          <line>51</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@diconium/commerce-cif-hybris-validators/src/Validator.ts</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/clients/PostShoppingListEntryClient.ts</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryModificationMapper.ts</url>
+          <line>51</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/clients/DeleteShoppingListEntryByIdClient.ts</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/actions/shoppinglists.ts</url>
+          <line>41</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListClient.ts</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListClient.ts</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/cif/carts/src/clients/PostBillingAddressClient.ts</url>
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@diconium/commerce-cif-hybris-clients/src/HttpClient.ts</url>
+          <line>104</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>pagedResponseShoppingList</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>carts.length</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSON.stringify(entry) === JSON.stringify(test2)</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSON.stringify(test)</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>JSON.stringify(entry)</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry == test</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry === test</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>entry</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(`/users/${customerId}/carts/${id}/entries`, entry, { bearer, queryParameters: { fields: 'FULL' } })</expression-string>
+        <language-id>TypeScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/clients/PostShoppingListEntryClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="74" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryModificationMapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="e#593#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListByIdClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListEntryByIdClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/carts/src/clients/DeleteCartClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/validDeleteCartInput.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validDeleteShoppingListEntryInput.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validAuthenticatedDeleteShoppingListEntryInput.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/invalidPostShoppingListEntryInput.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/invalidPostShoppingListEntryInputNoProductVariantId.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/invalidDeleteShoppingListEntryInput.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/invalidDeleteShoppingListEntryInputWithId.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/actions/entries.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/clients/DeleteShoppingListEntryByIdClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="38" column="106" selection-start-line="38" selection-start-column="106" selection-end-line="38" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/validAuthenticatedDeleteCartInput.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/products/src/validations/products.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/validations/shoppinglists.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@diconium/commerce-cif-hybris-core/src/mappers/Mapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@diconium/commerce-cif-hybris-validators/src/Validator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/common/@adobe/commerce-cif-web-action-transformer@1.0.2/node_modules/@adobe/commerce-cif-common/input-validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="118" column="47" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/validations/entries.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/carts/src/clients/PutCartEntryClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validGetEntriesInputWithPagination.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListMapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/ShoppingListEntryMapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/PagedResponseShoppingListEntryMapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/adobeEmptyGetShoppingListsResponse.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/mappers/PagedResponseShoppingListMapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/actions/shoppinglists.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/src/clients/GetShoppingListClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/validGetShoppingListsInput.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/invalidGetShoppingListsInputWithPagination.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/validGetShoppingListsInputWithPagination.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/emptyShoppingLists.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingListById.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/resources/entry/validAuthenticatedPostShoppingListEntryInput.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/postShoppingListEntry.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="185" column="45" lean-forward="true" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#593#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingListEntries.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="91" column="27" lean-forward="true" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+          <folding>
+            <element signature="e#593#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/deleteShoppingListById.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="91" column="12" lean-forward="true" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingListEntryById.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+          <folding>
+            <element signature="e#593#617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/getShoppingLists.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1001">
+          <caret line="76" column="27" lean-forward="true" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/patchShoppingList.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1175">
+          <caret line="20" column="89" lean-forward="true" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/postShoppingList.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="20" column="87" lean-forward="true" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/test/unit/deleteShoppingListEntryById.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="e#669#755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/carts/test/resources/addresses/valid-post-cart-billing-address-input.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@diconium/commerce-cif-hybris-clients/src/HttpClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="104" column="4" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/shoppinglists/serverless.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/carts/src/clients/PostBillingAddressClient.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/carts/src/actions/billingaddress.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer-deployment/serverless.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="25" column="69" lean-forward="true" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cif/carts/test/unit/billingaddress/postBillingAddress.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="105" column="93" selection-start-line="105" selection-start-column="93" selection-end-line="105" selection-end-column="93" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
