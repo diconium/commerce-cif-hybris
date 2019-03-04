@@ -1,0 +1,75 @@
+service: hybris
+
+package:
+  individually: true
+  exclude:
+  - ./**
+
+provider:
+  name: openwhisk
+  runtime: nodejs:10
+  ignore_certs: true
+  defaultService: hybris
+  service: ${opt:service, self:provider.defaultService}
+
+custom:
+  npm-version: ${file(package.json):name}@${file(package.json):version}
+  ow-package: ${opt:ow-package, self:custom.npm-version}
+
+plugins:
+- serverless-openwhisk
+- serverless-webpack
+
+resources:
+  packages: ${file(../common/serverlessPackageConfig.js)}
+
+functions:
+  validateGetShoppingListService:
+    name: ${self:custom.ow-package}/validateGetShoppingListService
+    handler: lib/validations/shoppinglists.get
+    concurrency: 500
+
+  getShoppingListService:
+    name: ${self:custom.ow-package}/getShoppingListService
+    handler: lib/actions/shoppinglists.get
+    concurrency: 500
+
+  validateGetShoppingListByIdService:
+    name: ${self:custom.ow-package}/validateGetShoppingListByIdService
+    handler: lib/validations/shoppinglists.getById
+    concurrency: 500
+
+  getShoppingListByIdService:
+    name: ${self:custom.ow-package}/getShoppingListByIdService
+    handler: lib/actions/shoppinglists.getById
+    concurrency: 500
+
+  validatePostShoppingListService:
+    name: ${self:custom.ow-package}/validatePostShoppingListService
+    handler: lib/validations/shoppinglists.post
+    concurrency: 500
+
+  postShoppingListService:
+    name: ${self:custom.ow-package}/postShoppingListService
+    handler: lib/actions/shoppinglists.post
+    concurrency: 500
+
+  validatePatchShoppingListService:
+    name: ${self:custom.ow-package}/validatePatchShoppingListService
+    handler: lib/validations/shoppinglists.patch
+    concurrency: 500
+
+  patchShoppingListService:
+    name: ${self:custom.ow-package}/patchShoppingListService
+    handler: lib/actions/shoppinglists.patch
+    concurrency: 500
+
+  validateDeleteShoppingListService:
+    name: ${self:custom.ow-package}/validateDeleteShoppingListService
+    handler: lib/validations/shoppinglists.deleteById
+    concurrency: 500
+
+  deleteShoppingListService:
+    name: ${self:custom.ow-package}/deleteShoppingListService
+    handler: lib/actions/shoppinglists.deleteById
+    concurrency: 500
