@@ -1,7 +1,9 @@
 {
   "parameters": {
-    "id": "00001000",
     "saveCartName": "Sample_Cart_Name"
+  },
+  "responseExtension": {
+    "id": "00001000"
   },
   "settings": {
     "HB_API_BASE_PATH": "/rest/v2",

@@ -83,8 +83,11 @@ describe('postShoppingList', () => {
             lang: 'en',
           })
           .reply(200, cartCreated);
-        const { parameters } = await postShoppingList(validInput);
-        expect(parameters.id).to.be.equal('00001002');
+        const { responseExtension, errorOutput } = await postShoppingList(validInput);
+        expect(errorOutput).to.be.undefined;
+        expect(responseExtension).to.deep.equal({
+          id: '00001002',
+        });
       });
     });
   });

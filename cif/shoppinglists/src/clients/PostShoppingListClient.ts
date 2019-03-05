@@ -32,11 +32,7 @@ export default class PostShoppingListClient extends HttpClient {
       customerId,
     } = this.input.settings;
 
-    const {
-      curr,
-    } = this.input.parameters;
-
-    return this.post(`/users/${customerId}/carts`, {}, { bearer, queryParameters: { curr, fields: 'DEFAULT' } })
+    return this.post(`/users/${customerId}/carts`, {}, { bearer, queryParameters: { fields: 'DEFAULT' } })
       .then(cartDto => this.modifyInputs(cartDto))
       .catch(errorOutput => Promise.reject(errorOutput));
 

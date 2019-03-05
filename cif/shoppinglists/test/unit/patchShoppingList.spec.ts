@@ -27,6 +27,7 @@ const cartNotFoundExample = require('../resources/cartNotFound.json');
 const invalidInput = require('../resources/invalidPatchShoppingListInput.json');
 const invalidInputWithId = require('../resources/invalidPatchShoppingListInputWithId.json');
 const validInput = require('../resources/validPatchShoppingListInput.json');
+const validInputWithResponseExtension = require('../resources/validPatchShoppingListInputWithResponseExtension.json');
 const shoppingListExample = require('../resources/shoppingListExample-00001000.json');
 
 describe('patchShoppingList', () => {
@@ -92,7 +93,7 @@ describe('patchShoppingList', () => {
       });
 
       it('Action should return CommerceServiceResourceNotFoundError if a shopping list does not exist with the id', async () => {
-        scope.patch('/rest/v2/electronics/users/current/carts/00001002/save')
+        scope.patch('/rest/v2/electronics/users/current/carts/00001000/save')
           .query({
             saveCartName: 'Sample_Cart_Name',
             fields: 'FULL',
@@ -111,7 +112,7 @@ describe('patchShoppingList', () => {
       });
 
       it('Action should have a response with the correct shopping list id for current user', async () => {
-        scope.patch('/rest/v2/electronics/users/current/carts/00001002/save')
+        scope.patch('/rest/v2/electronics/users/current/carts/00001000/save')
           .query({
             saveCartName: 'Sample_Cart_Name',
             fields: 'FULL',
@@ -120,6 +121,21 @@ describe('patchShoppingList', () => {
           })
           .reply(200, shoppingListExample);
         const { response } = await patchShoppingList(validInput);
+        const { body } = response;
+        expect(body.id).to.equal('00001000');
+        expect(body.name).to.equal('Sample_Cart_Name');
+      });
+
+      it('Action should have a response with the correct shopping list id  (using response extension) for current user', async () => {
+        scope.patch('/rest/v2/electronics/users/current/carts/00001000/save')
+          .query({
+            saveCartName: 'Sample_Cart_Name',
+            fields: 'FULL',
+            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
+            lang: 'en',
+          })
+          .reply(200, shoppingListExample);
+        const { response } = await patchShoppingList(validInputWithResponseExtension);
         const { body } = response;
         expect(body.id).to.equal('00001000');
         expect(body.name).to.equal('Sample_Cart_Name');
