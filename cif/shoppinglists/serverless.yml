@@ -113,3 +113,8 @@ functions:
     name: ${self:custom.ow-package}/deleteShoppingListEntryService
     handler: lib/actions/entries.deleteById
     concurrency: 500
+
+  validatePutShoppingListEntryService:
+    name: ${self:custom.ow-package}/validatePutShoppingListEntryService
+    handler: lib/validations/entries.put
+    concurrency: 500

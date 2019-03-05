@@ -60,3 +60,11 @@ function postShoppingListEntry(args: any): Input {
     .input();
 }
 export const post = postShoppingListEntry;
+
+function putShoppingListEntry(args: any): Input {
+  return new Validator<ShoppingList>(args, ERROR_TYPE)
+    .setMapper(ShoppingListEntryMapper)
+    .isNotImplemented()
+    .input();
+}
+export const put = putShoppingListEntry;

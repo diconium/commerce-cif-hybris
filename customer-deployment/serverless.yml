@@ -387,3 +387,11 @@ functions:
     - ${self:custom.commons-actions}/webActionTransformer
     annotations:
       web-export: true
+
+  putShoppingListEntry:
+    name: ${self:custom.customer-package}/putShoppingListEntry
+    sequence:
+      - ${self:custom.shoppinglists-actions}/validatePutShoppingListEntryService
+      - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
