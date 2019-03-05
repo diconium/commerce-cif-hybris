@@ -98,7 +98,6 @@ describe('getShoppingListEntries', () => {
           .reply(200, entriesExample);
         const { response } = await getShoppingListEntries(validInputWithPagination);
         const { body } = response;
-        console.log(body);
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeValidResponse);
       });
 

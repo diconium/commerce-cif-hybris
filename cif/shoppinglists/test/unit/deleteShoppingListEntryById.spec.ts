@@ -122,7 +122,7 @@ describe('deleteShoppingListEntryById', () => {
           .reply(204);
         const { response } = await deleteShoppingListEntryById(validAuthenticatedInput);
         expect(response.statusCode).to.equal(204);
-        expect(response.body).to.deep.equal(undefined);
+        expect(response.body).to.deep.equal({});
       });
     });
 
