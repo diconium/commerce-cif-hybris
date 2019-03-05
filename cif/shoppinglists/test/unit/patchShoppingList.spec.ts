@@ -92,7 +92,7 @@ describe('patchShoppingList', () => {
       });
 
       it('Action should return CommerceServiceResourceNotFoundError if a shopping list does not exist with the id', async () => {
-        scope.patch('/rest/v2/electronics/users/current/carts/00001000/save')
+        scope.patch('/rest/v2/electronics/users/current/carts/00001002/save')
           .query({
             saveCartName: 'Sample_Cart_Name',
             fields: 'FULL',
@@ -111,7 +111,7 @@ describe('patchShoppingList', () => {
       });
 
       it('Action should have a response with the correct shopping list id for current user', async () => {
-        scope.patch('/rest/v2/electronics/users/current/carts/00001000/save')
+        scope.patch('/rest/v2/electronics/users/current/carts/00001002/save')
           .query({
             saveCartName: 'Sample_Cart_Name',
             fields: 'FULL',
