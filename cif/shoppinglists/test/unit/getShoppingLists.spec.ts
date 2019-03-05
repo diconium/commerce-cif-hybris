@@ -70,17 +70,16 @@ describe('getShoppingLists', () => {
       it('Action should have an empty response when pagination input exceeds limit', async () => {
         scope.get('/rest/v2/electronics/users/current/carts')
           .query({
+            pageSize: 1,
+            currentPage: 2,
             fields: 'FULL',
             savedCartsOnly: true,
             access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
-            currentPage: 2,
-            pageSize: 1,
           })
           .reply(200, emptyShoppingListsExample);
         const { response } = await getShoppingLists(invalidInputWithPagination);
         const { body } = response;
-        console.log(body);
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeEmptyResponse);
       });
 
@@ -101,12 +100,12 @@ describe('getShoppingLists', () => {
       it('Action should have a response with the correct shopping list id for current user, with pagination', async () => {
         scope.get('/rest/v2/electronics/users/current/carts')
           .query({
+            pageSize: 1,
+            currentPage: 0,
             fields: 'FULL',
             savedCartsOnly: true,
             access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
-            currentPage: 0,
-            pageSize: 1,
           })
           .reply(200, shoppingListsExample);
         const { response } = await getShoppingLists(validInputWithPagination);
