@@ -22,7 +22,7 @@ import ShoppingListMapper from './ShoppingListMapper';
 
 export default class PagedResponseShoppingListMapper extends Mapper<PagedResponseShoppingList> {
 
-  offset: number = 0; 
+  offset: number = 0;
   limit: number = 20;
 
   constructor(settings: InputSettings) {
