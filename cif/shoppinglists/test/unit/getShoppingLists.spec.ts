@@ -80,7 +80,6 @@ describe('getShoppingLists', () => {
           .reply(200, emptyShoppingListsExample);
         const { response } = await getShoppingLists(invalidInputWithPagination);
         const { body } = response;
-        console.log(body);
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeEmptyResponse);
       });
 

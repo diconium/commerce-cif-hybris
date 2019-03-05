@@ -15,12 +15,14 @@ custom:
   customer-package: ${opt:customer-package, file(package.json):customer-package}
   bindings-namespace: ${opt:bindings-namespace, file(package.json):bindings-namespace}
 
-  commons-actions: /${self:custom.customer-namespace}/customer-dahc-commons@latest
-  carts-actions: /${self:custom.customer-namespace}/customer-dahc-cart@latest
-  customer-actions: /${self:custom.customer-namespace}/customer-dahc-customer@latest
-  products-actions: /${self:custom.customer-namespace}/customer-dahc-product@latest
-  categories-actions: /${self:custom.customer-namespace}/customer-dahc-category@latest
-  orders-actions: /${self:custom.customer-namespace}/customer-dahc-order@latest
+  carts-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-carts@latest
+  categories-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-categories@latest
+  common-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-common@latest
+  products-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-products@latest
+  shoppinglists-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-shoppinglists@latest
+
+  customers-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-customers@latest
+  orders-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-orders@latest
 
   hybris:
     HB_BASESITEID: ${opt:basesiteid, file(options.yml):HB_BASESITEID}
@@ -42,22 +44,26 @@ plugins:
 
 resources:
   packages:
-    customer-dahc-commons@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-commons@latest
-    customer-dahc-cart@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-cart@latest
+    customer-commerce-cif-hybris-carts@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-carts@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-customer@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-customer@latest
+    customer-commerce-cif-hybris-categories@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-categories@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-product@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-product@latest
+    customer-commerce-cif-hybris-common@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-common@latest
+    customer-commerce-cif-hybris-products@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-products@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-category@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-category@latest
+    customer-commerce-cif-hybris-shoppinglists@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-shoppinglists@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-order@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-order@latest
+
+    customer-commerce-cif-hybris-customers@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-customers@latest
+      parameters: ${self:custom.hybris}
+    customer-commerce-cif-hybris-orders@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-orders@latest
       parameters: ${self:custom.hybris}
 
 functions:
@@ -300,3 +306,48 @@ functions:
     annotations:
       web-export: true
 
+  getShoppingLists:
+    name: ${self:custom.customer-package}/getShoppingLists
+    sequence:
+        - ${self:custom.shoppinglists-actions}/validateGetShoppingListService
+        - ${self:custom.shoppinglists-actions}/getShoppingListService
+        - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postShoppingList:
+    name: ${self:custom.customer-package}/postShoppingList
+    sequence:
+      - ${self:custom.shoppinglists-actions}/validatePostShoppingListService
+      - ${self:custom.shoppinglists-actions}/postShoppingListService
+      - ${self:custom.shoppinglists-actions}/patchShoppingListService
+      - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getShoppingListById:
+    name: ${self:custom.customer-package}/getShoppingListById
+    sequence:
+        - ${self:custom.shoppinglists-actions}/validateGetShoppingListByIdService
+        - ${self:custom.shoppinglists-actions}/getShoppingListByIdService
+        - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  putShoppingList:
+    name: ${self:custom.customer-package}/putShoppingList
+    sequence:
+        - ${self:custom.shoppinglists-actions}/validatePatchShoppingListService
+        - ${self:custom.shoppinglists-actions}/patchShoppingListService
+        - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteShoppingList:
+    name: ${self:custom.customer-package}/deleteShoppingList
+    sequence:
+      - ${self:custom.shoppinglists-actions}/validateDeleteShoppingListService
+      - ${self:custom.shoppinglists-actions}/deleteShoppingListService
+      - ${self:custom.commons-actions}/webActionTransformer
+    annotations:
+      web-export: true
