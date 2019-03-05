@@ -25,6 +25,7 @@ chai.use(chaiShallowDeepEqual);
 
 const cartCreated = require('../resources/cartCreatedExample.json');
 const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
+const invalidInput = require('../resources/invalidPatchShoppingListInputWithoutBearer.json');
 const validInput = require('../resources/validPatchShoppingListInput.json');
 
 describe('postShoppingList', () => {
@@ -64,7 +65,7 @@ describe('postShoppingList', () => {
             fields: 'DEFAULT',
           })
           .reply(403, customerNotAuthorizedExample);
-        const { errorOutput } = await postShoppingList(validInput);
+        const { errorOutput } = await postShoppingList(invalidInput);
         expect(errorOutput).to.be.deep.equal({
           cause: {
             message: 'UnauthorizedError',

@@ -1,6 +1,6 @@
 {
   "parameters": {
-    "currentPage": 0,
+    "currentPage": "0",
     "pageSize": 1
   },
   "settings": {
@@ -21,8 +21,6 @@
     "cookies": [],
     "customerId": "current",
     "headers": {},
-    "language": "",
-    "LOG_LEVEL": "TRACE",
-    "customerId": "current"
+    "language": ""
   }
 }

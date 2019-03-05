@@ -37,7 +37,7 @@ export default class PagedResponseShoppingListMapper extends Mapper<PagedRespons
     this.offset = offset;
     this.limit = limit;
 
-    return { pageSize: limit, currentPage: offset / limit };
+    return { pageSize: limit, currentPage: String(offset / limit) };
   }
 
   /* istanbul ignore next */
