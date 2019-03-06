@@ -1,8 +1,8 @@
 {
   "parameters": {
     "id": "00001000",
-    "currentPage": 1,
-    "pageSize": 1
+    "offset": 0,
+    "limit": 20
   },
   "settings": {
     "HB_API_BASE_PATH": "/rest/v2",

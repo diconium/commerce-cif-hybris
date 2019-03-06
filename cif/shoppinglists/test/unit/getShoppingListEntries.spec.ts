@@ -92,8 +92,8 @@ describe('getShoppingListEntries', () => {
             fields: 'FULL',
             access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
-            currentPage: 1,
-            pageSize: 1,
+            currentPage: 0,
+            pageSize: 20,
           })
           .reply(200, entriesExample);
         const { response } = await getShoppingListEntries(validInputWithPagination);

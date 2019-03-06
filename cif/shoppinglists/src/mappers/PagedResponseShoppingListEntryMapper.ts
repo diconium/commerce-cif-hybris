@@ -22,23 +22,18 @@ import ShoppingListEntryMapper from './ShoppingListEntryMapper';
 
 export default class PagedResponseShoppingListEntryMapper extends Mapper<PagedResponseShoppingListEntry> {
 
-  offset: number = 0;  // TODO: pode-se fazer isto para passar contexto?
-  limit: number = 20;
-
-  constructor(settings: InputSettings) {
-    super(settings, dahcTranslator);
+  constructor(settings: InputSettings, actionParameters?: any) {
+    super(settings, dahcTranslator.setLocale(settings.language), actionParameters);
   }
 
   mapFromInputArgsToActionParameters(mappable: any) {
     const {
-      offset = 0,
-      limit = 20,
       id,
+      offset,
+      limit,
     } = mappable;
-    this.offset = offset;
-    this.limit = limit;
 
-    return { id, pageSize: limit, currentPage: offset / limit };
+    return { id, limit, offset };
   }
 
   /* istanbul ignore next */
@@ -47,31 +42,33 @@ export default class PagedResponseShoppingListEntryMapper extends Mapper<PagedRe
   }
 
   mapToEntity(dto: OrderEntryListWsDTO, entity?): PagedResponseShoppingListEntry {
-
     const {
       orderEntries = [],
     } = dto;
     const totalResults = orderEntries.length;
 
-    if (this.offset >= totalResults) {    // Empty result TODO: refactor me
+    const {
+      limit = 20,
+      offset = 0,
+    } = this.actionParameters;
+
+    if (offset >= totalResults) {
       return new PagedResponseShoppingListEntry.Builder()
         .withResults({})
         .withCount(0)
         .withTotal(0)
-        .withOffset(this.offset)
+        .withOffset(offset)
         .build();
     }
 
-    const page = orderEntries.slice(this.offset, this.offset + this.limit);
+    const page = orderEntries.slice(offset, offset + limit);
     const results = page.map(entryDto => new ShoppingListEntryMapper(this.settings).mapToEntity(entryDto));
 
-    const pagedResponseShoppingListEntry = new PagedResponseShoppingListEntry.Builder()
+    return new PagedResponseShoppingListEntry.Builder()
       .withResults(results)
       .withCount(results.length)
       .withTotal(totalResults)
-      .withOffset(this.offset)
+      .withOffset(offset)
       .build();
-
-    return pagedResponseShoppingListEntry;
   }
 }
