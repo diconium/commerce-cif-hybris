@@ -28,10 +28,10 @@ export default class ShoppingListMapper extends Mapper<ShoppingList> {
   mapFromInputArgsToActionParameters(mappable: any) {
     const {
       id,
-      saveCartName,
+      name,
     } = mappable;
 
-    return { id, saveCartName };
+    return { id, name };
   }
 
   /* istanbul ignore next */

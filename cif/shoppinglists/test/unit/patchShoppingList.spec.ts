@@ -48,20 +48,20 @@ describe('patchShoppingList', () => {
       const incorrectInput = {
         id: '00001000',
       };
-      it('Validation should return error if \'saveCartName\' is missing', async () => {
+      it('Validation should return error if \'name\' is missing', async () => {
         const { errorOutput } = await validatePatchShoppingList(incorrectInput);
-        expect(errorOutput).to.be.ok.and.to.haveOwnProperty('message').that.equals('Parameter \'saveCartName\' is missing.');
+        expect(errorOutput).to.be.ok.and.to.haveOwnProperty('message').that.equals('Parameter \'name\' is missing.');
       });
 
       const correctInput = {
         id: '00001000',
-        saveCartName: 'Sample_Cart_Name',
+        name: 'Sample_Cart_Name',
       };
       it('Validation should return a valid Input if all the inputs are ok', async () => {
         const { errorOutput, parameters } = await validatePatchShoppingList(correctInput);
         expect(errorOutput).to.not.exist;
         expect(parameters).to.be.ok.and.to.haveOwnProperty('id').that.equals('00001000');
-        expect(parameters).to.be.ok.and.to.haveOwnProperty('saveCartName').that.equals('Sample_Cart_Name');
+        expect(parameters).to.be.ok.and.to.haveOwnProperty('name').that.equals('Sample_Cart_Name');
       });
     });
 
@@ -81,13 +81,13 @@ describe('patchShoppingList', () => {
         });
       });
 
-      it('Response should be a MissingPropertyError when saveCartName is missing', async () => {
+      it('Response should be a MissingPropertyError when name is missing', async () => {
         const { response } = await patchShoppingList(invalidInputWithId);
         expect(response.error).to.exist.and.to.deep.equal({
           cause: {
             message: 'missing-property',
           },
-          message: 'Parameter \'saveCartName\' is missing.',
+          message: 'Parameter \'name\' is missing.',
           name: 'MissingPropertyError',
         });
       });

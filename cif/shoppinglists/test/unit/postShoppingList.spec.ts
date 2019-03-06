@@ -38,18 +38,18 @@ describe('postShoppingList', () => {
 
     describe('Validation', () => {
       const incorrectInput = {};
-      it('Validation should return error if \'saveCartName\' is missing', async () => {
+      it('Validation should return error if \'name\' is missing', async () => {
         const { errorOutput } = await validatePostShoppingList(incorrectInput);
-        expect(errorOutput).to.be.ok.and.to.haveOwnProperty('message').that.equals('Parameter \'saveCartName\' is missing.');
+        expect(errorOutput).to.be.ok.and.to.haveOwnProperty('message').that.equals('Parameter \'name\' is missing.');
       });
 
       const correctInput = {
-        saveCartName: 'Sample_Cart_Name',
+        name: 'Sample_Cart_Name',
       };
       it('Validation should return a valid Input if all the inputs are ok', async () => {
         const { errorOutput, parameters } = await validatePostShoppingList(correctInput);
         expect(errorOutput).to.not.exist;
-        expect(parameters).to.be.ok.and.to.haveOwnProperty('saveCartName').that.equals('Sample_Cart_Name');
+        expect(parameters).to.be.ok.and.to.haveOwnProperty('name').that.equals('Sample_Cart_Name');
       });
     });
 

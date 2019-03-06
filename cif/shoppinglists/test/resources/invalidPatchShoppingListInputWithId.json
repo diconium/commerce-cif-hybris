@@ -6,7 +6,7 @@
     "cause": {
       "message": "missing-property"
     },
-    "message": "Parameter 'saveCartName' is missing.",
+    "message": "Parameter 'name' is missing.",
     "name": "MissingPropertyError"
   },
   "settings": {

@@ -38,14 +38,14 @@ describe('patchShoppingList', function () {
       const { parameters, errorOutput } = await postShoppingList(validInput);
       expect(errorOutput).not.to.exist;
       expect(parameters).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
-      expect(parameters).to.be.ok.and.to.haveOwnProperty('saveCartName').and.to.equal(validInput.parameters.saveCartName);
+      expect(parameters).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
 
       validInput.parameters.id = parameters.id;
       const { response } = await patchShoppingList(validInput);
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.saveCartName);
+      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
     });
 
     // For this test to execute the login interface needs to be available
@@ -54,14 +54,14 @@ describe('patchShoppingList', function () {
       const { parameters, errorOutput } = await postShoppingList(validInputOauth);
       expect(errorOutput).not.to.exist;
       expect(parameters).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInputOauth.parameters.id);
-      expect(parameters).to.be.ok.and.to.haveOwnProperty('saveCartName').and.to.equal(validInputOauth.parameters.saveCartName);
+      expect(parameters).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInputOauth.parameters.name);
 
       validInputOauth.parameters.id = parameters.id;
       const { response } = await patchShoppingList(validInputOauth);
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.saveCartName);
+      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
     });
   });
 });

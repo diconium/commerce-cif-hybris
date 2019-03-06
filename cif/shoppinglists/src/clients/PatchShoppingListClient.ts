@@ -32,12 +32,12 @@ export default class PatchShoppingListClient extends HttpClient {
     } = this.input.settings;
 
     const {
-      saveCartName,
+      name,
     } = this.input.parameters;
 
     const id = this.input.parameters.id ? this.input.parameters.id : this.input.responseExtension.id;
 
-    return this.patch(`/users/${customerId}/carts/${id}/save`, {}, { bearer, queryParameters: { saveCartName, fields: 'FULL' } })
+    return this.patch(`/users/${customerId}/carts/${id}/save`, {}, { bearer, queryParameters: { saveCartName: name, fields: 'FULL' } })
       .then(shoppingListDto => this.buildCartDto(shoppingListDto.savedCartData, customerId))
       .catch(errorOutput => Promise.reject(errorOutput));
   }

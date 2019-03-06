@@ -50,11 +50,11 @@ describe('getShoppingLists', function () {
 
       return chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
         .patch(`carts/${validInputOauth.parameters.id}/save?
-                saveCartName=${validInputOauth.parameters.saveCartName}&
+                name=${validInputOauth.parameters.name}&
                 access_token=${validInputOauth.settings.bearer}`)
         .then((response) => {
-          validInputOauth.parameters.saveCartName = response.body.savedCartData.name;
-          validInput.parameters.saveCartName = response.body.savedCartData.name;
+          validInputOauth.parameters.name = response.body.savedCartData.name;
+          validInput.parameters.name = response.body.savedCartData.name;
         });
     });
 
@@ -69,7 +69,7 @@ describe('getShoppingLists', function () {
       expect(body).to.be.ok.and.to.haveOwnProperty('offset').and.to.equal(0);
       expect(body).to.be.ok.and.to.haveOwnProperty('count').and.to.equal(1);
       expect(body).to.be.ok.and.to.haveOwnProperty('total').and.to.equal(1);
-      expect(body.results[0]).to.deep.include({ name: validInput.parameters.saveCartName });
+      expect(body.results[0]).to.deep.include({ name: validInput.parameters.name });
     });
 
     // For this test to execute the login interface needs to be available
@@ -80,7 +80,7 @@ describe('getShoppingLists', function () {
       expect(body).to.be.ok.and.to.haveOwnProperty('offset').and.to.equal(0);
       expect(body).to.be.ok.and.to.haveOwnProperty('count').and.to.equal(1);
       expect(body).to.be.ok.and.to.haveOwnProperty('total').and.to.equal(1);
-      expect(body.results[0]).to.deep.include({ name: validInputOauth.parameters.saveCartName });
+      expect(body.results[0]).to.deep.include({ name: validInputOauth.parameters.name });
     });
 
     it('Paginated Response should be 200 if any shopping list exists for the current user, if bearer is valid', async () => {
@@ -93,10 +93,10 @@ describe('getShoppingLists', function () {
 
       chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
         .patch(`carts/${validInputOauthWithPagination.parameters.id}/save?
-                saveCartName=${validInputOauthWithPagination.parameters.saveCartName}&
+                name=${validInputOauthWithPagination.parameters.name}&
                 access_token=${validInputOauthWithPagination.settings.bearer}`)
         .then((response) => {
-          validInputOauthWithPagination.parameters.saveCartName = response.body.savedCartData.name;
+          validInputOauthWithPagination.parameters.name = response.body.savedCartData.name;
         });
 
       const { response } = await getShoppingLists(validInputOauthWithPagination);
@@ -105,7 +105,7 @@ describe('getShoppingLists', function () {
       expect(body).to.be.ok.and.to.haveOwnProperty('offset').and.to.equal(validInputOauthWithPagination.parameters.offset);
       expect(body).to.be.ok.and.to.haveOwnProperty('count').and.to.equal(1);
       expect(body).to.be.ok.and.to.haveOwnProperty('total').and.to.equal(2);
-      expect(body.results[0]).to.deep.include({ name: validInputOauthWithPagination.parameters.saveCartName });
+      expect(body.results[0]).to.deep.include({ name: validInputOauthWithPagination.parameters.name });
     });
   });
 });

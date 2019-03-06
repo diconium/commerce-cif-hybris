@@ -50,7 +50,7 @@ function postShoppingList(args: any): Input {
   return new Validator<ShoppingList>(args, ERROR_TYPE)
     .setMapper(ShoppingListMapper)
     .checkArguments()
-    .mandatoryParameter('saveCartName')
+    .mandatoryParameter('name')
     .input();
 }
 export const post = postShoppingList;
@@ -60,7 +60,7 @@ function patchShoppingList(args: any): Input {
     .setMapper(ShoppingListMapper)
     .checkArguments()
     .mandatoryParameter('id')
-    .mandatoryParameter('saveCartName')
+    .mandatoryParameter('name')
     .input();
 }
 export const patch = patchShoppingList;

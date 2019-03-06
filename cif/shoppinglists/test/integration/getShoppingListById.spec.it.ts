@@ -48,11 +48,11 @@ describe('getShoppingListById', function () {
 
       return chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
         .patch(`carts/${validInputOauth.parameters.id}/save?
-                saveCartName=${validInputOauth.parameters.saveCartName}&
+                name=${validInputOauth.parameters.name}&
                 access_token=${validInputOauth.settings.bearer}`)
         .then((response) => {
-          validInputOauth.parameters.saveCartName = response.body.savedCartData.name;
-          validInput.parameters.saveCartName = response.body.savedCartData.name;
+          validInputOauth.parameters.name = response.body.savedCartData.name;
+          validInput.parameters.name = response.body.savedCartData.name;
         });
     });
 
@@ -73,7 +73,7 @@ describe('getShoppingListById', function () {
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInputOauth.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInputOauth.parameters.saveCartName);
+      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInputOauth.parameters.name);
     });
   });
 });
