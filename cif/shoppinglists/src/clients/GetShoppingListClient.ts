@@ -32,11 +32,12 @@ export default class GetShoppingListClient extends HttpClient {
     } = this.input.settings;
 
     const {
-      currentPage,
-      pageSize,
+      offset,
+      limit,
     } = this.input.parameters;
+    const currentPage = Number.isNaN(offset / limit) ? '' : String(offset / limit);
 
-    return this.get(`/users/${customerId}/carts`, { bearer, queryParameters: { currentPage, pageSize, fields: 'FULL', savedCartsOnly: true } })
+    return this.get(`/users/${customerId}/carts`, { bearer, queryParameters: { currentPage, pageSize: limit, fields: 'FULL', savedCartsOnly: true } })
     .then(cartDto => cartDto)
     .catch(errorOutput => Promise.reject(errorOutput));
 

@@ -22,22 +22,17 @@ import ShoppingListMapper from './ShoppingListMapper';
 
 export default class PagedResponseShoppingListMapper extends Mapper<PagedResponseShoppingList> {
 
-  offset: number = 0;
-  limit: number = 20;
-
-  constructor(settings: InputSettings) {
-    super(settings, dahcTranslator);
+  constructor(settings: InputSettings, actionParameters?: any) {
+    super(settings, dahcTranslator, actionParameters);
   }
 
   mapFromInputArgsToActionParameters(mappable: any) {
     const {
-      offset = 0,
-      limit = 20,
+      offset,
+      limit,
     } = mappable;
-    this.offset = offset;
-    this.limit = limit;
 
-    return { pageSize: limit, currentPage: String(offset / limit) };
+    return { limit, offset };
   }
 
   /* istanbul ignore next */
@@ -51,6 +46,11 @@ export default class PagedResponseShoppingListMapper extends Mapper<PagedRespons
       carts = [],
     } = dto;
 
+    const {
+      limit = 20,
+      offset = 0,
+    } = this.actionParameters;
+
     const totalResults = carts.length;   // TODO: como saber o total real?  fazer outra chamada com "fields = BASIC" e sem limites para saber?
     const results = carts.map(cartDto => new ShoppingListMapper(this.settings).mapToEntity(cartDto));
 
@@ -58,7 +58,7 @@ export default class PagedResponseShoppingListMapper extends Mapper<PagedRespons
       .withResults(results)
       .withCount(results.length)
       .withTotal(totalResults)
-      .withOffset(this.offset)
+      .withOffset(offset)
       .build();
 
     return pagedResponseShoppingList;

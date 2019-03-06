@@ -1,7 +1,7 @@
 {
   "parameters": {
-    "currentPage": "2",
-    "pageSize": 1
+    "offset": "2",
+    "limit": 1
   },
   "settings": {
     "HB_API_BASE_PATH": "/rest/v2",
