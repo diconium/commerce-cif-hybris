@@ -119,6 +119,13 @@
   dependencies:
     loglevel "^1.6.1"
 
+"@diconium/commerce-cif-hybris-core@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-core/-/commerce-cif-hybris-core-1.5.0.tgz#0545dab70533c2012e7561c3f0ed5a2e8c719ba1"
+  integrity sha512-Nj4GB8p6vrqCLLOUiECGI7K3ZQ0h1B7Ly8pcdd7Vntkkv7j74Vfvym4Tj3lHTcssuz1444h+hCWRq/sM9XaCvA==
+  dependencies:
+    loglevel "^1.6.1"
+
 "@diconium/commerce-cif-hybris-i18n@^1.0.3", "@diconium/commerce-cif-hybris-i18n@^1.0.9":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-i18n/-/commerce-cif-hybris-i18n-1.0.9.tgz#80e64951b6ee4d904cef43a68fd5379c420f0fce"
