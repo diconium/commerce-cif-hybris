@@ -18,7 +18,7 @@ import { DTO, InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { ShoppingList } from '@adobe/commerce-cif-model';
 import { CartModificationWsDTO, CartWsDTO } from '@diconium/commerce-cif-hybris-clients';
 
-export default class ShoppingListMapper extends Mapper<ShoppingList> {
+export default class ShoppingListCreationMapper extends Mapper<ShoppingList> {
 
   constructor(settings: InputSettings) {
     super(settings);
