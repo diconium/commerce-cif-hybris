@@ -125,7 +125,7 @@ describe('postShoppingListEntry', () => {
         expect(postShoppingListEntry).to.exist;
       });
 
-      it('Action should return MissingPropertyError response.error if no id is provided', async () => {
+      it('Should return MissingPropertyError if no id is provided', async () => {
         const { response } = await postShoppingListEntry(invalidInputNoId);
         expect(response.error).to.be.deep.equal({
           cause: {
@@ -136,7 +136,7 @@ describe('postShoppingListEntry', () => {
         });
       });
 
-      it('Action should return MissingPropertyError response.error if no productVariantId is provided', async () => {
+      it('Should return MissingPropertyError if no productVariantId is provided', async () => {
         const { response } = await postShoppingListEntry(invalidInputNoProductVariantId);
         expect(response.error).to.be.deep.equal({
           cause: {
@@ -147,7 +147,7 @@ describe('postShoppingListEntry', () => {
         });
       });
 
-      it('Action should return MissingPropertyError response.error if no quantity is provided', async () => {
+      it('Should return MissingPropertyError if no quantity is provided', async () => {
         const { response } = await postShoppingListEntry(invalidInputNoQuantity);
         expect(response.error).to.be.deep.equal({
           cause: {
@@ -158,7 +158,7 @@ describe('postShoppingListEntry', () => {
         });
       });
 
-      it('Action should return  response.error if an invalid quantity is provided', async () => {
+      it('Should return InvalidArgumentError if an invalid quantity is provided', async () => {
         const { response } = await postShoppingListEntry(invalidInput);
         expect(response.error).to.be.deep.equal({
           cause: {
@@ -169,7 +169,7 @@ describe('postShoppingListEntry', () => {
         });
       });
 
-      it('Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided', async () => {
+      it('Should return CommerceServiceResourceNotFoundError if an invalid product id is provided', async () => {
         scope.post('/rest/v2/electronics/users/current/carts/00000006/entries')
           .query({
             fields: 'FULL',

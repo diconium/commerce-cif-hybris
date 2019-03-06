@@ -17,13 +17,14 @@
 import chai from 'chai';
 import chaiShallowDeepEqual from 'chai-shallow-deep-equal';
 import nock from 'nock';
-import {getById as getShoppingListEntryById, post as postShoppingListEntry} from '../../src/actions/entries';
+import { getById as getShoppingListEntryById } from '../../src/actions/entries';
 import { getById as getShoppingListEntryByIdValidation } from '../../src/validations/entries';
 
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
 const adobeValidResponse = require('../resources/entry/adobeValidGetEntryByIdResponse.json');
+const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
 const entryExample = require('../resources/entry/singleEntryExample.json');
 const entryNotFound = require('../resources/entry/entryNotFound.json');
 const validInput = require('../resources/entry/validGetShoppingListEntryByIdInput.json');
@@ -65,12 +66,12 @@ describe('getShoppingListEntryById', () => {
     });
 
     describe('Service', () => {
-      it('Function should return something', () => {
+      it('Should return something', () => {
         const customer = getShoppingListEntryById(validInput);
         expect(customer).to.exist;
       });
 
-      it('Action should return CommerceServiceResourceNotFoundError if there is no entry for the given id in the shopping list', async () => {
+      it('Should return CommerceServiceResourceNotFoundError if there is no entry for the given id in the shopping list', async () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries/2')
           .query({
             fields: 'FULL',
@@ -89,7 +90,26 @@ describe('getShoppingListEntryById', () => {
         });
       });
 
-      it('Action should have a response with the correct entries within this shopping list for current user', async () => {
+      it('Should return CommerceServiceForbiddenError if user is not allowed to get the shopping list', async () => {
+        scope.get('/rest/v2/electronics/users/current/carts/00001000/entries/0')
+          .query({
+            fields: 'FULL',
+            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
+            lang: 'en',
+          })
+          .reply(403, customerNotAuthorizedExample);
+        validInput.parameters.entryId = 0;
+        const { response } = await getShoppingListEntryById(validInput);
+        expect(response.error).to.be.deep.equal({
+          cause: {
+            message: 'UnauthorizedError',
+          },
+          message: 'Full authentication is required to access this resource',
+          name: 'CommerceServiceForbiddenError',
+        });
+      });
+
+      it('Should have a response with the correct entries within this shopping list for current user', async () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries/0')
           .query({
             fields: 'FULL',

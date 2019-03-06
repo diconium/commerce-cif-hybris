@@ -59,18 +59,20 @@ export default class ShoppingListEntryModificationMapper extends Mapper<any> {
     const {
       product,
       quantity,
+      totalPrice,
     } = entry;
 
     const shoppingListEntry = new ShoppingListEntry.Builder()
       .withId(String(entryNumber))
-      .withProductVariant(this.mapProductVariant(product))
+      .withProductVariant(this.mapProductVariant(product, totalPrice))
       .withQuantity(quantity)
       .build();
 
     return shoppingListEntry;
   }
 
-  mapProductVariant(product: ProductWsDTO) {
+  mapProductVariant(product: ProductWsDTO, totalPrice: any) {
+    product.price = totalPrice;
     const productVariant = new ProductMapper(this.settings).mapToEntity(product);
     const { variants } = productVariant;
     if (variants[0]) {
@@ -79,6 +81,7 @@ export default class ShoppingListEntryModificationMapper extends Mapper<any> {
     productVariant.available = product.stock && product.stock.stockLevelStatus === 'inStock';
     productVariant.variants = undefined;
     productVariant.sku = productVariant.id;
+
     return productVariant;
   }
 

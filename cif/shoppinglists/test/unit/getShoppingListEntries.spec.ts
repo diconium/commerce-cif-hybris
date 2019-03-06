@@ -55,12 +55,12 @@ describe('getShoppingListEntries', () => {
     });
 
     describe('Service', () => {
-      it('Function should return something', () => {
+      it('Should return something', () => {
         const customer = getShoppingListEntries(validInput);
         expect(customer).to.exist;
       });
 
-      it('Action should return an empty response if there are no entries in the shopping list', async () => {
+      it('Should return an empty response if there are no entries in the shopping list', async () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries')
           .query({
             fields: 'FULL',
@@ -73,7 +73,7 @@ describe('getShoppingListEntries', () => {
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeEmptyResponse);
       });
 
-      it('Action should have a response with the correct entries within this shopping list for current user', async () => {
+      it('Should have a response with the correct entries within this shopping list for current user', async () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries')
           .query({
             fields: 'FULL',
@@ -86,7 +86,7 @@ describe('getShoppingListEntries', () => {
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeValidResponse);
       });
 
-      it('Action should have a response with the correct entries within this shopping list for current user, with pagination', async () => {
+      it('Should have a response with the correct entries within this shopping list for current user, with pagination', async () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries')
           .query({
             fields: 'FULL',
