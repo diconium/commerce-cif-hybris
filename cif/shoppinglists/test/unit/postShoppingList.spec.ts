@@ -54,11 +54,11 @@ describe('postShoppingList', () => {
     });
 
     describe('Service', () => {
-      it('Function should return something', () => {
+      it('Should return something', () => {
         expect(postShoppingList).to.exist;
       });
 
-      it('Action should return CommerceServiceForbiddenError if user is not allowed to create the cart', async () => {
+      it('Should return CommerceServiceForbiddenError if user is not allowed to create the cart', async () => {
         scope.post('/rest/v2/electronics/users/current/carts')
           .query({
             lang: 'en',
@@ -75,7 +75,7 @@ describe('postShoppingList', () => {
         });
       });
 
-      it('Action should have a response with the correct shopping list id for current user', async () => {
+      it('Should have a response with the correct shopping list id for current user', async () => {
         scope.post('/rest/v2/electronics/users/current/carts')
           .query({
             fields: 'DEFAULT',
