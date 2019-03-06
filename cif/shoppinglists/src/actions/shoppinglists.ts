@@ -25,6 +25,7 @@ import PostShoppingListClient from '../clients/PostShoppingListClient';
 
 import PagedResponseShoppingListMapper from '../mappers/PagedResponseShoppingListMapper';
 import ShoppingListMapper from '../mappers/ShoppingListMapper';
+import ShoppingListCreationMapperMapper from '../mappers/ShoppingListCreationMapper';
 
 const ERROR_TYPE = 'ShoppingListError';
 
@@ -67,6 +68,7 @@ export const patch = patchShoppingList;
 function postShoppingList(input: Input): Promise<Input> {
   return new SequenceAction(input)
     .setClient(PostShoppingListClient)
+    .setMapper(ShoppingListCreationMapperMapper)
     .setErrorType(ERROR_TYPE)
     .activate();
 }

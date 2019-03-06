@@ -16,54 +16,31 @@
 
 import { DTO, InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { ShoppingList } from '@adobe/commerce-cif-model';
-import { CartWsDTO } from '@diconium/commerce-cif-hybris-clients';
-import ShoppingListEntryMapper from './ShoppingListEntryMapper';
+import { CartModificationWsDTO, CartWsDTO } from '@diconium/commerce-cif-hybris-clients';
 
-export default class ShoppingListMapper extends Mapper<ShoppingList> {
+export default class ShoppingListCreationMapper extends Mapper<ShoppingList> {
 
   constructor(settings: InputSettings) {
     super(settings);
   }
 
-  mapFromInputArgsToActionParameters(mappable: any) {
-    const {
-      id,
-      name,
-    } = mappable;
-
-    return { id, name };
+  /* istanbul ignore next */
+  mapFromEntity(entity: any, mappable?: CartWsDTO): CartModificationWsDTO {
+    throw new Error('Unsupported Operation');
   }
 
   /* istanbul ignore next */
-  mapFromEntity(entity, mappable?: DTO): DTO {
+  mapFromInputArgsToActionParameters(mappable: any): any {
     throw new Error('Unsupported Operation');
   }
 
   mapToEntity(dto: CartWsDTO, entity?: ShoppingList): ShoppingList {
     const {
       code,
-      entries = [],
-      guid,
-      name,
-      user,
-      description,
     } = dto;
 
-    const id = (user && user.name) === 'current' ? code : guid;
-
-    const shoppingList = new ShoppingList.Builder()
-      .withId(id)
-      .withName(name)
-      .withEntries(entries.map(entry => new ShoppingListEntryMapper(this.settings).mapToEntity(entry)))
-      .build();
-
-    if (user && user.uid) {
-      shoppingList.customerId = user.uid;
-    }
-    if (description) {
-      shoppingList.description = description;
-    }
-
-    return shoppingList;
+    return {
+      id: code,
+    };
   }
 }

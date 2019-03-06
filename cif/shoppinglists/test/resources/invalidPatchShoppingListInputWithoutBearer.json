@@ -1,7 +1,7 @@
 {
   "parameters": {
     "id": "00001002",
-    "saveCartName": "Sample_Cart_Name"
+    "name": "Sample_Cart_Name"
   },
   "settings": {
     "HB_API_BASE_PATH": "/rest/v2",

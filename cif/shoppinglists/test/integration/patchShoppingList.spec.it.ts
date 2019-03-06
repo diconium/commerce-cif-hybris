@@ -55,7 +55,7 @@ describe('patchShoppingList', function () {
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.saveCartName);
+      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
     });
 
     // For this test to execute the login interface needs to be available
@@ -64,7 +64,7 @@ describe('patchShoppingList', function () {
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInputOauth.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.saveCartName);
+      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
     });
   });
 });
