@@ -31,23 +31,18 @@ describe('deleteShoppingListEntryById', () => {
   this.timeout(25000);
   describe('Integration tests', () => {
 
+    let bearer;
     let id;
-    before(async () => {
-      validInput.settings.bearer = await TestUtils.getBearer();
 
-      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInput.settings.bearer}`)
-        .then((response) => {
-          id = response.body.code;
-        })
-        .then(() => {
-          chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-          .post(`carts/${id}/entries?access_token=${validInput.settings.bearer}`)
-          .then((response) => {
-            invalidInput.parameters.id = response.body.code;
-            validInput.parameters.id = response.body.code;
-          });
-        });
+    before(async () => {
+      bearer = await TestUtils.getBearer();
+      const cart = await TestUtils.postCartWithEntry(bearer);
+      id = cart.id;
+      await TestUtils.saveCart(bearer, id, validInput.parameters.name);
+
+      validInput.settings.bearer = bearer;
+      validInput.parameters.id = invalidInput.parameters.id = id;
+      validInput.parameters.entryId = cart.entry.entryNumber;
     });
 
     after(() => {
