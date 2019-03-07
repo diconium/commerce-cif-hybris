@@ -21,8 +21,6 @@
     "cookies": [],
     "customerId": "anonymous",
     "headers": {},
-    "language": "",
-    "LOG_LEVEL": "TRACE",
-    "customerId": "current"
+    "language": ""
   }
 }

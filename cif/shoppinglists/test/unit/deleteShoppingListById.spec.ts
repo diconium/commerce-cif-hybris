@@ -65,7 +65,7 @@ describe('deleteShoppingListById', () => {
       });
 
       it('Should return CommerceServiceForbiddenError if not allowed to delete the cart', async () => {
-        scope.delete('/rest/v2/electronics/users/anonymous/carts/ce280b6d-61f0-41e7-acb4-d670546f744b')
+        scope.delete('/rest/v2/electronics/users/current/carts/00000006')
           .query({ lang: 'en' })
           .reply(403, customerNotAuthorizedExample);
         const { response } = await deleteShoppingListById(validInput);
