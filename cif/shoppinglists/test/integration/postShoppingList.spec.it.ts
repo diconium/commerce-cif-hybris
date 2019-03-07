@@ -26,7 +26,7 @@ chai.use(chaiShallowDeepEqual);
 const invalidInput = require('../resources/validGetShoppingListByIdInputAnonymousIntegration.json');
 const validInput = require('../resources/validGetShoppingListByIdInputIntegration.json');
 
-describe('patchShoppingList', function () {
+describe('postShoppingList', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
@@ -49,7 +49,7 @@ describe('patchShoppingList', function () {
       });
     });
 
-    it('Response should be 200 if the shopping list exists with that number for the current user if bearer is valid', async () => {
+    it('Response should be 200 if the shopping list was successfully created for the current user (and bearer is valid)', async () => {
       const { parameters, errorOutput } = await postShoppingList(validInput);
       expect(errorOutput).not.to.exist;
       expect(parameters).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);

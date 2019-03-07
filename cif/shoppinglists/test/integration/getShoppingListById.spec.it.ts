@@ -31,27 +31,20 @@ describe('getShoppingListById', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
+    let bearer;
     let id;
-    before(async () => {
-      validInput.settings.bearer = await TestUtils.getBearer();
 
-      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInput.settings.bearer}`)
-        .then((response) => {
-          id = response.body.code;
-        })
-        .then(() => {
-          chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-            .patch(`carts/${id}/save?saveCartName=${validInput.parameters.name}&access_token=${validInput.settings.bearer}`)
-            .then((response) => {
-              invalidInput.parameters.id = response.body.code;
-              validInput.parameters.id = response.body.code;
-            });
-        });
+    before(async () => {
+      bearer = await TestUtils.getBearer();
+      id = await TestUtils.postCart(bearer);
+      await TestUtils.saveCart(bearer, id, validInput.parameters.name);
+
+      validInput.parameters.id = invalidInput.parameters.id = id;
+      validInput.settings.bearer = bearer;
     });
 
     after(() => {
-      return TestUtils.deleteCartById(validInput.parameters.id);
+      return TestUtils.deleteCartById(id);
     });
 
     it('Response should be a ForbiddenError if token is not valid for this customer', async () => {

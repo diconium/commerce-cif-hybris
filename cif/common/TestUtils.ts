@@ -72,4 +72,58 @@ export class TestUtils {
       .delete(`rest/v2/electronics/users/current/carts/${id}`);
   }
 
+  static async saveCart(accessToken: string,  id: string, saveCartName: string): Promise<any> {
+    await chai.request(TestUtils.getHybrisInstance())
+      .patch(`rest/v2/electronics/users/current/carts/${id}/save`)
+      .query({
+        saveCartName,
+        access_token: accessToken,
+        fields: 'DEFAULT',
+      })
+      .then(response => response.body.code)
+      .catch(reason => reason);
+  }
+
+  static async postCart(accessToken: string): Promise<any> {
+    const id = await chai.request(TestUtils.getHybrisInstance())
+      .post('rest/v2/electronics/users/current/carts')
+      .query({
+        fields: 'DEFAULT',
+        access_token: accessToken,
+      })
+      .then(response => response.body.guid)
+      .catch(reason => reason);
+
+    return id;
+  }
+
+  static async postCartWithEntry(accessToken: string): Promise<any> {
+    const id = await chai.request(TestUtils.getHybrisInstance())
+      .post('rest/v2/electronics/users/current/carts')
+      .query({
+        fields: 'DEFAULT',
+        access_token: accessToken,
+      })
+      .then(response => response.body.guid)
+      .catch(reason => reason);
+    const added = await chai.request(TestUtils.getHybrisInstance())
+      .post(`rest/v2/electronics/users/current/carts/${id}/entries`)
+      .query({
+        fields: 'DEFAULT',
+      })
+      .send(
+        {
+          product: {
+            code: '280916',
+            access_token: accessToken,
+          },
+        })
+      .then(response => response.body.quantityAdded)
+      .catch(reason => reason);
+
+    if (added) {
+      return { id, entry: added };
+    }
+  }
+
 }

@@ -32,31 +32,18 @@ describe('getShoppingLists', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
+    let bearer;
     let id;
-    before(async () => {
-      validInput.settings.bearer = await TestUtils.getBearer();
-      validInputWithPagination.settings.bearer = validInput.settings.bearer;
 
-      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInput.settings.bearer}`)
-        .then((response) => {
-          id = response.body.code;
-        })
-        .then(() => {
-          chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-            .patch(`carts/${id}/save?
-            saveCartName=${validInput.parameters.name}&
-            access_token=${validInput.settings.bearer}`)
-            .then((response) => {
-              invalidInput.parameters.id = response.body.code;
-              validInput.parameters.id = response.body.code;
-              validInputWithPagination.parameters.id = response.body.code;
-            });
-        });
+    before(async () => {
+      bearer = await TestUtils.getBearer();
+      id = await TestUtils.postCart(bearer);
+      await TestUtils.saveCart(bearer, id, validInput.parameters.name);
+      validInput.parameters.id = validInputWithPagination.parameters.id = invalidInput.parameters.id = id;
     });
 
     after(() => {
-      return TestUtils.deleteCartById(validInput.parameters.id);
+      return TestUtils.deleteCartById(id);
     });
 
     it('Response should be a ForbiddenError if token is not valid for this customer', async () => {
@@ -81,20 +68,8 @@ describe('getShoppingLists', function () {
     });
 
     it('Response should be 200 if any shopping list exists for the current user, with pagination (if bearer is valid)', async () => {
-      chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInputWithPagination.settings.bearer}`)
-        .then((response) => {
-          validInputWithPagination.parameters.id = response.body.code;
-          validInputWithPagination.settings.customerId = 'current';
-        });
-
-      chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .patch(`carts/${validInputWithPagination.parameters.id}/save?
-                saveCartName=${validInputWithPagination.parameters.name}&
-                access_token=${validInputWithPagination.settings.bearer}`)
-        .then((response) => {
-          validInputWithPagination.parameters.name = response.body.savedCartData.name;
-        });
+      const id = await TestUtils.postCart(bearer);
+      await TestUtils.saveCart(bearer, id, validInput.parameters.name);
 
       const { response } = await getShoppingLists(validInputWithPagination);
       const { statusCode, body } = response;

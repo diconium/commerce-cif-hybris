@@ -30,19 +30,19 @@ describe('patchShoppingList', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
-    before(async () => {
-      validInput.settings.bearer = await TestUtils.getBearer();
+    let bearer;
+    let id;
 
-      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInput.settings.bearer}`)
-        .then((response) => {
-          invalidInput.parameters.id = response.body.code;
-          validInput.parameters.id = response.body.code;
-        });
+    before(async () => {
+      bearer = await TestUtils.getBearer();
+      id = await TestUtils.postCart(bearer);
+
+      validInput.parameters.id = invalidInput.parameters.id = id;
+      validInput.settings.bearer = bearer;
     });
 
     after(() => {
-      return TestUtils.deleteCartById(validInput.parameters.id);
+      return TestUtils.deleteCartById(id);
     });
 
     it('Response should be a ForbiddenError if token is not valid for this customer', async () => {
