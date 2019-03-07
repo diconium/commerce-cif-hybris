@@ -48,12 +48,12 @@ describe('getShoppingLists', () => {
     });
 
     describe('Service', () => {
-      it('Function should return something', () => {
+      it('Should return something', () => {
         const customer = getShoppingLists(validInput);
         expect(customer).to.exist;
       });
 
-      it('Action should return an empty response if there are no shopping lists', async () => {
+      it('Should return an empty response if there are no shopping lists', async () => {
         scope.get('/rest/v2/electronics/users/current/carts')
           .query({
             fields: 'FULL',
@@ -67,7 +67,7 @@ describe('getShoppingLists', () => {
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeEmptyResponse);
       });
 
-      it('Action should have an empty response when pagination input exceeds limit', async () => {
+      it('Should have an empty response when pagination input exceeds limit', async () => {
         scope.get('/rest/v2/electronics/users/current/carts')
           .query({
             pageSize: 1,
@@ -83,7 +83,7 @@ describe('getShoppingLists', () => {
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeEmptyResponse);
       });
 
-      it('Action should have a response with the correct shopping list id for current user', async () => {
+      it('Should have a response with the correct shopping list id for current user', async () => {
         scope.get('/rest/v2/electronics/users/current/carts')
           .query({
             fields: 'FULL',
@@ -97,7 +97,7 @@ describe('getShoppingLists', () => {
         expect(body).to.be.ok.and.to.to.shallowDeepEqual(adobeValidResponse);
       });
 
-      it('Action should have a response with the correct shopping list id for current user, with pagination', async () => {
+      it('Should have a response with the correct shopping list id for current user, with pagination', async () => {
         scope.get('/rest/v2/electronics/users/current/carts')
           .query({
             pageSize: 1,

@@ -24,35 +24,29 @@ import { getById as getShoppingListById } from '../../src/actions/shoppinglists'
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const validInput = require('../resources/validGetShoppingListByIdInputAnonymous.json');
-const validInputOauth = require('../resources/validGetShoppingListByIdInput.json');
+const invalidInput = require('../resources/validGetShoppingListByIdInputAnonymousIntegration.json');
+const validInput = require('../resources/validGetShoppingListByIdInput.json');
 
 describe('getShoppingListById', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
-    before(async() => {
-      chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/anonymous/`)
-        .post('carts')
-        .then((response) => {
-          validInput.parameters.id = response.body.guid;
-        });
+    let id;
+    before(async () => {
+      validInput.settings.bearer = await TestUtils.getBearer();
 
-      validInputOauth.settings.bearer = await TestUtils.getBearer();
-      chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInputOauth.settings.bearer}`)
+      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
+        .post(`carts?access_token=${validInput.settings.bearer}`)
         .then((response) => {
-          validInputOauth.parameters.id = response.body.code;
-          validInputOauth.settings.customerId = 'current';
-        });
-
-      return chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .patch(`carts/${validInputOauth.parameters.id}/save?
-                name=${validInputOauth.parameters.name}&
-                access_token=${validInputOauth.settings.bearer}`)
-        .then((response) => {
-          validInputOauth.parameters.name = response.body.savedCartData.name;
-          validInput.parameters.name = response.body.savedCartData.name;
+          id = response.body.code;
+        })
+        .then(() => {
+          chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
+            .patch(`carts/${id}/save?saveCartName=${validInput.parameters.name}&access_token=${validInput.settings.bearer}`)
+            .then((response) => {
+              invalidInput.parameters.id = response.body.code;
+              validInput.parameters.id = response.body.code;
+            });
         });
     });
 
@@ -60,20 +54,23 @@ describe('getShoppingListById', function () {
       return TestUtils.deleteCartById(validInput.parameters.id);
     });
 
-    it('Response should be 200 if the shopping list exists with that number for the anonymous user', async () => {
+    it('Response should be a ForbiddenError if token is not valid for this customer', async () => {
       const { response } = await getShoppingListById(validInput);
+      expect(response.error).to.exist.and.to.deep.equal({
+        cause: {
+          message: 'ForbiddenError',
+        },
+        message: 'Access is denied',
+        name: 'CommerceServiceForbiddenError',
+      });
+    });
+
+    it('Response should be 200 if the shopping list exists with that number for the current user if bearer is valid', async () => {
+      const {  response } = await getShoppingListById(validInput);
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
-    });
-
-    // For this test to execute the login interface needs to be available
-    it('Response should be 200 if the shopping list exists with that number for the current user if bearer is valid', async () => {
-      const {  response } = await getShoppingListById(validInputOauth);
-      const { statusCode, body } = response;
-      expect(statusCode).to.be.equal(200);
-      expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInputOauth.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInputOauth.parameters.name);
+      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
     });
   });
 });

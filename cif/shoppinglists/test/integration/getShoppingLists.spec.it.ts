@@ -24,37 +24,34 @@ import { getById as getShoppingLists } from '../../src/actions/shoppinglists';
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const validInput = require('../resources/validGetShoppingListByIdInputAnonymous.json');
-const validInputOauth = require('../resources/validGetShoppingListByIdInput.json');
-const validInputOauthWithPagination = require('../resources/validGetShoppingListInputWithPagination.json');
+const invalidInput = require('../resources/validGetShoppingListByIdInputAnonymousIntegration.json');
+const validInput = require('../resources/validGetShoppingListByIdInput.json');
+const validInputWithPagination = require('../resources/validGetShoppingListInputWithPagination.json');
 
 describe('getShoppingLists', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
-    before(async() => {
-      chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/anonymous/`)
-        .post('carts')
-        .then((response) => {
-          validInput.parameters.id = response.body.guid;
-        });
+    let id;
+    before(async () => {
+      validInput.settings.bearer = await TestUtils.getBearer();
+      validInputWithPagination.settings.bearer = validInput.settings.bearer;
 
-      validInputOauth.settings.bearer = await TestUtils.getBearer();
-      validInputOauthWithPagination.settings.bearer = validInputOauth.settings.bearer;
-      chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInputOauth.settings.bearer}`)
+      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
+        .post(`carts?access_token=${validInput.settings.bearer}`)
         .then((response) => {
-          validInputOauth.parameters.id = response.body.code;
-          validInputOauth.settings.customerId = 'current';
-        });
-
-      return chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .patch(`carts/${validInputOauth.parameters.id}/save?
-                name=${validInputOauth.parameters.name}&
-                access_token=${validInputOauth.settings.bearer}`)
-        .then((response) => {
-          validInputOauth.parameters.name = response.body.savedCartData.name;
-          validInput.parameters.name = response.body.savedCartData.name;
+          id = response.body.code;
+        })
+        .then(() => {
+          chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
+            .patch(`carts/${id}/save?
+            saveCartName=${validInput.parameters.name}&
+            access_token=${validInput.settings.bearer}`)
+            .then((response) => {
+              invalidInput.parameters.id = response.body.code;
+              validInput.parameters.id = response.body.code;
+              validInputWithPagination.parameters.id = response.body.code;
+            });
         });
     });
 
@@ -62,8 +59,19 @@ describe('getShoppingLists', function () {
       return TestUtils.deleteCartById(validInput.parameters.id);
     });
 
-    it('Response should be 200 if any shopping lists exists for the anonymous user', async () => {
-      const { response } = await getShoppingLists(validInput);
+    it('Response should be a ForbiddenError if token is not valid for this customer', async () => {
+      const { response } = await getShoppingLists(invalidInput);
+      expect(response.error).to.exist.and.to.deep.equal({
+        cause: {
+          message: 'ForbiddenError',
+        },
+        message: 'Access is denied',
+        name: 'CommerceServiceForbiddenError',
+      });
+    });
+
+    it('Response should be 200 if any shopping list exists for the current user, if bearer is valid', async () => {
+      const {  response } = await getShoppingLists(validInput);
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('offset').and.to.equal(0);
@@ -72,40 +80,29 @@ describe('getShoppingLists', function () {
       expect(body.results[0]).to.deep.include({ name: validInput.parameters.name });
     });
 
-    // For this test to execute the login interface needs to be available
-    it('Response should be 200 if any shopping list exists for the current user, if bearer is valid', async () => {
-      const {  response } = await getShoppingLists(validInputOauth);
-      const { statusCode, body } = response;
-      expect(statusCode).to.be.equal(200);
-      expect(body).to.be.ok.and.to.haveOwnProperty('offset').and.to.equal(0);
-      expect(body).to.be.ok.and.to.haveOwnProperty('count').and.to.equal(1);
-      expect(body).to.be.ok.and.to.haveOwnProperty('total').and.to.equal(1);
-      expect(body.results[0]).to.deep.include({ name: validInputOauth.parameters.name });
-    });
-
-    it('Paginated Response should be 200 if any shopping list exists for the current user, if bearer is valid', async () => {
+    it('Response should be 200 if any shopping list exists for the current user, with pagination (if bearer is valid)', async () => {
       chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInputOauthWithPagination.settings.bearer}`)
+        .post(`carts?access_token=${validInputWithPagination.settings.bearer}`)
         .then((response) => {
-          validInputOauthWithPagination.parameters.id = response.body.code;
-          validInputOauthWithPagination.settings.customerId = 'current';
+          validInputWithPagination.parameters.id = response.body.code;
+          validInputWithPagination.settings.customerId = 'current';
         });
 
       chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .patch(`carts/${validInputOauthWithPagination.parameters.id}/save?
-                name=${validInputOauthWithPagination.parameters.name}&
-                access_token=${validInputOauthWithPagination.settings.bearer}`)
+        .patch(`carts/${validInputWithPagination.parameters.id}/save?
+                saveCartName=${validInputWithPagination.parameters.name}&
+                access_token=${validInputWithPagination.settings.bearer}`)
         .then((response) => {
-          validInputOauthWithPagination.parameters.name = response.body.savedCartData.name;
+          validInputWithPagination.parameters.name = response.body.savedCartData.name;
         });
 
-      const { response } = await getShoppingLists(validInputOauthWithPagination);
+      const { response } = await getShoppingLists(validInputWithPagination);
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
-      expect(body).to.be.ok.and.to.haveOwnProperty('offset').and.to.equal(validInputOauthWithPagination.parameters.offset);
-      expect(body).to.be.ok.and.to.haveOwnProperty('count').and.to.equal(1);
+      expect(body).to.be.ok.and.to.haveOwnProperty('offset').and.to.equal(validInputWithPagination.parameters.offset);
+      expect(body).to.be.ok.and.to.haveOwnProperty('count').and.to.equal(2);
       expect(body).to.be.ok.and.to.haveOwnProperty('total').and.to.equal(2);
-      expect(body.results[0]).to.deep.include({ name: validInputOauthWithPagination.parameters.name });
+      expect(body.results[0]).to.deep.include({ name: validInputWithPagination.parameters.name });
     });
   });
 });

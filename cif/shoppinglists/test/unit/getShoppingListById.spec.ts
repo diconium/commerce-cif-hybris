@@ -24,6 +24,7 @@ const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
 const cartNotFoundExample = require('../resources/cartNotFound.json');
+const customerNotAuthorizedExample = require('../resources/cartNotAuthorized.json');
 const invalidInput = require('../resources/invalidGetShoppingListByIdInput.json');
 const validInput = require('../resources/validGetShoppingListByIdInput.json');
 const shoppingListExample = require('../resources/shoppingListExample-00001000.json');
@@ -53,12 +54,12 @@ describe('getShoppingListById', () => {
     });
 
     describe('Service', () => {
-      it('Function should return something', () => {
+      it('Should return something', () => {
         const customer = getShoppingListById(invalidInput);
         expect(customer).to.exist;
       });
 
-      it('Action should return MissingPropertyError errorOutput if no id is provided', async () => {
+      it('Should return MissingPropertyError errorOutput if no id is provided', async () => {
         const { response } = await getShoppingListById(invalidInput);
         expect(response.error).to.be.deep.equal({
           cause: {
@@ -69,7 +70,7 @@ describe('getShoppingListById', () => {
         });
       });
 
-      it('Action should return CommerceServiceResourceNotFoundError if a shopping list does not exist with the id', async () => {
+      it('Should return CommerceServiceResourceNotFoundError if a shopping list does not exist with the id', async () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/savedcart')
           .query({
             fields: 'FULL',
@@ -87,7 +88,25 @@ describe('getShoppingListById', () => {
         });
       });
 
-      it('Action should have a response with the correct shopping list id for current user', async () => {
+      it('Should return CommerceServiceForbiddenError if user is not allowed to get the shopping list', async () => {
+        scope.get('/rest/v2/electronics/users/current/carts/00001000/savedcart')
+          .query({
+            fields: 'FULL',
+            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
+            lang: 'en',
+          })
+          .reply(403, customerNotAuthorizedExample);
+        const { response } = await getShoppingListById(validInput);
+        expect(response.error).to.be.deep.equal({
+          cause: {
+            message: 'UnauthorizedError',
+          },
+          message: 'Full authentication is required to access this resource',
+          name: 'CommerceServiceForbiddenError',
+        });
+      });
+
+      it('Should have a response with the correct shopping list id for current user', async () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/savedcart')
           .query({
             fields: 'FULL',
