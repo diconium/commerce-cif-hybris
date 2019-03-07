@@ -26,19 +26,40 @@ chai.use(chaiHttp);
 const { expect } = chai;
 
 const validInput = require('../resources/validDeleteCartInput.json');
+const invalidInput = require('../resources/validDeleteCartInput.json');
 
 describe('Delete Shopping List By Id', function ()  {
   this.timeout(25000);
   describe('Integration tests', () => {
 
-    before(() => {
+    let id;
+    before(async () => {
+      validInput.settings.bearer = await TestUtils.getBearer();
 
-      return chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/anonymous/`)
-        .post('carts')
+      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
+        .post(`carts?access_token=${validInput.settings.bearer}`)
         .then((response) => {
-          validInput.parameters.id = response.body.guid;
+          id = response.body.code;
+        })
+        .then(() => {
+          chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
+            .post(`carts/${id}/entries?access_token=${validInput.settings.bearer}`)
+            .then((response) => {
+              invalidInput.parameters.id = response.body.code;
+              validInput.parameters.id = response.body.code;
+            });
         });
+    });
 
+    it('Response should be a ForbiddenError if token is not valid for this customer', async () => {
+      const { response } = await deleteShoppingListById(invalidInput);
+      expect(response.error).to.exist.and.to.deep.equal({
+        cause: {
+          message: 'ForbiddenError',
+        },
+        message: 'Access is denied',
+        name: 'CommerceServiceForbiddenError',
+      });
     });
 
     it('Should return 200 if the cart was successfully deleted', async () => {

@@ -23,18 +23,33 @@ import { patch as patchShoppingList, post as postShoppingList } from '../../src/
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const validInput = require('../resources/validGetShoppingListByIdInputAnonymousIntegration.json');
-const validInputOauth = require('../resources/validGetShoppingListByIdInputIntegration.json');
+const invalidInput = require('../resources/validGetShoppingListByIdInputAnonymousIntegration.json');
+const validInput = require('../resources/validGetShoppingListByIdInputIntegration.json');
 
 describe('patchShoppingList', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
+    before(async () => {
+      validInput.settings.bearer = await TestUtils.getBearer();
+    });
+
     after(() => {
       return TestUtils.deleteCartById(validInput.parameters.id);
     });
 
-    it('Response should be 200 if the shopping list exists with that number for the anonymous user', async () => {
+    it('Response should be a ForbiddenError if token is not valid for this customer', async () => {
+      const { errorOutput } = await postShoppingList(invalidInput);
+      expect(errorOutput).to.exist.and.to.deep.equal({
+        cause: {
+          message: 'ForbiddenError',
+        },
+        message: 'Access is denied',
+        name: 'CommerceServiceForbiddenError',
+      });
+    });
+
+    it('Response should be 200 if the shopping list exists with that number for the current user if bearer is valid', async () => {
       const { parameters, errorOutput } = await postShoppingList(validInput);
       expect(errorOutput).not.to.exist;
       expect(parameters).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
@@ -42,22 +57,6 @@ describe('patchShoppingList', function () {
 
       validInput.parameters.id = parameters.id;
       const { response } = await patchShoppingList(validInput);
-      const { statusCode, body } = response;
-      expect(statusCode).to.be.equal(200);
-      expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
-    });
-
-    // For this test to execute the login interface needs to be available
-    it('Response should be 200 if the shopping list exists with that number for the current user if bearer is valid', async () => {
-
-      const { parameters, errorOutput } = await postShoppingList(validInputOauth);
-      expect(errorOutput).not.to.exist;
-      expect(parameters).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInputOauth.parameters.id);
-      expect(parameters).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInputOauth.parameters.name);
-
-      validInputOauth.parameters.id = parameters.id;
-      const { response } = await patchShoppingList(validInputOauth);
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);

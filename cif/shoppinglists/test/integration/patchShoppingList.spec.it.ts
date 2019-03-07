@@ -23,26 +23,21 @@ import { patch as patchShoppingList } from '../../src/actions/shoppinglists';
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-const validInput = require('../resources/validGetShoppingListByIdInputAnonymous.json');
-const validInputOauth = require('../resources/validGetShoppingListByIdInput.json');
+const invalidInput = require('../resources/validGetShoppingListByIdInputAnonymousIntegration.json');
+const validInput = require('../resources/validGetShoppingListByIdInput.json');
 
 describe('patchShoppingList', function () {
   this.timeout(25000);
   describe('Integration tests',  () => {
 
-    before(async() => {
-      chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/anonymous/`)
-        .post('carts')
-        .then((response) => {
-          validInput.parameters.id = response.body.guid;
-        });
+    before(async () => {
+      validInput.settings.bearer = await TestUtils.getBearer();
 
-      validInputOauth.settings.bearer = await TestUtils.getBearer();
-      return chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
-        .post(`carts?access_token=${validInputOauth.settings.bearer}`)
+      await chai.request(`${TestUtils.getHybrisInstance()}rest/v2/electronics/users/current/`)
+        .post(`carts?access_token=${validInput.settings.bearer}`)
         .then((response) => {
-          validInputOauth.parameters.id = response.body.code;
-          validInputOauth.settings.customerId = 'current';
+          invalidInput.parameters.id = response.body.code;
+          validInput.parameters.id = response.body.code;
         });
     });
 
@@ -50,20 +45,22 @@ describe('patchShoppingList', function () {
       return TestUtils.deleteCartById(validInput.parameters.id);
     });
 
-    it('Response should be 200 if the shopping list exists with that number for the anonymous user', async () => {
-      const { response } = await patchShoppingList(validInput);
+    it('Response should be a ForbiddenError if token is not valid for this customer', async () => {
+      const { response } = await patchShoppingList(invalidInput);
+      expect(response.error).to.exist.and.to.deep.equal({
+        cause: {
+          message: 'ForbiddenError',
+        },
+        message: 'Access is denied',
+        name: 'CommerceServiceForbiddenError',
+      });
+    });
+
+    it('Response should be 200 if the shopping list exists with that number for the current user if bearer is valid', async () => {
+      const {  response } = await patchShoppingList(validInput);
       const { statusCode, body } = response;
       expect(statusCode).to.be.equal(200);
       expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInput.parameters.id);
-      expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
-    });
-
-    // For this test to execute the login interface needs to be available
-    it('Response should be 200 if the shopping list exists with that number for the current user if bearer is valid', async () => {
-      const {  response } = await patchShoppingList(validInputOauth);
-      const { statusCode, body } = response;
-      expect(statusCode).to.be.equal(200);
-      expect(body).to.be.ok.and.to.haveOwnProperty('id').and.to.equal(validInputOauth.parameters.id);
       expect(body).to.be.ok.and.to.haveOwnProperty('name').and.to.equal(validInput.parameters.name);
     });
   });
