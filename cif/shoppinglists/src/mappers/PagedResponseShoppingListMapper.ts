@@ -51,7 +51,7 @@ export default class PagedResponseShoppingListMapper extends Mapper<PagedRespons
       offset = 0,
     } = this.actionParameters;
 
-    const totalResults = carts.length;   // TODO: como saber o total real?  fazer outra chamada com "fields = BASIC" e sem limites para saber?
+    const totalResults = carts.length;   // TODO: Hybris currently does not provide total number of results
     const results = carts.map(cartDto => new ShoppingListMapper(this.settings).mapToEntity(cartDto));
 
     const pagedResponseShoppingList = new PagedResponseShoppingList.Builder()
