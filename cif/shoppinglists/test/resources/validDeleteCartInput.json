@@ -1,6 +1,6 @@
 {
   "parameters": {
-    "id": "ce280b6d-61f0-41e7-acb4-d670546f744b"
+    "id": "00000006"
   },
   "settings": {
     "HB_API_HOST": "hybris.example.com",
@@ -17,7 +17,7 @@
     "HB_PROTOCOL": "https",
     "bearer": "",
     "cookies": [],
-    "customerId": "anonymous",
+    "customerId": "current",
     "headers": {},
     "language": ""
   }

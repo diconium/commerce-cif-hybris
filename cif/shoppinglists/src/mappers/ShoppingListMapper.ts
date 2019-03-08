@@ -49,10 +49,8 @@ export default class ShoppingListMapper extends Mapper<ShoppingList> {
       description,
     } = dto;
 
-    const id = (user && user.name) === 'current' ? code : guid;
-
     const shoppingList = new ShoppingList.Builder()
-      .withId(id)
+      .withId(code)
       .withName(name)
       .withEntries(entries.map(entry => new ShoppingListEntryMapper(this.settings).mapToEntity(entry)))
       .build();
