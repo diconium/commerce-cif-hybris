@@ -220,7 +220,7 @@ describe('postShoppingListEntry', () => {
       });
 
       it('Should return a valid input if new entry was successfully added to the authenticated shopping list', async () => {
-        scope.post('/rest/v2/electronics/users/current/carts/00000006/entries', validBody)
+        scope.post('/rest/v2/electronics/users/current/carts/00000014/entries', validBody)
           .query({
             fields: 'FULL',
             lang: 'en',

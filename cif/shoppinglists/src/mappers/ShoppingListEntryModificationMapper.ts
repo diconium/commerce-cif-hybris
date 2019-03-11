@@ -54,7 +54,7 @@ export default class ShoppingListEntryModificationMapper extends Mapper<any> {
 
   mapToEntity(dto: CartModificationWsDTO, entity?: any): any {
     const { entry } = dto;
-    const entryNumber = entry && entry.entryNumber || undefined;
+    const entryNumber = entry && String(entry.entryNumber) || undefined;
 
     const {
       product,

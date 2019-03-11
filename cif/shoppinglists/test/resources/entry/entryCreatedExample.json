@@ -1,24 +1,24 @@
 {
   "entry": {
     "configurationInfos": [],
-    "entryNumber": 2,
+    "entryNumber": 0,
     "product": {
-      "availableForPickup": true,
-      "code": "280916",
-      "name": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "availableForPickup": false,
+      "code": "3470545",
+      "name": "EASYSHARE M381",
       "purchasable": true,
       "stock": {
-        "stockLevel": 15
+        "stockLevel": 157
       },
-      "url": "/Open-Catalogue/Cameras/Webcams/Web-Camera-%28100KpixelM-CMOS%2C-640X480%2C-USB-1-1%29-Black/p/280916"
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/EASYSHARE-M381/p/3470545"
     },
-    "quantity": 2,
+    "quantity": 1,
     "totalPrice": {
       "currencyIso": "USD",
-      "value": 16.4
+      "value": 370.72
     }
   },
-  "quantity": 2,
-  "quantityAdded": 2,
+  "quantity": 1,
+  "quantityAdded": 1,
   "statusCode": "success"
 }
