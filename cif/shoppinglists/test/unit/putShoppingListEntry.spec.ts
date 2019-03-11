@@ -30,8 +30,8 @@ describe('putShoppingListEntry', () => {
 
     describe('Validator', () => {
       it('Validator should return NotImplementedError errorOutput', async () => {
-        const { errorOutput } = await validatePutShoppingListEntry({ });
-        expect(errorOutput).to.be.deep.equal({
+        const { response } = await validatePutShoppingListEntry({ });
+        expect(response.error).to.be.deep.equal({
           cause: {
             message: 'not-implemented',
           },

@@ -170,7 +170,7 @@ describe('postShoppingListEntry', () => {
       });
 
       it('Should return CommerceServiceResourceNotFoundError if an invalid product id is provided', async () => {
-        scope.post('/rest/v2/electronics/users/current/carts/00000006/entries')
+        scope.post('/rest/v2/electronics/users/current/carts/00000014/entries')
           .query({
             fields: 'FULL',
             lang: 'en',
@@ -202,7 +202,7 @@ describe('postShoppingListEntry', () => {
       });
 
       it('Should return CommerceServiceResourceNotFoundError if the shopping list is not found', async () => {
-        scope.post('/rest/v2/electronics/users/current/carts/00000006/entries')
+        scope.post('/rest/v2/electronics/users/current/carts/00000014/entries')
           .query({
             fields: 'FULL',
             lang: 'en',

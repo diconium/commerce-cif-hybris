@@ -15,7 +15,7 @@
  */
 
 import { ShoppingList } from '@adobe/commerce-cif-model';
-import { Input } from '@diconium/commerce-cif-hybris-core';
+import { Input, Output } from '@diconium/commerce-cif-hybris-core';
 import { Validator } from '@diconium/commerce-cif-hybris-validators';
 import PagedResponseShoppingListEntryMapper from '../mappers/PagedResponseShoppingListEntryMapper';
 import ShoppingListEntryMapper from '../mappers/ShoppingListEntryMapper';
@@ -61,10 +61,17 @@ function postShoppingListEntry(args: any): Input {
 }
 export const post = postShoppingListEntry;
 
-function putShoppingListEntry(args: any): Input {
-  return new Validator<ShoppingList>(args, ERROR_TYPE)
+function putShoppingListEntry(args: any): Output<ShoppingList> {
+
+  const input = new Validator<ShoppingList>(args, ERROR_TYPE)
     .setMapper(ShoppingListEntryMapper)
     .isNotImplemented()
     .input();
+
+  return new Output<ShoppingList>({
+    accessToken: input.settings.bearer,
+    error: input.errorOutput,
+    errorType: ERROR_TYPE,
+  });
 }
 export const put = putShoppingListEntry;
