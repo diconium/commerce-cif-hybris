@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-common@1.5.0...@diconium/commerce-cif-hybris-common@1.6.0) (2019-03-11)
+
+
+### Features
+
+* Shopping lists API ([#30](https://github.com/diconium/commerce-cif-hybris/issues/30)) ([ef92279](https://github.com/diconium/commerce-cif-hybris/commit/ef92279))
+
+
+
+
+
 # [1.5.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-common@1.0.1...@diconium/commerce-cif-hybris-common@1.5.0) (2019-02-20)
 
 

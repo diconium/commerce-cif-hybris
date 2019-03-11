@@ -86,6 +86,15 @@ jobs:
       - run: yarn ow:config
       - run: yarn deploy
 
+  deploy-eu:
+    docker:
+      - image: gcr.io/geometric-smoke-193807/wsk-serverless:1.0.10
+    working_directory: ~/repo
+    steps:
+      - *read-workspace
+      - run: yarn ow:eu:config
+      - run: yarn deploy
+
   publish:
     <<: *defaults
     steps:
@@ -120,9 +129,16 @@ workflows:
           filters:
             branches:
               only: master
+      - deploy-eu:
+          requires:
+            - version
+          filters:
+            branches:
+              only: master
       - publish:
           requires:
             - deploy
+            - deploy-eu
           filters:
             branches:
               only: master
