@@ -74,10 +74,6 @@ export default class ShoppingListEntryModificationMapper extends Mapper<any> {
   mapProductVariant(product: ProductWsDTO, totalPrice: any) {
     product.price = totalPrice;
     const productVariant = new ProductMapper(this.settings).mapToEntity(product);
-    const { variants } = productVariant;
-    if (variants[0]) {
-      productVariant.attributes = [...productVariant.attributes, variants[0].attributes];
-    }
     productVariant.available = product.stock && product.stock.stockLevelStatus === 'inStock';
     productVariant.variants = undefined;
     productVariant.sku = productVariant.id;

@@ -43,9 +43,7 @@ export default class ShoppingListMapper extends Mapper<ShoppingList> {
     const {
       code,
       entries = [],
-      guid,
       name,
-      user,
       description,
     } = dto;
 
@@ -55,9 +53,6 @@ export default class ShoppingListMapper extends Mapper<ShoppingList> {
       .withEntries(entries.map(entry => new ShoppingListEntryMapper(this.settings).mapToEntity(entry)))
       .build();
 
-    if (user && user.uid) {
-      shoppingList.customerId = user.uid;
-    }
     if (description) {
       shoppingList.description = description;
     }

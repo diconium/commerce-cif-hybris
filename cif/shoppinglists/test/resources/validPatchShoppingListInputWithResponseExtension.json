@@ -1,6 +1,7 @@
 {
   "parameters": {
-    "name": "Sample_Cart_Name"
+    "name": "Sample_Cart_Name",
+    "description": "sample description"
   },
   "responseExtension": {
     "id": "00001000"

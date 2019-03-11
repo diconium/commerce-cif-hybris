@@ -36,12 +36,8 @@ export default class PostShoppingListEntryClient extends HttpClient {
       entry,
     } = this.input.parameters;
 
-    if (entry) {
-      return this.post(`/users/${customerId}/carts/${id}/entries`, entry, { bearer, queryParameters: { fields: 'FULL' } })
-        .then(cartModification => cartModification)
-        .catch(errorOutput => Promise.reject(errorOutput));
-    }
-
-    return Promise.resolve(new CartModificationWsDTO());
+    return this.post(`/users/${customerId}/carts/${id}/entries`, entry, { bearer, queryParameters: { fields: 'FULL' } })
+      .then(cartModification => cartModification)
+      .catch(errorOutput => Promise.reject(errorOutput));
   }
 }
