@@ -1,0 +1,45 @@
+{
+  "count": 2,
+  "offset": 0,
+  "results": [
+    {
+      "id": "0",
+      "productVariant": {
+        "assets": [],
+        "attributes": [
+          {
+            "id": "availableForPickup",
+            "name": "Available for Pickup",
+            "value": true
+          }
+        ],
+        "categories": [],
+        "id": "3514519",
+        "name": "DSC-WX1",
+        "prices": [],
+        "sku": "3514519"
+      },
+      "quantity": 2
+    },
+    {
+      "id": "1",
+      "productVariant": {
+        "assets": [],
+        "attributes": [
+          {
+            "id": "availableForPickup",
+            "name": "Available for Pickup",
+            "value": true
+          }
+        ],
+        "categories": [],
+        "id": "3514520",
+        "name": "DSC-WX1",
+        "prices": [],
+        "sku": "3514520"
+      },
+      "quantity": 1
+    }
+  ],
+  "total": 2
+}

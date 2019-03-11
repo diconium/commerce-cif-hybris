@@ -1,0 +1,116 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "description": "test",
+      "entries": [
+        {
+          "id": "0",
+          "productVariant": {
+            "assets": [
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wyMTA5OHxpbWFnZS9qcGVnfGltYWdlcy9oMGQvaDI5Lzg3OTY3OTIwNjE5ODIuanBnfDAyMjJlZDE2N2I4MGU3MzM3NTVjNjQyZWNmY2Y1YjU4MmMwZDk0ZmNlMGViMWYyMzlmN2M1MzY5MGY5OTA1YjI"
+              },
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3w5OTI5fGltYWdlL2pwZWd8aW1hZ2VzL2hmYy9oN2EvODc5NjgxODM0MTkxOC5qcGd8N2FhMjhmN2VmZTE3OGJiMTEyOGUwNjkyNzk0NWYwNWRiY2QwMWU2ODcxNDRiMmUxYjc3MGEwZTAyMjU2MzQyYw"
+              },
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wyMTM2fGltYWdlL2pwZWd8aW1hZ2VzL2hlZC9oMTkvODc5Njg0NDY4NzM5MC5qcGd8MDIxMTVmOWMzZjBhY2ZiMWNiNzQ5OTE1NDkxYjE0NzI0NzI5NDYyNjI0YjRlZjJjNDlhYWU5NjA0YWI2YWJhMw"
+              },
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wxNDM3fGltYWdlL2pwZWd8aW1hZ2VzL2gwZi9oYWYvODc5Njg3MTAzMjg2Mi5qcGd8MzhhMTdiOTVhMjI2NTZhNjQzODZjMTZmNWNmYTIwYTlhNGIyMWM2OWY3ZTU5OGQyYzQ2MDE4NjM0ZmE5NWRmNg"
+              }
+            ],
+            "attributes": [
+              {
+                "id": "manufacturer",
+                "name": "Manufacturer",
+                "value": "Sony"
+              },
+              {
+                "id": "availableForPickup",
+                "name": "Available for Pickup",
+                "value": true
+              }
+            ],
+            "categories": [
+              {
+                "id": "576"
+              },
+              {
+                "id": "brand_5"
+              }
+            ],
+            "id": "3514519",
+            "name": "DSC-WX1",
+            "prices": [],
+            "sku": "3514519"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": "00001000",
+      "name": "saved_test_v2"
+    },
+    {
+      "description": "test",
+      "entries": [
+        {
+          "id": "0",
+          "productVariant": {
+            "assets": [
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wyMTA5OHxpbWFnZS9qcGVnfGltYWdlcy9oMGQvaDI5Lzg3OTY3OTIwNjE5ODIuanBnfDAyMjJlZDE2N2I4MGU3MzM3NTVjNjQyZWNmY2Y1YjU4MmMwZDk0ZmNlMGViMWYyMzlmN2M1MzY5MGY5OTA1YjI"
+              },
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3w5OTI5fGltYWdlL2pwZWd8aW1hZ2VzL2hmYy9oN2EvODc5NjgxODM0MTkxOC5qcGd8N2FhMjhmN2VmZTE3OGJiMTEyOGUwNjkyNzk0NWYwNWRiY2QwMWU2ODcxNDRiMmUxYjc3MGEwZTAyMjU2MzQyYw"
+              },
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wyMTM2fGltYWdlL2pwZWd8aW1hZ2VzL2hlZC9oMTkvODc5Njg0NDY4NzM5MC5qcGd8MDIxMTVmOWMzZjBhY2ZiMWNiNzQ5OTE1NDkxYjE0NzI0NzI5NDYyNjI0YjRlZjJjNDlhYWU5NjA0YWI2YWJhMw"
+              },
+              {
+                "id": "undefined",
+                "url": "https://hybris.example.com/medias/?context=bWFzdGVyfGltYWdlc3wxNDM3fGltYWdlL2pwZWd8aW1hZ2VzL2gwZi9oYWYvODc5Njg3MTAzMjg2Mi5qcGd8MzhhMTdiOTVhMjI2NTZhNjQzODZjMTZmNWNmYTIwYTlhNGIyMWM2OWY3ZTU5OGQyYzQ2MDE4NjM0ZmE5NWRmNg"
+              }
+            ],
+            "attributes": [
+              {
+                "id": "manufacturer",
+                "name": "Manufacturer",
+                "value": "Sony"
+              },
+              {
+                "id": "availableForPickup",
+                "name": "Available for Pickup",
+                "value": true
+              }
+            ],
+            "categories": [
+              {
+                "id": "576"
+              },
+              {
+                "id": "brand_5"
+              }
+            ],
+            "id": "3514519",
+            "name": "DSC-WX1",
+            "prices": [],
+            "sku": "3514519"
+          },
+          "quantity": 1
+        }
+      ],
+      "id": "00000019",
+      "name": "saved_test_v2"
+    }
+  ],
+  "total": 2
+}

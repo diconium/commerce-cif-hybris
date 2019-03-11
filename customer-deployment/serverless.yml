@@ -15,12 +15,14 @@ custom:
   customer-package: ${opt:customer-package, file(package.json):customer-package}
   bindings-namespace: ${opt:bindings-namespace, file(package.json):bindings-namespace}
 
-  commons-actions: /${self:custom.customer-namespace}/customer-dahc-commons@latest
-  carts-actions: /${self:custom.customer-namespace}/customer-dahc-cart@latest
-  customer-actions: /${self:custom.customer-namespace}/customer-dahc-customer@latest
-  products-actions: /${self:custom.customer-namespace}/customer-dahc-product@latest
-  categories-actions: /${self:custom.customer-namespace}/customer-dahc-category@latest
-  orders-actions: /${self:custom.customer-namespace}/customer-dahc-order@latest
+  carts-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-carts@latest
+  categories-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-categories@latest
+  common-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-common@latest
+  products-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-products@latest
+  shoppinglists-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-shoppinglists@latest
+
+  customers-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-customers@latest
+  orders-actions: /${self:custom.customer-namespace}/customer-commerce-cif-hybris-orders@latest
 
   hybris:
     HB_BASESITEID: ${opt:basesiteid, file(options.yml):HB_BASESITEID}
@@ -42,22 +44,26 @@ plugins:
 
 resources:
   packages:
-    customer-dahc-commons@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-commons@latest
-    customer-dahc-cart@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-cart@latest
+    customer-commerce-cif-hybris-carts@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-carts@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-customer@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-customer@latest
+    customer-commerce-cif-hybris-categories@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-categories@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-product@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-product@latest
+    customer-commerce-cif-hybris-common@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-common@latest
+    customer-commerce-cif-hybris-products@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-products@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-category@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-category@latest
+    customer-commerce-cif-hybris-shoppinglists@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-shoppinglists@latest
       parameters: ${self:custom.hybris}
-    customer-dahc-order@latest:
-      binding: /${self:custom.bindings-namespace}/dahc-order@latest
+
+    customer-commerce-cif-hybris-customers@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-customers@latest
+      parameters: ${self:custom.hybris}
+    customer-commerce-cif-hybris-orders@latest:
+      binding: /${self:custom.bindings-namespace}/commerce-cif-hybris-orders@latest
       parameters: ${self:custom.hybris}
 
 functions:
@@ -67,7 +73,7 @@ functions:
     sequence:
     - ${self:custom.carts-actions}/validateGetCartService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -76,7 +82,7 @@ functions:
     sequence:
     - ${self:custom.carts-actions}/validateDeleteCartService
     - ${self:custom.carts-actions}/deleteCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -85,25 +91,25 @@ functions:
     sequence:
     - ${self:custom.carts-actions}/validateGetPaymentMethodsService
     - ${self:custom.carts-actions}/getPaymentMethodsService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
   postCustomerLogin:
     name: ${self:custom.customer-package}/postCustomerLogin
     sequence:
-    - ${self:custom.customer-actions}/validatePostCustomerLoginService
-    - ${self:custom.customer-actions}/postCustomerLoginService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.customers-actions}/validatePostCustomerLoginService
+    - ${self:custom.customers-actions}/postCustomerLoginService
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
  
   getCustomerById:
     name: ${self:custom.customer-package}/getCustomerById
     sequence:
-    - ${self:custom.customer-actions}/validateGetCustomerByIdService
-    - ${self:custom.customer-actions}/getCustomerByIdService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.customers-actions}/validateGetCustomerByIdService
+    - ${self:custom.customers-actions}/getCustomerByIdService
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -112,7 +118,7 @@ functions:
     sequence:
     - ${self:custom.products-actions}/validateSearchProductsService
     - ${self:custom.products-actions}/searchProductsService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -121,7 +127,7 @@ functions:
     sequence:
     - ${self:custom.products-actions}/validateGetProductService
     - ${self:custom.products-actions}/getProductService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -130,7 +136,7 @@ functions:
     sequence:
     - ${self:custom.categories-actions}/validateGetCategoryService
     - ${self:custom.categories-actions}/getCategoryService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -139,7 +145,7 @@ functions:
     sequence:
     - ${self:custom.categories-actions}/validateGetCategoriesService
     - ${self:custom.categories-actions}/getCategoriesService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -148,7 +154,7 @@ functions:
     sequence:
     - ${self:custom.orders-actions}/validatePostOrderService
     - ${self:custom.orders-actions}/postOrderService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -158,7 +164,7 @@ functions:
     - ${self:custom.carts-actions}/validatePostCartShippingAddressService
     - ${self:custom.carts-actions}/postCartShippingAddressService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -168,7 +174,7 @@ functions:
     - ${self:custom.carts-actions}/validatePostCartBillingAddressService
     - ${self:custom.carts-actions}/postCartBillingAddressService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -178,7 +184,7 @@ functions:
     - ${self:custom.carts-actions}/validatePostPaymentService
     - ${self:custom.carts-actions}/postPaymentService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -188,7 +194,7 @@ functions:
     - ${self:custom.carts-actions}/validateDeletePaymentService
     - ${self:custom.carts-actions}/deletePaymentService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -198,7 +204,7 @@ functions:
     - ${self:custom.carts-actions}/validatePostCouponService
     - ${self:custom.carts-actions}/postCouponService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -208,7 +214,7 @@ functions:
     - ${self:custom.carts-actions}/validateDeleteCouponService
     - ${self:custom.carts-actions}/deleteCouponService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -218,7 +224,7 @@ functions:
     - ${self:custom.carts-actions}/validateDeleteCartShippingAddressService
     - ${self:custom.carts-actions}/deleteCartShippingAddressService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -226,7 +232,7 @@ functions:
     name: ${self:custom.customer-package}/deleteBillingAddress
     sequence:
     - ${self:custom.carts-actions}/validateDeleteCartBillingAddressService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -236,7 +242,7 @@ functions:
     - ${self:custom.carts-actions}/validatePostCartEntryService
     - ${self:custom.carts-actions}/postCartEntryService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -246,7 +252,7 @@ functions:
     - ${self:custom.carts-actions}/validatePutCartEntryService
     - ${self:custom.carts-actions}/putCartEntryService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -256,7 +262,7 @@ functions:
     - ${self:custom.carts-actions}/validateDeleteCartEntryService
     - ${self:custom.carts-actions}/deleteCartEntryService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -267,7 +273,7 @@ functions:
     - ${self:custom.carts-actions}/postCartService
     - ${self:custom.carts-actions}/postCartEntryService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -276,7 +282,7 @@ functions:
     sequence:
     - ${self:custom.carts-actions}/validateGetShippingMethodsService
     - ${self:custom.carts-actions}/getShippingMethodsService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -286,7 +292,7 @@ functions:
     - ${self:custom.carts-actions}/validatePostShippingMethodService
     - ${self:custom.carts-actions}/postShippingMethodService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
@@ -296,7 +302,52 @@ functions:
     - ${self:custom.carts-actions}/validateDeleteShippingMethodService
     - ${self:custom.carts-actions}/deleteShippingMethodService
     - ${self:custom.carts-actions}/getCartService
-    - ${self:custom.commons-actions}/webActionTransformer
+    - ${self:custom.common-actions}/webActionTransformer
     annotations:
       web-export: true
 
+  getShoppingLists:
+    name: ${self:custom.customer-package}/getShoppingLists
+    sequence:
+        - ${self:custom.shoppinglists-actions}/validateGetShoppingListService
+        - ${self:custom.shoppinglists-actions}/getShoppingListService
+        - ${self:custom.common-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  postShoppingList:
+    name: ${self:custom.customer-package}/postShoppingList
+    sequence:
+      - ${self:custom.shoppinglists-actions}/validatePostShoppingListService
+      - ${self:custom.shoppinglists-actions}/postShoppingListService
+      - ${self:custom.shoppinglists-actions}/patchShoppingListService
+      - ${self:custom.common-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getShoppingListById:
+    name: ${self:custom.customer-package}/getShoppingListById
+    sequence:
+        - ${self:custom.shoppinglists-actions}/validateGetShoppingListByIdService
+        - ${self:custom.shoppinglists-actions}/getShoppingListByIdService
+        - ${self:custom.common-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  putShoppingList:
+    name: ${self:custom.customer-package}/putShoppingList
+    sequence:
+        - ${self:custom.shoppinglists-actions}/validatePatchShoppingListService
+        - ${self:custom.shoppinglists-actions}/patchShoppingListService
+        - ${self:custom.common-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  deleteShoppingList:
+    name: ${self:custom.customer-package}/deleteShoppingList
+    sequence:
+      - ${self:custom.shoppinglists-actions}/validateDeleteShoppingListService
+      - ${self:custom.shoppinglists-actions}/deleteShoppingListService
+      - ${self:custom.common-actions}/webActionTransformer
+    annotations:
+      web-export: true

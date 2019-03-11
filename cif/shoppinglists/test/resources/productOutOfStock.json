@@ -1,0 +1,11 @@
+{
+  "errors": [
+    {
+      "message": "Product [11392000253] cannot be shipped - out of stock online",
+      "reason": "noStock",
+      "subject": "11392000253",
+      "subjectType": "product",
+      "type": "InsufficientStockError"
+    }
+  ]
+}
