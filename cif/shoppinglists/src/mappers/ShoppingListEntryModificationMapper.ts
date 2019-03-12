@@ -45,9 +45,11 @@ export default class ShoppingListEntryModificationMapper extends Mapper<any> {
   mapFromEntity(entity, mappable?: OrderEntryWsDTO): OrderEntryWsDTO {
     const orderEntry : OrderEntryWsDTO = new OrderEntryWsDTO();
     const product: ProductWsDTO = new ProductWsDTO();
-    product.code = entity.productVariantId;
+
+    const { productVariantId, quantity } = entity;
+    product.code = productVariantId;
     orderEntry.product = product;
-    orderEntry.quantity = entity.quantity;
+    orderEntry.quantity = quantity;
 
     return orderEntry;
   }

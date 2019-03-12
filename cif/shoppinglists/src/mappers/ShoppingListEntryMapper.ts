@@ -79,7 +79,6 @@ export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
     product.price = totalPrice;
     const productVariant = new ProductMapper(this.settings).mapToEntity(product);
     productVariant.available = product.stock && product.stock.stockLevelStatus === 'inStock';
-    productVariant.variants = undefined;
     productVariant.sku = productVariant.id;
 
     return productVariant;

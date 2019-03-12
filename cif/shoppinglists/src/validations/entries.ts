@@ -64,7 +64,6 @@ export const post = postShoppingListEntry;
 function putShoppingListEntry(args: any): Output<ShoppingListEntry> {
 
   const input = new Validator<ShoppingList>(args, ERROR_TYPE)
-    .setMapper(ShoppingListEntryMapper)
     .isNotImplemented()
     .input();
 
