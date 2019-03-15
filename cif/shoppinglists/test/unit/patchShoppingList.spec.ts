@@ -150,6 +150,7 @@ describe('patchShoppingList', () => {
         scope.patch('/rest/v2/electronics/users/current/carts/00001000/save')
           .query({
             saveCartName: 'Sample_Cart_Name',
+            description: 'sample description',
             fields: 'FULL',
             access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',

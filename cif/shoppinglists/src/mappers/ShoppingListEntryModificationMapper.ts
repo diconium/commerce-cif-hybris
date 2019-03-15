@@ -16,11 +16,10 @@
 
 import { InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { ShoppingListEntry } from '@adobe/commerce-cif-model';
-import { OrderEntryWsDTO, ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
+import { CartModificationWsDTO, OrderEntryWsDTO, ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import ProductMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/ProductMapper';
 
-export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
-
+export default class ShoppingListEntryModificationMapper extends Mapper<any> {
   constructor(settings: InputSettings) {
     super(settings);
   }
@@ -30,18 +29,15 @@ export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
       id,
       productVariantId,
       quantity,
-      entryId,
     } = mappable;
 
     const orderEntry = this.mapFromEntity({
       productVariantId,
       quantity,
-      entryId,
     });
 
     return {
       id,
-      entryId,
       entry: orderEntry,
     };
   }
@@ -49,22 +45,24 @@ export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
   mapFromEntity(entity, mappable?: OrderEntryWsDTO): OrderEntryWsDTO {
     const orderEntry : OrderEntryWsDTO = new OrderEntryWsDTO();
     const product: ProductWsDTO = new ProductWsDTO();
-    product.code = entity.productVariantId;
+
+    const { productVariantId, quantity } = entity;
+    product.code = productVariantId;
     orderEntry.product = product;
-    orderEntry.quantity = entity.quantity;
-    orderEntry.entryNumber = entity.entryId;
+    orderEntry.quantity = quantity;
 
     return orderEntry;
   }
 
-  mapToEntity(dto: OrderEntryWsDTO, entity?): ShoppingListEntry {
+  mapToEntity(dto: CartModificationWsDTO, entity?: any): any {
+    const { entry } = dto;
+    const entryNumber = entry && String(entry.entryNumber) || undefined;
 
     const {
-      entryNumber,
       product,
       quantity,
       totalPrice,
-    } = dto;
+    } = entry;
 
     const shoppingListEntry = new ShoppingListEntry.Builder()
       .withId(String(entryNumber))
@@ -79,6 +77,7 @@ export default class ShoppingListEntryMapper extends Mapper<ShoppingListEntry> {
     product.price = totalPrice;
     const productVariant = new ProductMapper(this.settings).mapToEntity(product);
     productVariant.available = product.stock && product.stock.stockLevelStatus === 'inStock';
+    productVariant.variants = undefined;
     productVariant.sku = productVariant.id;
 
     return productVariant;

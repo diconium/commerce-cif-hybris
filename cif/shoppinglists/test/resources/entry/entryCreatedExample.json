@@ -1,0 +1,24 @@
+{
+  "entry": {
+    "configurationInfos": [],
+    "entryNumber": 0,
+    "product": {
+      "availableForPickup": false,
+      "code": "3470545",
+      "name": "EASYSHARE M381",
+      "purchasable": true,
+      "stock": {
+        "stockLevel": 157
+      },
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/EASYSHARE-M381/p/3470545"
+    },
+    "quantity": 1,
+    "totalPrice": {
+      "currencyIso": "USD",
+      "value": 370.72
+    }
+  },
+  "quantity": 1,
+  "quantityAdded": 1,
+  "statusCode": "success"
+}

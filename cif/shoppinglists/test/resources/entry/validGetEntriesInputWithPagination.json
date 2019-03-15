@@ -1,10 +1,8 @@
 {
   "parameters": {
-    "name": "Sample_Cart_Name",
-    "description": "sample description"
-  },
-  "responseExtension": {
-    "id": "00001000"
+    "id": "00001000",
+    "offset": 0,
+    "limit": 20
   },
   "settings": {
     "HB_API_BASE_PATH": "/rest/v2",
@@ -20,10 +18,10 @@
     "HB_PASSWORD": "",
     "HB_PROTOCOL": "https",
     "HB_USER": "",
+    "bearer": "xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51",
     "cookies": [],
     "customerId": "current",
     "headers": {},
-    "language": "",
-    "bearer": "xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51"
+    "language": ""
   }
 }

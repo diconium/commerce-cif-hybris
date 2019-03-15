@@ -48,7 +48,7 @@ export class TestUtils {
       })
       .then(response => response.body.guid)
       .catch(reason => reason);
-    const added = await chai.request(TestUtils.getHybrisInstance())
+    const entry = await chai.request(TestUtils.getHybrisInstance())
       .post(`rest/v2/electronics/users/anonymous/carts/${id}/entries`)
       .query({
         fields: 'DEFAULT',
@@ -62,7 +62,7 @@ export class TestUtils {
       .then(response => response.body.quantityAdded)
       .catch(reason => reason);
 
-    if (added) {
+    if (entry) {
       return id;
     }
   }
@@ -106,7 +106,7 @@ export class TestUtils {
       })
       .then(response => response.body.guid)
       .catch(reason => reason);
-    const added = await chai.request(TestUtils.getHybrisInstance())
+    const entry = await chai.request(TestUtils.getHybrisInstance())
       .post(`rest/v2/electronics/users/current/carts/${id}/entries`)
       .query({
         fields: 'DEFAULT',
@@ -118,11 +118,11 @@ export class TestUtils {
             access_token: accessToken,
           },
         })
-      .then(response => response.body.quantityAdded)
+      .then(response => response.body)
       .catch(reason => reason);
 
-    if (added) {
-      return { id, entry: added };
+    if (entry) {
+      return { id, entry };
     }
   }
 

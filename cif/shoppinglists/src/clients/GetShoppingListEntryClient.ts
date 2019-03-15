@@ -15,16 +15,16 @@
  */
 
 import { Input } from '@diconium/commerce-cif-hybris-core';
-import { CartWsDTO, HttpClient, PrincipalWsDTO } from '@diconium/commerce-cif-hybris-clients';
+import { OrderEntryListWsDTO, HttpClient } from '@diconium/commerce-cif-hybris-clients';
 import { Cart } from '@adobe/commerce-cif-model';
 
-export default class PatchShoppingListClient extends HttpClient {
+export default class GetShoppingListEntryClient extends HttpClient {
 
   constructor(input: Input) {
     super(input);
   }
 
-  exec(): Promise<CartWsDTO> {
+  exec(): Promise<OrderEntryListWsDTO> {
 
     const {
       bearer,
@@ -32,21 +32,16 @@ export default class PatchShoppingListClient extends HttpClient {
     } = this.input.settings;
 
     const {
-      name,
-      description,
+      id,
+      offset,
+      limit,
     } = this.input.parameters;
 
-    const id = this.input.parameters.id ? this.input.parameters.id : this.input.responseExtension.id;
+    const currentPage = Number.isNaN(offset / limit) ? '' : String(offset / limit);
 
-    return this.patch(`/users/${customerId}/carts/${id}/save`, {}, { bearer, queryParameters: { description, saveCartName: name, fields: 'FULL' } })
-      .then(shoppingListDto => this.buildCartDto(shoppingListDto.savedCartData, customerId))
+    return this.get(`/users/${customerId}/carts/${id}/entries`, { bearer, queryParameters: { currentPage, pageSize: limit, fields: 'FULL' } })
+      .then(orderEntryListDto => orderEntryListDto)
       .catch(errorOutput => Promise.reject(errorOutput));
-  }
-
-  private buildCartDto(cartDto, customerId): CartWsDTO {
-    cartDto.user = new PrincipalWsDTO();
-    cartDto.user.name = customerId;
-    return cartDto;
   }
 
 }

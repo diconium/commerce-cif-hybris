@@ -73,3 +73,48 @@ functions:
     name: ${self:custom.ow-package}/deleteShoppingListService
     handler: lib/actions/shoppinglists.deleteById
     concurrency: 500
+
+  validateGetShoppingListEntryService:
+    name: ${self:custom.ow-package}/validateGetShoppingListEntryService
+    handler: lib/validations/entries.get
+    concurrency: 500
+
+  getShoppingListEntryService:
+    name: ${self:custom.ow-package}/getShoppingListEntryService
+    handler: lib/actions/entries.get
+    concurrency: 500
+
+  validateGetShoppingListEntryByIdService:
+    name: ${self:custom.ow-package}/validateGetShoppingListEntryByIdService
+    handler: lib/validations/entries.getById
+    concurrency: 500
+
+  getShoppingListEntryByIdService:
+    name: ${self:custom.ow-package}/getShoppingListEntryByIdService
+    handler: lib/actions/entries.getById
+    concurrency: 500
+
+  validatePostShoppingListEntryService:
+    name: ${self:custom.ow-package}/validatePostShoppingListEntryService
+    handler: lib/validations/entries.post
+    concurrency: 500
+
+  postShoppingListEntryService:
+    name: ${self:custom.ow-package}/postShoppingListEntryService
+    handler: lib/actions/entries.post
+    concurrency: 500
+
+  validateDeleteShoppingListEntryService:
+    name: ${self:custom.ow-package}/validateDeleteShoppingListEntryService
+    handler: lib/validations/entries.deleteById
+    concurrency: 500
+
+  deleteShoppingListEntryService:
+    name: ${self:custom.ow-package}/deleteShoppingListEntryService
+    handler: lib/actions/entries.deleteById
+    concurrency: 500
+
+  validatePutShoppingListEntryService:
+    name: ${self:custom.ow-package}/validatePutShoppingListEntryService
+    handler: lib/validations/entries.put
+    concurrency: 500
