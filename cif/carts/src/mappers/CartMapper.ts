@@ -37,9 +37,10 @@ export default class CartMapper extends Mapper<Cart> {
       currency,
       productVariantId,
       quantity,
+      anonymousCartId,
     } = mappable;
 
-    return { id, productVariantId, quantity, curr: currency };
+    return { id, productVariantId, quantity, curr: currency, oldCartId: anonymousCartId };
   }
   /* istanbul ignore next */
   mapFromEntity(entity, mappable?: DTO): DTO {
