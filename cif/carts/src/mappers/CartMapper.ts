@@ -75,8 +75,6 @@ export default class CartMapper extends Mapper<Cart> {
       .withCurrency(totalPriceWithTax.currencyIso)
       .build();
 
-    cart.guid = guid;
-
     if (totalPriceWithTax) {
       cart.grossTotalPrice = moneyValueMapper.mapToEntity(totalPriceWithTax);
     }
