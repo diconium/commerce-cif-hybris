@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.5.7...@diconium/commerce-cif-hybris-carts@1.6.0) (2019-03-21)
+
+
+### Features
+
+* add possibility to merge with anonymous cart on PostCart ([0597653](https://github.com/diconium/commerce-cif-hybris/commit/0597653))
+
+
+
+
+
 ## [1.5.7](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.5.6...@diconium/commerce-cif-hybris-carts@1.5.7) (2019-02-22)
 
 **Note:** Version bump only for package @diconium/commerce-cif-hybris-carts
