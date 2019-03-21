@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.6.0...@diconium/commerce-cif-hybris-carts@1.6.1) (2019-03-21)
+
+
+### Bug Fixes
+
+* add current cart id for merging with anonymous cart ([5c82de7](https://github.com/diconium/commerce-cif-hybris/commit/5c82de7))
+
+
+
+
+
 # [1.6.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.5.7...@diconium/commerce-cif-hybris-carts@1.6.0) (2019-03-21)
 
 

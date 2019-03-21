@@ -2,7 +2,7 @@
   "name": "@diconium/commerce-cif-hybris-carts",
   "owname": "commerce-cif-hybris-carts",
   "description": "Commerce Integration Framework (CIF) Hybris Integration Carts Project",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "author": "diconium",
   "license": "Apache-2.0",
   "dependencies": {
