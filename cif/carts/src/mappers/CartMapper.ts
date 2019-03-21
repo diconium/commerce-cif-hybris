@@ -38,9 +38,10 @@ export default class CartMapper extends Mapper<Cart> {
       productVariantId,
       quantity,
       anonymousCartId,
+      currentCardId,
     } = mappable;
 
-    return { id, productVariantId, quantity, curr: currency, oldCartId: anonymousCartId };
+    return { id, productVariantId, quantity, curr: currency, oldCartId: anonymousCartId, toMergeCartGuid: currentCardId };
   }
   /* istanbul ignore next */
   mapFromEntity(entity, mappable?: DTO): DTO {
@@ -73,6 +74,8 @@ export default class CartMapper extends Mapper<Cart> {
       .withProductTotalPrice(moneyValueMapper.mapToEntity(subTotal))
       .withCurrency(totalPriceWithTax.currencyIso)
       .build();
+
+    cart.guid = guid;
 
     if (totalPriceWithTax) {
       cart.grossTotalPrice = moneyValueMapper.mapToEntity(totalPriceWithTax);

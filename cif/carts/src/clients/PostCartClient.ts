@@ -35,9 +35,11 @@ export default class GetCartByIdClient extends HttpClient {
     const {
       curr,
       oldCartId,
+      toMergeCartGuid,
     } = this.input.parameters;
 
-    return this.post(`/users/${customerId}/carts`, {}, { bearer, queryParameters: { curr, oldCartId, fields: 'FULL' } })
+    return this.post(`/users/${customerId}/carts`, {},
+                     { bearer, queryParameters: { curr, oldCartId, toMergeCartGuid, fields: 'FULL' } })
       .then(cartDto => this.modifyInputs(cartDto))
       .catch(errorOutput => Promise.reject(errorOutput));
 
