@@ -49,3 +49,15 @@ function searchProducts(args: any): Input {
 }
 
 export const search = searchProducts;
+
+function getProductBySlug(args: any): Input {
+
+  return new Validator<Product>(args, ERROR_TYPE)
+    .setMapper(ProductMapper)
+    .checkArguments()
+    .mandatoryParameter('slug')
+    .input();
+
+}
+
+export const getBySlug = getProductBySlug;

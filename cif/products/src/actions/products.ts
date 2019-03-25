@@ -17,6 +17,7 @@
 import { PagedResponseProduct, Product } from '@adobe/commerce-cif-model';
 import { Input, Output, SimpleAction } from '@diconium/commerce-cif-hybris-core';
 import GetProductByIdClient from '../clients/GetProductByIdClient';
+import GetProductBySlugClient from '../clients/GetProductBySlugClient';
 import ProductMapper from '../mappers/ProductMapper';
 import SearchProductClient from '../clients/SearchProductClient';
 import PagedResponseProductMapper from '../mappers/PagedResponseProductMapper';
@@ -45,3 +46,14 @@ function searchProducts(input: Input): Promise<Output<PagedResponseProduct>> {
 }
 
 export const search = searchProducts;
+
+function getProductBySlug(input: Input): Promise<Output<Product>> {
+
+  return new SimpleAction<Product>(input)
+    .setMapper(ProductMapper)
+    .setClient(GetProductBySlugClient)
+    .setErrorType(ERROR_TYPE)
+    .activate();
+}
+
+export const getBySlug = getProductBySlug;
