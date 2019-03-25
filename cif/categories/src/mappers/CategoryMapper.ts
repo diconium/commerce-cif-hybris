@@ -29,9 +29,10 @@ export default class CategoryMapper extends Mapper<Category> {
 
     const {
       id: categoryId,
+      slug,
     } = mappable;
 
-    return { categoryId };
+    return { categoryId, slug };
   }
   /* istanbul ignore next */
   mapFromEntity(entity, mappable?: DTO): DTO {
@@ -45,6 +46,7 @@ export default class CategoryMapper extends Mapper<Category> {
       lastModified,
       name = id,
       subcategories,
+      // slug, TODO
     } = dto;
 
     const category = new Category.Builder()
@@ -53,6 +55,7 @@ export default class CategoryMapper extends Mapper<Category> {
 
     category.lastModifiedAt = lastModified;
     category.name = name;
+    // category.slug = slug; TODO
     if (subcategories) {
       category.children = subcategories.map((subCategory) => {
         const subCategoryEntity = this.mapToEntity(subCategory);
