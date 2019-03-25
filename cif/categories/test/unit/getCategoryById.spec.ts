@@ -58,6 +58,7 @@ describe('getCategoriesById', () => {
       const input = await validateGetCategoryById({ id: 'brands' });
       expect(input.parameters).to.be.deep.equal({
         categoryId: 'brands',
+        slug: undefined, // TODO
       });
     });
 
