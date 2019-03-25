@@ -1,0 +1,661 @@
+{
+  "availableForPickup": true,
+  "averageRating": 4.625,
+  "baseOptions": [],
+  "baseProduct": "280916",
+  "categories": [
+    {
+      "code": "577",
+      "url": "/Open-Catalogue/Cameras/Webcams/c/577"
+    },
+    {
+      "code": "brand_745",
+      "url": "/Brands/Canyon/c/brand_745"
+    }
+  ],
+  "classifications": [
+    {
+      "code": "624",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/624.source data-sheet, 6617",
+          "comparable": true,
+          "featureUnit": {
+            "name": ".",
+            "symbol": ".",
+            "unitType": "300"
+          },
+          "featureValues": [
+            {
+              "value": "ICEcat.biz"
+            }
+          ],
+          "name": "Source data-sheet",
+          "range": false
+        }
+      ],
+      "name": "Technical details"
+    },
+    {
+      "code": "15",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/15.compatible operating syst, 2507",
+          "comparable": true,
+          "featureUnit": {
+            "name": ".",
+            "symbol": ".",
+            "unitType": "300"
+          },
+          "featureValues": [
+            {
+              "value": "Windows 98/2000/XP"
+            }
+          ],
+          "name": "Compatible operating systems",
+          "range": false
+        }
+      ],
+      "name": "System requirements"
+    },
+    {
+      "code": "1709",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/1709.interface, 21",
+          "comparable": true,
+          "featureUnit": {
+            "name": ".",
+            "symbol": ".",
+            "unitType": "300"
+          },
+          "featureValues": [
+            {
+              "value": "USB 1.1"
+            }
+          ],
+          "name": "Interface",
+          "range": false
+        }
+      ],
+      "name": "Connectivity"
+    },
+    {
+      "code": "44",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/44.dimensions w x d x h, 49",
+          "comparable": true,
+          "featureUnit": {
+            "name": "millimeter",
+            "symbol": "mm",
+            "unitType": "24"
+          },
+          "featureValues": [
+            {
+              "value": "54x60x80"
+            }
+          ],
+          "name": "Dimensions W x D x H",
+          "range": false
+        },
+        {
+          "code": "ElectronicsClassification/1.0/44.weight, 94",
+          "comparable": true,
+          "featureUnit": {
+            "name": "gram",
+            "symbol": "g",
+            "unitType": "38"
+          },
+          "featureValues": [
+            {
+              "value": "50"
+            }
+          ],
+          "name": "Weight",
+          "range": false
+        }
+      ],
+      "name": "Weight & dimensions"
+    },
+    {
+      "code": "3553",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/3553.colour of product, 1766",
+          "comparable": true,
+          "featureUnit": {
+            "name": ".",
+            "symbol": ".",
+            "unitType": "300"
+          },
+          "featureValues": [
+            {
+              "value": "Black"
+            }
+          ],
+          "name": "Colour of product",
+          "range": false
+        }
+      ],
+      "name": "Colour"
+    },
+    {
+      "code": "3137",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/3137.digital video capture spe, 1570",
+          "comparable": true,
+          "featureUnit": {
+            "name": "frames per second",
+            "symbol": "fps",
+            "unitType": "85"
+          },
+          "featureValues": [
+            {
+              "value": "15"
+            }
+          ],
+          "name": "Digital video capture speed",
+          "range": false
+        },
+        {
+          "code": "ElectronicsClassification/1.0/3137.maximum resolution, 1659",
+          "comparable": true,
+          "featureUnit": {
+            "name": "pixels",
+            "symbol": "pixels",
+            "unitType": "39"
+          },
+          "featureValues": [
+            {
+              "value": "640 × 480"
+            }
+          ],
+          "name": "Maximum resolution",
+          "range": false
+        }
+      ],
+      "name": "Video"
+    },
+    {
+      "code": "3138",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/3138.box weight, 3420",
+          "comparable": true,
+          "featureUnit": {
+            "name": "gram",
+            "symbol": "g",
+            "unitType": "38"
+          },
+          "featureValues": [
+            {
+              "value": "9500"
+            }
+          ],
+          "name": "Box weight",
+          "range": false
+        },
+        {
+          "code": "ElectronicsClassification/1.0/3138.quantity per box, 2055",
+          "comparable": true,
+          "featureUnit": {
+            "name": "pieces",
+            "symbol": "pcs",
+            "unitType": "144"
+          },
+          "featureValues": [
+            {
+              "value": "40"
+            }
+          ],
+          "name": "Quantity per box",
+          "range": false
+        },
+        {
+          "code": "ElectronicsClassification/1.0/3138.box dimensions  w x d x h, 3419",
+          "comparable": true,
+          "featureUnit": {
+            "name": "millimeter",
+            "symbol": "mm",
+            "unitType": "24"
+          },
+          "featureValues": [
+            {
+              "value": "795 × 345 × 425"
+            }
+          ],
+          "name": "Box dimensions (W x D x H)",
+          "range": false
+        },
+        {
+          "code": "ElectronicsClassification/1.0/3138.package weight, 762",
+          "comparable": true,
+          "featureUnit": {
+            "name": "gram",
+            "symbol": "g",
+            "unitType": "38"
+          },
+          "featureValues": [
+            {
+              "value": "190"
+            }
+          ],
+          "name": "Package weight",
+          "range": false
+        }
+      ],
+      "name": "Packaging data"
+    },
+    {
+      "code": "3134",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/3134.sensor type, 1574",
+          "comparable": true,
+          "featureUnit": {
+            "name": ".",
+            "symbol": ".",
+            "unitType": "300"
+          },
+          "featureValues": [
+            {
+              "value": "CMOS"
+            }
+          ],
+          "name": "Sensor type",
+          "range": false
+        }
+      ],
+      "name": "Image sensor"
+    },
+    {
+      "code": "3139",
+      "features": [
+        {
+          "code": "ElectronicsClassification/1.0/3139.colour, 46",
+          "comparable": true,
+          "featureUnit": {
+            "name": ".",
+            "symbol": ".",
+            "unitType": "300"
+          },
+          "featureValues": [
+            {
+              "value": "true"
+            }
+          ],
+          "name": "Colour",
+          "range": false
+        }
+      ],
+      "name": "Camera"
+    }
+  ],
+  "code": "280916",
+  "description": "100K Webcam with blue LED & Rubber coating WITH CLIP",
+  "images": [
+    {
+      "altText": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "format": "zoom",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+    },
+    {
+      "altText": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "format": "product",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+    },
+    {
+      "altText": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "format": "thumbnail",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+    },
+    {
+      "altText": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "format": "cartIcon",
+      "imageType": "PRIMARY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMjU4fGltYWdlL2pwZWd8aW1hZ2VzL2gyMy9oYTAvODc5NjkxMDMyMTY5NC5qcGd8YjQ0NzczMTBkYmMwZTgyZWU4ZDFiODExYjMyYzNiMzVjNWVjN2I0Y2M5YmJiMGUwYzVjNWI1NGUyMjczNTA2NA"
+    },
+    {
+      "altText": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "format": "zoom",
+      "galleryIndex": 0,
+      "imageType": "GALLERY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxMTY1N3xpbWFnZS9qcGVnfGltYWdlcy9oMmUvaDkyLzg3OTY4MzEzNTA4MTQuanBnfGM1YTI0M2VhZjQyMGFlMDY4MzAzNmFkZGExNDE1OTY1MzRmZGRjNmYwNzljNDhlZWI4NTFiOTE5YzlhNTg0NTE"
+    },
+    {
+      "altText": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "format": "product",
+      "galleryIndex": 0,
+      "imageType": "GALLERY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3w1NjY3fGltYWdlL2pwZWd8aW1hZ2VzL2g5Zi9oNmMvODc5Njg1NzYzMDc1MC5qcGd8NWYxZjY1NzhkZDIzYWFjMWNlZmI5ODg2YmI2NDIyY2I1YzVkNDFmMDlmMDBhMjgwYTU3YzJjZmU3M2JkMDg1Nw"
+    },
+    {
+      "altText": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+      "format": "thumbnail",
+      "galleryIndex": 0,
+      "imageType": "GALLERY",
+      "url": "/rest/v2/medias/?context=bWFzdGVyfGltYWdlc3wxNzkzfGltYWdlL2pwZWd8aW1hZ2VzL2hjYy9oMzkvODc5Njg4Mzk3NjIyMi5qcGd8N2NjYzhmYzUwOGJlNWI3YTkxMDVlZDlhOGMxMjU4MTZiOTU4ZDMwYWM5NmVjMGQwZWVmYTJjMGIzZjY4Y2Y2YQ"
+    }
+  ],
+  "manufacturer": "Canyon",
+  "name": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black",
+  "numberOfReviews": 24,
+  "potentialPromotions": [],
+  "price": {
+    "currencyIso": "USD",
+    "formattedValue": "$8.20",
+    "priceType": "BUY",
+    "value": 8.2
+  },
+  "priceRange": {
+  },
+  "productReferences": [],
+  "purchasable": true,
+  "reviews": [
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093808689",
+      "principal": {
+        "name": "Doris Reviewer",
+        "uid": "keenreviewer24@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093775921",
+      "principal": {
+        "name": "Claudius Reviewer",
+        "uid": "keenreviewer23@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093743153",
+      "principal": {
+        "name": "Nicko Reviewer",
+        "uid": "keenreviewer22@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093710385",
+      "principal": {
+        "name": "Alistair Reviewer",
+        "uid": "keenreviewer21@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093677617",
+      "principal": {
+        "name": "Moritz Reviewer",
+        "uid": "keenreviewer20@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093644849",
+      "principal": {
+        "name": "Axel Reviewer",
+        "uid": "keenreviewer19@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093612081",
+      "principal": {
+        "name": "Thomas Reviewer",
+        "uid": "keenreviewer18@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093579313",
+      "principal": {
+        "name": "Flavia Reviewer",
+        "uid": "keenreviewer17@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093546545",
+      "principal": {
+        "name": "Kate Reviewer",
+        "uid": "keenreviewer16@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093513777",
+      "principal": {
+        "name": "Brendan Reviewer",
+        "uid": "keenreviewer15@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093481009",
+      "principal": {
+        "name": "Toby Reviewer",
+        "uid": "keenreviewer14@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093448241",
+      "principal": {
+        "name": "Aseem Reviewer",
+        "uid": "keenreviewer13@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093415473",
+      "principal": {
+        "name": "Richard Reviewer",
+        "uid": "keenreviewer12@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093382705",
+      "principal": {
+        "name": "Rick Reviewer",
+        "uid": "keenreviewer11@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093349937",
+      "principal": {
+        "name": "Stefan Reviewer",
+        "uid": "keenreviewer10@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093317169",
+      "principal": {
+        "name": "Klaus Reviewer",
+        "uid": "keenreviewer9@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093284401",
+      "principal": {
+        "name": "Ronald Reviewer",
+        "uid": "keenreviewer8@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093251633",
+      "principal": {
+        "name": "Roger Reviewer",
+        "uid": "keenreviewer7@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093218865",
+      "principal": {
+        "name": "Honda Reviewer",
+        "uid": "keenreviewer6@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093186097",
+      "principal": {
+        "name": "Adam Reviewer",
+        "uid": "keenreviewer5@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093153329",
+      "principal": {
+        "name": "Steve Reviewer",
+        "uid": "keenreviewer4@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093120561",
+      "principal": {
+        "name": "John Reviewer",
+        "uid": "keenreviewer3@hybris.com"
+      },
+      "rating": 5.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "A good solid product, worthy of a purchase.",
+      "id": "8796093087793",
+      "principal": {
+        "name": "Ken Reviewer",
+        "uid": "keenreviewer2@hybris.com"
+      },
+      "rating": 4.0
+    },
+    {
+      "comment": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas ut est. Donec suscipit. Donec eget diam vitae purus condentum adipiscing. Suspendisse lorem diam, cursus non,aliquam et, blandit ac, orci. Phasellus malesuada orci sit amet lorem. Sed egestas tortor eget ipsum. Cras mattis,lorem sit amet congue condimentum, nibh tellus sodales augue, ac euismod lectus arcu eu purus. Mauris tellus ligula,molestie vel, cursus at, eleifend ut, diam. Integer felis. Morbi sapien massa, iaculis id, convallis in, laoreet id, leo.Nullam id metus. Suspendisse turpis tellus, fermentum mollis, scelerisque fermentum, hendrerit sed, mi. Pellentesque bibendum.Mauris sit amet dolor. Praesent ullamcorper accumsan purus. Aliquam erat volutpat. Vivamus a sapien sed dui faucibus porttito.",
+      "date": "2018-05-09T12:34:36+0000",
+      "headline": "This is a fantastic product, did everything I wanted it to do.",
+      "id": "8796093055025",
+      "principal": {
+        "name": "Kenneth Reviewer",
+        "uid": "keenreviewer1@hybris.com"
+      },
+      "rating": 5.0
+    }
+  ],
+  "slug": "test/product_slug",
+  "stock": {
+    "stockLevel": 15,
+    "stockLevelStatus": "inStock"
+  },
+  "summary": "100K Webcam with blue LED & Rubber coating WITH CLIP",
+  "url": "/electronics/products/280916",
+  "variantOptions": [
+    {
+      "code": "280916",
+      "priceData": {
+        "currencyIso": "USD",
+        "formattedValue": "$532.00",
+        "priceType": "BUY",
+        "value": 8.2
+      },
+      "stock": {
+        "stockLevel": 0,
+        "stockLevelStatus": "outOfStock"
+      },
+      "url": "/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/EASYSHARE-M381/p/9999999",
+      "variantOptionQualifiers": [
+        {
+          "name": "Color",
+          "qualifier": "color",
+          "value": "red"
+        },
+        {
+          "name": "Web Camera ",
+          "qualifier": "name",
+          "value": "Web Camera (100KpixelM CMOS, 640X480, USB 1.1) Black"
+        }
+      ]
+    }
+  ],
+  "variantType": "ElectronicsColorVariantProduct"
+}
