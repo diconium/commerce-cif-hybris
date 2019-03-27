@@ -25,8 +25,8 @@ chai.use(chaiShallowDeepEqual);
 
 const validInput = require('../resources/validGetCategoryBySlug.json');
 const invalidInput = require('../resources/invalidGetCategoryBySlug.json');
-const validHybrisResponse = require('../resources/get-categoriesbyid-hybris-valid-response.json');
-const hybrisNotFoundResponse = require('../resources/get-categoriesbyid-hybris-notfound-response.json'); // TODO
+const validHybrisResponse = require('../resources/get-categoriesbyid-hybris-valid-response.json'); // TODO
+const hybrisNotFoundResponse = require('../resources/get-categoriesbyslug-hybris-notfound-response.json');
 const adobeValidResponse = require('../resources/get-categoriesbyid-adobe-valid-response.json'); // TODO
 
 describe('getCategoryBySlug', () => {
@@ -78,12 +78,26 @@ describe('getCategoryBySlug', () => {
           cause: {
             message: 'UnknownIdentifierError',
           },
-          message: 'Category with code \'brands\' in CatalogVersion \'electronicsProductCatalog.Online\' not found! (Active session catalogversions: electronicsProductCatalog.Online, ElectronicsClassification.1.0, electronicsContentCatalog.Online)', // TODO
+          message: 'Category with slug \'brands\' in CatalogVersion \'electronicsProductCatalog.Online\' not found! (Active session catalogversions: electronicsProductCatalog.Online, ElectronicsClassification.1.0, electronicsContentCatalog.Online)', // TODO
           name: 'CommerceServiceResourceNotFoundError',
         });
       });
 
-      it('Should return a succesfull resposne if a category with that slug exists', async() => {
+/*      it('Should return a 500 if the category slug is not unique', async() => {
+        scope.get('/rest/v2/electronics/catalogs/electronicsProductCatalog/Online/categories/slug/test_slug')
+          .query({ fields: 'FULL', lang: 'en' })
+          .reply(500, hybrisDuplicateResponse);
+        const { response } = await getCategoryBySlug(validInput);
+        expect(response.error).to.be.deep.equal({
+          cause: {
+            message: 'AmbiguousIdentifierError',
+          },
+          message: 'Category slug \'test_slug\' is not unique, 2 products found!',
+          name: 'CommerceServiceResourceNotFoundError', // TODO
+        });
+      });*/
+
+      it('Should return a successful response if a category with that slug exists', async() => {
         scope.get('/rest/v2/electronics/catalogs/electronicsProductCatalog/Online/categories/slug/brands')
           .query({ fields: 'FULL', lang: 'en' })
           .reply(200, validHybrisResponse);
