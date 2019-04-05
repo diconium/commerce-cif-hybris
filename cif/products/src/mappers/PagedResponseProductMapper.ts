@@ -90,7 +90,7 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
   }
 
   private updateFacetFromBreadcrumb({ facetCode, facetValueCode, facetValueName }, facet, totalResults) {
-    const facetValue = facet.values.find(value => value.id === facetValueCode);
+    const facetValue = facet.values.find(value => value.id === facetValueName);
     facet.id = facetCode;
     if (facetValue) {
       facetValue.id = facetValueName;
