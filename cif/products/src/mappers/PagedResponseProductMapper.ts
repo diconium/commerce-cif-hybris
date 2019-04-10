@@ -37,7 +37,7 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
       offset = 0,
       limit = 20,
     } = mappable;
-    const facets = selectedFacets.replace('|', ':');
+    const facets = selectedFacets.replace(/\|/g, ':');
 
     return { query: `${text}:${sort}:${facets}`, pageSize: limit, currentPage: offset / limit };
   }
