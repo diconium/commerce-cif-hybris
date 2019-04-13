@@ -36,8 +36,12 @@ export default class PutCartEntryClient extends HttpClient {
       cartEntryId,
       entry,
     } = this.input.parameters;
+    
+    const {
+      quantity,
+    } = entry
 
-    return this.patch(`/users/${customerId}/carts/${id}/entries/${cartEntryId}`, entry, { bearer, queryParameters: { fields: 'FULL' } })
+    return this.patch(`/users/${customerId}/carts/${id}/entries/${cartEntryId}`, { quantity }, { bearer, queryParameters: { fields: 'FULL' } })
       .then(cartModification => cartModification)
       .catch(errorOutput => Promise.reject(errorOutput));
   }
