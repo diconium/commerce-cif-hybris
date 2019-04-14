@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.6](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.2.5...@diconium/commerce-cif-hybris-shoppinglists@1.2.6) (2019-04-14)
+
+
+### Bug Fixes
+
+* fix body of patch operation in put cart entry ([#33](https://github.com/diconium/commerce-cif-hybris/issues/33)) ([d07614e](https://github.com/diconium/commerce-cif-hybris/commit/d07614e))
+* remove ts build files ([#34](https://github.com/diconium/commerce-cif-hybris/issues/34)) ([9329408](https://github.com/diconium/commerce-cif-hybris/commit/9329408))
+
+
+
+
+
 ## [1.2.5](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.2.4...@diconium/commerce-cif-hybris-shoppinglists@1.2.5) (2019-04-10)
 
 **Note:** Version bump only for package @diconium/commerce-cif-hybris-shoppinglists
