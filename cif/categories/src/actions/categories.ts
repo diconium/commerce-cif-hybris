@@ -17,6 +17,7 @@
 import { Category, PagedResponseCategory } from '@adobe/commerce-cif-model';
 import { Input, Output, SimpleAction } from '@diconium/commerce-cif-hybris-core';
 import GetCategoryByIdClient from '../clients/GetCategoryByIdClient';
+import GetCategoryBySlugClient from '../clients/GetCategoryBySlugClient';
 import GetCategoriesClient from '../clients/GetCategoriesClient';
 import CategoryMapper from '../mappers/CategoryMapper';
 import PagedResponseCategoryMapper from '../mappers/PagedResponseCategoryMapper';
@@ -45,3 +46,15 @@ function getCategories(input: Input) : Promise<Output<PagedResponseCategory>> {
 }
 
 export const get = getCategories;
+
+function getCategoryBySlug(input: Input): Promise<Output<Category>> {
+
+  return new SimpleAction<Category>(input)
+    .setMapper(CategoryMapper)
+    .setClient(GetCategoryBySlugClient)
+    .setErrorType(ERROR_TYPE)
+    .activate();
+
+}
+
+export const getBySlug = getCategoryBySlug;

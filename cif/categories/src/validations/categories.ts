@@ -47,3 +47,15 @@ function getCategories(args: any): Input {
 }
 
 export const get = getCategories;
+
+function getCategoryBySlug(args: any): Input {
+
+  return new Validator<Category>(args, ERROR_TYPE)
+    .setMapper(CategoryMapper)
+    .checkArguments()
+    .mandatoryParameter('slug')
+    .input();
+
+}
+
+export const getBySlug = getCategoryBySlug;

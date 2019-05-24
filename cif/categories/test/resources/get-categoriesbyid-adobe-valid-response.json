@@ -17,5 +17,6 @@
   ],
   "id": "brands",
   "lastModifiedAt": "2018-08-31T22:51:20+0000",
-  "name": "Brands"
+  "name": "Brands",
+  "slug": "test"
 }
