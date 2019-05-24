@@ -78,7 +78,7 @@ describe('getProductBySlug', () => {
 
       // The slug needs to uniquely identify the category and can be a path that contains slashes.
       it('Function should return something', async () => {
-        scope.get('/rest/v2/electronics/products/slug/test/product_slug')      // TODO: url vai dar problemas de parse no hybris?
+        scope.get('/rest/v2/electronics/products/slug/test/product_slug')
           .query({ lang: 'en', fields: 'FULL' })
           .reply(200, hybrisProductResponse);
         const { response } = await getProductBySlug(validInput);

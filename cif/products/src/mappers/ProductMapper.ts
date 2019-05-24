@@ -51,7 +51,7 @@ export default class ProductMapper extends Mapper<Product> {
       name = '',
       price,
       variantOptions,
-      // slug, TODO
+      slug,
     } = dto;
 
     const product = new Product.Builder()
@@ -68,7 +68,7 @@ export default class ProductMapper extends Mapper<Product> {
     product.attributes = ProductsHelper.buildAttributes(dto, this.translationService);
     product.variants = ProductsHelper.pushProductVariant(variantOptions, this.settings);
     product.assets = ProductsHelper.buildAssets(images, this.settings);
-    // product.slug = slug;
+    product.slug = slug;
 
     return product;
   }
