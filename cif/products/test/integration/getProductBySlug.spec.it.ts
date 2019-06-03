@@ -20,7 +20,7 @@ import { getBySlug as getProductBySlug } from '../../src/actions/products';
 const validInput = require('../resources/validGetProductBySlug.json');
 const invalidInput = require('../resources/invalidGetProductBySlug.json');
 
-describe('getProductBySlug', () => {
+describe('getProductBySlug',  function () {
   this.timeout(25000);
   describe('Integration tests', () => {
 

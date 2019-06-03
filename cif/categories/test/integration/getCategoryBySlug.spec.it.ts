@@ -20,7 +20,7 @@ import { getBySlug } from '../../src/actions/categories';
 const validInput = require('../resources/validGetCategoryBySlug.json');
 const invalidInput = require('../resources/invalidGetCategoryBySlug.json');
 
-describe('getCategoryBySlug', () => {
+describe('getCategoryBySlug', function () {
   this.timeout(25000);
   describe('Unit tests', () => {
 
