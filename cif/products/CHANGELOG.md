@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.9](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.8...@diconium/commerce-cif-hybris-products@1.5.9) (2019-04-10)
+
+
+### Bug Fixes
+
+* issue when mapping more than one facet ([c9b23a2](https://github.com/diconium/commerce-cif-hybris/commit/c9b23a2))
+
+
+
+
+
+## [1.5.8](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.7...@diconium/commerce-cif-hybris-products@1.5.8) (2019-04-05)
+
+
+### Bug Fixes
+
+* compare id with facetValueName instead of facetValueCode while updating facets with breadcrum ([0ffe876](https://github.com/diconium/commerce-cif-hybris/commit/0ffe876))
+
+
+
+
+
 ## [1.5.7](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.6...@diconium/commerce-cif-hybris-products@1.5.7) (2019-02-22)
 
 

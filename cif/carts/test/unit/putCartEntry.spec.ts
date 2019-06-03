@@ -176,7 +176,7 @@ describe('putCartEntry', () => {
       });
 
       it('Should return 200 if new entry was successfully added', async () => {
-        scope.patch('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries/0', validBody)
+        scope.patch('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries/0', { quantity: 2 })
           .query({ lang: 'en', fields: 'FULL' })
           .reply(200, successResponseDto);
         const { parameters , errorOutput } = await putCartEntry(validInput);
@@ -185,7 +185,7 @@ describe('putCartEntry', () => {
       });
 
       it('Should return a valid input if new entry was successfully added to the authenticated cart', async () => {
-        scope.patch('/rest/v2/electronics/users/current/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries/1', validBody)
+        scope.patch('/rest/v2/electronics/users/current/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries/1', { quantity: 2 })
           .query({ fields: 'FULL', lang: 'en', access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51' })
           .reply(200, successResponseDto);
         const { parameters, errorOutput } = await putCartEntry(validAuthenticatedInput);
