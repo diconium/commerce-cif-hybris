@@ -21,6 +21,7 @@ import ProductMapper from './ProductMapper';
 import FacetMapper from './FacetMapper';
 import { PagedResponseHelper } from '../helpers/PagedResponseHelper';
 import { dahcTranslator } from '@diconium/commerce-cif-hybris-i18n';
+import CommerceIntegrationHelper, { CIFRequestType } from '../helpers/CommerceIntegrationHelper';
 
 export default class PagedResponseProductMapper extends Mapper<PagedResponseProduct> {
 
@@ -36,8 +37,14 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
       sort = '',
       offset = 0,
       limit = 20,
+      filter = '',
     } = mappable;
     const facets = selectedFacets.replace(/\|/g, ':');
+
+    const isCIFRequest: boolean = CommerceIntegrationHelper.isCIFRequest(filter);
+    if (isCIFRequest) {
+      return this.buildCIFRequest(mappable);
+    }
 
     return { query: `${text}:${sort}:${facets}`, pageSize: limit, currentPage: offset / limit };
   }
@@ -111,5 +118,26 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
       facetValueName,
       totalResults,
     });
+  }
+
+  private buildCIFRequest(mappable: any) {
+
+    const {
+      offset = 0,
+      limit = 20,
+      filter = '',
+    } = mappable;
+
+    const cifRequestType = CommerceIntegrationHelper.checkRequestType(filter);
+    switch (cifRequestType) {
+      case CIFRequestType.Variant: {
+        const selectedVariant = filter.match(/(?<=")[^"]+(?=")/);
+        return { query: `${selectedVariant}`, pageSize: limit, currentPage: offset / limit };
+      }
+      case CIFRequestType.Category: {
+        const selectedCategory = filter.match(/(?<=")[^"]+(?=")/);
+        return { query: `::allCategories:${selectedCategory}`, pageSize: limit, currentPage: offset / limit };
+      }
+    }
   }
 }
