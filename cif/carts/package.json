@@ -7,11 +7,11 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@adobe/commerce-cif-model": "^1.1.2",
-    "@diconium/commerce-cif-hybris-clients": "^1.3.5",
-    "@diconium/commerce-cif-hybris-core": "^1.4.2",
-    "@diconium/commerce-cif-hybris-i18n": "^1.0.3",
+    "@diconium/commerce-cif-hybris-clients": "^1.6.0",
+    "@diconium/commerce-cif-hybris-core": "^1.6.0",
+    "@diconium/commerce-cif-hybris-i18n": "^1.0.11",
     "@diconium/commerce-cif-hybris-products": "^1.5.9",
-    "@diconium/commerce-cif-hybris-validators": "^1.1.1"
+    "@diconium/commerce-cif-hybris-validators": "^1.2.7"
   },
   "scripts": {
     "build": "npm run clean && tsc -b .",

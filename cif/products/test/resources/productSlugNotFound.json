@@ -1,0 +1,6 @@
+{
+  "errors" : [ {
+    "message" : "Product with slug 'test/product_slug' not found!",
+    "type" : "UnknownIdentifierError"
+  } ]
+}
