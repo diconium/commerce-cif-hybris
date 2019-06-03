@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.9...@diconium/commerce-cif-hybris-products@1.6.0) (2019-06-03)
+
+
+### Bug Fixes
+
+* fix body of patch operation in put cart entry ([#33](https://github.com/diconium/commerce-cif-hybris/issues/33)) ([d07614e](https://github.com/diconium/commerce-cif-hybris/commit/d07614e))
+* remove ts build files ([#34](https://github.com/diconium/commerce-cif-hybris/issues/34)) ([9329408](https://github.com/diconium/commerce-cif-hybris/commit/9329408))
+
+
+### Features
+
+* categories and product slugs ([#36](https://github.com/diconium/commerce-cif-hybris/issues/36)) ([4ed6b74](https://github.com/diconium/commerce-cif-hybris/commit/4ed6b74))
+
+
+
+
+
 ## [1.5.9](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.8...@diconium/commerce-cif-hybris-products@1.5.9) (2019-04-10)
 
 

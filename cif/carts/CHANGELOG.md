@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.6.5...@diconium/commerce-cif-hybris-carts@1.7.0) (2019-06-03)
+
+
+### Features
+
+* categories and product slugs ([#36](https://github.com/diconium/commerce-cif-hybris/issues/36)) ([4ed6b74](https://github.com/diconium/commerce-cif-hybris/commit/4ed6b74))
+
+
+
+
+
 ## [1.6.5](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.6.4...@diconium/commerce-cif-hybris-carts@1.6.5) (2019-04-14)
 
 
