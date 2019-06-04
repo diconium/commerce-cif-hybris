@@ -41,7 +41,7 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
     } = mappable;
     const facets = selectedFacets.replace(/\|/g, ':');
 
-    const isCIFRequest: boolean = CommerceIntegrationHelper.isCIFRequest(filter);
+    const isCIFRequest: boolean = CommerceIntegrationHelper.isCIFRequest(mappable);
     if (isCIFRequest) {
       return this.buildCIFRequest(mappable);
     }
