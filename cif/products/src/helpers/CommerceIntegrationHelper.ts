@@ -26,9 +26,8 @@ export default class CommerceIntegrationHelper {
     }
 
   }
-  static isCIFRequest(filter: string): boolean {
-    return (filter) ? true : false;
-  }
+
+  static isCIFRequest = (mappable: any): boolean => (mappable.filter) ? true : false;
 }
 
 export enum CIFRequestType {
