@@ -1,0 +1,14 @@
+{
+    "categoryFilter": "categories.id:subtree(\"693b0fc5-7283-4673-a362-589d37fb7b73\")",
+    "variantFilter": "variants.sku:\"meskwielt.1-xs\"",
+    "validCIFRequest": {
+        "offset": 10,
+        "limit": 9,
+        "filter": "categories.id:subtree(\"693b0fc5-7283-4673-a362-589d37fb7b73\")"
+    },
+    "invalidCIFRequest": {
+        "offset": 10,
+        "limit": 9,
+        "selectedFacets": "allCategories:98176"
+    }
+}
