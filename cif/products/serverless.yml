@@ -43,3 +43,13 @@ functions:
     name: ${self:custom.ow-package}/searchProductsService
     handler: lib/actions/products.search
     concurrency: 500
+
+  validateGetProductsBySlugService:
+    name: ${self:custom.ow-package}/validateGetProductsBySlugService
+    handler: lib/validations/products.getBySlug
+    concurrency: 500
+
+  getProductsBySlugService:
+    name: ${self:custom.ow-package}/getProductsBySlugService
+    handler: lib/actions/products.getBySlug
+    concurrency: 500
