@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.6.0...@diconium/commerce-cif-hybris-products@1.7.0) (2019-06-05)
+
+
+### Features
+
+* **products:** added mappings for CIF category and varian… ([#35](https://github.com/diconium/commerce-cif-hybris/issues/35)) ([c514215](https://github.com/diconium/commerce-cif-hybris/commit/c514215))
+
+
+
+
+
 # [1.6.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.5.9...@diconium/commerce-cif-hybris-products@1.6.0) (2019-06-03)
 
 
