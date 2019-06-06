@@ -72,27 +72,6 @@ describe('Search Products', () => {
           query: 'sony:topRated:',
         });
       });
-
-      it('Validation should return a valid Input if query parameters contain category from cif component', async () => {
-        const { errorOutput, parameters } = await validateSearchProduct({
-          filter: 'categories.id:subtree("693b0fc5-7283-4673-a362-589d37fb7b73")',
-        });
-        expect(errorOutput).to.not.exist;
-        expect(parameters).to.be.ok.and.shallowDeepEqual({
-          query: '::allCategories:693b0fc5-7283-4673-a362-589d37fb7b73',
-        });
-      });
-
-      it('Validation should return a valid Input if query parameters contain variant sku id from cif component', async () => {
-        const { errorOutput, parameters } = await validateSearchProduct({
-          filter: 'variants.sku:"meskwielt.1-xs"',
-        });
-        expect(errorOutput).to.not.exist;
-        expect(parameters).to.be.ok.and.shallowDeepEqual({
-          query: 'meskwielt.1-xs',
-        });
-      });
-
     });
 
     describe('Service', () => {
