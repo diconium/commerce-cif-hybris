@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.6.0...@diconium/commerce-cif-hybris-categories@1.6.1) (2019-06-06)
+
+
+### Bug Fixes
+
+* categories and product slugs serverless configuration ([#37](https://github.com/diconium/commerce-cif-hybris/issues/37)) ([030c2f1](https://github.com/diconium/commerce-cif-hybris/commit/030c2f1))
+
+
+
+
+
 # [1.6.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.5.6...@diconium/commerce-cif-hybris-categories@1.6.0) (2019-06-03)
 
 
