@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.7.1...@diconium/commerce-cif-hybris-products@1.8.0) (2019-06-06)
+
+
+### Features
+
+* reverted pull request [#35](https://github.com/diconium/commerce-cif-hybris/issues/35) due to wrongly done implementation ([0adc072](https://github.com/diconium/commerce-cif-hybris/commit/0adc072))
+
+
+
+
+
 ## [1.7.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.7.0...@diconium/commerce-cif-hybris-products@1.7.1) (2019-06-06)
 
 
