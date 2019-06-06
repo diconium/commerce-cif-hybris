@@ -43,3 +43,13 @@ functions:
     name: ${self:custom.ow-package}/getCategoriesService
     handler: lib/actions/categories.get
     concurrency: 500
+
+  validateGetCategoriesBySlugService:
+    name: ${self:custom.ow-package}/validateGetCategoriesBySlugService
+    handler: lib/validations/categories.getBySlug
+    concurrency: 500
+
+  getCategoriesBySlugService:
+    name: ${self:custom.ow-package}/getCategoriesBySlugService
+    handler: lib/actions/categories.getBySlug
+    concurrency: 500

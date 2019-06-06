@@ -131,6 +131,24 @@ functions:
     annotations:
       web-export: true
 
+  getProductBySlug:
+    name: ${self:custom.customer-package}/getProductsBySlug
+    sequence:
+      - ${self:custom.products-actions}/validateGetProductsBySlugService
+      - ${self:custom.products-actions}/getProductsBySlugService
+      - ${self:custom.common-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
+  getCategoryBySlug:
+    name: ${self:custom.customer-package}/getCategoryBySlug
+    sequence:
+      - ${self:custom.categories-actions}/validateGetCategoriesBySlugService
+      - ${self:custom.categories-actions}/getCategoriesBySlugService
+      - ${self:custom.common-actions}/webActionTransformer
+    annotations:
+      web-export: true
+
   getCategoryById:
     name: ${self:custom.customer-package}/getCategoryById
     sequence:
