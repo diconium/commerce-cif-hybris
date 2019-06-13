@@ -90,6 +90,7 @@ describe('Search Products', () => {
         expect(errorOutput).to.not.exist;
         expect(parameters).to.be.ok.and.shallowDeepEqual({
           query: 'meskwielt.1-xs',
+          isDispatchToProductById: true,
         });
       });
 

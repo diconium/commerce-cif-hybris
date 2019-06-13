@@ -37,7 +37,6 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
       sort = '',
       offset = 0,
       limit = 20,
-      filter = '',
     } = mappable;
     const facets = selectedFacets.replace(/\|/g, ':');
 
@@ -132,7 +131,7 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
     switch (cifRequestType) {
       case CIFRequestType.Variant: {
         const selectedVariant = filter.match(/(?<=")[^"]+(?=")/);
-        return { query: `${selectedVariant}`, pageSize: limit, currentPage: offset / limit };
+        return { isDispatchToProductById: true, query: `${selectedVariant}`, pageSize: limit, currentPage: offset / limit };
       }
       case CIFRequestType.Category: {
         const selectedCategory = filter.match(/(?<=")[^"]+(?=")/);
