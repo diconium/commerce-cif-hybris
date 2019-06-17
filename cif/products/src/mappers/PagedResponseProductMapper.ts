@@ -131,7 +131,7 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
     switch (cifRequestType) {
       case CIFRequestType.Variant: {
         const selectedVariant = filter.match(/(?<=")[^"]+(?=")/);
-        return { isDispatchToProductById: true, query: `${selectedVariant}`, pageSize: limit, currentPage: offset / limit };
+        return { query: `::code:${selectedVariant}`, pageSize: limit, currentPage: offset / limit };
       }
       case CIFRequestType.Category: {
         const selectedCategory = filter.match(/(?<=")[^"]+(?=")/);
