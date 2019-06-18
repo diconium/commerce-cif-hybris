@@ -21,7 +21,7 @@ import ProductMapper from './ProductMapper';
 import FacetMapper from './FacetMapper';
 import { PagedResponseHelper } from '../helpers/PagedResponseHelper';
 import { dahcTranslator } from '@diconium/commerce-cif-hybris-i18n';
-import CommerceIntegrationHelper, { CIFRequestType } from '../helpers/CommerceIntegrationHelper';
+import FilterMappingHelper, { FilterType } from '../helpers/FilterMappingHelper';
 
 export default class PagedResponseProductMapper extends Mapper<PagedResponseProduct> {
 
@@ -37,15 +37,12 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
       sort = '',
       offset = 0,
       limit = 20,
+      filter,
     } = mappable;
     const facets = selectedFacets.replace(/\|/g, ':');
+    const query = (filter) ? this.mapFilter(filter) : `${text}:${sort}:${facets}`;
 
-    const isCIFRequest: boolean = CommerceIntegrationHelper.isCIFRequest(mappable);
-    if (isCIFRequest) {
-      return this.buildCIFRequest(mappable);
-    }
-
-    return { query: `${text}:${sort}:${facets}`, pageSize: limit, currentPage: offset / limit };
+    return { query, pageSize: limit, currentPage: offset / limit };
   }
 
   /* istanbul ignore next */
@@ -119,23 +116,17 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
     });
   }
 
-  private buildCIFRequest(mappable: any) {
+  private mapFilter(filter: String) {
 
-    const {
-      offset = 0,
-      limit = 20,
-      filter = '',
-    } = mappable;
-
-    const cifRequestType = CommerceIntegrationHelper.checkRequestType(filter);
-    switch (cifRequestType) {
-      case CIFRequestType.Variant: {
+    const filterType = FilterMappingHelper.checkFilterType(filter);
+    switch (filterType) {
+      case FilterType.VariantWithSku: {
         const selectedVariant = filter.match(/(?<=")[^"]+(?=")/);
-        return { query: `::code:${selectedVariant}`, pageSize: limit, currentPage: offset / limit };
+        return `::code:${selectedVariant}`;
       }
-      case CIFRequestType.Category: {
+      case FilterType.Category: {
         const selectedCategory = filter.match(/(?<=")[^"]+(?=")/);
-        return { query: `::allCategories:${selectedCategory}`, pageSize: limit, currentPage: offset / limit };
+        return `::allCategories:${selectedCategory}`;
       }
     }
   }

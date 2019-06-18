@@ -17,12 +17,12 @@
 import chai from 'chai';
 import chaiShallowDeepEqual from 'chai-shallow-deep-equal';
 import MockCIFData from '../resources/helper/cif-requests.json';
-import CommerceIntegrationHelper, { CIFRequestType } from '../../src/helpers/CommerceIntegrationHelper';
+import FilterMappingHelper, { FilterType } from '../../src/helpers/FilterMappingHelper';
 
 const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
-describe('CommerceIntegrationHelper', () => {
+describe('FilterMappingHelper', () => {
   describe('Unit tests', () => {
 
     it('Gravity points down!', () => {
@@ -31,21 +31,13 @@ describe('CommerceIntegrationHelper', () => {
 
     describe('Validation', () => {
 
-      it('Check should return boolean true for cif requests', async () => {
-        expect(CommerceIntegrationHelper.isCIFRequest(MockCIFData.validCIFRequest)).to.be.true;
-      });
-
-      it('Check should return boolean true for non cif requests', async () => {
-        expect(CommerceIntegrationHelper.isCIFRequest(MockCIFData.invalidCIFRequest)).to.be.false;
-      });
-
       it('Check should return Category Type', async () => {
-        const type = await CommerceIntegrationHelper.checkRequestType(MockCIFData.categoryFilter);
-        expect(type).to.exist.and.to.equal(CIFRequestType.Category);
+        const type = await FilterMappingHelper.checkFilterType(MockCIFData.categoryFilter);
+        expect(type).to.exist.and.to.equal(FilterType.Category);
       });
       it('Check should return Variant Type', async () => {
-        const type = await CommerceIntegrationHelper.checkRequestType(MockCIFData.variantFilter);
-        expect(type).to.exist.and.to.equal(CIFRequestType.Variant);
+        const type = await FilterMappingHelper.checkFilterType(MockCIFData.variantFilter);
+        expect(type).to.exist.and.to.equal(FilterType.VariantWithSku);
       });
     });
   });

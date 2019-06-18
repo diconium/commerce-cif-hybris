@@ -14,23 +14,20 @@
  * limitations under the License.
  */
 
-export default class CommerceIntegrationHelper {
+export default class FilterMappingHelper {
 
-  static checkRequestType(filter: any) {
+  static checkFilterType(filter: any) {
     if (filter.startsWith('variants.sku')) {
-      return CIFRequestType.Variant;
+      return FilterType.VariantWithSku;
     }
 
     if (filter.startsWith('categories.id')) {
-      return CIFRequestType.Category;
+      return FilterType.Category;
     }
-
   }
-
-  static isCIFRequest = (mappable: any): boolean => (mappable.filter) ? true : false;
 }
 
-export enum CIFRequestType {
-  Variant,
+export enum FilterType {
+  VariantWithSku,
   Category,
 }
