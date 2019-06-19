@@ -171,10 +171,6 @@
       "visibleInAddressBook" : true
     },
     "cardNumber" : "************1234",
-    "cardType" : {
-      "code" : "visa",
-      "name" : "Visa"
-    },
     "defaultPayment" : false,
     "expiryMonth" : "02",
     "expiryYear" : "2020",

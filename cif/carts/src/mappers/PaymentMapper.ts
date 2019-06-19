@@ -74,7 +74,7 @@ export default class PaymentMapper extends Mapper<Payment> {
   mapToEntity(dto: PaymentDetailsWsDTO, entity?: Payment): Payment {
     const {
       id,
-      cardType,
+      cardType = { code: null, name: null },
     } = dto;
 
     const {

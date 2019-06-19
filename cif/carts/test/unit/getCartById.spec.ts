@@ -24,6 +24,7 @@ const { expect } = chai;
 chai.use(chaiShallowDeepEqual);
 
 const cartExample = require('../resources/cartExample-00000003.json');
+const cartExampleWithoutCardType = require('../resources/cart-example-with-payment-id.json');
 const validInput = require('../resources/validateGetCartByIdValid.json');
 const validInputWithResponseExtension = require('../resources/validateGetCartByIdValidWithResponseExtension.json');
 const invalidInput = require('../resources/validateGetCartByIdInvalid.json');
@@ -107,6 +108,15 @@ describe('getCartById', () => {
       const { response } = await getCartById(validInput);
       const { body } = response;
       expect(body.id).to.equal('f527bf4b-dda3-4e99-a76b-03a2ebe1ae94');
+    });
+
+    it('Should have a response with the correct card even without card type', async () => {
+      scope.get('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94')
+        .query({ lang: 'en', fields: 'FULL' })
+        .reply(200, cartExampleWithoutCardType);
+      const { response } = await getCartById(validInput);
+      const { body } = response;
+      expect(body).to.exist;
     });
 
     it('Should have a response with the correct cart id for current user', async () => {
