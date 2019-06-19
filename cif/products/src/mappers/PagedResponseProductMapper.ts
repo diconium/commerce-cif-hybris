@@ -21,6 +21,7 @@ import ProductMapper from './ProductMapper';
 import FacetMapper from './FacetMapper';
 import { PagedResponseHelper } from '../helpers/PagedResponseHelper';
 import { dahcTranslator } from '@diconium/commerce-cif-hybris-i18n';
+import FilterMappingHelper, { FilterType } from '../helpers/FilterMappingHelper';
 
 export default class PagedResponseProductMapper extends Mapper<PagedResponseProduct> {
 
@@ -36,10 +37,12 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
       sort = '',
       offset = 0,
       limit = 20,
+      filter,
     } = mappable;
     const facets = selectedFacets.replace(/\|/g, ':');
+    const query = (filter) ? this.mapFilter(filter) : `${text}:${sort}:${facets}`;
 
-    return { query: `${text}:${sort}:${facets}`, pageSize: limit, currentPage: offset / limit };
+    return { query, pageSize: limit, currentPage: offset / limit };
   }
 
   /* istanbul ignore next */
@@ -111,5 +114,20 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
       facetValueName,
       totalResults,
     });
+  }
+
+  private mapFilter(filter: String) {
+
+    const filterType = FilterMappingHelper.checkFilterType(filter);
+    const id = FilterMappingHelper.extractIdFromQueryFilter(filter);
+
+    switch (filterType) {
+      case FilterType.VariantWithSku: {
+        return `::code:${id}`;
+      }
+      case FilterType.Category: {
+        return `::allCategories:${id}`;
+      }
+    }
   }
 }
