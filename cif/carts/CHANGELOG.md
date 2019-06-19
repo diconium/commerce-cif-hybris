@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.5](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.7.4...@diconium/commerce-cif-hybris-carts@1.7.5) (2019-06-19)
+
+
+### Bug Fixes
+
+* problem when cart had payment but no card type ([1cc69a6](https://github.com/diconium/commerce-cif-hybris/commit/1cc69a6))
+
+
+
+
+
 ## [1.7.4](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.7.3...@diconium/commerce-cif-hybris-carts@1.7.4) (2019-06-19)
 
 **Note:** Version bump only for package @diconium/commerce-cif-hybris-carts
