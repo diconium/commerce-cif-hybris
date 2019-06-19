@@ -25,6 +25,10 @@ export default class FilterMappingHelper {
       return FilterType.Category;
     }
   }
+
+  static extractIdFromQueryFilter(filter: String) {
+    return filter.match(/(?<=")[^"]+(?=")/);
+  }
 }
 
 export enum FilterType {

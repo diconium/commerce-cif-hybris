@@ -119,14 +119,14 @@ export default class PagedResponseProductMapper extends Mapper<PagedResponseProd
   private mapFilter(filter: String) {
 
     const filterType = FilterMappingHelper.checkFilterType(filter);
+    const id = FilterMappingHelper.extractIdFromQueryFilter(filter);
+
     switch (filterType) {
       case FilterType.VariantWithSku: {
-        const selectedVariant = filter.match(/(?<=")[^"]+(?=")/);
-        return `::code:${selectedVariant}`;
+        return `::code:${id}`;
       }
       case FilterType.Category: {
-        const selectedCategory = filter.match(/(?<=")[^"]+(?=")/);
-        return `::allCategories:${selectedCategory}`;
+        return `::allCategories:${id}`;
       }
     }
   }
