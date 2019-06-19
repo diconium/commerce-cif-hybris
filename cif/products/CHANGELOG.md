@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.8.0...@diconium/commerce-cif-hybris-products@1.9.0) (2019-06-19)
+
+
+### Features
+
+* **products:** support for filter requests and correct mapping to hybris ([3ad77d8](https://github.com/diconium/commerce-cif-hybris/commit/3ad77d8))
+
+
+
+
+
 # [1.8.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.7.1...@diconium/commerce-cif-hybris-products@1.8.0) (2019-06-06)
 
 
