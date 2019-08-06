@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.6](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.3.5...@diconium/commerce-cif-hybris-shoppinglists@1.3.6) (2019-08-06)
+
+
+### Bug Fixes
+
+* core dependencies ([b72ebb5](https://github.com/diconium/commerce-cif-hybris/commit/b72ebb5))
+
+
+
+
+
 ## [1.3.5](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.3.4...@diconium/commerce-cif-hybris-shoppinglists@1.3.5) (2019-06-19)
 
 **Note:** Version bump only for package @diconium/commerce-cif-hybris-shoppinglists
