@@ -100,7 +100,9 @@ export default class CartMapper extends Mapper<Cart> {
     if (paymentInfo) {
       cart.payments = [];
       cart.payments.push(new PaymentMapper(this.settings).mapToEntity(paymentInfo));
-      cart.billingAddress = new AddressMapper(this.settings).mapToEntity(paymentInfo.billingAddress);
+      if (paymentInfo.billingAddress) {
+        cart.billingAddress = new AddressMapper(this.settings).mapToEntity(paymentInfo.billingAddress);
+      }
     }
 
     if (appliedVouchers) {
