@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.7](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.7.6...@diconium/commerce-cif-hybris-carts@1.7.7) (2019-08-23)
+
+
+### Bug Fixes
+
+* **cart:** Update CartMapper - bilingAddress verification ([#39](https://github.com/diconium/commerce-cif-hybris/issues/39)) ([9a0ec4a](https://github.com/diconium/commerce-cif-hybris/commit/9a0ec4a))
+
+
+
+
+
 ## [1.7.6](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.7.5...@diconium/commerce-cif-hybris-carts@1.7.6) (2019-08-06)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.7](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.3.6...@diconium/commerce-cif-hybris-shoppinglists@1.3.7) (2019-08-23)
+
+**Note:** Version bump only for package @diconium/commerce-cif-hybris-shoppinglists
+
+
+
+
+
 ## [1.3.6](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.3.5...@diconium/commerce-cif-hybris-shoppinglists@1.3.6) (2019-08-06)
 
 
