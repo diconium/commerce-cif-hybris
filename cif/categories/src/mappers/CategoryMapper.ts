@@ -16,7 +16,6 @@
 
 import { DTO, InputSettings, Mapper } from '@diconium/commerce-cif-hybris-core';
 import { Category } from '@adobe/commerce-cif-model';
-import { CategoryHierarchyWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import { dahcTranslator } from '@diconium/commerce-cif-hybris-i18n';
 
 export default class CategoryMapper extends Mapper<Category> {
@@ -39,13 +38,14 @@ export default class CategoryMapper extends Mapper<Category> {
     throw new Error('Unsupported Operation');
   }
 
-  mapToEntity(dto: CategoryHierarchyWsDTO, entity?): Category {
+  mapToEntity(dto, entity?): Category {
 
     const {
       id,
       lastModified,
       name = id,
       subcategories,
+      parents,
       slug,
     } = dto;
 
@@ -62,6 +62,10 @@ export default class CategoryMapper extends Mapper<Category> {
         subCategoryEntity.mainParentId = id;
         return subCategoryEntity;
       });
+    }
+
+    if (parents) {
+      category.parents = parents;
     }
     return category;
 
