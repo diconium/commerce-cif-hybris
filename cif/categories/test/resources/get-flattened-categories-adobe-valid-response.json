@@ -1,0 +1,172 @@
+[
+  {
+    "id": "brands",
+    "name": "Brands"
+  },
+  {
+    "id": "brand_1",
+    "name": "brand_1",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_2",
+    "name": "Toshiba",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_5",
+    "name": "Sony",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_10",
+    "name": "Canon",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_18",
+    "name": "Kingston",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_26",
+    "name": "Samsung",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_75",
+    "name": "Fujifilm",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_88",
+    "name": "Kodak",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_91",
+    "name": "Logitech",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_103",
+    "name": "NEC",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_128",
+    "name": "Targus",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_251",
+    "name": "TDK",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_702",
+    "name": "Sweex",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_745",
+    "name": "Canyon",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_750",
+    "name": "Dane-Elec",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "brand_2171",
+    "name": "ICIDU",
+    "parents": [
+      {
+        "id": "brands"
+      }
+    ]
+  },
+  {
+    "id": "B2C_Color",
+    "name": "Color"
+  },
+  {
+    "id": "B2C_Red",
+    "name": "Red",
+    "parents": [
+      {
+        "id": "B2C_Color"
+      }
+    ]
+  },
+  {
+    "id": "B2C_Green",
+    "name": "Green",
+    "parents": [
+      {
+        "id": "B2C_Color"
+      }
+    ]
+  }
+]
