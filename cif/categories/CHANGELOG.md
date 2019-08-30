@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.6.2...@diconium/commerce-cif-hybris-categories@1.7.0) (2019-08-30)
+
+
+### Features
+
+* Adds Parent to each category for a flat categories call ([#40](https://github.com/diconium/commerce-cif-hybris/issues/40)) ([58f0b53](https://github.com/diconium/commerce-cif-hybris/commit/58f0b53))
+
+
+
+
+
 ## [1.6.2](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.6.1...@diconium/commerce-cif-hybris-categories@1.6.2) (2019-08-06)
 
 
