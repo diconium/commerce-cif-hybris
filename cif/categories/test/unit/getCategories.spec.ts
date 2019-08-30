@@ -32,6 +32,8 @@ const validInputTree = require('../resources/get-categories-valid-input-tree.jso
 const categoriesHybrisResponse = require('../resources/categoriesHybrisResponses.json');
 const categoriesHybrisErrorResponse = require('../resources/categoriesHybrisErrorResponses.json');
 
+const validFlattenedCategories = require('../resources/get-flattened-categories-adobe-valid-response.json');
+
 describe('getCategories', () => {
   describe('Unit tests', () => {
     const scope = nock('https://hybris.example.com');
@@ -126,6 +128,7 @@ describe('getCategories', () => {
           .reply(200, categoriesHybrisResponse);
         const { response } = await getCategories(validInput);
         const { body } = response;
+        expect(body.results).to.shallowDeepEqual(validFlattenedCategories);
         expect(body.results[0]).to.shallowDeepEqual({ id: 'brands', name: 'Brands' });
         expect(body.results[1]).to.shallowDeepEqual({ id: 'brand_1', name: 'brand_1' });
       });

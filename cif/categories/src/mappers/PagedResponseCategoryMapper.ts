@@ -77,15 +77,22 @@ export default class PagedResponseCategoryMapper extends Mapper<PagedResponseCat
         .build();
   }
 
-  private flatten(categories: CategoryHierarchyWsDTO[]) {
-    return categories.reduce((acc, value) => this.flattenReducer(acc, value), []);
+  private flatten(categories: CategoryHierarchyWsDTO[], mainParentId?) {
+    return categories.reduce((acc, value) => this.flattenReducer(acc, value, mainParentId), []);
   }
 
-  private flattenReducer(acc, value) {
+  private flattenReducer(acc, value, mainParentId?) {
     let result = acc;
+
+    if (mainParentId) {
+      value.parents = [{
+        id: mainParentId,
+      }];
+    }
+
     result.push(value);
     if (value.subcategories) {
-      result = result.concat(this.flatten(value.subcategories));
+      result = result.concat(this.flatten(value.subcategories, value.id));
       delete value.subcategories;
     }
     return result;
