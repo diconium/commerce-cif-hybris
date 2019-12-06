@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.7.0...@diconium/commerce-cif-hybris-categories@1.8.0) (2019-12-06)
+
+
+### Features
+
+* make methods protected ([edf8665](https://github.com/diconium/commerce-cif-hybris/commit/edf8665))
+
+
+
+
+
 # [1.7.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.6.2...@diconium/commerce-cif-hybris-categories@1.7.0) (2019-08-30)
 
 
