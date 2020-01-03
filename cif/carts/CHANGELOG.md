@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.8](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.7.7...@diconium/commerce-cif-hybris-carts@1.7.8) (2020-01-03)
+
+
+### Bug Fixes
+
+* updated core dependencies ([2d6ad77](https://github.com/diconium/commerce-cif-hybris/commit/2d6ad77385b15cfdcc4d0825538c818c4734e331))
+
+
+
+
+
 ## [1.7.7](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.7.6...@diconium/commerce-cif-hybris-carts@1.7.7) (2019-08-23)
 
 
