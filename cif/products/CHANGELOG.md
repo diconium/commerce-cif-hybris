@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.2](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.9.1...@diconium/commerce-cif-hybris-products@1.9.2) (2020-01-03)
+
+
+### Bug Fixes
+
+* updated core dependencies ([2d6ad77](https://github.com/diconium/commerce-cif-hybris/commit/2d6ad77385b15cfdcc4d0825538c818c4734e331))
+
+
+
+
+
 ## [1.9.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.9.0...@diconium/commerce-cif-hybris-products@1.9.1) (2019-08-06)
 
 
