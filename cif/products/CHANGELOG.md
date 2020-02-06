@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.9.2...@diconium/commerce-cif-hybris-products@1.10.0) (2020-02-06)
+
+
+### Features
+
+* commit to bump the version ([d00bfc8](https://github.com/diconium/commerce-cif-hybris/commit/d00bfc81cbf77759a7acf4ee1368e8ce9f01dddc))
+
+
+
+
+
 ## [1.9.2](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.9.1...@diconium/commerce-cif-hybris-products@1.9.2) (2020-01-03)
 
 
