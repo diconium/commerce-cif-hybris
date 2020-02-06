@@ -23,10 +23,12 @@ export default class AssetMapper extends Mapper<Asset> {
   constructor(settings: InputSettings) {
     super(settings);
   }
+
   /* istanbul ignore next */
   mapFromInputArgsToActionParameters(mappable: any) {
     throw new Error('Unsupported Operation');
   }
+
   /* istanbul ignore next */
   mapFromEntity(entity, mappable?: ImageWsDTO): ImageWsDTO {
     throw new Error('Unsupported Operation');
