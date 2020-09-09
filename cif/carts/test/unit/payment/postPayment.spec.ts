@@ -59,7 +59,6 @@ describe('postPayment', () => {
 
       scope.get('/rest/v2/electronics/users/current/addresses')
         .query({ lang: 'en' })
-        .query({ access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
         .query({ fields: 'FULL' })
         .reply(200, addressesListExample);
     });
@@ -94,7 +93,6 @@ describe('postPayment', () => {
       it('Should return CommerceServiceForbiddenError errorOutput if user is not not allowed to set the payment.', async () => {
         scope.post('/rest/v2/electronics/users/current/carts/00000003/paymentdetails', hybrisInputBody)
           .query({ lang: 'en' })
-          .query({ access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
           .reply(403, hybrisForbidden);
         const { errorOutput } = await postPayment(validInput);
         expect(errorOutput).to.haveOwnProperty('name').that.equals('CommerceServiceForbiddenError');
@@ -102,7 +100,6 @@ describe('postPayment', () => {
 
       it('Should return CommerceServiceResourceNotFoundError errorOutput if the cart id is not valid/found.', async () => {
         scope.post('/rest/v2/electronics/users/current/carts/00000000/paymentdetails').query({ lang: 'en' })
-          .query({ access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
           .reply(404, hybrisCartNotFoundResponse);
         const { errorOutput } = await postPayment(invalidInput);
         expect(errorOutput).to.haveOwnProperty('name').that.equals('CommerceServiceResourceNotFoundError');
@@ -111,7 +108,6 @@ describe('postPayment', () => {
       it('Should return a 200 if the payment was successful', async () => {
         scope.post('/rest/v2/electronics/users/current/carts/00000003/paymentdetails', hybrisInputBody)
           .query({ lang: 'en' })
-          .query({ access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
           .reply(200, hybrisValidResponse);
         const { parameters, errorOutput } = await postPayment(validInput);
         expect(errorOutput).to.be.not.ok;

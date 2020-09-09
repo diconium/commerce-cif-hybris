@@ -117,7 +117,7 @@ describe('postCart', () => {
 
     it('Action should return CommerceServiceForbiddenError if user is not allowed to create the cart', async () => {
       scope.post('/rest/v2/electronics/users/current/carts')
-        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL', access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
+        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL' })
         .reply(403, customerNotAuthorizedExample);
       const { errorOutput } = await postCart(validInput);
       expect(errorOutput).to.be.deep.equal({
@@ -131,7 +131,7 @@ describe('postCart', () => {
 
     it('Action should return CommerceServiceResourceNotFoundError if a new cart is not found', async () => {
       scope.post('/rest/v2/electronics/users/current/carts')
-        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL', access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
+        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL' })
         .reply(404, cartNotFound);
       const { errorOutput } = await postCart(validInput);
       expect(errorOutput).to.be.deep.equal({
@@ -155,7 +155,7 @@ describe('postCart', () => {
 
     it('Should return 200 if a new empty cart was successfully created for an authenticated user', async () => {
       scope.post('/rest/v2/electronics/users/current/carts')
-        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL', access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51' })
+        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL' })
         .reply(200, successResponseDto);
       const { parameters } = await postCart(validInputAuthenticatedNoProduct);
       expect(parameters.id).to.equal('00000006');
@@ -174,7 +174,7 @@ describe('postCart', () => {
 
     it('Should return 200 if a new cart with products was successfully created for an authenticated user', async () => {
       scope.post('/rest/v2/electronics/users/current/carts')
-        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL', access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51' })
+        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL' })
         .reply(200, successResponseDto);
       const { parameters } = await postCart(validInputAuthenticatedWithProduct);
       expect(parameters.id).to.be.equal('00000006');
@@ -183,7 +183,7 @@ describe('postCart', () => {
 
     it('Should return 200 if given no quantity a new cart with products was successfully created for an authenticated user', async () => {
       scope.post('/rest/v2/electronics/users/current/carts')
-        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL', access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51' })
+        .query({ lang: 'en' , curr: 'USD' , fields: 'FULL' })
         .reply(200, successResponseDto);
       const { parameters } = await postCart(validInputAuthenticatedWithProductNoQuantity);
       expect(parameters.id).to.be.equal('00000006');

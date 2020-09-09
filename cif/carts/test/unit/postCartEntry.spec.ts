@@ -241,7 +241,6 @@ describe('postCartEntry', () => {
           .query({
             fields: 'FULL',
             lang: 'en',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
           })
           .reply(200, successResponseDto);
         const { parameters, errorOutput } = await postCartEntry(validAuthenticatedInput);
@@ -254,7 +253,6 @@ describe('postCartEntry', () => {
           .query({
             fields: 'FULL',
             lang: 'en',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
           })
           .reply(200, successResponseDto);
         const { responseExtension, errorOutput } = await postCartEntry(validAuthenticatedInput);

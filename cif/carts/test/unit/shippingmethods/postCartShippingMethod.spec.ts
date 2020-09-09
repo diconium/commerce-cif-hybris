@@ -66,7 +66,7 @@ describe('postCartShippingMethods', () => {
 
       it('Should return CommerceServiceResourceNotFoundError if the requested cart was not found', async () => {
         scope.put('/rest/v2/electronics/users/current/carts/00000001/deliverymode', {})
-          .query({ deliveryModeId: 'pickup', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8', lang: 'en' })
+          .query({ deliveryModeId: 'pickup', lang: 'en' })
           .reply(404, cartNotFoundExample);
         const { errorOutput } = await postCartShippingMethod(validInput);
         expect(errorOutput).to.be.deep.equal({
@@ -80,7 +80,7 @@ describe('postCartShippingMethods', () => {
 
       it('Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart', async () => {
         scope.put('/rest/v2/electronics/users/current/carts/00000001/deliverymode', {})
-          .query({ deliveryModeId: 'pickup', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8', lang: 'en' })
+          .query({ deliveryModeId: 'pickup', lang: 'en' })
           .reply(403, forbiddenHybrisResponse);
         const { errorOutput } = await postCartShippingMethod(validInput);
         expect(errorOutput).to.be.deep.equal({
@@ -94,7 +94,7 @@ describe('postCartShippingMethods', () => {
 
       it('Should return CommerceServiceBadRequestError if it is not allowed to post the specific method to the requested cart', async () => {
         scope.put('/rest/v2/electronics/users/current/carts/00000001/deliverymode', {})
-          .query({ deliveryModeId: 'pickup', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8', lang: 'en' })
+          .query({ deliveryModeId: 'pickup', lang: 'en' })
           .reply(400, unsupportedHybrisResponse);
         const { errorOutput } = await postCartShippingMethod(validInput);
         expect(errorOutput).to.be.deep.equal({
@@ -108,7 +108,7 @@ describe('postCartShippingMethods', () => {
 
       it('Should return 200 and a cart with shipping methods', async () => {
         scope.put('/rest/v2/electronics/users/current/carts/00000001/deliverymode', {})
-          .query({ deliveryModeId: 'pickup', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8', lang: 'en' })
+          .query({ deliveryModeId: 'pickup', lang: 'en' })
           .reply(200);
         const { parameters, settings, errorOutput } = await postCartShippingMethod(validInput);
         expect(settings).to.be.deep.equal(validInput.settings);

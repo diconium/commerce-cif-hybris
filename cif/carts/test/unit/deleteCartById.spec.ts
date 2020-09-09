@@ -101,7 +101,6 @@ describe('deleteCartById', () => {
 
       it('Should return 200 was successfully deleted for authenticated cart', async () => {
         scope.delete('/rest/v2/electronics/users/current/carts/00000006').query({ lang: 'en' })
-          .query({ access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51' })
           .reply(200);
         const { response } = await deleteCartById(validAuthenticatedInput);
         expect(response.statusCode).to.equal(204);

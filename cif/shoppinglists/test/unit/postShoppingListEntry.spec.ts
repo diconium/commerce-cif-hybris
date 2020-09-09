@@ -174,7 +174,6 @@ describe('postShoppingListEntry', () => {
           .query({
             fields: 'FULL',
             lang: 'en',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
           })
           .reply(404, productUnknown);
         const { response } = await postShoppingListEntry(validAuthenticatedInput);
@@ -206,7 +205,6 @@ describe('postShoppingListEntry', () => {
           .query({
             fields: 'FULL',
             lang: 'en',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
           })
           .reply(404, cartNotFound);
         const { response } = await postShoppingListEntry(validAuthenticatedInput);
@@ -224,7 +222,6 @@ describe('postShoppingListEntry', () => {
           .query({
             fields: 'FULL',
             lang: 'en',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
           })
           .reply(200, successResponseDto);
         const { response } = await postShoppingListEntry(validAuthenticatedInput);

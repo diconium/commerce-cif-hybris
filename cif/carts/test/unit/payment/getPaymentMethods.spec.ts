@@ -67,7 +67,6 @@ describe('getPaymentMethods', () => {
       it('Should return CommerceServiceForbiddenError if not allowed to get the payment details.', async () => {
         scope.get('/rest/v2/electronics/users/current/paymentdetails')
           .query({ lang: 'en' })
-          .query({ access_token: '16bf7f81-ceeb-444e-ab0b-7d7baca1a183' })
           .reply(403, customerNotAuthorizedExample);
         const { response } = await getPaymentMethods(validInput);
         expect(response.error).to.be.deep.equal({
@@ -82,7 +81,6 @@ describe('getPaymentMethods', () => {
       it('Should return 200 with the correct payment informarion', async () => {
         scope.get('/rest/v2/electronics/users/current/paymentdetails')
           .query({ lang: 'en' })
-          .query({ access_token: '16bf7f81-ceeb-444e-ab0b-7d7baca1a183' })
           .reply(200, validResponse);
         const { response } = await getPaymentMethods(validInput);
         expect(response.statusCode).to.equal(200);

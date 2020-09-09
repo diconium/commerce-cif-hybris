@@ -79,7 +79,6 @@ describe('postShoppingList', () => {
         scope.post('/rest/v2/electronics/users/current/carts')
           .query({
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(200, cartCreated);
