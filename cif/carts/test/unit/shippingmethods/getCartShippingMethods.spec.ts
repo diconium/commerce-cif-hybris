@@ -59,7 +59,7 @@ describe('getCartShippingMethods', () => {
 
     it('Should return CommerceServiceResourceNotFoundError if the request has user but no bearer exist', async () => {
       scope.get('/rest/v2/electronics/users/current/carts/00000060/deliverymodes')
-        .query({ fields: 'FULL', lang: 'en', access_token: 'c0a40aa0-bdae-4109-a6c2-50d3098a6d6c' })
+        .query({ fields: 'FULL', lang: 'en' })
         .reply(403, unauthorizedHybrisResponse);
       const { response } = await getCartShippingMethods(validInput);
       expect(response.error).to.be.deep.equal({
@@ -73,7 +73,7 @@ describe('getCartShippingMethods', () => {
 
     it('Should return CommerceServiceForbiddenError if the request has user but no token is invalid', async () => {
       scope.get('/rest/v2/electronics/users/current/carts/00000060/deliverymodes')
-        .query({ fields: 'FULL', lang: 'en', access_token: 'c0a40aa0-bdae-4109-a6c2-50d3098a6d6c' })
+        .query({ fields: 'FULL', lang: 'en' })
         .reply(403, forbiddenHybrisResponse);
       const { response } = await getCartShippingMethods(validInput);
       expect(response.error).to.be.deep.equal({
@@ -87,7 +87,7 @@ describe('getCartShippingMethods', () => {
 
     it('Should return 200 with shipping methods if authenticated user does a request', async () => {
       scope.get('/rest/v2/electronics/users/current/carts/00000060/deliverymodes')
-        .query({ fields: 'FULL', lang: 'en', access_token: 'c0a40aa0-bdae-4109-a6c2-50d3098a6d6c' })
+        .query({ fields: 'FULL', lang: 'en' })
         .reply(200, validHybrisResponse);
       const { response } = await getCartShippingMethods(validInput);
       expect(response.statusCode).to.equal(200);
@@ -95,7 +95,7 @@ describe('getCartShippingMethods', () => {
 
     it('Should return an array with items for each method available in the hybris response', async () => {
       scope.get('/rest/v2/electronics/users/current/carts/00000060/deliverymodes')
-        .query({ fields: 'FULL', lang: 'en', access_token: 'c0a40aa0-bdae-4109-a6c2-50d3098a6d6c' })
+        .query({ fields: 'FULL', lang: 'en' })
         .reply(200, validHybrisResponse);
       const { response } = await getCartShippingMethods(validInput);
       expect(response.body).to.have.lengthOf(2);
@@ -103,7 +103,7 @@ describe('getCartShippingMethods', () => {
 
     it('Should return a valid shipping method model', async () => {
       scope.get('/rest/v2/electronics/users/current/carts/00000060/deliverymodes')
-        .query({ fields: 'FULL', lang: 'en', access_token: 'c0a40aa0-bdae-4109-a6c2-50d3098a6d6c' })
+        .query({ fields: 'FULL', lang: 'en' })
         .reply(200, validHybrisResponse);
       const { response } = await getCartShippingMethods(validInput);
       expect(response.body[0]).to.shallowDeepEqual(validAdobeResponse);

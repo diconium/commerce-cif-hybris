@@ -99,7 +99,6 @@ describe('deleteShoppingListEntryById', () => {
       it('Should return CommerceServiceResourceNotFoundError if entry to delete is not found', async () => {
         scope.delete('/rest/v2/electronics/users/current/carts/00000006/entries/1')
           .query({
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(404, cartNotFound);
@@ -116,7 +115,6 @@ describe('deleteShoppingListEntryById', () => {
       it('Should return 204 was successfully deleted for authenticated user', async () => {
         scope.delete('/rest/v2/electronics/users/current/carts/00000006/entries/1')
           .query({
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(204);

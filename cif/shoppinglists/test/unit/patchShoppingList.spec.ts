@@ -98,7 +98,6 @@ describe('patchShoppingList', () => {
           .query({
             saveCartName: 'Sample_Cart_Name',
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(404, cartNotFoundExample);
@@ -117,7 +116,6 @@ describe('patchShoppingList', () => {
           .query({
             saveCartName: 'Sample_Cart_Name',
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(403, customerNotAuthorizedExample);
@@ -136,7 +134,6 @@ describe('patchShoppingList', () => {
           .query({
             saveCartName: 'Sample_Cart_Name',
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(200, shoppingListExample);
@@ -152,7 +149,6 @@ describe('patchShoppingList', () => {
             saveCartName: 'Sample_Cart_Name',
             description: 'sample description',
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(200, shoppingListExample);

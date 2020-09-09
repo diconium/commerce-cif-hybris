@@ -64,7 +64,6 @@ describe('getShoppingListEntries', () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries')
           .query({
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(200, emptyEntriesExample);
@@ -77,7 +76,6 @@ describe('getShoppingListEntries', () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries')
           .query({
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
           })
           .reply(200, entriesExample);
@@ -90,7 +88,6 @@ describe('getShoppingListEntries', () => {
         scope.get('/rest/v2/electronics/users/current/carts/00001000/entries')
           .query({
             fields: 'FULL',
-            access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
             lang: 'en',
             currentPage: 0,
             pageSize: 20,

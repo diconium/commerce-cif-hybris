@@ -56,7 +56,6 @@ describe('Delete payment', () => {
 
       it('Should return CommerceServiceResourceNotFoundError errorOutput if the it is not available to delete the payment.', async () => {
         scope.delete('/rest/v2/electronics/users/current/paymentdetails/8796099280938').query({ lang: 'en' })
-          .query({ access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
           .reply(401, deletePaymentFailed);
         const { errorOutput } = await deletePaymentById(validInput);
         expect(errorOutput).to.haveOwnProperty('message').that.equals('Payment details [8796108161066] not found.');
@@ -64,7 +63,6 @@ describe('Delete payment', () => {
 
       it('Should return CommerceServiceForbiddenError errorOutput if the it is not authorized to delete the payment.', async () => {
         scope.delete('/rest/v2/electronics/users/current/paymentdetails/8796099280938').query({ lang: 'en' })
-          .query({ access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
           .reply(403, deletePaymentNotAuthorized);
         const { errorOutput } = await deletePaymentById(validInput);
         expect(errorOutput).to.haveOwnProperty('message').that.equals('Access is denied');
@@ -72,7 +70,6 @@ describe('Delete payment', () => {
 
       it('Should return a 200 if the payment was removed successfully ', async () => {
         scope.delete('/rest/v2/electronics/users/current/paymentdetails/8796099280938').query({ lang: 'en' })
-          .query({ access_token: '8330c161-6b0c-441a-b4d6-3c111c5bac54' })
           .reply(200);
         const { parameters, settings } = await deletePaymentById(validInput);
         expect(parameters.id).to.be.equals('00000003');

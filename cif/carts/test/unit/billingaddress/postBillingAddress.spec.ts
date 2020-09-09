@@ -72,7 +72,7 @@ describe('postCartBillingAddress', () => {
 
     it('Should return CommerceServiceResourceNotFoundError if the requested cart was not found', async () => {
       scope.post('/rest/v2/electronics/users/current/addresses', validHybrisBody)
-        .query({ lang: 'en', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8' })
+        .query({ lang: 'en' })
         .reply(404, cartNotFoundExample);
       const { errorOutput } = await postCartBillingAddress(validInput);
       expect(errorOutput).to.be.deep.equal({
@@ -86,7 +86,7 @@ describe('postCartBillingAddress', () => {
 
     it('Should return CommerceServiceForbiddenError if it is not allowed to post to the requested cart', async () => {
       scope.post('/rest/v2/electronics/users/current/addresses', validHybrisBody)
-        .query({ lang: 'en', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8' })
+        .query({ lang: 'en' })
         .reply(403, forbiddenHybrisResponse);
       const { errorOutput } = await postCartBillingAddress(validInput);
       expect(errorOutput).to.be.deep.equal({
@@ -101,7 +101,7 @@ describe('postCartBillingAddress', () => {
 
     it('Should return success', async () => {
       scope.post('/rest/v2/electronics/users/current/addresses', validHybrisBody)
-        .query({ lang: 'en', access_token: '4b825a40-b54b-4b6f-8873-ab478ebd34a8' })
+        .query({ lang: 'en' })
         .reply(200);
       const { parameters, settings, errorOutput } = await postCartBillingAddress(validInput);
       expect(settings).to.be.deep.equal(validInput.settings);

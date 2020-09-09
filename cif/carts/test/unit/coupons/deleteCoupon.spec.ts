@@ -61,7 +61,7 @@ describe('deleteCoupon', () => {
 
       it('Should CommerceServiceForbiddenError when accessing a not authorized cart', async () => {
         scope.delete('/electronics/users/current/carts/00000003/vouchers/001')
-          .query({ lang: 'en', access_token: '16bf7f81-ceeb-444e-ab0b-7d7baca1a183' })
+          .query({ lang: 'en' })
           .reply(403, cartNotAuthorized);
         const {  errorOutput } = await deleteCoupon(validInput);
         expect(errorOutput).to.exist;
@@ -76,7 +76,7 @@ describe('deleteCoupon', () => {
 
       it('Should return 200 if coupon is valid', async () => {
         scope.delete('/electronics/users/current/carts/00000003/vouchers/001')
-          .query({ lang: 'en', access_token: '16bf7f81-ceeb-444e-ab0b-7d7baca1a183' })
+          .query({ lang: 'en' })
           .reply(200);
         const { parameters, errorOutput } = await deleteCoupon(validInput);
         expect(errorOutput).to.not.exist;

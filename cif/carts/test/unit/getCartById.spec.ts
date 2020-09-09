@@ -124,7 +124,6 @@ describe('getCartById', () => {
         .query({
           lang: 'en',
           fields: 'FULL',
-          access_token: 'xx508xx63817x752xx74004x30705xx92x58349x5x78f5xx34xxxxx51',
         })
         .reply(200, cartExample);
       const { response } = await getCartById(validInputWithUser);
