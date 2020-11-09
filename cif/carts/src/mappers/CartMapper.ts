@@ -61,10 +61,9 @@ export default class CartMapper extends Mapper<Cart> {
       totalPriceWithTax,
       totalPrice,
       totalTax,
-      user,
     } = dto;
 
-    const id = user.name === 'current' ? code : guid;
+    const id = this.settings.customerId === 'current' ? code : guid;
 
     const moneyValueMapper = new MoneyValueMapper(this.settings);
 

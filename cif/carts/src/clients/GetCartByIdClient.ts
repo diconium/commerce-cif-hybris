@@ -36,15 +36,8 @@ export default class GetCartByIdClient extends HttpClient {
     } = this.input.parameters;
 
     return this.get(`/users/${customerId}/carts/${id}`, { bearer, queryParameters: { fields: 'FULL' } })
-      .then(cartDto => this.buildCartDto(cartDto, customerId))
+      .then(cartDto => cartDto)
       .catch(errorOutput => Promise.reject(errorOutput));
 
   }
-
-  private buildCartDto(cartDto, customerId): CartWsDTO {
-    cartDto.user = new PrincipalWsDTO();
-    cartDto.user.name = customerId;
-    return cartDto;
-  }
-
 }
