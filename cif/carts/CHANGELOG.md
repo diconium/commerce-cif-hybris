@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.8.0...@diconium/commerce-cif-hybris-carts@1.9.0) (2020-11-09)
+
+
+### Features
+
+* removed mutation of the dto from hybris and passing the user object as is to the mapper ([#48](https://github.com/diconium/commerce-cif-hybris/issues/48)) ([e80e68f](https://github.com/diconium/commerce-cif-hybris/commit/e80e68fa2a3d638f06e114121fc010ca99f23f7a))
+
+
+
+
+
 # [1.8.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.7.9...@diconium/commerce-cif-hybris-carts@1.8.0) (2020-09-09)
 
 
