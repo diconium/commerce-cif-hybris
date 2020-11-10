@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.0...@diconium/commerce-cif-hybris-carts@1.9.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* renamed variable to bump version ([e1e3bf0](https://github.com/diconium/commerce-cif-hybris/commit/e1e3bf0b6ce542564a684e9b49d94c3b0029ec8b))
+
+
+
+
+
 # [1.9.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.8.0...@diconium/commerce-cif-hybris-carts@1.9.0) (2020-11-09)
 
 
