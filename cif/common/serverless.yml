@@ -28,5 +28,3 @@ functions:
     name: ${self:custom.ow-package}/webActionTransformer
     concurrency: 500
     handler: "@adobe/commerce-cif-web-action-transformer@1.0.2/index.main"
-    ccif_dependency: "@adobe/commerce-cif-web-action-transformer@1.0.2"
-
