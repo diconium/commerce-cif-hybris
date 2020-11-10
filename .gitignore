@@ -10,7 +10,6 @@
 
 # package directories
 node_modules/
-@adobe/
 npm-debug.log
 yarn-error.log
 yarn-debug.log*
@@ -45,3 +44,4 @@ lib/
 !k6-script.js
 !deployment-install.js
 !serverlessPackageConfig.js
+!/**/@adobe/**/*
