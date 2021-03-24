@@ -66,13 +66,16 @@ export default class CartMapper extends Mapper<Cart> {
     const cartId = this.settings.customerId === 'current' ? code : guid;
 
     const moneyValueMapper = new MoneyValueMapper(this.settings);
+    const cartBuilder = new Cart.Builder()
+        .withId(cartId)
+        .withEntries(entries.map(entry => new CartEntryMapper(this.settings).mapToEntity(entry)))
+        .withProductTotalPrice(moneyValueMapper.mapToEntity(subTotal));
 
-    const cart = new Cart.Builder()
-      .withId(cartId)
-      .withEntries(entries.map(entry => new CartEntryMapper(this.settings).mapToEntity(entry)))
-      .withProductTotalPrice(moneyValueMapper.mapToEntity(subTotal))
-      .withCurrency(totalPriceWithTax.currencyIso)
-      .build();
+    if (totalPriceWithTax && totalPriceWithTax.currencyIso) {
+      cartBuilder.withCurrency(totalPriceWithTax.currencyIso);
+    }
+    const cart = cartBuilder
+        .build();
 
     if (totalPriceWithTax) {
       cart.grossTotalPrice = moneyValueMapper.mapToEntity(totalPriceWithTax);
