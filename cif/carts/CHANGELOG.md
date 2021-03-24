@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.2](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.1...@diconium/commerce-cif-hybris-carts@1.9.2) (2021-03-24)
+
+
+### Bug Fixes
+
+* totalPriceWithTax currency validation ([5fd7b23](https://github.com/diconium/commerce-cif-hybris/commit/5fd7b23ee78ca77534ada02430c1cdbf0a2c9308))
+
+
+
+
+
 ## [1.9.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.0...@diconium/commerce-cif-hybris-carts@1.9.1) (2020-11-10)
 
 
