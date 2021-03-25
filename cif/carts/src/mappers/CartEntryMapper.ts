@@ -19,7 +19,6 @@ import { CartEntry } from '@adobe/commerce-cif-model';
 import { OrderEntryWsDTO, ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import MoneyValueMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/MoneyValueMapper';
 import ProductMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/ProductMapper';
-import base = Mocha.reporters.base;
 
 export default class CartEntryMapper extends Mapper<CartEntry> {
 
