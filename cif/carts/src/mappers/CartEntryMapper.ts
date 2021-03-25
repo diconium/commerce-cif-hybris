@@ -19,6 +19,7 @@ import { CartEntry } from '@adobe/commerce-cif-model';
 import { OrderEntryWsDTO, ProductWsDTO } from '@diconium/commerce-cif-hybris-clients';
 import MoneyValueMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/MoneyValueMapper';
 import ProductMapper from '@diconium/commerce-cif-hybris-products/lib/mappers/ProductMapper';
+import base = Mocha.reporters.base;
 
 export default class CartEntryMapper extends Mapper<CartEntry> {
 
@@ -69,15 +70,21 @@ export default class CartEntryMapper extends Mapper<CartEntry> {
     } = dto;
 
     const moneyValueMapper = new MoneyValueMapper(this.settings);
+    const cartEntryBuilder = new CartEntry.Builder()
+        .withId(String(entryNumber))
+        .withQuantity(quantity)
+        .withProductVariant(this.mapProductVariant(product))
+        .withType('REGULAR');
 
-    const cartEntry = new CartEntry.Builder()
-      .withId(String(entryNumber))
-      .withQuantity(quantity)
-      .withProductVariant(this.mapProductVariant(product))
-      .withPrice(moneyValueMapper.mapToEntity(totalPrice))
-      .withUnitPrice(moneyValueMapper.mapToEntity(basePrice))
-      .withType('REGULAR')
-      .build();
+    if (totalPrice) {
+      cartEntryBuilder.withPrice(moneyValueMapper.mapToEntity(totalPrice));
+    }
+
+    if (basePrice) {
+      cartEntryBuilder.withUnitPrice(moneyValueMapper.mapToEntity(basePrice));
+    }
+
+    const cartEntry = cartEntryBuilder.build();
 
     return cartEntry;
   }
