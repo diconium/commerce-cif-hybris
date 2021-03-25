@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.4](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.3...@diconium/commerce-cif-hybris-carts@1.9.4) (2021-03-25)
+
+
+### Bug Fixes
+
+* Add prices validations into CartEntryMapper ([#58](https://github.com/diconium/commerce-cif-hybris/issues/58)) ([2ef057a](https://github.com/diconium/commerce-cif-hybris/commit/2ef057ac420648c4b1312b5a6dd1a3bb1a4db55b))
+
+
+
+
+
 ## [1.9.3](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.2...@diconium/commerce-cif-hybris-carts@1.9.3) (2021-03-25)
 
 
