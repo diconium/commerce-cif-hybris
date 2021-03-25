@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.3](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.2...@diconium/commerce-cif-hybris-carts@1.9.3) (2021-03-25)
+
+
+### Bug Fixes
+
+* add subTotal validation ([4794eec](https://github.com/diconium/commerce-cif-hybris/commit/4794eecae11b7a17611e2b20708da9b8af6d55a7))
+
+
+
+
+
 ## [1.9.2](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.1...@diconium/commerce-cif-hybris-carts@1.9.2) (2021-03-24)
 
 
