@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.5](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.4...@diconium/commerce-cif-hybris-carts@1.9.5) (2021-04-07)
+
+
+### Bug Fixes
+
+* updates client library to latest version ([5e220c3](https://github.com/diconium/commerce-cif-hybris/commit/5e220c3ecd2c5b992696acf3a3a1b91271085c25))
+
+
+
+
+
 ## [1.9.4](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.9.3...@diconium/commerce-cif-hybris-carts@1.9.4) (2021-03-25)
 
 
