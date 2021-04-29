@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.9.1...@diconium/commerce-cif-hybris-categories@1.10.0) (2021-04-29)
+
+
+### Features
+
+* update commerce-cif-hybris-clients version to latest (1.19.0) ([8749f89](https://github.com/diconium/commerce-cif-hybris/commit/8749f89efd83dea8c232f99f0100590c0526414a))
+
+
+
+
+
 ## [1.9.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-categories@1.9.0...@diconium/commerce-cif-hybris-categories@1.9.1) (2021-04-07)
 
 
