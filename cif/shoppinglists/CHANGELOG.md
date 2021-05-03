@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.5.0...@diconium/commerce-cif-hybris-shoppinglists@1.6.0) (2021-05-03)
+
+
+### Features
+
+* update commerce-cif-hybris-clients version to latest (1.19.1) ([640724b](https://github.com/diconium/commerce-cif-hybris/commit/640724bcb971f71750e6de92999c558e041db8dc))
+
+
+
+
+
 # [1.5.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-shoppinglists@1.4.6...@diconium/commerce-cif-hybris-shoppinglists@1.5.0) (2021-04-29)
 
 
