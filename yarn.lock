@@ -113,10 +113,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@diconium/commerce-cif-hybris-clients@^1.16.1":
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.16.1.tgz#3cb6204df75e06e866c87c15fd322e32e6ba0bd4"
-  integrity sha512-kekUBWxFqS1I9oPDC8uezwxrZ54bkmNemIFJ4Fh2yFhOOJ246uzAVLGBYZhxeHQAkjCRuwKcH064/0c8REQOFg==
+"@diconium/commerce-cif-hybris-clients@^1.19.1":
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/@diconium/commerce-cif-hybris-clients/-/commerce-cif-hybris-clients-1.19.1.tgz#16c2d8cb63edc6e873aa4d59331673fbc13c47ba"
+  integrity sha512-jDUnsFY4FFkFXfzYVtg4lSBrUF1rqnBjOSXQLU3WyrfyGadZKjSk/TuRxlG5YV7JHtRujY4TRhEIhz0OvyTaXw==
   dependencies:
     "@diconium/commerce-cif-hybris-core" "^1.9.1"
     "@diconium/commerce-cif-hybris-i18n" "^1.1.3"
