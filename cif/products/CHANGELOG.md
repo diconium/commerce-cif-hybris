@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.13.0...@diconium/commerce-cif-hybris-products@1.13.1) (2021-06-21)
+
+
+### Bug Fixes
+
+* updates client library to latest version in yarn.lock ([12262f0](https://github.com/diconium/commerce-cif-hybris/commit/12262f07b3dba33149545f1af52862243d26838a))
+
+
+
+
+
 # [1.13.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.12.0...@diconium/commerce-cif-hybris-products@1.13.0) (2021-05-03)
 
 
