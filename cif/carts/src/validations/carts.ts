@@ -40,7 +40,6 @@ function postCart(args: any): Input {
   return new Validator<Cart>(args, ERROR_TYPE)
     .setMapper(CartMapper)
     .checkArguments()
-    .mandatoryParameter('currency')
     .isCurrencyCode('currency')
     .isInteger('quantity')
     .isInsideInterval('quantity', 1)
