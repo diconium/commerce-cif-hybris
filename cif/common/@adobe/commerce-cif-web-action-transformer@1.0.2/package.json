@@ -20,7 +20,7 @@
     "serverless": "1.29.2",
     "serverless-openwhisk": "0.14.0",
     "serverless-webpack": "4.3.0",
-    "webpack": "4.0.1"
+    "webpack": "5.75.0"
   },
   "eslintConfig": {
     "extends": "../../.eslintrc.js"
