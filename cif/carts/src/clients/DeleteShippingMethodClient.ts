@@ -35,7 +35,7 @@ export default class DeleteShippingMethodClient extends HttpClient {
       id,
     } = this.input.parameters;
 
-    return this.delete(`/users/${customerId}/carts/${id}/deliverymode`, { bearer })
+    return this.delete(`/users/${customerId}/carts/${id}/deliverymode`, { bearer }, undefined)
       .then(() => undefined)
       .catch(errorOutput => Promise.reject(errorOutput));
 

@@ -34,7 +34,7 @@ export default class DeletePaymentClient extends HttpClient {
       paymentId,
     } = this.input.parameters;
 
-    return this.delete(`/users/${customerId}/paymentdetails/${paymentId}`, { bearer })
+    return this.delete(`/users/${customerId}/paymentdetails/${paymentId}`, { bearer }, undefined)
       .then(paymentDto => paymentDto)
       .catch(errorOutput => Promise.reject(errorOutput));
 
