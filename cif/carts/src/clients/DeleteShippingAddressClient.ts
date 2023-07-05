@@ -35,7 +35,7 @@ export default class DeleteShippingAddressClient extends HttpClient {
       id,
     } = this.input.parameters;
 
-    return this.delete(`/users/${customerId}/carts/${id}/addresses/delivery`, { bearer, queryParameters: { fields: 'FULL' } })
+    return this.delete(`/users/${customerId}/carts/${id}/addresses/delivery`, { bearer, queryParameters: { fields: 'FULL' } }, undefined)
       .then(() => undefined)
       .catch(errorOutput => Promise.reject(errorOutput));
 

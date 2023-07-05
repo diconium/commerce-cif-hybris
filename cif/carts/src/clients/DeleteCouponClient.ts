@@ -35,7 +35,7 @@ export default class DeleteCouponClient extends HttpClient {
       couponId,
     } = this.input.parameters;
 
-    return this.delete(`/users/${customerId}/carts/${id}/vouchers/${couponId}`, { bearer })
+    return this.delete(`/users/${customerId}/carts/${id}/vouchers/${couponId}`, { bearer }, undefined)
       .then(couponDto => couponDto)
       .catch(errorOutput => Promise.reject(errorOutput));
   }

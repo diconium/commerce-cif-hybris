@@ -36,7 +36,7 @@ export default class DeleteCartEntryClient extends HttpClient {
       cartEntryId,
     } = this.input.parameters;
 
-    return this.delete(`/users/${customerId}/carts/${id}/entries/${cartEntryId}`, { bearer })
+    return this.delete(`/users/${customerId}/carts/${id}/entries/${cartEntryId}`, { bearer }, undefined)
       .then(() => undefined)
       .catch(errorOutput => Promise.reject(errorOutput));
   }
