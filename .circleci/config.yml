@@ -21,7 +21,7 @@ set-git-setting: &set-git-settings
   run:
     command: |
       git config --global user.email $USER_EMAIL
-      git config --global user.name "${CIRCLE_USERNAME}"
+      git config --global user.name lopesdasilva
       mkdir -pvm 0700 ~/.ssh/
       echo -e "StrictHostKeyChecking=no" > ~/.ssh/config
 
