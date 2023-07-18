@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.13.1...@diconium/commerce-cif-hybris-products@1.14.0) (2023-07-18)
+
+
+### Features
+
+* updated commerce dependencies with the latest version ([aef1e22](https://github.com/diconium/commerce-cif-hybris/commit/aef1e22e55307d6f57c696ebb30a1472f1f6242b))
+
+
+
+
+
 ## [1.13.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-products@1.13.0...@diconium/commerce-cif-hybris-products@1.13.1) (2021-06-21)
 
 
