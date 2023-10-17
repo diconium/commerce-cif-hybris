@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@adobe/commerce-cif-model": "^1.1.2",
-    "@diconium/commerce-cif-hybris-clients": "^1.21.1",
+    "@diconium/commerce-cif-hybris-clients": "^1.22.1",
     "@diconium/commerce-cif-hybris-core": "^1.10.0",
     "@diconium/commerce-cif-hybris-i18n": "^1.1.4",
     "@diconium/commerce-cif-hybris-validators": "^1.3.4"
