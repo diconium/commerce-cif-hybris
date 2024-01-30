@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.12.1...@diconium/commerce-cif-hybris-carts@1.13.0) (2024-01-30)
+
+
+### Features
+
+* set nodejs version to default ([00ffcb2](https://github.com/diconium/commerce-cif-hybris/commit/00ffcb287cefcbc89759c908aca581ee59aa5af7))
+
+
+
+
+
 ## [1.12.1](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.12.0...@diconium/commerce-cif-hybris-carts@1.12.1) (2023-10-17)
 
 **Note:** Version bump only for package @diconium/commerce-cif-hybris-carts
