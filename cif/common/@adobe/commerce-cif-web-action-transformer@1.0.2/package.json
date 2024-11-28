@@ -15,7 +15,7 @@
     "http-status-codes": "1.1.6"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
+    "eslint": "4.18.2",
     "eslint-plugin-header": "2.0",
     "serverless": "1.29.2",
     "serverless-openwhisk": "0.14.0",
