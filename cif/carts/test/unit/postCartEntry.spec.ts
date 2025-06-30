@@ -120,7 +120,7 @@ describe('postCartEntry', () => {
           quantity: 2,
         });
         expect(parameters.id).to.be.equal('f527bf4b-dda3-4e99-a76b-03a2ebe1ae94');
-        expect(parameters.entry.product.offerCode).to.be.equal('offer-123');
+        expect(parameters.entry.product.code).to.be.equal('offer-123');
         expect(parameters.entry.quantity).to.be.equal(2);
       });
     });
