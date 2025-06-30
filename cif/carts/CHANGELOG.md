@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.13.0...@diconium/commerce-cif-hybris-carts@1.14.0) (2025-06-30)
+
+
+### Features
+
+* bud 204 add to cart param offer code ([#110](https://github.com/diconium/commerce-cif-hybris/issues/110)) ([9dcb8c1](https://github.com/diconium/commerce-cif-hybris/commit/9dcb8c171f1c7aa3cb4c21b73e8675fe4fbcee16))
+
+
+
+
+
 # [1.13.0](https://github.com/diconium/commerce-cif-hybris/compare/@diconium/commerce-cif-hybris-carts@1.12.1...@diconium/commerce-cif-hybris-carts@1.13.0) (2024-01-30)
 
 
