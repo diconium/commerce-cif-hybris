@@ -28,7 +28,6 @@ function postCartEntry(args: any): Input {
     .setMapper(CartEntryMapper)
     .checkArguments()
     .mandatoryParameter('id')
-    .mandatoryParameter('productVariantId')
     .mandatoryParameter('quantity')
     .isInteger('quantity')
     .isInsideInterval('quantity', 1)

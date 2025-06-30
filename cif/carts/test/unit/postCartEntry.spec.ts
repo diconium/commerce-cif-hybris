@@ -70,15 +70,9 @@ describe('postCartEntry', () => {
         });
       });
 
-      it('Validator should return MissingPropertyError errorOutput if no productVariantId is provided', async () => {
+      it('Validator should assert that productVariantId is not a mandatory parameter', async () => {
         const { errorOutput } = await validateCartEntry({ id: 'f527bf4b-dda3-4e99-a76b-03a2ebe1ae94', quantity: 2 });
-        expect(errorOutput).to.be.deep.equal({
-          cause: {
-            message: 'missing-property',
-          },
-          message: 'Parameter \'productVariantId\' is missing.',
-          name: 'MissingPropertyError',
-        });
+        expect(errorOutput).to.be.null;
       });
 
       it('Validator should return MissingPropertyError errorOutput if no quantity is provided', async () => {
@@ -117,6 +111,17 @@ describe('postCartEntry', () => {
           quantity: 0,
         });
         expect(input.errorOutput).to.be.deep.equal(errorOutput);
+      });
+
+      it('Validator should return a valid input using a offerCode', async () => {
+        const { parameters } = await validateCartEntry({
+          id: 'f527bf4b-dda3-4e99-a76b-03a2ebe1ae94',
+          offerCode: 'offer-123',
+          quantity: 2,
+        });
+        expect(parameters.id).to.be.equal('f527bf4b-dda3-4e99-a76b-03a2ebe1ae94');
+        expect(parameters.entry.product.offerCode).to.be.equal('offer-123');
+        expect(parameters.entry.quantity).to.be.equal(2);
       });
     });
 
@@ -172,8 +177,8 @@ describe('postCartEntry', () => {
 
       it('Action should return CommerceServiceResourceNotFoundError if an invalid product id is provided', async () => {
         scope.post('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries')
-          .query({ fields: 'FULL', lang: 'en' })
-          .reply(404, productUnknown);
+            .query({ fields: 'FULL', lang: 'en' })
+            .reply(404, productUnknown);
         const { errorOutput } = await postCartEntry(validInput);
         expect(errorOutput).to.be.deep.equal({
           name: 'CommerceServiceResourceNotFoundError',
@@ -186,8 +191,8 @@ describe('postCartEntry', () => {
 
       it('Action should return InvalidArgumentError if an product has no stock', async () => {
         scope.post('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries')
-          .query({ fields: 'FULL', lang: 'en' })
-          .reply(400, productOutOfStock);
+            .query({ fields: 'FULL', lang: 'en' })
+            .reply(400, productOutOfStock);
         const { errorOutput } = await postCartEntry(validInput);
         expect(errorOutput).to.be.deep.equal({
           name: 'CommerceServiceBadRequestError',
@@ -200,8 +205,8 @@ describe('postCartEntry', () => {
 
       it('Should return CommerceServiceForbiddenError if user is not allowed to add entry to the cart', async () => {
         scope.post('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries')
-          .query({ lang: 'en', fields: 'FULL' })
-          .reply(403, customerNotAuthorizedExample);
+            .query({ lang: 'en', fields: 'FULL' })
+            .reply(403, customerNotAuthorizedExample);
         const { errorOutput } = await postCartEntry(validInput);
         expect(errorOutput).to.be.deep.equal({
           cause: {
@@ -214,8 +219,8 @@ describe('postCartEntry', () => {
 
       it('Should return CommerceServiceResourceNotFoundError if the cart is not found', async () => {
         scope.post('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries')
-          .query({ fields: 'FULL', lang: 'en' })
-          .reply(404, cartNotFound);
+            .query({ fields: 'FULL', lang: 'en' })
+            .reply(404, cartNotFound);
 
         const { errorOutput } = await postCartEntry(validInput);
         expect(errorOutput).to.be.deep.equal({
@@ -229,8 +234,8 @@ describe('postCartEntry', () => {
 
       it('Should return 200 if new entry was successfully added', async () => {
         scope.post('/rest/v2/electronics/users/anonymous/carts/f527bf4b-dda3-4e99-a76b-03a2ebe1ae94/entries', validBody)
-          .query({ lang: 'en', fields: 'FULL' })
-          .reply(200, successResponseDto);
+            .query({ lang: 'en', fields: 'FULL' })
+            .reply(200, successResponseDto);
         const { parameters, errorOutput } = await postCartEntry(validInput);
         expect(errorOutput).to.be.undefined;
         expect(parameters.id).to.equal('f527bf4b-dda3-4e99-a76b-03a2ebe1ae94');
@@ -238,11 +243,11 @@ describe('postCartEntry', () => {
 
       it('Should return a valid input if new entry was successfully added to the authenticated cart', async () => {
         scope.post('/rest/v2/electronics/users/current/carts/00000006/entries', validBody)
-          .query({
-            fields: 'FULL',
-            lang: 'en',
-          })
-          .reply(200, successResponseDto);
+            .query({
+              fields: 'FULL',
+              lang: 'en',
+            })
+            .reply(200, successResponseDto);
         const { parameters, errorOutput } = await postCartEntry(validAuthenticatedInput);
         expect(errorOutput).to.be.undefined;
         expect(parameters.id).to.equal('00000006');
@@ -250,11 +255,11 @@ describe('postCartEntry', () => {
 
       it('Post cart entry output should have a cart modification object as responseExtension', async () => {
         scope.post('/rest/v2/electronics/users/current/carts/00000006/entries', validBody)
-          .query({
-            fields: 'FULL',
-            lang: 'en',
-          })
-          .reply(200, successResponseDto);
+            .query({
+              fields: 'FULL',
+              lang: 'en',
+            })
+            .reply(200, successResponseDto);
         const { responseExtension, errorOutput } = await postCartEntry(validAuthenticatedInput);
         expect(errorOutput).to.be.undefined;
         expect(responseExtension).to.deep.equal({
