@@ -36,9 +36,10 @@ export default class CartEntryMapper extends Mapper<CartEntry> {
     } = mappable;
 
     const orderEntry = this.mapFromEntity({
+      productVariantId,
       quantity,
       cartEntryId,
-      code: productVariantId || offerCode,
+      offerCode,
     });
 
     return {
@@ -51,7 +52,7 @@ export default class CartEntryMapper extends Mapper<CartEntry> {
   mapFromEntity(entity, mappable?: OrderEntryWsDTO): OrderEntryWsDTO {
     const orderEntry : OrderEntryWsDTO = new OrderEntryWsDTO();
     const product: ProductWsDTO = new ProductWsDTO();
-    product.code = entity.code;
+    product.code = entity.productVariantId || entity.offerCode;
     orderEntry.product = product;
     orderEntry.quantity = entity.quantity;
     orderEntry.entryNumber = entity.cartEntryId;
