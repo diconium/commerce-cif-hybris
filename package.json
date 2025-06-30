@@ -21,8 +21,8 @@
     "clean": "rimraf **/lib **/node_modules yarn.lock **/tsconfig.tsbuildinfo",
     "lerna:version": "lerna version --conventional-commits --yes --push -m \"docs(all): [skip ci] Bump versions\" --loglevel trace",
     "lerna:publish": "lerna publish from-git --yes --loglevel trace",
-    "ow:config": "wsk property set --auth \"$ADOBE_RUNTIME_AUTH\" --apihost \"$ADOBE_RUNTIME_HOST\" --namespace \"$ADOBE_NAMESPACE\"",
-    "ow:eu:config": "wsk property set --auth \"$ADOBE_RUNTIME_AUTH_EU\" --apihost \"$ADOBE_RUNTIME_HOST_EU\" --namespace \"$ADOBE_NAMESPACE_EU\""
+    "ow:config": "wsk property set --auth \"$ADOBE_RUNTIME_AUTH\" --apihost \"$ADOBE_RUNTIME_HOST\",
+    "ow:eu:config": "wsk property set --auth \"$ADOBE_RUNTIME_AUTH_EU\" --apihost \"$ADOBE_RUNTIME_HOST_EU\"
   },
   "devDependencies": {
     "@adobe/commerce-cif-model": "^1.1.2",
