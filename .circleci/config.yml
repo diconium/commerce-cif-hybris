@@ -79,7 +79,7 @@ jobs:
 
   deploy:
     docker:
-      - image: gcr.io/geometric-smoke-193807/wsk-serverless:1.0.10
+      - image: litos70/wsk-serverless:1.4.0
     working_directory: ~/repo
     steps:
       - *read-workspace
